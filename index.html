@@ -11,7 +11,13 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
     
         <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet">
+    <link href="css/countryData.css" rel="stylesheet">
+        <!--   <link href="css/countryView.css" rel="stylesheet">-->
+        <link href="css/portfolio.css" rel="stylesheet">
+        <!--   <link href="css/pillarsAndTargets.css" rel="stylesheet">-->
         <link href="css/header.css" rel="stylesheet">
+        
       </head>
 
 
@@ -53,7 +59,7 @@
   </div>
       <div class="infoSection">
         <img src="images/infoImages.jpg" style="margin-top:40px; width:100%">
-        <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoImages">
+        <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoImages panel">
 
          <h3> Small Island Developing States </h3>
 
@@ -62,6 +68,153 @@
       </div>
     
 
+
+
+
+      <div class="container panel portfolio">
+        <div class="container-fluid panelTitle">
+            <div class="col-lg-12"> <h1>UNDP Portfolio in Small Island Developing States</h1>
+            </div>
+          </div>
+            <div class="row">
+            <div class="col-sm-7"></div>
+            <div class="col-sm-5">
+              <div class="row portfolioOverview">
+              <div class="portfolioStat" id="portfolio1">
+                <div><h3>50</h3></div>
+                <div><p>UNDP SIDS</p></div>
+              </div>
+              <div class="portfolioStat" id="portfolio2"></div>
+              <div class="portfolioStat" id="portfolio3"></div>
+              <div class="portfolioStat" id="portfolio4"></div>
+            </div>
+          </div>
+    
+          </div>
+        <div class="row spacer" style="height:80px">
+       </div>
+       <div class="row pies">
+        <div id="pieRegion"><img src="graphics/pieRegion.png" width="100%"></img></div>
+        <div id="pieFunding"><img src="graphics/pieFunding.png" width="100%"></img></div>
+      </div>
+      <div class="row sdgPortfolio hoverMe">
+        <div id="bars"><img src="graphics/bars.png" width="100%"></img></div>
+      </div>
+      <div class="row sdgIcons">
+        <div id="sdgIcons"><img src="graphics/sdgs.png" width="100%"></img></div>
+      </div>
+      <div class="row goalsLogo">
+        <img src="graphics/sdgLogo.png" width="100%"></img>
+      </div>
+      <div class="row goalSelector">
+      
+        <div class="goalSelect col-lg-12 d-flex justify-content-center">
+          <ul>        
+              <li><a  id="global">SAMOA Pathway</a></li>
+              <li><a id="caribbean">Sustainable Development Goals</a></li>
+              <li><a id="ais">UNDP Signature Solutions</a></li>
+          
+           <div class="goalShader"></div>
+          </ul>
+        
+      </div></div>
+        
+        
+    
+      
+      <div class="row portfolioFilterRow">
+        
+        <div class="regionSelect col-lg-7 d-flex justify-content-center">
+          <ul >        
+              <li><a  id="global">Global</a></li>
+              <li><a id="caribbean">Caribbean (RBLAC)</a></li>
+              <li><a id="ais">AIS (RBA)</a></li>
+              <li><a  id="pacific">Pacific (RBAP)</a></li>
+           <div class="regionShader"></div>
+          </ul>
+        
+      </div>
+    
+    
+      <div class="fundingSelect col-lg-3 d-flex justify-content-center">
+
+        <div class="info__box info__roaster" id="scss and multidropdown test">
+          <div class="input__container">
+           <!-- Roaster -->
+           <div class="input__select input__big">
+             <select name="roaster" id="roaster">
+               <option value="all">All funders</option>
+               <option value="emilo">Emilo</option>
+               <option value="gug">Gang und Gaebe</option>
+               <option value="mvm">Man Versus Machine</option>
+               <option value="vdk">Vits der Kaffee</option>
+             </select>
+           </div>
+           
+           <!-- Type of coffe -->
+           <div class="input__select input__small">
+             <select id="type">
+               <option value="">-- select one -- </option>
+             </select>
+           </div>
+         </div>
+        </div>
+      
+    </div>
+    
+    
+      
+      <div class="yearSelect col-lg-2 d-flex justify-content-center">
+        <ul >        
+            <li><a  id="global">Year</a></li>
+         <div class="yearShader"></div>
+        </ul>
+      
+    </div>
+    
+        
+      </div>
+    
+      <div id="test">test</div>
+    
+    </div>
+
+
+    <div class="container panel countryData">
+
+      <div class="col-lg-12"> <h1>SIDS Country Data</h1>
+      </div>
+
+<div class="row">
+
+          <div class="col-md-3" id="countryDataSelectors"> 
+              
+              <img src="images/countryDataSelectTemp.jpg" style="width:100%">
+          </div>
+
+          <div class="col-md-9"> 
+       
+          <div class="row" id="countryDataVizSelector">
+
+                  <div class="vizSelect col-lg-12 d-flex justify-content-center">
+                    <ul>        
+                      <li><a  id="global">Choropleth</a></li>
+                      <li><a id="caribbean">Time Series</a></li>
+                      <li><a id="ais">Charts</a></li>
+                      <li><a id="ais">Analysis</a></li>
+                    
+                     <div class="vizShader"></div>
+                    </ul>
+                  
+                </div></div>
+
+          <div class="row hoverMe" id="countryDataViz">
+              <img src="graphics/sidsGrid.png" style="width:100%">
+          </div>
+      </div>
+      </div>
+
+  </div>
 
 
 
@@ -78,9 +231,75 @@
 <script src="scripts/popper.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
 <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
 
 
 
+<script>
 
+  var v1="<option value='all-sources'>All sources</option><option value='emilo-muc'>Münchner Kaffe</option><option value='emilo-muc-bio'>Münchner Kaffee BIO</option><option value='emilo-coli'>Colibri</option><option value='emilo-wall'>Wallaby</option><option value='emilo-lua'>Luani</option><option value='emilo-tuc'>Tucano BIO</option><option value='emilo-cora'>Corallo Decaf</option>"
+  
+  var v2="<option value='all-sources'>All sources</option><option value='gug-etho'>Äthopien</option><option value='gug-ecua'>Ecuador</option><option value='gug-gua'>Guatemala</option><option value='gug-hon'>Honduras</option>"
+  
+  var v3="<option value='all-sources'>All sources</option><option value='mvm-foge'>Foge, Peru</option><option value='mvm-lech'>El Lechero, Peur</option><option value='mvm-chel'>Chelbesa, Ethiopia</option><option value='mvm-serr'>Serrinha, Brazil</option>"
+  
+  var v4="<option value='all-sources'>All sources</option><option value='vdk-1'>Nr.1 Einmal um die Welt</option><option value='vdk-2'>Nr.2 Die Wiege des Kaffees</option><option value='vdk-3'>Nr.3 Indien Summer</option><option value='vdk-4'>Nr.4 Noch Ohne Namen</option><option value='vdk-spec'>Speciality Blend</option>"
+  
+  
+   $("#roaster").change(function() {
+          let val = $(this).val();
+          if (val == "emilo") {
+              $("#type").html(v1);
+          } else if (val == "gug") {
+              $("#type").html(v2);
+  
+          } else if (val == "mvm") {
+              $("#type").html(v3);
+  
+          } else if (val == "vdk") {
+              $("#type").html(v4);
+          }
+          
+      });
+  
+  </script>
+
+
+<script>
+
+$('.goalSelect ul li').click(function() {
+      var x = $(this);
+      document.getElementById("test").innerHTML = this.innerText;
+        $('.goalShader').stop().animate({
+         'width': x.width()+32,
+         'left' : x.position().left
+      }, 400);
+ });
+
+ $('.regionSelect ul li').click(function() {
+      var x = $(this);
+      document.getElementById("test").innerHTML = this.innerText;
+        $('.regionShader').stop().animate({
+         'width': x.width()+32,
+         'left' : x.position().left
+      }, 400);
+ });
+  
+
+ $('.vizSelect ul li').click(function() {
+      var x = $(this);
+      document.getElementById("test").innerHTML = this.innerText;
+        $('.vizShader').stop().animate({
+         'width': x.width()+32,
+         'left' : x.position().left
+      }, 400);
+ });
+
+  </script>
+
+
+</body>
 
     </html>
