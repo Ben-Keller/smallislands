@@ -1,0 +1,81 @@
+/*
+-----------------------
+SCSS
+------------------*/
+:root {
+  --color-primary: #00587a;
+  --color-primary-light: #008891;
+  --color-primary-dark: #0f3057;
+  --color-climate: #0DB14B;
+  --color-blue: #11878D;
+  --color-digital:#F58220;
+}
+
+/* 
+Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1b022bfbf
+*/
+.countryData .col-lg-4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.countryData h2 {
+  font-weight: 400;
+}
+
+.countryData .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.countryData h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.countryData h2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.countryData h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.countryData h5 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.countryData p {
+  font-size: 12px;
+  text-align: center;
+}
+
+#countryDataSelectors {
+  padding: 30px;
+}
+
+#countryDataViz {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.vizShader {
+  background-color: #E9ECF6;
+  position: absolute;
+  height: 24px;
+  z-index: -1;
+  margin: 4px 6px;
+  padding: 0px 4px 3px 32px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=countryData.css.map */

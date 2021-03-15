@@ -1,0 +1,133 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+div {
+  outline: 2px solid red;
+}
+
+body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #F4F5F8;
+  color: #2c2c2c;
+  font-family: "Proxima Nova";
+}
+
+* {
+  font-family: "proxima-nova", sans-serif;
+  letter-spacing: 0.6px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .fundingSelect.selection.dropdown .menu {
+    /*      max-height: 8.01428571rem; /* + 1.335714285 to 9.349999995rem */
+    /*      max-height: 9.349999995rem; /* Adds a half */
+    max-height: 16.02857142rem;
+    /* Double size */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fundingSelect.selection.dropdown .menu {
+    /*         max-height: 10.68571429rem; /* + 1.3357142863 to 12.0214285763rem */
+    max-height: 12.0214285763rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fundingSelect.selection.dropdown .menu {
+    max-height: 16.02857143rem;
+    /* + 1.3357142858 to 17.3642857158rem */
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .fundingSelect.selection.dropdown .menu {
+    max-height: 21.37142857rem;
+    /* + 1.3357142856 to 22.7071428556rem */
+  }
+}
+/* Tooltip
+-------------------------------------------------- */
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+#arrow {
+  visibility: hidden;
+}
+
+#arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+#tooltip[data-popper-placement^=top] > #arrow {
+  bottom: -4px;
+}
+
+#tooltip[data-popper-placement^=bottom] > #arrow {
+  top: -4px;
+}
+
+#tooltip[data-popper-placement^=left] > #arrow {
+  right: -4px;
+}
+
+#tooltip[data-popper-placement^=right] > #arrow {
+  left: -4px;
+}
+
+#tooltip {
+  background: #E9ECF6;
+  color: black;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 4px;
+  display: none;
+  z-index: 99;
+}
+
+#tooltip[data-show] {
+  display: block;
+}
+
+/*format for region selector*/
+li, a {
+  outline: 0px solid red;
+}
+
+ul {
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+  margin: 0 12px;
+  padding: 4px 12px 4px;
+  cursor: pointer;
+}
+
+ul li a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.panel {
+  margin-top: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
