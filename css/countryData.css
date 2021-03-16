@@ -19,10 +19,6 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   text-align: center;
 }
 
-.countryData h2 {
-  font-weight: 400;
-}
-
 .countryData .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
@@ -33,12 +29,6 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   text-align: center;
   font-weight: bold;
   color: black;
-}
-
-.countryData h2 {
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
 }
 
 .countryData h3 {

@@ -3,9 +3,6 @@
 SCSS
 ------------------*/
 :root {
-  --color-primary: #00587a;
-  --color-primary-light: #008891;
-  --color-primary-dark: #0f3057;
   --color-climate: #0DB14B;
   --color-blue: #11878D;
   --color-digital:#F58220;
@@ -30,10 +27,6 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   text-align: center;
 }
 
-.storyMap h2 {
-  font-weight: 400;
-}
-
 .storyMap .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
@@ -41,12 +34,6 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
 
 .storyMap h1 {
   font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.storyMap h2 {
-  font-size: 18px;
   text-align: center;
   font-weight: bold;
 }
@@ -72,6 +59,29 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
 
 #bubbleMap {
   height: 280px;
+}
+
+#story {
+  overflow-y: scroll;
+  max-height: 250px;
+}
+
+#storyImage {
+  overflow: hidden;
+  max-height: 250px;
+  margin: 0;
+  padding: 0;
+}
+
+#storyImage img {
+  width: 100%;
+}
+
+.subscribe {
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*# sourceMappingURL=storyMap.css.map */

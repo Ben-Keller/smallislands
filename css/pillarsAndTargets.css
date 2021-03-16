@@ -23,25 +23,9 @@
   text-align: center;
 }
 
-.pillarsTargets h2 {
-  font-weight: 400;
-}
-
 .pillarsTargets .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-}
-
-.pillarsTargets h1 {
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.pillarsTargets h2 {
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
 }
 
 .pillarsTargets h3 {

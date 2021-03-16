@@ -7,22 +7,34 @@
 }
 
 .pies {
-  margin-bottom: -10px;
-}
-
-#pieRegion {
-  width: 10%;
-}
-
-#pieFunding {
-  width: 15%;
+  margin-bottom: -32px;
+  padding: 0;
 }
 
 .portfolioStat {
   width: 24%;
-  background-color: gainsboro;
+  background-color: white;
   margin-right: 1%;
   border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.portfolioStat h3 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+.portfolioStat p {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0;
+  line-height: 15px;
 }
 
 .title {
@@ -45,68 +57,17 @@
   text-align: center;
 }
 
-.portfolio .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem;
-}
-
 .portfolio h1 {
   text-align: center;
   font-weight: bold;
 }
 
-.portfolio h2 {
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.portfolio h3 {
-  font-size: 18px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 0px;
-}
-
 .portfolio h5 {
-  font-size: 14px;
+  font-size: 13px;
   text-align: center;
-}
-
-.portfolio p {
-  font-size: 12px;
-  text-align: center;
-}
-
-/*format for region selector*/
-li, a {
-  outline: 0px solid red;
-}
-
-ul {
   margin: 0;
-  margin-top: 3px;
   padding: 0;
-  position: relative;
-  overflow: hidden;
-  z-index: 99;
-  background-color: #ffffff;
-  display: inline-block;
-  border-radius: 10px;
-}
-
-ul li {
-  list-style: none;
-  float: left;
-  margin: 0 12px;
-  padding: 4px 12px 4px;
-  cursor: pointer;
-}
-
-ul li a {
-  font-size: 12px;
-  text-decoration: none;
+  font-weight: 800;
 }
 
 .regionShader, .goalShader {
