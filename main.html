@@ -5,7 +5,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
      
-        <title>index</title>
+        <title>Small Islands</title>
     
         <!-- Bootstrap core CSS -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -36,8 +36,8 @@
           <h3 class="masthead-brand"><!--put branding here for upper left corner-->
           <img id="undpLogo" src="icons/UNDP-Logo-White/UNDP-Logo-White-Small.png" height="160px"></h3>
           <nav class="nav nav-masthead justify-content-center">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#">Dev Mode</a>
+            <a class="nav-link active" id="homeMode" href="#">Home</a>
+            <a class="nav-link" id="devMode" href="#">Dev Mode</a>
            <!-- <a class="nav-link" href="#">Contact</a> -->
           </nav>
         </div>
@@ -64,7 +64,7 @@
         <img src="images/infoImages.jpg" style="margin-top:40px; width:100%">
         <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoImages panel">
 
-         <h3> Small Island Developing States </h3>
+         <h4> Small Island Developing States </h4>
 
 <p>          As a special case for development, Small Island Developing States (SIDS) face a set of common environmental, social and economic development challenges related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
         </div>
@@ -73,10 +73,9 @@
 
 
 
-
-      <div class="container panel portfolio">
-        <div class="container-fluid panelTitle">
-            <div class="col-lg-12"> <h1>UNDP Portfolio in Small Island Developing States</h1>
+      <div class="container portfolio">
+        <div class="container-fluid ">
+            <div class="col-lg-12"> <h2>UNDP Portfolio in Small Island Developing States</h2>
             </div>
           </div>
             <div class="row">
@@ -87,18 +86,23 @@
                 <div><h3>50</h3></div>
                 <div><p>UNDP SIDS</p></div>
               </div>
-              <div class="portfolioStat" id="portfolio2"></div>
-              <div class="portfolioStat" id="portfolio3"></div>
-              <div class="portfolioStat" id="portfolio4"></div>
+              <div class="portfolioStat" id="portfolio2">          
+                  <div><h3>38</h3></div> <div><p>UN Member States</p></div></div>
+              <div class="portfolioStat" id="portfolio3">        
+                  <div><h3>1032</h3></div>
+              <div><p>UNDP Projects</p></div></div>
+              <div class="portfolioStat" id="portfolio4">   
+                   <div><h3>1.34B</h3></div>
+              <div><p>Total Project Funding</p></div></div>
             </div>
           </div>
     
           </div>
-        <div class="row spacer" style="height:80px">
+        <div class="row spacer" style="height:120px">
        </div>
        <div class="row pies">
-        <div id="pieRegion"><img src="graphics/pieRegion.png" width="100%"></img></div>
-        <div id="pieFunding"><img src="graphics/pieFunding.png" width="100%"></img></div>
+        <div id="pieRegion" class="col-md-2"><h5>Funding by Region</h5><img src="graphics/pieRegion.png" width="100%"></img></div>
+        <div id="pieFunding" class="col-md-3"><h5>Funding by Category</h5><img src="graphics/pieFunding.png" width="100%"></img></div>
       </div>
       <div class="row sdgPortfolio hoverMe">
         <div id="bars"><img src="graphics/bars.png" width="100%"></img></div>
@@ -113,9 +117,9 @@
       
         <div class="goalSelect col-lg-12 d-flex justify-content-center">
           <ul>        
-              <li><a  id="global">SAMOA Pathway</a></li>
-              <li><a id="caribbean">Sustainable Development Goals</a></li>
-              <li><a id="ais">UNDP Signature Solutions</a></li>
+              <li id="samoa"><a >SAMOA Pathway</a></li>
+              <li id="sdg"><a> Sustainable Development Goals</a></li>
+              <li id="undpss"><a >UNDP Signature Solutions</a></li>
           
            <div class="goalShader"></div>
           </ul>
@@ -129,10 +133,10 @@
         
         <div class="regionSelect col-lg-7 d-flex justify-content-center">
           <ul >        
-              <li><a  id="global">Global</a></li>
-              <li><a id="caribbean">Caribbean (RBLAC)</a></li>
-              <li><a id="ais">AIS (RBA)</a></li>
-              <li><a  id="pacific">Pacific (RBAP)</a></li>
+              <li id="global"><a  >Global</a></li>
+              <li id="caribbean"><a >Caribbean (RBLAC)</a></li>
+              <li id="ais"><a >AIS (RBA)</a></li>
+              <li id="pacific"><a  >Pacific (RBAP)</a></li>
            <div class="regionShader"></div>
           </ul>
         
@@ -140,28 +144,7 @@
     
     
       <div class="fundingSelect col-lg-3 d-flex justify-content-center">
-
-        <div class="info__box info__MultiSelect" id="scss and multidropdown test">
-          <div class="input__container">
-           <!-- funding multi-select -->
-           <div class="input__select input__big">
-             <select name="fundingMultiSelect" id="fundingMultiSelect">
-               <option value="all">All funders</option>
-               <option value="emilo">Emilo</option>
-               <option value="gug">Gang und Gaebe</option>
-               <option value="mvm">Man Versus Machine</option>
-               <option value="vdk">Vits der Kaffee</option>
-             </select>
-           </div>
-           
-           <!-- Type of coffe -->
-           <div class="input__select input__small">
-             <select id="fundingCategory">
-               <option value="">-- select one -- </option>
-             </select>
-           </div>
-         </div>
-        </div>
+    
       
     </div>
     
@@ -169,11 +152,15 @@
       
       <div class="yearSelect col-lg-2 d-flex justify-content-center">
         <ul >        
-            <li><a  id="global">Year</a></li>
+            <li><a  id="global">2012-2021</a></li>
          <div class="yearShader"></div>
         </ul>
       
     </div>
+
+
+
+
     
         
       </div>
@@ -183,9 +170,10 @@
     </div>
 
     <div class="container panel pillarsTargets">
-      <div class="container-fluid pillars">
-      <div class="col-lg-12"> <h1>Small Island Development Pillars</h1>
+      <div class="col-lg-12"> <h2>Small Island Development Pillars</h2>
       </div>
+      <div class="pillars">
+   
       <div class="col-lg-12 description"> <h5>UNDP’s SIDS offer – Rising Up for SIDS – presents an integrated approach for tapping into areas with potential to accelerate green recovery and transform societies based on three interconnected pillars: Climate Action, Blue Economy and Digital Transformation.  
           </h5>
       </div>
@@ -215,7 +203,7 @@
   </div>
   
     <div class="container-fluid targets">
-      <h2>SIDS Targets</h2>
+      <h3>SIDS Targets</h3>
       <p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
       <div class="row icon-bar">
           <div class=sidsTarget><img src="icons/TargetIcons/1.1.1_Clean_Energy.png"><p>1.1.1_Clean Energy</p></div>
@@ -250,7 +238,7 @@
 
     <div class="container panel countryData">
 
-      <div class="col-lg-12"> <h1>SIDS Country Data</h1>
+      <div class="col-lg-12"> <h2>SIDS Country Data</h2>
       </div>
 
 <div class="row">
@@ -266,10 +254,10 @@
 
                   <div class="vizSelect col-lg-12 d-flex justify-content-center">
                     <ul>        
-                      <li><a  id="global">Choropleth</a></li>
-                      <li><a id="caribbean">Time Series</a></li>
-                      <li><a id="ais">Charts</a></li>
-                      <li><a id="ais">Analysis</a></li>
+                      <li  id="choropleth"><a >Choropleth</a></li>
+                      <li id="caribbean"><a >Time Series</a></li>
+                      <li id="ais"><a >Charts</a></li>
+                      <li id="ais"><a >Analysis</a></li>
                     
                      <div class="vizShader"></div>
                     </ul>
@@ -297,16 +285,16 @@
     <div class="info__box info__MultiSelect input__container countryViewTitle row" id="scss and multidropdown test">
       <div class="col-lg-3">
       </div>
-  <div class="col-lg-3"> <h1>Country View</h1>
+  <div class="col-lg-3"> <h2>Country View</h2>
   </div>
 
   <div class="input__select col-lg-3" style="padding:0">
-    <select id="countryCategory" class="input__big">
+    <select id="countrySelect" class="input__big">
       <option value="Grenada"> Grenada </option>
     </select>
   </div>
        <div class="input__select col-lg-3 input__small">
-         <select name="countryMultiSelect" id="countryMultiSelect">
+         <select name="countryMultiSelect" id="countryCategory">
            <option value="sids" selected disabled hidden>Filter country list</option>
            <option value="emilo">Emilo</option>
            <option value="gug">Gang und Gaebe</option>
@@ -368,7 +356,7 @@
 
 <div class="container panel storyMap">
 
-  <div class="col-lg-12" id="storyMapTitle"> <h1>Stories from the Small Island Developing States</h1>
+  <div class="col-lg-12" id="storyMapTitle"> <h2>Stories from the Small Island Developing States</h2>
   </div>
   <div class="col-lg-12 hoverMe" ><div id="bubbleMap">
 
@@ -378,17 +366,20 @@
   <div class="col-lg-12 hoverMe" >
     <div class="row">
   
-      <div class="col-lg-6"><img src="images/zoom/oceantemperature.jpg" style="width:100%"></div>
+      <div class="col-lg-6" id="storyImage"><img src="images/zoom/oceantemperature.jpg" ></div>
 
-      <div class="col-lg-6">
+      <div class="col-lg-6 scrollbar" id="story">
         
         <h5>Fiji pioneers US$ 12.5 million agreement to prevent deforestation and maintain trajectory towards resilience</h5>
         <p>SIDS' ecosystems and their unique biodiversity are critical components of climate adaptation as the foundation of nature-based solutions for resilience — mitigating the impact of climate change through soil retention and flood regulation, for instance. Fiji, the first country to ratify the Paris Climate Agreement, has also become the first SIDS to sign an Emission Reductions Payment Agreement (ERPA) with the Forest Carbon Partnership Facility (FCPF) within the World Bank, a five-year arrangement that will catalyze up to US$ 12.5 million for the reduction of carbon emissions produced through deforestation and forest degradation. This threat to biodiversity will be addressed through integrated land-use planning, conservation and sustainable plantations — including initiatives for boosting community livelihoods with involvement in climate-resilient agriculture. The agreement covers 90% of Fiji's landmass and will aim to reduce emissions by 2.5 million tonnes throughout its duration, a critical goal for maintaining the forest's contribution to climate adaptation. As Fijian Attorney-General and Minister for Economy, Aiyaz Sayed-Khaiyum, noted, “Our forests have a critical role to play in building not only a more resilient nation but a more habitable planet.” Forests have been positioned as a key priority within UNDP's efforts to employ a "ridge to reef" approach in land management in SIDS around the world, integrating ecosystem sustainability from landscapes to seascapes and harnessing ecosystems' ability to protect island communities. In Grenada, this approach is being utilized in partnership with the Ministry of Agriculture, Lands, Forestry and Fisheries and the Environment to promote sustainable land management and the establishment of protected areas. Learn more about Ridge to Reef.</div>
 
   </div>
+  <div class="subscribe row">
+    <img src="images/subscribeBar.jpg" style="width:100%">
+</div>
 </div>
 
-
+</div>
 
 
     <footer class="footerImg">
@@ -442,21 +433,20 @@
   var v8="<option value='all-sources'>All sources</option><option value='vdk-1'>Nr.1 Einmal um die Welt</option><option value='vdk-2'>Nr.2 Die Wiege des Kaffees</option><option value='vdk-3'>Nr.3 Indien Summer</option><option value='vdk-4'>Nr.4 Noch Ohne Namen</option><option value='vdk-spec'>Speciality Blend</option>"
   
   
-   $("#countryMultiSelect").change(function() {
+  $("#countryCategory").change(function() {
           let val = $(this).val();
           if (val == "emilo") {
-              $("#countryCategory").html(v5);
+              $("#countrySelect").html(v5);
           } else if (val == "gug") {
-              $("#countryCategory").html(v6);
+              $("#countrySelect").html(v6);
   
           } else if (val == "mvm") {
-              $("#countryCategory").html(v7);
+              $("#countrySelect").html(v7);
   
           } else if (val == "vdk") {
-              $("#countryCategory").html(v8);
+              $("#countrySelect").html(v8);
           }
-          
-      });
+        });
   
   </script>
 
@@ -490,6 +480,42 @@ $('.goalSelect ul li').click(function() {
          'left' : x.position().left
       }, 400);
  });
+
+
+
+ var x= $("#global");
+$('.regionShader').css({ 
+  'width': x.width()+32,
+         'left' : x.position().left});
+     
+      var x= $("#samoa");
+$('.goalShader').css({
+         'width': x.width()+32,
+         'left':x.position().left});
+
+         var x= $("#choropleth");
+$('.vizShader').css({
+         'width': x.width()+32,
+         'left':x.position().left});
+
+
+         $('#devMode').click(function() {
+  $('body div').css( 'outline', '2px solid red');
+  $('body row').css( 'outline', '2px solid blue');
+  $('#devMode').css({  'color': '#fff',
+ 'border-bottom-color': '#fff'});
+ $('#homeMode').css({  'color': 'rgba(255, 255, 255, .5)',
+ 'border-bottom-color': 'rgba(255, 255, 255, .5)'});
+});
+$('#homeMode').click(function() {
+  $('body div').css( 'outline', '0px');
+  $('body row').css( 'outline', '0px');
+  $('#homeMode').css({  'color': '#fff',
+ 'border-bottom-color': '#fff'});
+ $('#devMode').css({  'color': 'rgba(255, 255, 255, .5)',
+ 'border-bottom-color': 'rgba(255, 255, 255, .5)'});
+  
+});
 
   </script>
 
