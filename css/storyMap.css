@@ -1,0 +1,77 @@
+/*
+-----------------------
+SCSS
+------------------*/
+:root {
+  --color-primary: #00587a;
+  --color-primary-light: #008891;
+  --color-primary-dark: #0f3057;
+  --color-climate: #0DB14B;
+  --color-blue: #11878D;
+  --color-digital:#F58220;
+}
+
+/* 
+Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1b022bfbf
+*/
+#storyMapTitle {
+  padding-top: 50px;
+}
+
+.storyMap {
+  background-image: url("../images/storyMapTemp.jpg");
+  background-size: 100%;
+  background-color: #F4F5F8;
+  background-repeat: no-repeat;
+}
+
+.storyMap .col-lg-4 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.storyMap h2 {
+  font-weight: 400;
+}
+
+.storyMap .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.storyMap h1 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.storyMap h2 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.storyMap h3 {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+
+.storyMap h5 {
+  font-size: 14px;
+  text-align: left;
+  font-style: bold;
+}
+
+.storyMap p {
+  font-size: 11px;
+  text-align: left;
+}
+
+#bubbleMap {
+  height: 280px;
+}
+
+/*# sourceMappingURL=storyMap.css.map */
