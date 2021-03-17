@@ -7,26 +7,41 @@
      
         <title>Small Islands</title>
     
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+      
+
+  
+
     
 
-        <link href="css/style.css" rel="stylesheet">
+      
         <!-- Custom styles for this template -->
-       
-    <link href="css/countryData.css" rel="stylesheet">
-        <link href="css/countryView.css" rel="stylesheet">
-        <link href="css/portfolio.css" rel="stylesheet">
-     <link href="css/pillarsAndTargets.css" rel="stylesheet">
-     <link href="css/storyMap.css" rel="stylesheet">
-        <link href="css/header.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/materialui.css">
+
+
         
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <link href="css/countryData.css" rel="stylesheet">
+  <link href="css/countryView.css" rel="stylesheet">
+  <link href="css/portfolio.css" rel="stylesheet">
+
+<link href="css/storyMap.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/pillarsAndTargets.css" rel="stylesheet">
+      
       </head>
 
 
 
   <body>
-<div class="headerPanel">   
+
+
+
+
+<div id="headerPanel">   
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         
@@ -60,21 +75,58 @@
 
     </div>
   </div>
-      <div class="infoSection">
-        <img src="images/infoImages.jpg" style="margin-top:40px; width:100%">
-        <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoImages panel">
 
-         <h4> Small Island Developing States </h4>
-
-<p>          As a special case for development, Small Island Developing States (SIDS) face a set of common environmental, social and economic development challenges related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
-        </div>
-      </div>
     
 
 
+  <div class="infoSection">
+    <img src="images/infoImages.jpg" id="infoImages">
+ <!--   <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoStuff">
 
-      <div class="container portfolio">
-        <div class="container-fluid ">
+     <h4> Small Island Developing States </h4>
+
+<p>          As a special case for development, Small Island Developing States (SIDS) face a set of common environmental, social and economic development challenges related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+   </div>--> 
+  </div>
+
+
+
+
+
+      <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--2-col">
+              <div class="mdl-tabs__tab-bar">
+                 <a href="#portfolioPanel" class="mdl-tabs__tab is-active">
+                     
+                      <h5>UNDP Portfolio</h5>
+                 </a>
+                 <a href="#pillarsPanel" class="mdl-tabs__tab">
+               
+                      <h5>Pillars & Targets</h5>
+                  </a>
+                  <a href="#countryViewPanel" class="mdl-tabs__tab" >
+               
+                      <h5>Country View</h5>
+                  </a>
+                  <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
+               
+                    <h5>All Country Data</h5>
+                </a>
+             </div>
+           </div>
+           <div class="mdl-cell mdl-cell--10-col">
+      
+
+
+
+
+
+
+
+
+      <div class="container mdl-tabs__panel is-active panel" id="portfolioPanel">
+        <div class="panelTitleRow">
             <div class="col-lg-12"> <h2>UNDP Portfolio in Small Island Developing States</h2>
             </div>
           </div>
@@ -98,11 +150,11 @@
           </div>
     
           </div>
-        <div class="row spacer" style="height:120px">
+        <div class="row spacer" style="height:10vw">
        </div>
        <div class="row pies">
-        <div id="pieRegion" class="col-md-2"><h5>Funding by Region</h5><img src="graphics/pieRegion.png" width="100%"></img></div>
-        <div id="pieFunding" class="col-md-3"><h5>Funding by Category</h5><img src="graphics/pieFunding.png" width="100%"></img></div>
+        <div id="pieRegion" class="col-md-2 fundPie"><h5>Funding by Region</h5><img src="graphics/pieRegion.png" ></img></div>
+        <div id="pieFunding" class="col-md-3 fundPie"><h5>Funding by Category</h5><img src="graphics/pieFunding.png"></img></div>
       </div>
       <div class="row sdgPortfolio hoverMe">
         <div id="bars"><img src="graphics/bars.png" width="100%"></img></div>
@@ -110,12 +162,10 @@
       <div class="row sdgIcons">
         <div id="sdgIcons"><img src="graphics/sdgs.png" width="100%"></img></div>
       </div>
-      <div class="row goalsLogo">
-        <img src="graphics/sdgLogo.png" width="100%"></img>
-      </div>
+
       <div class="row goalSelector">
       
-        <div class="goalSelect col-lg-12 d-flex justify-content-center">
+        <div class="col-lg-12 d-flex justify-content-center" id="goalSelect">
           <ul>        
               <li id="samoa"><a >SAMOA Pathway</a></li>
               <li id="sdg"><a> Sustainable Development Goals</a></li>
@@ -131,7 +181,7 @@
       
       <div class="row portfolioFilterRow">
         
-        <div class="regionSelect col-lg-7 d-flex justify-content-center">
+        <div class="col-lg-7 d-flex justify-content-center" id="regionSelect">
           <ul >        
               <li id="global"><a  >Global</a></li>
               <li id="caribbean"><a >Caribbean (RBLAC)</a></li>
@@ -169,9 +219,16 @@
     
     </div>
 
-    <div class="container panel pillarsTargets">
+
+
+
+
+
+    <div class="container panel mdl-tabs__panel" id="pillarsPanel">
+      <div class="panelTitleRow">
       <div class="col-lg-12"> <h2>Small Island Development Pillars</h2>
       </div>
+    </div>
       <div class="pillars">
    
       <div class="col-lg-12 description"> <h5>UNDP’s SIDS offer – Rising Up for SIDS – presents an integrated approach for tapping into areas with potential to accelerate green recovery and transform societies based on three interconnected pillars: Climate Action, Blue Economy and Digital Transformation.  
@@ -236,11 +293,11 @@
 
 
 
-    <div class="container panel countryData">
-
+    <div class="container panel mdl-tabs__panel" id="countryDataPanel">
+<div class="panelTitleRow">
       <div class="col-lg-12"> <h2>SIDS Country Data</h2>
       </div>
-
+    </div>
 <div class="row">
 
           <div class="col-md-3" id="countryDataSelectors"> 
@@ -252,7 +309,7 @@
        
           <div class="row" id="countryDataVizSelector">
 
-                  <div class="vizSelect col-lg-12 d-flex justify-content-center">
+                  <div class="col-lg-12 d-flex justify-content-left" id="vizSelect">
                     <ul>        
                       <li  id="choropleth"><a >Choropleth</a></li>
                       <li id="caribbean"><a >Time Series</a></li>
@@ -265,7 +322,7 @@
                 </div></div>
 
           <div class="row hoverMe" id="countryDataViz">
-              <img src="graphics/sidsGrid.png" style="width:100%">
+              <img src="graphics/sidsGrid.png" style="width:90%">
           </div>
       </div>
       </div>
@@ -277,12 +334,11 @@
 
 
 
-  <div class="container panel" id="countryView">
+  <div class="container panel mdl-tabs__panel" id="countryViewPanel">
 
         
 
-
-    <div class="info__box info__MultiSelect input__container countryViewTitle row" id="scss and multidropdown test">
+    <div class="info__box info__MultiSelect input__container countryViewTitle row panelTitleRow">
       <div class="col-lg-3">
       </div>
   <div class="col-lg-3"> <h2>Country View</h2>
@@ -305,7 +361,7 @@
 
 
 
-
+      </div>
     
     <div class="col-lg-12 countryInfoBar"> 
       <div class="row">
@@ -331,7 +387,7 @@
         <div class="col-lg-3" id="countryImage"><img src="images/countries/grenada/grenadaBeachside.jpg"></div>
       </div>
     </div>
-  </div>
+  
 
     
 <div class="row">
@@ -354,7 +410,7 @@
 
 
 
-<div class="container panel storyMap">
+<div class="container panel mdl-tabs__panel" id="storyMap">
 
   <div class="col-lg-12" id="storyMapTitle"> <h2>Stories from the Small Island Developing States</h2>
   </div>
@@ -382,6 +438,15 @@
 </div>
 
 
+
+</div>
+</div>
+</div>
+
+
+
+
+
     <footer class="footerImg">
 <img src="images/footer.png" style="width:100%">
     </footer>
@@ -394,131 +459,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
+<script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
 
-
-
-<script>
-
-  var v1="<option value='all-sources'>All sources</option><option value='emilo-muc'>Münchner Kaffe</option><option value='emilo-muc-bio'>Münchner Kaffee BIO</option><option value='emilo-coli'>Colibri</option><option value='emilo-wall'>Wallaby</option><option value='emilo-lua'>Luani</option><option value='emilo-tuc'>Tucano BIO</option><option value='emilo-cora'>Corallo Decaf</option>"
-  
-  var v2="<option value='all-sources'>All sources</option><option value='gug-etho'>Äthopien</option><option value='gug-ecua'>Ecuador</option><option value='gug-gua'>Guatemala</option><option value='gug-hon'>Honduras</option>"
-  
-  var v3="<option value='all-sources'>All sources</option><option value='mvm-foge'>Foge, Peru</option><option value='mvm-lech'>El Lechero, Peur</option><option value='mvm-chel'>Chelbesa, Ethiopia</option><option value='mvm-serr'>Serrinha, Brazil</option>"
-  
-  var v4="<option value='all-sources'>All sources</option><option value='vdk-1'>Nr.1 Einmal um die Welt</option><option value='vdk-2'>Nr.2 Die Wiege des Kaffees</option><option value='vdk-3'>Nr.3 Indien Summer</option><option value='vdk-4'>Nr.4 Noch Ohne Namen</option><option value='vdk-spec'>Speciality Blend</option>"
-  
-  
-   $("#fundingMultiSelect").change(function() {
-          let val = $(this).val();
-          if (val == "emilo") {
-              $("#fundingCategory").html(v1);
-          } else if (val == "gug") {
-              $("#fundingCategory").html(v2);
-  
-          } else if (val == "mvm") {
-              $("#fundingCategory").html(v3);
-  
-          } else if (val == "vdk") {
-              $("#fundingCategory").html(v4);
-          }
-          
-      });
-
-      var v5="<option value='all-sources'>All sources</option><option value='emilo-muc'>Münchner Kaffe</option><option value='emilo-muc-bio'>Münchner Kaffee BIO</option><option value='emilo-coli'>Colibri</option><option value='emilo-wall'>Wallaby</option><option value='emilo-lua'>Luani</option><option value='emilo-tuc'>Tucano BIO</option><option value='emilo-cora'>Corallo Decaf</option>"
-  
-  var v6="<option value='all-sources'>All sources</option><option value='gug-etho'>Äthopien</option><option value='gug-ecua'>Ecuador</option><option value='gug-gua'>Guatemala</option><option value='gug-hon'>Honduras</option>"
-  
-  var v7="<option value='all-sources'>All sources</option><option value='mvm-foge'>Foge, Peru</option><option value='mvm-lech'>El Lechero, Peur</option><option value='mvm-chel'>Chelbesa, Ethiopia</option><option value='mvm-serr'>Serrinha, Brazil</option>"
-  
-  var v8="<option value='all-sources'>All sources</option><option value='vdk-1'>Nr.1 Einmal um die Welt</option><option value='vdk-2'>Nr.2 Die Wiege des Kaffees</option><option value='vdk-3'>Nr.3 Indien Summer</option><option value='vdk-4'>Nr.4 Noch Ohne Namen</option><option value='vdk-spec'>Speciality Blend</option>"
-  
-  
-  $("#countryCategory").change(function() {
-          let val = $(this).val();
-          if (val == "emilo") {
-              $("#countrySelect").html(v5);
-          } else if (val == "gug") {
-              $("#countrySelect").html(v6);
-  
-          } else if (val == "mvm") {
-              $("#countrySelect").html(v7);
-  
-          } else if (val == "vdk") {
-              $("#countrySelect").html(v8);
-          }
-        });
-  
-  </script>
-
-
-<script>
-
-$('.goalSelect ul li').click(function() {
-      var x = $(this);
-      document.getElementById("test").innerHTML = this.innerText;
-        $('.goalShader').stop().animate({
-         'width': x.width()+32,
-         'left' : x.position().left
-      }, 400);
- });
-
- $('.regionSelect ul li').click(function() {
-      var x = $(this);
-      document.getElementById("test").innerHTML = this.innerText;
-        $('.regionShader').stop().animate({
-         'width': x.width()+32,
-         'left' : x.position().left
-      }, 400);
- });
-  
-
- $('.vizSelect ul li').click(function() {
-      var x = $(this);
-      document.getElementById("test").innerHTML = this.innerText;
-        $('.vizShader').stop().animate({
-         'width': x.width()+32,
-         'left' : x.position().left
-      }, 400);
- });
-
-
-
- var x= $("#global");
-$('.regionShader').css({ 
-  'width': x.width()+32,
-         'left' : x.position().left});
-     
-      var x= $("#samoa");
-$('.goalShader').css({
-         'width': x.width()+32,
-         'left':x.position().left});
-
-         var x= $("#choropleth");
-$('.vizShader').css({
-         'width': x.width()+32,
-         'left':x.position().left});
-
-
-         $('#devMode').click(function() {
-  $('body div').css( 'outline', '2px solid red');
-  $('body row').css( 'outline', '2px solid blue');
-  $('#devMode').css({  'color': '#fff',
- 'border-bottom-color': '#fff'});
- $('#homeMode').css({  'color': 'rgba(255, 255, 255, .5)',
- 'border-bottom-color': 'rgba(255, 255, 255, .5)'});
-});
-$('#homeMode').click(function() {
-  $('body div').css( 'outline', '0px');
-  $('body row').css( 'outline', '0px');
-  $('#homeMode').css({  'color': '#fff',
- 'border-bottom-color': '#fff'});
- $('#devMode').css({  'color': 'rgba(255, 255, 255, .5)',
- 'border-bottom-color': 'rgba(255, 255, 255, .5)'});
-  
-});
-
-  </script>
-
+<script src="scripts/script.js"></script>
 
 </body>
 
