@@ -35,6 +35,11 @@
   float: right;
 }
 
+#spacer {
+  height: 10vw;
+  max-height: 140px;
+}
+
 .portfolioStat {
   width: 24%;
   background-color: white;

@@ -2,11 +2,18 @@
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
 .pillars {
-  background-color: #f8f8f8;
+  background-color: #FFFFFF;
   border-radius: 10px;
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 15px;
+}
+
+.pillar-bar {
+  margin: 0%;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .targets {
@@ -44,6 +51,7 @@
 #pillarsPanel p {
   font-size: 12px;
   text-align: center;
+  line-height: 14px;
 }
 
 .rounded-circle {
@@ -52,7 +60,7 @@
 }
 
 .shadebox {
-  background-color: #d2e3f3;
+  background-color: #E7F1FF;
   padding: 10px;
   background-clip: content-box;
   border-radius: 25px;
@@ -65,18 +73,6 @@
   cursor: pointer;
 }
 
-.climate {
-  color: #0DB14B;
-}
-
-.blue {
-  color: #11878D;
-}
-
-.digital {
-  color: #F58220;
-}
-
 .description {
   text-align: center;
   padding-left: 15%;
@@ -86,24 +82,23 @@
 .pillar-bar {
   margin: 0%;
   text-align: center;
-  color: white;
   font-size: 12px;
 }
 
 #blueEconomyTargetTitle {
-  background-color: blue;
+  background-color: #0BC6FF;
 }
 
 #climateActionTargetTitle {
-  background-color: green;
+  background-color: #0DB14B;
 }
 
 #digitalTransTargetTitle {
-  background-color: orange;
+  background-color: #F58220;
 }
 
 .icon-bar {
-  background-color: #cfcece;
+  background-color: #e6e6e6;
   /* Dark-grey background */
   margin: 0%;
   /*overflow: auto; /* Overflow due to float */
@@ -118,8 +113,6 @@
   /* Equal width (5 icons with 20% width each = 100%) */
   transition: all 0.3s ease;
   /* Add transition for hover effects */
-  color: white;
-  /* White text color */
   font-size: 36px;
   /* Increased font size */
 }

@@ -5,6 +5,14 @@
 div {
     outline: 2px solid red;
   }*/
+div {
+  outline: 2px solid blue;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("fonts/Proxima Nova/Proxima Nova Reg.otf") format("opentype");
+}
 body {
   padding-top: 0rem;
   padding-bottom: 0rem;
