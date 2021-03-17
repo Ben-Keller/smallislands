@@ -7,8 +7,32 @@
 }
 
 .pies {
-  margin-bottom: -32px;
+  margin-bottom: -42px;
   padding: 0;
+}
+
+.fundPie img {
+  width: 75%;
+}
+
+#pieRegion h5 {
+  text-align: right;
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
+  font-weight: 800;
+}
+
+#pieFunding h5 {
+  padding-left: 15%;
+  font-size: 13px;
+  margin: 0;
+  padding-right: 0;
+  font-weight: 800;
+}
+
+#pieRegion img {
+  float: right;
 }
 
 .portfolioStat {
@@ -44,30 +68,22 @@
   padding-top: 15px;
 }
 
-.portfolio {
+#portfolioPanel {
   background-image: url("../graphics/sidsMap.png");
-  background-size: 100%;
+  background-size: 95%;
   background-repeat: no-repeat;
-  padding-top: 5%;
   width: 100%;
+  background-position: 0% -2%;
 }
 
-.portfolio .col-lg-4 {
+#portfolioPanel .col-lg-4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.portfolio h1 {
+#portfolioPanel h1 {
   text-align: center;
   font-weight: bold;
-}
-
-.portfolio h5 {
-  font-size: 13px;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  font-weight: 800;
 }
 
 .regionShader, .goalShader {

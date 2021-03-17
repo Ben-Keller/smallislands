@@ -11,17 +11,17 @@
   padding-top: 15px;
 }
 
-#countryView .col-lg-4 {
+#countryViewPanel .col-lg-4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-#countryView .col-lg-4 p {
+#countryViewPanel .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 
-#countryView h1 {
+#countryViewPanel h1 {
   font-size: 21px;
   text-align: right;
   margin-top: 12px;
@@ -29,11 +29,7 @@
   letter-spacing: 1.2px;
 }
 
-#countryView h2 {
-  margin-top: 10px;
-}
-
-#countryView h3 {
+#countryViewPanel h3 {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -41,12 +37,12 @@
   margin-bottom: 0px;
 }
 
-#countryView h5 {
+#countryViewPanel h5 {
   font-size: 14px;
   text-align: center;
 }
 
-#countryView p {
+#countryViewPanel p {
   font-size: 12px;
   text-align: center;
 }
@@ -80,13 +76,18 @@
   font-size: 12px;
 }
 
+#countryProfile, #countryStories {
+  padding-top: 8px;
+}
+
 #countryProfile {
   margin-right: 0;
   padding-right: 0;
+  padding-left: 20px;
 }
 
 .coutryInfoBar #countryRelief, #countryProfile {
-  max-height: 150px;
+  max-height: 180px;
   overflow: hidden;
 }
 
@@ -97,10 +98,12 @@
 
 .countryInfoBar {
   background-image: linear-gradient(to right, #d0cfcf, #F4F5F8 75%);
+  margin-top: 1%;
+  margin-bottom: 2%;
 }
 
 .countryInfoBar img {
-  max-height: 150px;
+  max-height: 180px;
   overflow-x: hidden;
   display: block;
   margin-left: auto;
@@ -109,13 +112,13 @@
 }
 
 #countryStories {
-  max-height: 150px;
+  max-height: 180px;
   overflow-y: scroll;
   text-align: left;
 }
 
 #countryProfileInfo {
-  font-size: 11px;
+  font-size: 12px;
 }
 
 #countryStories {
@@ -125,7 +128,7 @@
 
 #countryStories p {
   text-align: left;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 1.1;
   text-decoration: underline;
   margin-bottom: 8px;
@@ -136,10 +139,6 @@
   font-size: 16px;
   font-weight: 800;
   margin-top: 6px;
-}
-
-.countryViewTitle {
-  min-height: 200px;
 }
 
 /*
@@ -203,7 +202,7 @@ select#type option[value=Colibri] {
 }
 
 #countryCategory {
-  margin-top: 5px;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=countryView.css.map */

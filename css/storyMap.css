@@ -15,30 +15,31 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   padding-top: 50px;
 }
 
-.storyMap {
+.storyMapPanel {
   background-image: url("../images/storyMapTemp.jpg");
   background-size: 100%;
   background-color: #F4F5F8;
   background-repeat: no-repeat;
+  padding-top: 4%;
 }
 
-.storyMap .col-lg-4 {
+.storyMapPanel .col-lg-4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.storyMap .col-lg-4 p {
+.storyMapPanel .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 
-.storyMap h1 {
+.storyMapPanel h1 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
 }
 
-.storyMap h3 {
+.storyMapPanel h3 {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -46,13 +47,13 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   margin-bottom: 0px;
 }
 
-.storyMap h5 {
+.storyMapPanel h5 {
   font-size: 14px;
   text-align: left;
   font-style: bold;
 }
 
-.storyMap p {
+.storyMapPanel p {
   font-size: 11px;
   text-align: left;
 }

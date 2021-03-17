@@ -14,24 +14,24 @@ SCSS
 /* 
 Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1b022bfbf
 */
-.countryData .col-lg-4 {
+#countryDataPanel .col-lg-4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.countryData .col-lg-4 p {
+#countryDataPanel .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 
-.countryData h1 {
+#countryDataPanel h1 {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: black;
 }
 
-.countryData h3 {
+#countryDataPanel h3 {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
@@ -39,23 +39,22 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   margin-bottom: 0px;
 }
 
-.countryData h5 {
+#countryDataPanel h5 {
   font-size: 14px;
   text-align: center;
 }
 
-.countryData p {
+#countryDataPanel p {
   font-size: 12px;
   text-align: center;
 }
 
 #countryDataSelectors {
-  padding: 30px;
+  padding: 40px;
 }
 
 #countryDataViz {
-  padding-left: 20px;
-  padding-right: 20px;
+  max-height: 400px;
 }
 
 .vizShader {

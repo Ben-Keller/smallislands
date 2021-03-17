@@ -18,30 +18,30 @@
   padding-top: 15px;
 }
 
-.pillarsTargets .col-lg-4 {
+#pillarsPanel .col-lg-4 {
   margin-bottom: 10px;
   text-align: center;
 }
 
-.pillarsTargets .col-lg-4 p {
+#pillarsPanel .col-lg-4 p {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
 
-.pillarsTargets h3 {
+#pillarsPanel h3 {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 
-.pillarsTargets h5 {
+#pillarsPanel h5 {
   font-size: 14px;
   text-align: center;
 }
 
-.pillarsTargets p {
+#pillarsPanel p {
   font-size: 12px;
   text-align: center;
 }
@@ -135,10 +135,11 @@
   /* Add transition for hover effects */
   color: black;
   /* White text color */
-  font-size: 8px;
+  font-size: 8px !important;
   /* Increased font size */
   height: 20px;
   filter: contrast(200%);
+  line-height: 12px;
 }
 
 .sidsTarget:hover {

@@ -1,3 +1,7 @@
+div {
+  outline: 2px solid blue;
+}
+
 /*
  * Globals
  */
@@ -84,7 +88,7 @@ a:hover {
 }
 
 /*  header panel */
-.headerPanel {
+#headerPanel {
   background-image: url("../images/zoom/Seychelles.jpg");
   background-position: center;
   width: 100%;
@@ -93,7 +97,7 @@ a:hover {
   color: ghostwhite;
 }
 
-.headerPanel h1 {
+#headerPanel h1 {
   font-weight: 650;
   font-size: 48px;
   margin-top: -6px;
@@ -103,7 +107,7 @@ a:hover {
   overflow: auto;
 }
 
-.infoImages {
+.infostuff {
   padding: 80px;
 }
 
@@ -111,13 +115,16 @@ a:hover {
   font-weight: bold;
 }
 
-.infoSection {
-  margin-bottom: 60px;
-}
-
-.infoSection h4 {
+.infoStuff h4 {
   font-size: 20px;
   font-weight: 650;
+}
+
+#infoImages {
+  height: 60px;
+  object-fit: cover;
+  margin-top: 30px;
+  width: 100%;
 }
 
 /*# sourceMappingURL=header.css.map */
