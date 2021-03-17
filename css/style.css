@@ -11,14 +11,19 @@ div {
 
 @font-face {
   font-family: "Proxima Nova";
-  src: url("fonts/Proxima Nova/Proxima Nova Reg.otf") format("opentype");
+  src: url("../fonts/Proxima-Nova/Proxima Nova Reg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-Nova/Proxima Nova Bold.otf") format("opentype");
+  font-weight: bold;
 }
 body {
   padding-top: 0rem;
   padding-bottom: 0rem;
   background-color: #F4F5F8;
   color: #2c2c2c;
-  font-family: "Proxima Nova";
+  font-family: "Proxima Nova" !important;
   letter-spacing: 0.6px;
 }
 
