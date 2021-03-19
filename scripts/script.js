@@ -26,29 +26,8 @@ window.onload = function(){
           
       });
 
-      var v5="<option value='all-sources'>All sources</option><option value='emilo-muc'>Münchner Kaffe</option><option value='emilo-muc-bio'>Münchner Kaffee BIO</option><option value='emilo-coli'>Colibri</option><option value='emilo-wall'>Wallaby</option><option value='emilo-lua'>Luani</option><option value='emilo-tuc'>Tucano BIO</option><option value='emilo-cora'>Corallo Decaf</option>"
-  
-  var v6="<option value='all-sources'>All sources</option><option value='gug-etho'>Äthopien</option><option value='gug-ecua'>Ecuador</option><option value='gug-gua'>Guatemala</option><option value='gug-hon'>Honduras</option>"
-  
-  var v7="<option value='all-sources'>All sources</option><option value='mvm-foge'>Foge, Peru</option><option value='mvm-lech'>El Lechero, Peur</option><option value='mvm-chel'>Chelbesa, Ethiopia</option><option value='mvm-serr'>Serrinha, Brazil</option>"
-  
-  var v8="<option value='all-sources'>All sources</option><option value='vdk-1'>Nr.1 Einmal um die Welt</option><option value='vdk-2'>Nr.2 Die Wiege des Kaffees</option><option value='vdk-3'>Nr.3 Indien Summer</option><option value='vdk-4'>Nr.4 Noch Ohne Namen</option><option value='vdk-spec'>Speciality Blend</option>"
-  
-  
-  $("#countryCategory").change(function() {
-          let val = $(this).val();
-          if (val == "emilo") {
-              $("#countrySelect").html(v5);
-          } else if (val == "gug") {
-              $("#countrySelect").html(v6);
-  
-          } else if (val == "mvm") {
-              $("#countrySelect").html(v7);
-  
-          } else if (val == "vdk") {
-              $("#countrySelect").html(v8);
-          }
-        });
+
+
   
 
 $('#goalSelect ul li').click(function() {
@@ -67,6 +46,38 @@ $('#goalSelect ul li').click(function() {
          'width': x.width()+32,
          'left' : x.position().left
       }, 400);
+
+region=this.innerText
+    //zoom to new region
+    if(region=="Global"){
+        $('#portfolioPanel').animate({
+            'background-size':'95%',
+            'background-position-x': '0%',
+            'background-position-y': '-4%'
+        },1800, function() { console.log('zoomed'); });
+    }
+    else if(region=="Caribbean (RBLAC)"){
+        $('#portfolioPanel').animate({
+            'background-size':'135%',
+            'background-position-x': '-60%',
+            'background-position-y': '-120%'
+        },1800, function() { console.log('zoomed'); });
+    }
+    else if(region=="AIS (RBA)"){
+        $('#portfolioPanel').animate({
+            'background-size':'125%',
+            'background-position-x': '50%',
+            'background-position-y': '-120%'
+        },1600, function() { console.log('zoomed'); });
+    }
+    else if(region=="Pacific (RBAP)"){
+        $('#portfolioPanel').animate({
+            'background-size':'130%',
+            'background-position-x': '185%',
+            'background-position-y': '-250%'
+        },1600, function() { console.log('zoomed'); });
+    }
+
  });
   
 
@@ -122,3 +133,147 @@ $('#homeMode').click(function() {
 });
 
 }
+
+
+
+
+
+
+
+
+
+///options and values for all regions -> countries
+
+var all="<option value='anguilla'>Anguilla</option>\
+<option value='antiguaBarbuda'>Antigua and Barbuda</option>\
+<option value='aruba'>Aruba</option>\
+<option value='bahamas'>Bahamas</option>\
+<option value='bahrain'>Bahrain</option>\
+<option value='barbados'>Barbados</option>\
+<option value='belize'>Belize</option>\
+<option value='bermuda'>Bermuda</option>\
+<option value='caboVerde'>Cabo Verde</option>\
+<option value='caymanIslands'>Cayman Islands</option>\
+<option value='comoros'>Comoros</option>\
+<option value='cookIslands'>Cook Islands</option>\
+<option value='cuba'>Cuba</option>\
+<option value='curacao'>Curaçao</option>\
+<option value='dominica'>Dominica</option>\
+<option value='dominicanRepublic'>Dominican Republic</option>\
+<option value='micronesia'>Micronesia</option>\
+<option value='fiji'>Fiji</option>\
+<option value='grenada'>Grenada</option>\
+<option value='guineaBissau'>Guinea-Bissau</option>\
+<option value='guyana'>Guyana</option>\
+<option value='haiti'>Haiti</option>\
+<option value='jamaica'>Jamaica</option>\
+<option value='kiribati'>Kiribati</option>\
+<option value='maldives'>Maldives</option>\
+<option value='mauritius'>Mauritius</option>\
+<option value='montserrat'>Montserrat</option>\
+<option value='nauru'>Nauru</option>\
+<option value='nieu'>Nieu</option>\
+<option value='palau'>Palau</option>\
+<option value='papua'>Papua New Guinea</option>\
+<option value='marshallIslands'>Marshall Islands</option>\
+<option value='saintLucia'>Saint Lucia</option>\
+<option value='samoa'>Samoa</option>\
+<option value='saoTomeAndPrincipe'>Sao Tome and Principe</option>\
+<option value='seychelles'>Seychelles</option>\
+<option value='singapore'>Singapore</option>\
+<option value='sintMaarten'>Sint Maarten</option>\
+<option value='solomonIslands'>Solomon Islands</option>\
+<option value='kittsAndNevis'>St. Kitts and Nevis</option>\
+<option value='stVincent'>St. Vincent and the Grenadines</option>\
+<option value='suriname'>Suriname</option>\
+<option value='britishVirgin'>The British Virgin Islands</option>\
+<option value='timorLeste'>Timor Leste</option>\
+<option value='tokelau'>Tokelau</option>\
+<option value='tonga'>Tonga</option>\
+<option value='trinidadAndTobago'>Trinidad and Tobago</option>\
+<option value='turksAndCaicos'>Turks and Caicos</option>\
+<option value='tuvalu'>Tuvalu</option>\
+<option value='vanuatu'>Vanuatu</option>"
+
+var caribbean="<option value='anguilla'>Anguilla</option>\
+<option value='antiguaBarbuda'>Antigua and Barbuda</option>\
+<option value='bahamas'>Bahamas</option>\
+<option value='barbados'>Barbados</option>\
+<option value='belize'>Belize</option>\
+<option value='bermuda'>Bermuda</option>\
+<option value='caymanIslands'>Cayman Islands</option>\
+<option value='cuba'>Cuba</option>\
+<option value='curacao'>Curaçao</option>\
+<option value='dominica'>Dominica</option>\
+<option value='dominicanRepublic'>Dominican Republic</option>\
+<option value='grenada'>Grenada</option>\
+<option value='guyana'>Guyana</option>\
+<option value='haiti'>Haiti</option>\
+<option value='belize'>Jamaica</option>\
+<option value='montserrat'>Montserrat</option>\
+<option value='saintLucia'>Saint Lucia</option>\
+<option value='sintMaarten'>Sint Maarten</option>\
+<option value='kittsAndNevis'>St. Kitts and Nevis</option>\
+<option value='stVincent'>St. Vincent and the Grenadines</option>\
+<option value='suriname'>Suriname</option>\
+<option value='britishVirgin'>The British Virgin Islands</option>\
+<option value='trinidadAndTobago'>Trinidad and Tobago</option>\
+<option value='turksAndCaicos'>Turks and Caicos</option>"
+
+var ais="<option value='bahrain'>Bahrain</option>\
+<option value='caboVerde'>Cabo Verde</option>\
+<option value='comoros'>Comoros</option>\
+<option value='guineaBissau'>Guinea-Bissau</option>\
+<option value='maldives'>Maldives</option>\
+<option value='mauritius'>Mauritius</option>\
+<option value='saoTomeAndPrincipe'>Sao Tome and Principe</option>\
+<option value='seychelles'>Seychelles</option>\
+<option value='singapore'>Singapore</option>"
+
+var pacific="<option value='aruba'>Aruba</option>\
+<option value='cookIslands'>Cook Islands</option>\
+<option value='micronesia'>Micronesia</option>\
+<option value='fiji'>Fiji</option>\
+<option value='kiribati'>Kiribati</option>\
+<option value='nauru'>Nauru</option>\
+<option value='nieu'>Nieu</option>\
+<option value='palau'>Palau</option>\
+<option value='papua'>Papua New Guinea</option>\
+<option value='marshallIslands'>Marshall Islands</option>\
+<option value='samoa'>Samoa</option>\
+<option value='solomonIslands'>Solomon Islands</option>\
+<option value='timorLeste'>Timor Leste</option>\
+<option value='tokelau'>Tokelau</option>\
+<option value='tonga'>Tonga</option>\
+<option value='tuvalu'>Tuvalu</option>\
+<option value='vanuatu'>Vanuatu</option>"
+
+
+$("#countryCategory").change(function() {
+        let val = $(this).val();
+        if (val == "all") {
+            $("#countrySelect").html(all);
+        } else if (val == "members") {
+            $("#countrySelect").html(members);
+
+        } else if (val == "caribbean") {
+            $("#countrySelect").html(caribbean);
+
+        } else if (val == "ais") {
+            $("#countrySelect").html(ais);
+        }
+        else if (val == "pacific") {
+          $("#countrySelect").html(pacific);
+      }
+
+
+
+      });
+
+      ////initilalize countryView
+
+$("#countrySelect").html(all);
+
+//set option
+//automatically generate content
+
