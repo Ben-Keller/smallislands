@@ -1,0 +1,232 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+/*
+div {
+    outline: 2px solid red;
+  }*/
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-Nova/Proxima Nova Reg.otf") format("opentype");
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-Nova/Proxima Nova Bold.otf") format("opentype");
+  font-weight: bold;
+}
+body {
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background-color: #F4F5F8;
+  color: #2c2c2c;
+  font-family: "Proxima Nova" !important;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media only screen and (max-width: 767px) {
+  .fundingSelect.selection.dropdown .menu {
+    /*      max-height: 8.01428571rem; /* + 1.335714285 to 9.349999995rem */
+    /*      max-height: 9.349999995rem; /* Adds a half */
+    max-height: 16.02857142rem;
+    /* Double size */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .fundingSelect.selection.dropdown .menu {
+    /*         max-height: 10.68571429rem; /* + 1.3357142863 to 12.0214285763rem */
+    max-height: 12.0214285763rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .fundingSelect.selection.dropdown .menu {
+    max-height: 16.02857143rem;
+    /* + 1.3357142858 to 17.3642857158rem */
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .fundingSelect.selection.dropdown .menu {
+    max-height: 21.37142857rem;
+    /* + 1.3357142856 to 22.7071428556rem */
+  }
+}
+/* Tooltip
+-------------------------------------------------- */
+.arrow,
+.arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: inherit;
+}
+
+.arrow {
+  visibility: hidden;
+}
+
+.arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.tooltip[data-popper-placement^=top] > .arrow {
+  bottom: -4px;
+}
+
+.tooltip[data-popper-placement^=bottom] > .arrow {
+  top: -4px;
+}
+
+.tooltip[data-popper-placement^=left] > .arrow {
+  right: -4px;
+}
+
+.tooltip[data-popper-placement^=right] > .arrow {
+  left: -4px;
+}
+
+.tooltip {
+  background: #E9ECF6;
+  color: black;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 4px;
+  display: none;
+  z-index: 99;
+}
+
+.tooltip[data-show] {
+  display: block;
+}
+
+/*format for region selector*/
+ul {
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+ul li {
+  list-style: none;
+  float: left;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+ul li a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#vizSelect ul li {
+  padding: 4px 28px 4px 28px;
+}
+
+#regionSelect ul li, #goalSelect ul li {
+  padding: 4px 12px 4px;
+}
+
+.panel {
+  height: 680px;
+}
+
+/*scrollbar stuff*/
+/* total width */
+.scrollbar::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 5px solid #F4F5F8;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #a0a0a5;
+  border: 4px solid #F4F5F8;
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {
+  display: none;
+}
+
+h2 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 800;
+  padding-top: 8px;
+  letter-spacing: 0.6px;
+}
+
+.panelTitleRow {
+  padding-top: 4%;
+}
+
+/*Vertical Tabs*/
+.mdl-tabs__panel {
+  display: none;
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab-bar {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 35px;
+  margin-top: 150px;
+  height: inherit;
+  border-bottom: none;
+  border-right: 1px solid rgba(10, 11, 49, 0.2);
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab {
+  width: 100%;
+  height: 50px;
+  line-height: 35px;
+  box-sizing: border-box;
+  letter-spacing: 2px;
+}
+
+.vertical-mdl-tabs .mdl-tabs__tab:hover {
+  background: rgba(158, 158, 158, 0.34);
+  color: black;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded a.mdl-tabs__tab.is-active {
+  border-right: 3px solid #ED462F;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active:after {
+  content: inherit;
+  height: 0;
+}
+
+.vertical-mdl-tabs.mdl-tabs.is-upgraded .mdl-tabs__panel.is-active, .mdl-tabs__panel {
+  padding: 0 30px;
+}
+
+.vertical-mdl-tabs.mdl-tabs .mdl-tabs__tab {
+  text-align: left;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+  color: #E21549;
+}
+
+.mdl-tabs__tab h5 {
+  font-size: 16px;
+  margin-top: 14px;
+  text-align: right;
+  letter-spacing: 1px;
+}
+
+/*# sourceMappingURL=styleold.css.map */
