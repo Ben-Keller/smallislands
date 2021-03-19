@@ -52,41 +52,41 @@ body {
 }
 /* Tooltip
 -------------------------------------------------- */
-#arrow,
-#arrow::before {
+.arrow,
+.arrow::before {
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 15px;
+  height: 15px;
   background: inherit;
 }
 
-#arrow {
+.arrow {
   visibility: hidden;
 }
 
-#arrow::before {
+.arrow::before {
   visibility: visible;
   content: "";
   transform: rotate(45deg);
 }
 
-#tooltip[data-popper-placement^=top] > #arrow {
-  bottom: -4px;
+.tooltips[data-popper-placement^=top] > .arrow {
+  bottom: -6px;
 }
 
-#tooltip[data-popper-placement^=bottom] > #arrow {
+.tooltips[data-popper-placement^=bottom] > .arrow {
   top: -4px;
 }
 
-#tooltip[data-popper-placement^=left] > #arrow {
+.tooltips[data-popper-placement^=left] > .arrow {
   right: -4px;
 }
 
-#tooltip[data-popper-placement^=right] > #arrow {
+.tooltips[data-popper-placement^=right] > .arrow {
   left: -4px;
 }
 
-#tooltip {
+.tooltips {
   background: #E9ECF6;
   color: black;
   font-size: 15px;
@@ -96,7 +96,7 @@ body {
   z-index: 99;
 }
 
-#tooltip[data-show] {
+.tooltips[data-show] {
   display: block;
 }
 

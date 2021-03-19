@@ -113,8 +113,6 @@
   /* Equal width (5 icons with 20% width each = 100%) */
   transition: all 0.3s ease;
   /* Add transition for hover effects */
-  font-size: 36px;
-  /* Increased font size */
 }
 
 .sidsTarget p {
@@ -130,9 +128,7 @@
   /* White text color */
   font-size: 8px !important;
   /* Increased font size */
-  height: 20px;
-  filter: contrast(200%);
-  line-height: 12px;
+  line-height: 12px !important;
 }
 
 .sidsTarget:hover {
