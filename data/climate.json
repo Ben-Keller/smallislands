@@ -1,0 +1,452 @@
+[
+    {
+        "Country": "Anguilla",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": "",
+        "Terrestrial and marine protected areas (% of total territorial area)": "",
+        "Climate Readiness Index": "",
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Antigua and Barbuda",
+        "Red List Index (value)\u00a0": 0.8897,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0025833976620932802,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.480725767,
+        "NG-Gain Readiness Index": 0.449840968
+    },
+    {
+        "Country": "Aruba",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.148561614426793,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Bahamas",
+        "Red List Index (value)\u00a0": 0.70186,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0855510641678468,
+        "Climate Readiness Index": 0.05508474576271186,
+        "ND-GAIN Vulnerability Index": 0.463947693,
+        "NG-Gain Readiness Index": 0.437618978
+    },
+    {
+        "Country": "Bahrain",
+        "Red List Index (value)\u00a0": 0.75102,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.453720634,
+        "NG-Gain Readiness Index": 0.482622023
+    },
+    {
+        "Country": "Barbados",
+        "Red List Index (value)\u00a0": 0.89769,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 8.87361505544849e-05,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.390400658,
+        "NG-Gain Readiness Index": 0.506055281
+    },
+    {
+        "Country": "Belize",
+        "Red List Index (value)\u00a0": 0.84466,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.45239930474824497,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.205904509930421,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.478513017,
+        "NG-Gain Readiness Index": 0.330925408
+    },
+    {
+        "Country": "Bermuda",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Cabo Verde",
+        "Red List Index (value)\u00a0": 0.90446,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.202084965923393,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.000155917052278871,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.445204009,
+        "NG-Gain Readiness Index": 0.43908411
+    },
+    {
+        "Country": "Cayman Islands",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Comoros",
+        "Red List Index (value)\u00a0": 0.74497,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 0.21466101694915252,
+        "ND-GAIN Vulnerability Index": 0.539714559,
+        "NG-Gain Readiness Index": 0.282032039
+    },
+    {
+        "Country": "Cook Islands",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Cuba",
+        "Red List Index (value)\u00a0": 0.66347,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0394814668769716,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0718462280816919,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 0.436068063,
+        "NG-Gain Readiness Index": 0.342220719
+    },
+    {
+        "Country": "Cura\u00e7ao",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Dominica",
+        "Red List Index (value)\u00a0": 0.67465,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.161757892646767,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00673332200010968,
+        "Climate Readiness Index": 0.6582203389830509,
+        "ND-GAIN Vulnerability Index": 0.441472061,
+        "NG-Gain Readiness Index": 0.532625318
+    },
+    {
+        "Country": "Dominican Republic",
+        "Red List Index (value)\u00a0": 0.73281,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.116324429755648,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.192157370412977,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.432040526,
+        "NG-Gain Readiness Index": 0.36545652
+    },
+    {
+        "Country": "Micronesia",
+        "Red List Index (value)\u00a0": 0.69708,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0160116448326055,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.000157814365656374,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.619819941,
+        "NG-Gain Readiness Index": 0.355409435
+    },
+    {
+        "Country": "Fiji",
+        "Red List Index (value)\u00a0": 0.66834,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.450158848200176,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00990369350346329,
+        "Climate Readiness Index": 0.6186440677966102,
+        "ND-GAIN Vulnerability Index": 0.437977168,
+        "NG-Gain Readiness Index": 0.435068995
+    },
+    {
+        "Country": "Grenada",
+        "Red List Index (value)\u00a0": 0.67519,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00222068705409949,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.381056277,
+        "NG-Gain Readiness Index": 0.535134545
+    },
+    {
+        "Country": "Guinea-Bissau",
+        "Red List Index (value)\u00a0": 0.90819,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.116199334552951,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.620135319,
+        "NG-Gain Readiness Index": 0.253112971
+    },
+    {
+        "Country": "Guyana",
+        "Red List Index (value)\u00a0": 0.87981,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.053060773478650194,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.46655027,
+        "NG-Gain Readiness Index": 0.323138666
+    },
+    {
+        "Country": "Haiti",
+        "Red List Index (value)\u00a0": 0.7191,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0799614643545279,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00353092294045252,
+        "Climate Readiness Index": 0.4943220338983051,
+        "ND-GAIN Vulnerability Index": 0.535531733,
+        "NG-Gain Readiness Index": 0.232775983
+    },
+    {
+        "Country": "Jamaica",
+        "Red List Index (value)\u00a0": 0.66599,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.102620087336245,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0140564285524534,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.427432935,
+        "NG-Gain Readiness Index": 0.398326992
+    },
+    {
+        "Country": "Kiribati",
+        "Red List Index (value)\u00a0": 0.77171,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0727272727272727,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.118210466833858,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.0,
+        "NG-Gain Readiness Index": 0.448886726
+    },
+    {
+        "Country": "Maldives",
+        "Red List Index (value)\u00a0": 0.84984,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.012772044548891399,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0005188737826968891,
+        "Climate Readiness Index": 0.8248305084745763,
+        "ND-GAIN Vulnerability Index": 0.542723858,
+        "NG-Gain Readiness Index": 0.415902383
+    },
+    {
+        "Country": "Mauritius",
+        "Red List Index (value)\u00a0": 0.41274,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.227227227227227,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00011473419674754701,
+        "Climate Readiness Index": 0.8912711864406779,
+        "ND-GAIN Vulnerability Index": 0.445180255,
+        "NG-Gain Readiness Index": 0.571330717
+    },
+    {
+        "Country": "Montserrat",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Nauru",
+        "Red List Index (value)\u00a0": 0.76878,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.00398406374501992,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 0.0,
+        "NG-Gain Readiness Index": 0.459831527
+    },
+    {
+        "Country": "Niue",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Palau",
+        "Red List Index (value)\u00a0": 0.72744,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.829423566073058,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 0.0,
+        "NG-Gain Readiness Index": 0.439824446
+    },
+    {
+        "Country": "Papua New Guinea",
+        "Red List Index (value)\u00a0": 0.83555,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.345306513409962,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.006579896533888619,
+        "Climate Readiness Index": 0.4972033898305085,
+        "ND-GAIN Vulnerability Index": 0.52344566,
+        "NG-Gain Readiness Index": 0.282087148
+    },
+    {
+        "Country": "Marshall Islands",
+        "Red List Index (value)\u00a0": 0.83842,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.00233372228704784,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00270441119827786,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.0,
+        "NG-Gain Readiness Index": 0.375679438
+    },
+    {
+        "Country": "Saint Lucia",
+        "Red List Index (value)\u00a0": 0.83768,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00931020062296175,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.368965974,
+        "NG-Gain Readiness Index": 0.449028374
+    },
+    {
+        "Country": "Samoa",
+        "Red List Index (value)\u00a0": 0.7668,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.303504847129008,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00242263364980923,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.495841151,
+        "NG-Gain Readiness Index": 0.435295501
+    },
+    {
+        "Country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "Red List Index (value)\u00a0": 0.79871,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.104734576757532,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00244688365296076,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 0.57138435,
+        "NG-Gain Readiness Index": 0.360187011
+    },
+    {
+        "Country": "Seychelles",
+        "Red List Index (value)\u00a0": 0.68593,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0238095238095238,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0005136866813201791,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.496429837,
+        "NG-Gain Readiness Index": 0.470053559
+    },
+    {
+        "Country": "Singapore",
+        "Red List Index (value)\u00a0": 0.85251,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.018208866408806902,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0246306282917716,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.400625916,
+        "NG-Gain Readiness Index": 0.829060156
+    },
+    {
+        "Country": "Sint Maarten",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Solomon Islands",
+        "Red List Index (value)\u00a0": 0.76186,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0226263043702862,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00155319976394379,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.584625406,
+        "NG-Gain Readiness Index": 0.417009457
+    },
+    {
+        "Country": "St. Kitts and Nevis",
+        "Red List Index (value)\u00a0": 0.73408,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.045716822015091,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00250803474209924,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.452720601,
+        "NG-Gain Readiness Index": 0.558745507
+    },
+    {
+        "Country": "St. Vincent and the Grenadines",
+        "Red List Index (value)\u00a0": 0.76689,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.156626506024096,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0046656263650570705,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.0,
+        "NG-Gain Readiness Index": 0.481288818
+    },
+    {
+        "Country": "Suriname",
+        "Red List Index (value)\u00a0": 0.98335,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.600531443755536,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0848307368434299,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.398158291,
+        "NG-Gain Readiness Index": 0.33482992
+    },
+    {
+        "Country": "The British Virgin Islands",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Timor Leste",
+        "Red List Index (value)\u00a0": 0.8535,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.044230445397883296,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.510076016,
+        "NG-Gain Readiness Index": 0.386779406
+    },
+    {
+        "Country": "Tokelau",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 15,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Tonga",
+        "Red List Index (value)\u00a0": 0.72413,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0590740907860301,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.0152165140342354,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.568334824,
+        "NG-Gain Readiness Index": 0.413933345
+    },
+    {
+        "Country": "Trinidad and Tobago",
+        "Red List Index (value)\u00a0": 0.80582,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.020144231605130097,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.393487775,
+        "NG-Gain Readiness Index": 0.354920011
+    },
+    {
+        "Country": "Turks and Caicos",
+        "Red List Index (value)\u00a0": 42,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.0,
+        "Terrestrial and marine protected areas (% of total territorial area)": 15,
+        "Climate Readiness Index": 42,
+        "ND-GAIN Vulnerability Index": 42,
+        "NG-Gain Readiness Index": 42
+    },
+    {
+        "Country": "Tuvalu",
+        "Red List Index (value)\u00a0": 0.83346,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.28169014084507,
+        "Terrestrial and marine protected areas (% of total territorial area)": 8.59404213623363e-05,
+        "Climate Readiness Index": 1.0,
+        "ND-GAIN Vulnerability Index": 0.0,
+        "NG-Gain Readiness Index": 0.566784356
+    },
+    {
+        "Country": "Vanuatu",
+        "Red List Index (value)\u00a0": 0.661,
+        "Renewable electricity output (% of total electricity output)\u00a0": 0.21259842519685002,
+        "Terrestrial and marine protected areas (% of total territorial area)": 0.00090716740815002,
+        "Climate Readiness Index": 0.6186440677966102,
+        "ND-GAIN Vulnerability Index": 0.553239447,
+        "NG-Gain Readiness Index": 0.362800614
+    }
+]

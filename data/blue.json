@@ -1,0 +1,352 @@
+[
+    {
+        "Country": "Anguilla",
+        "Ocean Health Index -": 0.7308,
+        "Percent coverage of marine protected areas": 0.0006999999999999999,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": ""
+    },
+    {
+        "Country": "Antigua and Barbuda",
+        "Ocean Health Index -": 0.7706000000000001,
+        "Percent coverage of marine protected areas": 0.003,
+        "Rev. as a % of GDP": 0.47,
+        "Total fisheries production (metric tons per capita) ": 0.030736554034045075
+    },
+    {
+        "Country": "Aruba",
+        "Ocean Health Index -": 0.8301999999999999,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.001330011426858738
+    },
+    {
+        "Country": "Bahamas",
+        "Ocean Health Index -": 0.8015000000000001,
+        "Percent coverage of marine protected areas": 0.0792,
+        "Rev. as a % of GDP": 0.28,
+        "Total fisheries production (metric tons per capita) ": 0.029582142384880633
+    },
+    {
+        "Country": "Bahrain",
+        "Ocean Health Index -": 0.6747,
+        "Percent coverage of marine protected areas": 0.0124,
+        "Rev. as a % of GDP": 0.1,
+        "Total fisheries production (metric tons per capita) ": 0.008818888382821797
+    },
+    {
+        "Country": "Barbados",
+        "Ocean Health Index -": 0.6424,
+        "Percent coverage of marine protected areas": 0.0001,
+        "Rev. as a % of GDP": 0.24,
+        "Total fisheries production (metric tons per capita) ": 0.006126141800782949
+    },
+    {
+        "Country": "Belize",
+        "Ocean Health Index -": 0.6027,
+        "Percent coverage of marine protected areas": 0.11020000000000002,
+        "Rev. as a % of GDP": 0.26,
+        "Total fisheries production (metric tons per capita) ": 0.23234027784763647
+    },
+    {
+        "Country": "Bermuda",
+        "Ocean Health Index -": 0.6831999999999999,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.006583384180609525
+    },
+    {
+        "Country": "Cabo Verde",
+        "Ocean Health Index -": 0.732,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 0.26,
+        "Total fisheries production (metric tons per capita) ": 0.035792203774548684
+    },
+    {
+        "Country": "Cayman Islands",
+        "Ocean Health Index -": 0.7476999999999999,
+        "Percent coverage of marine protected areas": 0.0008,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.0019019506405769757
+    },
+    {
+        "Country": "Comoros",
+        "Ocean Health Index -": 0.6409999999999999,
+        "Percent coverage of marine protected areas": 0.0037,
+        "Rev. as a % of GDP": 0.065,
+        "Total fisheries production (metric tons per capita) ": 0.01886727361169088
+    },
+    {
+        "Country": "Cook Islands",
+        "Ocean Health Index -": 0.6920999999999999,
+        "Percent coverage of marine protected areas": 1.0,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Cuba",
+        "Ocean Health Index -": 0.6695,
+        "Percent coverage of marine protected areas": 0.0385,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.004657966686607898
+    },
+    {
+        "Country": "Cura\u00e7ao",
+        "Ocean Health Index -": 0.8055,
+        "Percent coverage of marine protected areas": 15,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Dominica",
+        "Ocean Health Index -": 0.5426,
+        "Percent coverage of marine protected areas": 0.0003,
+        "Rev. as a % of GDP": 0.19,
+        "Total fisheries production (metric tons per capita) ": 0.010779873864362514
+    },
+    {
+        "Country": "Dominican Republic",
+        "Ocean Health Index -": 0.7513,
+        "Percent coverage of marine protected areas": 0.1796,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.0015602075089814487
+    },
+    {
+        "Country": "Micronesia",
+        "Ocean Health Index -": 0.613,
+        "Percent coverage of marine protected areas": 0.0002,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.7685158620449823
+    },
+    {
+        "Country": "Fiji",
+        "Ocean Health Index -": 0.7089,
+        "Percent coverage of marine protected areas": 0.0092,
+        "Rev. as a % of GDP": 0.24,
+        "Total fisheries production (metric tons per capita) ": 0.05066345397654067
+    },
+    {
+        "Country": "Grenada",
+        "Ocean Health Index -": 0.6849,
+        "Percent coverage of marine protected areas": 0.001,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.02266203353980964
+    },
+    {
+        "Country": "Guinea-Bissau",
+        "Ocean Health Index -": 0.5457,
+        "Percent coverage of marine protected areas": 0.08990000000000001,
+        "Rev. as a % of GDP": 0.013999999999999999,
+        "Total fisheries production (metric tons per capita) ": 0.0034044698148019232
+    },
+    {
+        "Country": "Guyana",
+        "Ocean Health Index -": 0.662,
+        "Percent coverage of marine protected areas": 0.0002,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.05400621955064636
+    },
+    {
+        "Country": "Haiti",
+        "Ocean Health Index -": 0.5224,
+        "Percent coverage of marine protected areas": 0.0146,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.0015549183479312658
+    },
+    {
+        "Country": "Jamaica",
+        "Ocean Health Index -": 0.6236,
+        "Percent coverage of marine protected areas": 0.0075,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.005882815795259099
+    },
+    {
+        "Country": "Kiribati",
+        "Ocean Health Index -": 0.6384000000000001,
+        "Percent coverage of marine protected areas": 0.1182,
+        "Rev. as a % of GDP": 0.018000000000000002,
+        "Total fisheries production (metric tons per capita) ": 1.4774003968220748
+    },
+    {
+        "Country": "Maldives",
+        "Ocean Health Index -": 0.7228,
+        "Percent coverage of marine protected areas": 0.0006999999999999999,
+        "Rev. as a % of GDP": 0.57,
+        "Total fisheries production (metric tons per capita) ": 0.23900182038834952
+    },
+    {
+        "Country": "Mauritius",
+        "Ocean Health Index -": 0.6917,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 0.12,
+        "Total fisheries production (metric tons per capita) ": 0.0150053468871681
+    },
+    {
+        "Country": "Montserrat",
+        "Ocean Health Index -": 0.7066,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Nauru",
+        "Ocean Health Index -": 0.6059,
+        "Percent coverage of marine protected areas": 15,
+        "Rev. as a % of GDP": 15,
+        "Total fisheries production (metric tons per capita) ": 0.048992978566149294
+    },
+    {
+        "Country": "Niue",
+        "Ocean Health Index -": 0.6289,
+        "Percent coverage of marine protected areas": 0.406,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Palau",
+        "Ocean Health Index -": 0.7212000000000001,
+        "Percent coverage of marine protected areas": 1.0,
+        "Rev. as a % of GDP": 0.43,
+        "Total fisheries production (metric tons per capita) ": 0.04649054935337681
+    },
+    {
+        "Country": "Papua New Guinea",
+        "Ocean Health Index -": 0.6978,
+        "Percent coverage of marine protected areas": 0.0013999999999999998,
+        "Rev. as a % of GDP": 0.0001,
+        "Total fisheries production (metric tons per capita) ": 0.03525691894869177
+    },
+    {
+        "Country": "Marshall Islands",
+        "Ocean Health Index -": 0.6111,
+        "Percent coverage of marine protected areas": 0.0027,
+        "Rev. as a % of GDP": 0.094,
+        "Total fisheries production (metric tons per capita) ": 1.0947795235681703
+    },
+    {
+        "Country": "Saint Lucia",
+        "Ocean Health Index -": 0.6254,
+        "Percent coverage of marine protected areas": 0.0022,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.011596551705359235
+    },
+    {
+        "Country": "Samoa",
+        "Ocean Health Index -": 0.615,
+        "Percent coverage of marine protected areas": 0.0013999999999999998,
+        "Rev. as a % of GDP": 0.22,
+        "Total fisheries production (metric tons per capita) ": 0.0444071486891046
+    },
+    {
+        "Country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "Ocean Health Index -": 0.6262,
+        "Percent coverage of marine protected areas": 15,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.05361404277259889
+    },
+    {
+        "Country": "Seychelles",
+        "Ocean Health Index -": 0.8472,
+        "Percent coverage of marine protected areas": 0.3282,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 1.2926474625560516
+    },
+    {
+        "Country": "Singapore",
+        "Ocean Health Index -": 0.6801,
+        "Percent coverage of marine protected areas": 0.0001,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.0012557147941094726
+    },
+    {
+        "Country": "Sint Maarten",
+        "Ocean Health Index -": 0.736,
+        "Percent coverage of marine protected areas": 0.087,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Solomon Islands",
+        "Ocean Health Index -": 0.6461,
+        "Percent coverage of marine protected areas": 0.0012,
+        "Rev. as a % of GDP": 0.048,
+        "Total fisheries production (metric tons per capita) ": 0.11214027404918443
+    },
+    {
+        "Country": "St. Kitts and Nevis",
+        "Ocean Health Index -": 0.7847,
+        "Percent coverage of marine protected areas": 0.0398,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 1.2356435271339687
+    },
+    {
+        "Country": "St. Vincent and the Grenadines",
+        "Ocean Health Index -": 0.6689,
+        "Percent coverage of marine protected areas": 0.0022,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.20801334054443843
+    },
+    {
+        "Country": "Suriname",
+        "Ocean Health Index -": 0.6546,
+        "Percent coverage of marine protected areas": 0.0154,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.08031457540672858
+    },
+    {
+        "Country": "The British Virgin Islands",
+        "Ocean Health Index -": 0.7209,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Timor Leste",
+        "Ocean Health Index -": 0.6169,
+        "Percent coverage of marine protected areas": 0.0137,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.003610313664961375
+    },
+    {
+        "Country": "Tokelau",
+        "Ocean Health Index -": 0.6986,
+        "Percent coverage of marine protected areas": 0.0,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 15
+    },
+    {
+        "Country": "Tonga",
+        "Ocean Health Index -": 0.7555,
+        "Percent coverage of marine protected areas": 0.0006,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.016084015327120487
+    },
+    {
+        "Country": "Trinidad and Tobago",
+        "Ocean Health Index -": 0.6634,
+        "Percent coverage of marine protected areas": 0.0005,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.009316335688480358
+    },
+    {
+        "Country": "Turks and Caicos",
+        "Ocean Health Index -": 0.7918999999999999,
+        "Percent coverage of marine protected areas": 0.001,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.07180308391662577
+    },
+    {
+        "Country": "Tuvalu",
+        "Ocean Health Index -": 0.7578,
+        "Percent coverage of marine protected areas": 0.0003,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.6518402306648575
+    },
+    {
+        "Country": "Vanuatu",
+        "Ocean Health Index -": 0.6515000000000001,
+        "Percent coverage of marine protected areas": 0.0001,
+        "Rev. as a % of GDP": 42,
+        "Total fisheries production (metric tons per capita) ": 0.14331276758534245
+    }
+]

@@ -1,0 +1,452 @@
+[
+    {
+        "Country": "Anguilla",
+        "Internet users, total (% of population)": 0.82,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.865,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Antigua and Barbuda",
+        "Internet users, total (% of population)": 0.76,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.975,
+        "E-government Development Index\u00a0": 0.6055,
+        "Online Service Index\u00a0": 0.4471,
+        "Telecommunications Infrastructure Index\u00a0": 0.6176,
+        "Human Capital Index\u00a0": 0.7518
+    },
+    {
+        "Country": "Aruba",
+        "Internet users, total (% of population)": 0.97,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.685,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Bahamas",
+        "Internet users, total (% of population)": 0.85,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.48,
+        "E-government Development Index\u00a0": 0.7017,
+        "Online Service Index\u00a0": 0.6765,
+        "Telecommunications Infrastructure Index\u00a0": 0.6739,
+        "Human Capital Index\u00a0": 0.7546
+    },
+    {
+        "Country": "Bahrain",
+        "Internet users, total (% of population)": 0.99,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.655,
+        "E-government Development Index\u00a0": 0.8213,
+        "Online Service Index\u00a0": 0.7882,
+        "Telecommunications Infrastructure Index\u00a0": 0.8319,
+        "Human Capital Index\u00a0": 0.8439
+    },
+    {
+        "Country": "Barbados",
+        "Internet users, total (% of population)": 0.82,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.585,
+        "E-government Development Index\u00a0": 0.7279,
+        "Online Service Index\u00a0": 0.5765,
+        "Telecommunications Infrastructure Index\u00a0": 0.7523,
+        "Human Capital Index\u00a0": 0.8549
+    },
+    {
+        "Country": "Belize",
+        "Internet users, total (% of population)": 0.61,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.51,
+        "E-government Development Index\u00a0": 0.4548,
+        "Online Service Index\u00a0": 0.2647,
+        "Telecommunications Infrastructure Index\u00a0": 0.4079,
+        "Human Capital Index\u00a0": 0.6919
+    },
+    {
+        "Country": "Bermuda",
+        "Internet users, total (% of population)": 0.98,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.615,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Cabo Verde",
+        "Internet users, total (% of population)": 0.57,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.505,
+        "E-government Development Index\u00a0": 0.5604,
+        "Online Service Index\u00a0": 0.5,
+        "Telecommunications Infrastructure Index\u00a0": 0.5476,
+        "Human Capital Index\u00a0": 0.6337
+    },
+    {
+        "Country": "Cayman Islands",
+        "Internet users, total (% of population)": 0.89,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.745,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Comoros",
+        "Internet users, total (% of population)": 0.2,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.265,
+        "E-government Development Index\u00a0": 0.2799,
+        "Online Service Index\u00a0": 0.1235,
+        "Telecommunications Infrastructure Index\u00a0": 0.2511,
+        "Human Capital Index\u00a0": 0.4652
+    },
+    {
+        "Country": "Cook Islands",
+        "Internet users, total (% of population)": 0.63,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.17,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Cuba",
+        "Internet users, total (% of population)": 0.63,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.255,
+        "E-government Development Index\u00a0": 0.4439,
+        "Online Service Index\u00a0": 0.2588,
+        "Telecommunications Infrastructure Index\u00a0": 0.2514,
+        "Human Capital Index\u00a0": 0.8215
+    },
+    {
+        "Country": "Cura\u00e7ao",
+        "Internet users, total (% of population)": 0.73,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.565,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Dominica",
+        "Internet users, total (% of population)": 0.7,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.585,
+        "E-government Development Index\u00a0": 0.6013,
+        "Online Service Index\u00a0": 0.4471,
+        "Telecommunications Infrastructure Index\u00a0": 0.6871,
+        "Human Capital Index\u00a0": 0.6698
+    },
+    {
+        "Country": "Dominican Republic",
+        "Internet users, total (% of population)": 0.75,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.4,
+        "E-government Development Index\u00a0": 0.6782,
+        "Online Service Index\u00a0": 0.7647,
+        "Telecommunications Infrastructure Index\u00a0": 0.5279,
+        "Human Capital Index\u00a0": 0.7419
+    },
+    {
+        "Country": "Micronesia",
+        "Internet users, total (% of population)": 0.35,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.11,
+        "E-government Development Index\u00a0": 0.3779,
+        "Online Service Index\u00a0": 0.3529,
+        "Telecommunications Infrastructure Index\u00a0": 0.1061,
+        "Human Capital Index\u00a0": 0.6747
+    },
+    {
+        "Country": "Fiji",
+        "Internet users, total (% of population)": 0.66,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.695,
+        "E-government Development Index\u00a0": 0.6585,
+        "Online Service Index\u00a0": 0.5059,
+        "Telecommunications Infrastructure Index\u00a0": 0.6468,
+        "Human Capital Index\u00a0": 0.8227
+    },
+    {
+        "Country": "Grenada",
+        "Internet users, total (% of population)": 0.63,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.57,
+        "E-government Development Index\u00a0": 0.5812,
+        "Online Service Index\u00a0": 0.3412,
+        "Telecommunications Infrastructure Index\u00a0": 0.5449,
+        "Human Capital Index\u00a0": 0.8576
+    },
+    {
+        "Country": "Guinea-Bissau",
+        "Internet users, total (% of population)": 0.13,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.395,
+        "E-government Development Index\u00a0": 0.2316,
+        "Online Service Index\u00a0": 0.0647,
+        "Telecommunications Infrastructure Index\u00a0": 0.2037,
+        "Human Capital Index\u00a0": 0.4265
+    },
+    {
+        "Country": "Guyana",
+        "Internet users, total (% of population)": 0.55,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.41,
+        "E-government Development Index\u00a0": 0.4909,
+        "Online Service Index\u00a0": 0.4647,
+        "Telecommunications Infrastructure Index\u00a0": 0.3619,
+        "Human Capital Index\u00a0": 0.6462
+    },
+    {
+        "Country": "Haiti",
+        "Internet users, total (% of population)": 0.33,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.315,
+        "E-government Development Index\u00a0": 0.2723,
+        "Online Service Index\u00a0": 0.1882,
+        "Telecommunications Infrastructure Index\u00a0": 0.2449,
+        "Human Capital Index\u00a0": 0.3839
+    },
+    {
+        "Country": "Jamaica",
+        "Internet users, total (% of population)": 0.55,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.555,
+        "E-government Development Index\u00a0": 0.5392,
+        "Online Service Index\u00a0": 0.3882,
+        "Telecommunications Infrastructure Index\u00a0": 0.5151,
+        "Human Capital Index\u00a0": 0.7142
+    },
+    {
+        "Country": "Kiribati",
+        "Internet users, total (% of population)": 0.36,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.26,
+        "E-government Development Index\u00a0": 0.432,
+        "Online Service Index\u00a0": 0.4941,
+        "Telecommunications Infrastructure Index\u00a0": 0.1241,
+        "Human Capital Index\u00a0": 0.6778
+    },
+    {
+        "Country": "Maldives",
+        "Internet users, total (% of population)": 0.71,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.83,
+        "E-government Development Index\u00a0": 0.574,
+        "Online Service Index\u00a0": 0.4353,
+        "Telecommunications Infrastructure Index\u00a0": 0.5981,
+        "Human Capital Index\u00a0": 0.6886
+    },
+    {
+        "Country": "Mauritius",
+        "Internet users, total (% of population)": 0.68,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.75,
+        "E-government Development Index\u00a0": 0.7196,
+        "Online Service Index\u00a0": 0.7,
+        "Telecommunications Infrastructure Index\u00a0": 0.6677,
+        "Human Capital Index\u00a0": 0.7911
+    },
+    {
+        "Country": "Montserrat",
+        "Internet users, total (% of population)": 0.6,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.915,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Nauru",
+        "Internet users, total (% of population)": 0.76,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.7,
+        "E-government Development Index\u00a0": 0.415,
+        "Online Service Index\u00a0": 0.1706,
+        "Telecommunications Infrastructure Index\u00a0": 0.4738,
+        "Human Capital Index\u00a0": 0.6006
+    },
+    {
+        "Country": "Niue",
+        "Internet users, total (% of population)": 0.8,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.48,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Palau",
+        "Internet users, total (% of population)": 0.94,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.75,
+        "E-government Development Index\u00a0": 0.5109,
+        "Online Service Index\u00a0": 0.2765,
+        "Telecommunications Infrastructure Index\u00a0": 0.3745,
+        "Human Capital Index\u00a0": 0.8816
+    },
+    {
+        "Country": "Papua New Guinea",
+        "Internet users, total (% of population)": 0.12,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.16,
+        "E-government Development Index\u00a0": 0.2827,
+        "Online Service Index\u00a0": 0.2235,
+        "Telecommunications Infrastructure Index\u00a0": 0.1233,
+        "Human Capital Index\u00a0": 0.5013
+    },
+    {
+        "Country": "Marshall Islands",
+        "Internet users, total (% of population)": 0.39,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.055,
+        "E-government Development Index\u00a0": 0.4055,
+        "Online Service Index\u00a0": 0.3412,
+        "Telecommunications Infrastructure Index\u00a0": 0.1247,
+        "Human Capital Index\u00a0": 0.7506
+    },
+    {
+        "Country": "Saint Lucia",
+        "Internet users, total (% of population)": 0.55,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.535,
+        "E-government Development Index\u00a0": 0.5444,
+        "Online Service Index\u00a0": 0.3824,
+        "Telecommunications Infrastructure Index\u00a0": 0.5302,
+        "Human Capital Index\u00a0": 0.7205
+    },
+    {
+        "Country": "Samoa",
+        "Internet users, total (% of population)": 0.66,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.365,
+        "E-government Development Index\u00a0": 0.4219,
+        "Online Service Index\u00a0": 0.2647,
+        "Telecommunications Infrastructure Index\u00a0": 0.2596,
+        "Human Capital Index\u00a0": 0.7414
+    },
+    {
+        "Country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+        "Internet users, total (% of population)": 0.31,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.57,
+        "E-government Development Index\u00a0": 0.4074,
+        "Online Service Index\u00a0": 0.2471,
+        "Telecommunications Infrastructure Index\u00a0": 0.3015,
+        "Human Capital Index\u00a0": 0.6736
+    },
+    {
+        "Country": "Seychelles",
+        "Internet users, total (% of population)": 0.74,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.88,
+        "E-government Development Index\u00a0": 0.692,
+        "Online Service Index\u00a0": 0.6176,
+        "Telecommunications Infrastructure Index\u00a0": 0.6925,
+        "Human Capital Index\u00a0": 0.766
+    },
+    {
+        "Country": "Singapore",
+        "Internet users, total (% of population)": 0.88,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.735,
+        "E-government Development Index\u00a0": 0.915,
+        "Online Service Index\u00a0": 0.9647,
+        "Telecommunications Infrastructure Index\u00a0": 0.8899,
+        "Human Capital Index\u00a0": 0.8904
+    },
+    {
+        "Country": "Sint Maarten",
+        "Internet users, total (% of population)": 0.77,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.965,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Solomon Islands",
+        "Internet users, total (% of population)": 0.22,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.355,
+        "E-government Development Index\u00a0": 0.3442,
+        "Online Service Index\u00a0": 0.3235,
+        "Telecommunications Infrastructure Index\u00a0": 0.2106,
+        "Human Capital Index\u00a0": 0.4985
+    },
+    {
+        "Country": "St. Kitts and Nevis",
+        "Internet users, total (% of population)": 0.72,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.72,
+        "E-government Development Index\u00a0": 0.6352,
+        "Online Service Index\u00a0": 0.3941,
+        "Telecommunications Infrastructure Index\u00a0": 0.708,
+        "Human Capital Index\u00a0": 0.8035
+    },
+    {
+        "Country": "St. Vincent and the Grenadines",
+        "Internet users, total (% of population)": 0.6,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.64,
+        "E-government Development Index\u00a0": 0.5605,
+        "Online Service Index\u00a0": 0.4706,
+        "Telecommunications Infrastructure Index\u00a0": 0.4894,
+        "Human Capital Index\u00a0": 0.7214
+    },
+    {
+        "Country": "Suriname",
+        "Internet users, total (% of population)": 0.62,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.87,
+        "E-government Development Index\u00a0": 0.5154,
+        "Online Service Index\u00a0": 0.2882,
+        "Telecommunications Infrastructure Index\u00a0": 0.5482,
+        "Human Capital Index\u00a0": 0.7098
+    },
+    {
+        "Country": "The British Virgin Islands",
+        "Internet users, total (% of population)": 0.83,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.89,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Timor Leste",
+        "Internet users, total (% of population)": 0.39,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.555,
+        "E-government Development Index\u00a0": 0.4649,
+        "Online Service Index\u00a0": 0.4412,
+        "Telecommunications Infrastructure Index\u00a0": 0.3935,
+        "Human Capital Index\u00a0": 0.5599
+    },
+    {
+        "Country": "Tokelau",
+        "Internet users, total (% of population)": 0.37,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.34,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Tonga",
+        "Internet users, total (% of population)": 0.65,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.53,
+        "E-government Development Index\u00a0": 0.5616,
+        "Online Service Index\u00a0": 0.3765,
+        "Telecommunications Infrastructure Index\u00a0": 0.48,
+        "Human Capital Index\u00a0": 0.8283
+    },
+    {
+        "Country": "Trinidad and Tobago",
+        "Internet users, total (% of population)": 0.77,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.685,
+        "E-government Development Index\u00a0": 0.6785,
+        "Online Service Index\u00a0": 0.6118,
+        "Telecommunications Infrastructure Index\u00a0": 0.6803,
+        "Human Capital Index\u00a0": 0.7434
+    },
+    {
+        "Country": "Turks and Caicos",
+        "Internet users, total (% of population)": 0.81,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.57,
+        "E-government Development Index\u00a0": 0.0,
+        "Online Service Index\u00a0": 0.0,
+        "Telecommunications Infrastructure Index\u00a0": 0.0,
+        "Human Capital Index\u00a0": 0.0
+    },
+    {
+        "Country": "Tuvalu",
+        "Internet users, total (% of population)": 0.49,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.165,
+        "E-government Development Index\u00a0": 0.4209,
+        "Online Service Index\u00a0": 0.3,
+        "Telecommunications Infrastructure Index\u00a0": 0.2807,
+        "Human Capital Index\u00a0": 0.6821
+    },
+    {
+        "Country": "Vanuatu",
+        "Internet users, total (% of population)": 0.31,
+        "Mobile cellular subscriptions (per 0.5 people)\u00a0\u00a0": 0.575,
+        "E-government Development Index\u00a0": 0.4403,
+        "Online Service Index\u00a0": 0.3353,
+        "Telecommunications Infrastructure Index\u00a0": 0.3845,
+        "Human Capital Index\u00a0": 0.6012
+    }
+]
