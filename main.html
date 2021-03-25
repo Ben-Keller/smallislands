@@ -18,7 +18,7 @@
   <!-- Custom styles for this template -->
   <link rel="stylesheet" href="css/materialui.css">
 
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -99,8 +99,35 @@
 
   <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
     <div class="mdl-grid mdl-grid--no-spacing">
-      <div class="mdl-cell mdl-cell--2-col">
+      <div class="mdl-cell mdl-cell--2-col"  id="verticalMenu">
         <div class="mdl-tabs__tab-bar">
+          <a href="#portfolioPanel" class="mdl-tabs__tab is-active">
+
+            <h5>UNDP Portfolio</h5>
+          </a>
+
+          <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
+
+            <h5>Compare Countries</h5>
+          </a>
+          <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
+
+            <h5>Country Profiles</h5>
+          </a>
+          <a href="#geoPanel" class="mdl-tabs__tab">
+
+            <h5>Geospatial Data</h5>
+          </a>
+          <a href="#pillarsPanel" class="mdl-tabs__tab">
+
+            <h5>SIDS Offer</h5>
+          </a> 
+        </div>
+      </div>
+
+
+      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu2"  style="display:none">
+        <div class="mdl-tabs__tab-bar" >
           <a href="#portfolioPanel" class="mdl-tabs__tab is-active">
 
             <h5>UNDP Portfolio</h5>
@@ -111,9 +138,9 @@
           </a>
           <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
-            <h5>Data and Insights</h5>
+            <h5>Compare Countries</h5>
           </a>
-          <a href="#countryViewPanel" class="mdl-tabs__tab">
+          <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
 
             <h5>Country Profiles</h5>
           </a>
@@ -121,9 +148,20 @@
 
             <h5>Geospatial Data</h5>
           </a>
+
+
+          <a href="#storyMapPanel" class="mdl-tabs__tab"><h5>Story Map</h5></a>
+          <a href="#machineLearningPanel" class="mdl-tabs__tab"><h5>Machine Learning</h5></a>
+          <a href="#powerBiPanel" class="mdl-tabs__tab"><h5>Power BI</h5></a>
+          <a href="#targetsPanel" class="mdl-tabs__tab"><h5>SIDS Targets</h5></a>
+          <a href="#dataDownloadPanel" class="mdl-tabs__tab"><h5>Data Download</h5></a>
          
         </div>
       </div>
+
+
+
+
       <div class="mdl-cell mdl-cell--10-col">
 
 
@@ -143,33 +181,33 @@
             <div class="col-sm-7"></div>
             <div class="col-sm-5">
               <div class="row portfolioOverview">
-                <div class="portfolioStat" id="portfolio1">
+                <div class="portfolioStat" >
                   <div>
-                    <h3>50</h3>
+                    <h3 id="portfolio1">50</h3>
                   </div>
                   <div>
                     <p>UNDP SIDS</p>
                   </div>
                 </div>
-                <div class="portfolioStat" id="portfolio2">
+                <div class="portfolioStat" >
                   <div>
-                    <h3>38</h3>
+                    <h3 id="portfolio2">38</h3>
                   </div>
                   <div>
                     <p>UN Member States</p>
                   </div>
                 </div>
-                <div class="portfolioStat" id="portfolio3">
+                <div class="portfolioStat">
                   <div>
-                    <h3>1032</h3>
+                    <h3  id="portfolio3">1533</h3>
                   </div>
                   <div>
                     <p>UNDP Projects</p>
                   </div>
                 </div>
-                <div class="portfolioStat" id="portfolio4">
+                <div class="portfolioStat">
                   <div>
-                    <h3>1.34B</h3>
+                    <h3 id="portfolio4">3.04B</h3>
                   </div>
                   <div>
                     <p>Total Project Funding</p>
@@ -197,7 +235,7 @@
 
 
 
-            <div id="bars"><img src="graphics/bars.png" width="100%"></img></div>
+            <div id="portfolioBars"></div>
           </div>
           <div class="row sdgIcons">
             <div id="sdgIcons"><img src="graphics/sdgs.png" width="100%"></img></div>
@@ -224,7 +262,7 @@
 
             <div class="col-lg-7 d-flex justify-content-center" id="regionSelect">
               <ul>
-                <li id="global"><a>Global</a></li>
+                <li id="global"><a class="selectedRegion">Global</a></li>
                 <li id="caribbean"><a>Caribbean (RBLAC)</a></li>
                 <li id="ais"><a>AIS (RBA)</a></li>
                 <li id="pacific"><a>Pacific (RBAP)</a></li>
@@ -241,11 +279,21 @@
 
 
 
-            <div class="yearSelect col-lg-2 d-flex justify-content-center">
+            <div class="yrSelect col-lg-2 d-flex justify-content-center">
               <ul>
-                <li><a id="global">2012-2021</a></li>
-                <div class="yearShader"></div>
-              </ul>
+                <select id="yearSelect">
+                  <option value='2012to2021' select="selected">2012 to 2021</option>
+                  <option value='2021'>2021</option>
+                  <option value='2020'>2020</option>
+                  <option value='2019'>2019</option>
+                  <option value='2018'>2018</option>
+                  <option value='2017'>2017</option>
+                  <option value='2016'>2016</option>
+                  <option value='2015'>2015</option>
+                  <option value='2014'>2014</option>
+                  <option value='2013'>2013</option>
+                  <option value='2012'>2012</option>
+                </select>
 
             </div>
 
@@ -256,7 +304,7 @@
 
           </div>
 
-          <div id="test">test</div>
+       
 
         </div>
 
@@ -281,7 +329,7 @@
 
             
             <div class="col-lg-12 description">
-              <h5>UNDP’s SIDS offer – Rising Up for SIDS – presents an integrated approach for tapping into areas with potential to accelerate green recovery and transform societies based on three interconnected pillars: Climate Action, Blue Economy and Digital Transformation. As a cross-cutting enabler of change, supporting the mobilization of financing for development is at the heart of UNDP’s SIDS offer.
+              <h5>UNDP’s SIDS offer – Rising Up for SIDS – presents an integrated approach for tapping into areas with potential to accelerate green recovery and transform societies based on three interconnected pillars: Climate Action, Blue Economy and Digital Transformation.
               </h5>
             </div>
 
@@ -368,8 +416,19 @@
                 </div>
 
               </div><!-- /.col-lg-4 -->
+
+
+              <div class="col-lg-9 shadebox" id="financeRow">
+
+                <h3 style="color:#000000">Finance</h3>
+                <p>As a cross-cutting enabler of change, supporting the mobilization of financing for development is at the heart of UNDP’s SIDS offer.
+                </p>      </div>
+
+                
             </div><!-- /.row -->
+            
           </div>
+          
 
           <div class="container-fluid targets">
             
@@ -437,9 +496,8 @@
         </div>
 
 
-
-
-        <div class="container panel mdl-tabs__panel" id="countryDataPanel">
+         <div class="container panel mdl-tabs__panel" id="countryDataPanel">
+         
           <div class="panelTitleRow">
             <div class="col-lg-12">
               <h2>SIDS Country Data</h2>
@@ -499,7 +557,7 @@
               </select>
             </div>
             <div class="input__select col-lg-3">
-              <select name="countryMultiSelect" id="countryCategory" class="input__small">
+              <select id="countryCategory" class="input__small">
                 <option value="all">All SIDS</option> <!--selected disabled hidden   (after val)-->
                 <option value="caribbean">Caribbean</option>
                 <option value="ais">AIS</option>
@@ -515,54 +573,61 @@
             <div class="row">
               <div class="col-lg-3" id="countryProfile">
                 <h4>Country Information</h4>
-                <div id="countryProfileInfo"><b>Population:</b> 112,286 <br>
-                  <b>Region: </b>Caribbean (RBLAC) <br>
-                  <b> HDI:</b> 0.779 (24th, medium) <br>
-                  <b>Languages:</b> Grenadian Creole English, Grenadian Creole French <br>
-                  <b> Surface Area:</b> 348.5 sq. km <br>
-                  <b>Economic Zone Area:</b> 500 sq. km.
+                <div id="countryProfileInfo">
+  
                 </div>
               </div>
-              <div class="col-lg-3" id="countryRelief"><img src="maps/relief/grenadaRelief.png" id="reliefMap"></div>
+              <div class="col-lg-3" id="countryRelief"><img id="reliefMap"></div>
               <div class="col-lg-3 scrollbar" id="countryStories">
-                <h4>Stories from Grenada</h5>
-                  <p>Grenada pioneers US$ 12.5 million agreement to prevent deforestation and maintain trajectory
-                    towards resilience
-                  </p>
-                  <p> Grenada placing gender equality at the center of private sector and disaster management
-                  </p>
-                  <p>Circular economy opportunities can
-                    reduce GHG emissions with 44% in Grenada
-                  </p>
+              
               </div>
-              <div class="col-lg-3" id="countryImage"><img src="images/countries/grenada/grenadaBeachside.jpg"></div>
+              <div class="col-lg-3"><img id="countryImage"><!--src="images/countries/grenada/grenadaBeachside.jpg">--></div>
             </div>
           </div>
 
 
 
           <div class="row">
+      
             <div class="col-lg-4 spiderbox">
               <h3 style="color:#0DB14B">Climate Action</h3>
-              <img src="graphics/climateSpider.png" style="width:100%">
+              <div id="climateSpider" class="radarChart" style="display: inline-flex;"></div>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 spiderbox">
               <h3 style="color:#0BC6FF">Blue Economy</h3>
-              <img src="graphics/blueSpider.png" style="width:100%">
+              <div id="blueSpider" class="radarChart" style="display: inline-flex;"></div>
             </div><!-- /.col-lg-4 -->
             <div class="col-lg-4 spiderbox">
               <h3 style="color:#F58220">Digital Transformation</h3>
-              <img src="graphics/digitalSpider.png" style="width:100%">
+              <div id="digitalSpider" class="radarChart" style="display: inline-flex;"></div>
             </div><!-- /.col-lg-4 -->
           </div><!-- /.row -->
+
+
+
+          <div class="fundingSelect col-lg-3 d-flex justify-content-center">
+            <div class="inline field">
+        
+            <select multiple="" class="label fundingSelect selection fluid dropdown" id="multiCountrySelect">
+              <option value="">Overlay countries and regions</option>
+            </select>
+          </div>
+          
         </div>
 
 
 
 
 
-        <div class="container panel mdl-tabs__panel" id="storyMap">
+        </div>
 
+
+
+
+
+        <div class="container panel mdl-tabs__panel" id="storyMapPanel" class="storyMapPanel">
+<div><img src="images/storyMapMock.jpg"></img></div>
+          <!--
           <div class="col-lg-12" id="storyMapTitle">
             <h2>Stories from the Small Island Developing States</h2>
           </div>
@@ -606,7 +671,7 @@
             <div class="subscribe row">
               <img src="images/subscribeBar.jpg" style="width:100%">
             </div>
-          </div>
+          </div>-->
 
         </div>
 
@@ -617,14 +682,57 @@
 
           <div class="col-lg-12" id="geoTitle">
             <h2>Geospatial Data from the UN Biodiversity Lab</h2>
-            <p>      elated to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+            <p>    Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
 
           </div>
           <img src="images/geomock.jpg" style="width:100%">
-            <div id="geoMock">
+          </div>
+
+
+
+          <div class="container panel mdl-tabs__panel" id="dataDownloadPanel">
+
+            <div class="col-lg-12" id="dataDownloadTitle">
+              <h2>Download Data</h2>
+              <p>      Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+  
+            </div>
+            <img src="images/dataDownloadMock.jpg" style="width:100%">
 
             </div>
-          </div>
+
+            <div class="container panel mdl-tabs__panel" id="machineLearningPanel">
+
+              <div class="col-lg-12" id="mlTitle">
+                <h2>Machine Learning</h2>
+                <p>      Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+    
+              </div>
+              <img src="images/machineLearningMock.jpg" style="width:100%">
+       
+              </div>
+
+              <div class="container panel mdl-tabs__panel" id="powerBiPanel">
+
+                <div class="col-lg-12" id="powerBiTitle">
+                  <h2>Power BI</h2>
+                  <p>     Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+      
+                </div>
+                <img src="images/powerBiMock.jpg" style="width:100%">
+
+                </div>
+
+                <div class="container panel mdl-tabs__panel" id="targetsPanel">
+
+                  <div class="col-lg-12" id="targetsTitle">
+                    <h2>UNDP SIDS Offer Targets</h2>
+                    <p>The SIDS Accelerated Modalities of Action, or SAMOA Pathway, was adopted in Apia, Samoa in September 2014 to establish a intergovernmental SIDS Partnership Framework and identify 16 targets to guide development. </p>
+        
+                  </div>
+                  <img src="images/targetsMock.jpg" style="width:100%">
+
+                  </div>
 
 
       </div>
@@ -652,15 +760,24 @@
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
 
+
+ 
   <!--Tooltips-->
   <!--<script src="scripts/tooltips/tooltipPNT.js"></script>-->
   <script src="scripts/tooltips/tooltipTest.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
-
+  <script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
+  <script src="scripts/countryProfile.js"></script>
   <script src="scripts/script.js"></script>
 
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="scripts/portfolioBars.js"></script>
 
-  <script src="scripts/countryProfile.js"></script>
+
+
+ 
 
 </body>
 
