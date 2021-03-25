@@ -7,8 +7,9 @@
 }
 
 .pies {
-  margin-bottom: -42px;
+  margin-bottom: -100px;
   padding: 0;
+  margin-left: 10px;
 }
 
 .fundPie img {
@@ -36,7 +37,7 @@
 }
 
 #spacer {
-  height: 10vw;
+  height: 9vw;
   max-height: 140px;
 }
 
@@ -64,6 +65,11 @@
   padding: 0;
   letter-spacing: 0;
   line-height: 15px;
+}
+
+.portfolioOverview {
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .title {

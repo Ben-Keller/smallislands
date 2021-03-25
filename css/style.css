@@ -141,6 +141,8 @@ ul li a {
 /* total width */
 .scrollbar::-webkit-scrollbar {
   width: 16px;
+  background-color: #F4F5F8;
+  opacity: 0;
 }
 
 /* scrollbar itself */
@@ -170,11 +172,6 @@ h2 {
 
 .panelTitleRow {
   padding-top: 4%;
-}
-
-/*Vertical Tabs*/
-.mdl-tabs__panel {
-  display: none;
 }
 
 .vertical-mdl-tabs .mdl-tabs__tab-bar {
@@ -227,6 +224,10 @@ h2 {
   margin-top: 14px;
   text-align: right;
   letter-spacing: 1px;
+}
+
+#undpLogo {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

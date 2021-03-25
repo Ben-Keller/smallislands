@@ -48,7 +48,7 @@
 }
 
 .spiderbox {
-  padding: 10px;
+  padding: 6px;
   background-clip: content-box;
   border-radius: 25px;
 }
@@ -71,6 +71,7 @@
 
 #countryProfile, #countryStories {
   padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 #countryProfile {
@@ -80,8 +81,8 @@
 }
 
 #countryRelief {
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
   text-align: left;
   overflow-x: hidden;
 }
@@ -92,14 +93,16 @@
 }
 
 #countryImage, #countryRelief {
-  padding: 0;
-  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .countryInfoBar {
   background-image: linear-gradient(to right, #d0cfcf, #F4F5F8 75%);
   margin-top: 1%;
-  margin-bottom: 2%;
+  margin-bottom: 0%;
 }
 
 .countryInfoBar img {
