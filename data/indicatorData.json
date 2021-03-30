@@ -1,0 +1,8990 @@
+{
+    "Region": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Aruba",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Bahamas",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Bahrain",
+            "value": "AIS"
+        },
+        {
+            "axis": "Barbados",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Belize",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Bermuda",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": "AIS"
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Comoros",
+            "value": "AIS"
+        },
+        {
+            "axis": "Cook Islands",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Cuba",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Dominica",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Micronesia",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Fiji",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Grenada",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": "AIS"
+        },
+        {
+            "axis": "Guyana",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Haiti",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Jamaica",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Kiribati",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Maldives",
+            "value": "AIS"
+        },
+        {
+            "axis": "Mauritius",
+            "value": "AIS"
+        },
+        {
+            "axis": "Montserrat",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Nauru",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Niue",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Palau",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Samoa",
+            "value": "Pacific"
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": "AIS"
+        },
+        {
+            "axis": "Seychelles",
+            "value": "AIS"
+        },
+        {
+            "axis": "Singapore",
+            "value": "AIS"
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": "Pacific"
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Suriname",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Timor Leste",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Tokelau",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Tonga",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": "Caribbean"
+        },
+        {
+            "axis": "Tuvalu",
+            "value": "Pacific"
+        },
+        {
+            "axis": "Vanuatu",
+            "value": "Pacific"
+        }
+    ],
+    "CO/MCO": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Aruba",
+            "value": "Trinidad and Tobago MCO"
+        },
+        {
+            "axis": "Bahamas",
+            "value": "Jamaica MCO"
+        },
+        {
+            "axis": "Bahrain",
+            "value": "CO"
+        },
+        {
+            "axis": "Barbados",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Belize",
+            "value": "El Salvador MCO"
+        },
+        {
+            "axis": "Bermuda",
+            "value": "Jamaica MCO"
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": "CO"
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": "Jamaica MCO"
+        },
+        {
+            "axis": "Comoros",
+            "value": "CO"
+        },
+        {
+            "axis": "Cook Islands",
+            "value": "Samoa MCO"
+        },
+        {
+            "axis": "Cuba",
+            "value": "CO"
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": "Trinidad and Tobago MCO"
+        },
+        {
+            "axis": "Dominica",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": "CO"
+        },
+        {
+            "axis": "Micronesia",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Fiji",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Grenada",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": "CO"
+        },
+        {
+            "axis": "Guyana",
+            "value": "CO"
+        },
+        {
+            "axis": "Haiti",
+            "value": "CO"
+        },
+        {
+            "axis": "Jamaica",
+            "value": "Jamaica MCO"
+        },
+        {
+            "axis": "Kiribati",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Maldives",
+            "value": "CO"
+        },
+        {
+            "axis": "Mauritius",
+            "value": "Mauritius MCO"
+        },
+        {
+            "axis": "Montserrat",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Nauru",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Niue",
+            "value": "Samoa MCO"
+        },
+        {
+            "axis": "Palau",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": "CO"
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Samoa",
+            "value": "Samoa MCO"
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": "CO"
+        },
+        {
+            "axis": "Seychelles",
+            "value": "Mauritius MCO"
+        },
+        {
+            "axis": "Singapore",
+            "value": "Malaysia MCO"
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": "Trinidad and Tobago MCO"
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": "Pacific Office Fiji, with own DRR"
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Suriname",
+            "value": "CO"
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": "Barbados & OECS MCO"
+        },
+        {
+            "axis": "Timor Leste",
+            "value": "CO"
+        },
+        {
+            "axis": "Tokelau",
+            "value": "Samoa MCO"
+        },
+        {
+            "axis": "Tonga",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": "Trinidad and Tobago MCO"
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": "Jamaica MCO"
+        },
+        {
+            "axis": "Tuvalu",
+            "value": "Pacific Office Fiji"
+        },
+        {
+            "axis": "Vanuatu",
+            "value": "Pacific Office Fiji"
+        }
+    ],
+    "Member State (Y/N)": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": "N"
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": "Y"
+        },
+        {
+            "axis": "Aruba",
+            "value": "N"
+        },
+        {
+            "axis": "Bahamas",
+            "value": "Y"
+        },
+        {
+            "axis": "Bahrain",
+            "value": "Y"
+        },
+        {
+            "axis": "Barbados",
+            "value": "Y"
+        },
+        {
+            "axis": "Belize",
+            "value": "Y"
+        },
+        {
+            "axis": "Bermuda",
+            "value": "N"
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": "Y"
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": "N"
+        },
+        {
+            "axis": "Comoros",
+            "value": "Y"
+        },
+        {
+            "axis": "Cook Islands",
+            "value": "N"
+        },
+        {
+            "axis": "Cuba",
+            "value": "Y"
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": "N"
+        },
+        {
+            "axis": "Dominica",
+            "value": "Y"
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": "Y"
+        },
+        {
+            "axis": "Micronesia",
+            "value": "Y"
+        },
+        {
+            "axis": "Fiji",
+            "value": "Y"
+        },
+        {
+            "axis": "Grenada",
+            "value": "Y"
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": "Y"
+        },
+        {
+            "axis": "Guyana",
+            "value": "Y"
+        },
+        {
+            "axis": "Haiti",
+            "value": "Y"
+        },
+        {
+            "axis": "Jamaica",
+            "value": "Y"
+        },
+        {
+            "axis": "Kiribati",
+            "value": "Y"
+        },
+        {
+            "axis": "Maldives",
+            "value": "Y"
+        },
+        {
+            "axis": "Mauritius",
+            "value": "Y"
+        },
+        {
+            "axis": "Montserrat",
+            "value": "N"
+        },
+        {
+            "axis": "Nauru",
+            "value": "Y"
+        },
+        {
+            "axis": "Niue",
+            "value": "N"
+        },
+        {
+            "axis": "Palau",
+            "value": "Y"
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": "Y"
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": "Y"
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": "Y"
+        },
+        {
+            "axis": "Samoa",
+            "value": "Y"
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": "Y"
+        },
+        {
+            "axis": "Seychelles",
+            "value": "Y"
+        },
+        {
+            "axis": "Singapore",
+            "value": "Y"
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": "N"
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": "Y"
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": "Y"
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": "Y"
+        },
+        {
+            "axis": "Suriname",
+            "value": "Y"
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": "N"
+        },
+        {
+            "axis": "Timor Leste",
+            "value": "Y"
+        },
+        {
+            "axis": "Tokelau",
+            "value": "N"
+        },
+        {
+            "axis": "Tonga",
+            "value": "Y"
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": "Y"
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": "N"
+        },
+        {
+            "axis": "Tuvalu",
+            "value": "Y"
+        },
+        {
+            "axis": "Vanuatu",
+            "value": "Y"
+        }
+    ],
+    "Sovereign state (non-member states)": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": "HDR\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": "GB"
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Aruba",
+            "value": "NL"
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.0
+        },
+        {
+            "axis": "Belize",
+            "value": 0.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": "GB"
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": "GB"
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": "NZ"
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": "NL"
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": "GB"
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.0
+        },
+        {
+            "axis": "Niue",
+            "value": "NZ"
+        },
+        {
+            "axis": "Palau",
+            "value": 0.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": "NL"
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": "GB"
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": "NZ"
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": "GB"
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.0
+        }
+    ],
+    "LDC status": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 0.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.0
+        },
+        {
+            "axis": "Belize",
+            "value": 0.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Comoros",
+            "value": "LDC"
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": "LDC"
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.0
+        },
+        {
+            "axis": "Haiti",
+            "value": "LDC"
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": "LDC; decision deferred until no later than 2021"
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": 0.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.0
+        },
+        {
+            "axis": "Niue",
+            "value": 0.0
+        },
+        {
+            "axis": "Palau",
+            "value": 0.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": "LDC; expected to graduate in 2024"
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 0.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": "LDC; expected to graduate in 2024"
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": "LDC; decision deferred until 2021"
+        },
+        {
+            "axis": "Tokelau",
+            "value": 0.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": "LDC; decision deferred until no later than 2021"
+        },
+        {
+            "axis": "Vanuatu",
+            "value": "LDC; expected to graduate in 2020"
+        }
+    ],
+    "Population": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": "# people"
+        },
+        {
+            "axis": "Anguilla",
+            "value": 15003.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 97929.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 106766.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 393244.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 1701575.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 287375.0
+        },
+        {
+            "axis": "Belize",
+            "value": 397628.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": 62278.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 555987.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 65722.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 869601.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 17564.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 11326616.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 164093.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 71986.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 10847916.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 115023.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 896445.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 112523.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 1968001.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 786552.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 11402528.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 2961167.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 119449.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 540544.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 1271768.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": 4992.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 10824.0
+        },
+        {
+            "axis": "Niue",
+            "value": 1626.0
+        },
+        {
+            "axis": "Palau",
+            "value": 18094.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 8947024.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 59190.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 183627.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 198414.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 219159.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 98347.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 5850342.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 42876.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 686884.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 53199.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 110940.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 586632.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 30231.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 1318445.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": 1357.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 105695.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 1399488.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 38717.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 11792.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 307145.0
+        }
+    ],
+    "Languages": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Surface Area": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Economic  Zone Area": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Human Development Index\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Profile"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": "Index (0-1)"
+        },
+        {
+            "axis": "Anguilla",
+            "value": 42
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.778
+        },
+        {
+            "axis": "Aruba",
+            "value": 42
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.814
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.852
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.814
+        },
+        {
+            "axis": "Belize",
+            "value": 0.716
+        },
+        {
+            "axis": "Bermuda",
+            "value": 42
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.665
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 42
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.554
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 42
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.783
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 42
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.742
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.756
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.62
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.743
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.779
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.48
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.682
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.51
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.734
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.63
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.74
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.804
+        },
+        {
+            "axis": "Montserrat",
+            "value": 42
+        },
+        {
+            "axis": "Nauru",
+            "value": ".."
+        },
+        {
+            "axis": "Niue",
+            "value": 42
+        },
+        {
+            "axis": "Palau",
+            "value": 0.826
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.555
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.704
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.759
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.715
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.625
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.796
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.938
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 42
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.567
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.779
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.738
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.738
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 42
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.606
+        },
+        {
+            "axis": "Tokelau",
+            "value": 42
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.725
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.796
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 42
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ".."
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.609
+        }
+    ],
+    "Forest area (% of land area)": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "ESG "
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Natural resource depletion (% of GNI)\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "HDR\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Red List Index (value)\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "HDR\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 42
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.8897
+        },
+        {
+            "axis": "Aruba",
+            "value": 42
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.70186
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.75102
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.89769
+        },
+        {
+            "axis": "Belize",
+            "value": 0.84466
+        },
+        {
+            "axis": "Bermuda",
+            "value": 42
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.90446
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 42
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.74497
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 42
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.66347
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 42
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.67465
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.73281
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.69708
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.66834
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.67519
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.90819
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.87981
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.7191
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.66599
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.77171
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.84984
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.41274
+        },
+        {
+            "axis": "Montserrat",
+            "value": 42
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.76878
+        },
+        {
+            "axis": "Niue",
+            "value": 42
+        },
+        {
+            "axis": "Palau",
+            "value": 0.72744
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.83555
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.83842
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.83768
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.7668
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.79871
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.68593
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.85251
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 42
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.76186
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.73408
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.76689
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.98335
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 42
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.8535
+        },
+        {
+            "axis": "Tokelau",
+            "value": 42
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.72413
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.80582
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 42
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.83346
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.661
+        }
+    ],
+    "Access to electricity (% of population)": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "ESG\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 100.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 100.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 100.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 100.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 100.0
+        },
+        {
+            "axis": "Belize",
+            "value": 99.5400161743164
+        },
+        {
+            "axis": "Bermuda",
+            "value": 100.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 93.5859985351563
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 100.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 81.9227523803711
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 100.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 100.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 100.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 82.099723815918
+        },
+        {
+            "axis": "Fiji",
+            "value": 99.5933609008789
+        },
+        {
+            "axis": "Grenada",
+            "value": 95.2919845581055
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 28.6620216369629
+        },
+        {
+            "axis": "Guyana",
+            "value": 91.8495254516602
+        },
+        {
+            "axis": "Haiti",
+            "value": 45.277889251709
+        },
+        {
+            "axis": "Jamaica",
+            "value": 98.9332809448242
+        },
+        {
+            "axis": "Kiribati",
+            "value": 100.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 100.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 97.4660034179688
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 99.8389739990234
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 100.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 58.967357635498
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 96.3554763793945
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 99.5374984741211
+        },
+        {
+            "axis": "Samoa",
+            "value": 100.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 71.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 100.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 100.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 66.6660995483398
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 100.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 100.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 97.4
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 85.5918350219727
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 98.8926010131836
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 100.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 100.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 100.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 61.8647689819336
+        }
+    ],
+    "Renewable electricity output (% of total electricity output)\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "ESG\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 14.8561614426793
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.0
+        },
+        {
+            "axis": "Belize",
+            "value": 45.2399304748245
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 20.2084965923393
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 3.94814668769716
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 16.1757892646767
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 11.6324429755648
+        },
+        {
+            "axis": "Micronesia",
+            "value": 1.60116448326055
+        },
+        {
+            "axis": "Fiji",
+            "value": 45.0158848200176
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 7.99614643545279
+        },
+        {
+            "axis": "Jamaica",
+            "value": 10.2620087336245
+        },
+        {
+            "axis": "Kiribati",
+            "value": 7.27272727272727
+        },
+        {
+            "axis": "Maldives",
+            "value": 1.27720445488914
+        },
+        {
+            "axis": "Mauritius",
+            "value": 22.7227227227227
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.398406374501992
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 0.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 34.5306513409962
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.233372228704784
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 30.3504847129008
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 10.4734576757532
+        },
+        {
+            "axis": "Seychelles",
+            "value": 2.38095238095238
+        },
+        {
+            "axis": "Singapore",
+            "value": 1.82088664088069
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 2.26263043702862
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 4.5716822015091
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 15.6626506024096
+        },
+        {
+            "axis": "Suriname",
+            "value": 60.0531443755536
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 5.90740907860301
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 28.169014084507
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 21.259842519685
+        }
+    ],
+    "Terrestrial and marine protected areas (% of total territorial area)": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "ESG\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.258339766209328
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": 8.55510641678468
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.00887361505544849
+        },
+        {
+            "axis": "Belize",
+            "value": 20.5904509930421
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.0155917052278871
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 7.18462280816919
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.673332200010968
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 19.2157370412977
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.0157814365656374
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.990369350346329
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.222068705409949
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 11.6199334552951
+        },
+        {
+            "axis": "Guyana",
+            "value": 5.30607734786502
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.353092294045252
+        },
+        {
+            "axis": "Jamaica",
+            "value": 1.40564285524534
+        },
+        {
+            "axis": "Kiribati",
+            "value": 11.8210466833858
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.0518873782696889
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.0114734196747547
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 82.9423566073058
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.657989653388862
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.270441119827786
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.931020062296175
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.242263364980923
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.244688365296076
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.0513686681320179
+        },
+        {
+            "axis": "Singapore",
+            "value": 2.46306282917716
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.155319976394379
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.250803474209924
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.466562636505707
+        },
+        {
+            "axis": "Suriname",
+            "value": 8.48307368434299
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 4.42304453978833
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 1.52165140342354
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 2.01442316051301
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.00859404213623363
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.090716740815002
+        }
+    ],
+    "Climate Risk Index Score": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "GermanWatch"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "ND-GAIN readiness score": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "NDGAIN"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "ND-GAIN Vulnerability score": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "NDGAIN"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Energy imports, net (% of energy use)": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Total RE electricity Capacity in MW": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "IRENA statistics"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Number of climate laws": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "laws of the world"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 3.0
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": 2.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 2.0
+        },
+        {
+            "axis": "Belize",
+            "value": 0.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 3.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 2.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 8.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 2.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 2.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 1.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 1.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 1.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 3.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 3.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.0
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 3.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 3.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 1.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 3.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 4.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 7.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 2.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 1.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 1.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 4.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 3.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 1.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 4.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 3.0
+        }
+    ],
+    "Number of climate targets": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "laws of the world"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 3.0
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": 2.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 2.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 2.0
+        },
+        {
+            "axis": "Belize",
+            "value": 3.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 7.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": 1.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 7.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 6.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 3.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 3.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 6.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 7.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 1.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 3.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 2.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 4.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 11.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 5.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 3.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 5.0
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 5.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 10.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 5.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 4.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 7.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 2.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 3.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 4.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 5.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 4.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 2.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 2.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 2.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 4.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 5.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 6.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 6.0
+        }
+    ],
+    "number of climate policies": [
+        {
+            "axis": "Datatype",
+            "value": "Climate"
+        },
+        {
+            "axis": "Source",
+            "value": "laws of the world"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 8.0
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": 7.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 1.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 2.0
+        },
+        {
+            "axis": "Belize",
+            "value": 20.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 17.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": 17.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 6.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 21.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 6.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 5.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 12.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 14.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 9.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 5.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 8.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 7.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 25.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 6.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 5.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 5.0
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 6.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 7.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 11.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 3.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 10.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 5.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 11.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 14.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 3.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 11.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 6.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 2.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 9.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 2.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 5.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 7.0
+        }
+    ],
+    "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "HDR\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 82.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 76.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 97.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 85.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 99.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 82.0
+        },
+        {
+            "axis": "Belize",
+            "value": 61.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": 98.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 57.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 89.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 20.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 63.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 63.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 73.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 70.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 75.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 35.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 66.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 63.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 13.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 55.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 33.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 55.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 36.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 71.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 68.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": 60.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 76.0
+        },
+        {
+            "axis": "Niue",
+            "value": 80.0
+        },
+        {
+            "axis": "Palau",
+            "value": 94.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 12.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 39.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 55.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 66.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 31.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 74.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 88.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 77.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 22.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 72.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 60.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 62.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 83.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 39.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": 37.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 65.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 77.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 81.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 49.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 31.0
+        }
+    ],
+    "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "WDI\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 173.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 195.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 137.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 96.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 131.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 117.0
+        },
+        {
+            "axis": "Belize",
+            "value": 102.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": 123.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 101.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 149.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 53.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 34.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 51.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 113.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 117.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 80.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 22.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 139.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 114.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 79.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 82.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 63.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 111.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 52.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 166.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 150.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": 183.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 140.0
+        },
+        {
+            "axis": "Niue",
+            "value": 96.0
+        },
+        {
+            "axis": "Palau",
+            "value": 150.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 32.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 11.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 107.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 73.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 114.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 176.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 147.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 193.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 71.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 144.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 128.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 174.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 178.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 111.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": 68.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 106.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 137.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 114.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 33.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 115.0
+        }
+    ],
+    "E-government Development Index\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "E-Gov survey\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 0.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.6055
+        },
+        {
+            "axis": "Aruba",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.7017
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.8213
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.7279
+        },
+        {
+            "axis": "Belize",
+            "value": 0.4548
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.5604
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.2799
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.4439
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.6013
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.6782
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.3779
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.6585
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.5812
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.2316
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.4909
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.2723
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.5392
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.432
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.574
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.7196
+        },
+        {
+            "axis": "Montserrat",
+            "value": 0.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.415
+        },
+        {
+            "axis": "Niue",
+            "value": 0.0
+        },
+        {
+            "axis": "Palau",
+            "value": 0.5109
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.2827
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.4055
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.5444
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.4219
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.4074
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.692
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.915
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 0.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.3442
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.6352
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.5605
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.5154
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.4649
+        },
+        {
+            "axis": "Tokelau",
+            "value": 0.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.5616
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.6785
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.4209
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.4403
+        }
+    ],
+    "Online Service Index\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "E-Gov survey"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 0.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.4471
+        },
+        {
+            "axis": "Aruba",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.6765
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.7882
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.5765
+        },
+        {
+            "axis": "Belize",
+            "value": 0.2647
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.5
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.1235
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.2588
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.4471
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.7647
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.3529
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.5059
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.3412
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.0647
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.4647
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.1882
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.3882
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.4941
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.4353
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.7
+        },
+        {
+            "axis": "Montserrat",
+            "value": 0.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.1706
+        },
+        {
+            "axis": "Niue",
+            "value": 0.0
+        },
+        {
+            "axis": "Palau",
+            "value": 0.2765
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.2235
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.3412
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.3824
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.2647
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.2471
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.6176
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.9647
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 0.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.3235
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.3941
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.4706
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.2882
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.4412
+        },
+        {
+            "axis": "Tokelau",
+            "value": 0.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.3765
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.6118
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.3
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.3353
+        }
+    ],
+    "Telecommunications Infrastructure Index\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "E-Gov survey\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 0.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.6176
+        },
+        {
+            "axis": "Aruba",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.6739
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.8319
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.7523
+        },
+        {
+            "axis": "Belize",
+            "value": 0.4079
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.5476
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.2511
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.2514
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.6871
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.5279
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.1061
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.6468
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.5449
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.2037
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.3619
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.2449
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.5151
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.1241
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.5981
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.6677
+        },
+        {
+            "axis": "Montserrat",
+            "value": 0.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.4738
+        },
+        {
+            "axis": "Niue",
+            "value": 0.0
+        },
+        {
+            "axis": "Palau",
+            "value": 0.3745
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.1233
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.1247
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.5302
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.2596
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.3015
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.6925
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.8899
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 0.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.2106
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.708
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.4894
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.5482
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.3935
+        },
+        {
+            "axis": "Tokelau",
+            "value": 0.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.48
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.6803
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.2807
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.3845
+        }
+    ],
+    "Human Capital Index\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "E-Gov survey\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": 0.0
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.7518
+        },
+        {
+            "axis": "Aruba",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.7546
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.8439
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.8549
+        },
+        {
+            "axis": "Belize",
+            "value": 0.6919
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.6337
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.4652
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.8215
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 0.0
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.6698
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.7419
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.6747
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.8227
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.8576
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.4265
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.6462
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.3839
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.7142
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.6778
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.6886
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.7911
+        },
+        {
+            "axis": "Montserrat",
+            "value": 0.0
+        },
+        {
+            "axis": "Nauru",
+            "value": 0.6006
+        },
+        {
+            "axis": "Niue",
+            "value": 0.0
+        },
+        {
+            "axis": "Palau",
+            "value": 0.8816
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.5013
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.7506
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.7205
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.7414
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 0.6736
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.766
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.8904
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 0.0
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.4985
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.8035
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.7214
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.7098
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.5599
+        },
+        {
+            "axis": "Tokelau",
+            "value": 0.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.8283
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.7434
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.6821
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.6012
+        }
+    ],
+    "Cybersecurity Index\u00a0 (GCI)": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "ITU"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Population with access to electricity (%)\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Price for mobile data -\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "ITU"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Doing Business Data (135 indicators)": [
+        {
+            "axis": "Datatype",
+            "value": "Digital"
+        },
+        {
+            "axis": "Source",
+            "value": "Doing Business (WB)"
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Labor force participation rate, total (% of total population ages 15-64)\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": "ESG "
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 42
+        },
+        {
+            "axis": "Aruba",
+            "value": 42
+        },
+        {
+            "axis": "Bahamas",
+            "value": 81.4599990844727
+        },
+        {
+            "axis": "Bahrain",
+            "value": 75.0899963378906
+        },
+        {
+            "axis": "Barbados",
+            "value": 77.7300033569336
+        },
+        {
+            "axis": "Belize",
+            "value": 67.7099990844727
+        },
+        {
+            "axis": "Bermuda",
+            "value": 42
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 63.8899993896484
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 42
+        },
+        {
+            "axis": "Comoros",
+            "value": 46.560001373291
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 64.2900009155273
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 42
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 71.0500030517578
+        },
+        {
+            "axis": "Micronesia",
+            "value": 42
+        },
+        {
+            "axis": "Fiji",
+            "value": 60.2900009155273
+        },
+        {
+            "axis": "Grenada",
+            "value": 42
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 72.8899993896484
+        },
+        {
+            "axis": "Guyana",
+            "value": 58.6399993896484
+        },
+        {
+            "axis": "Haiti",
+            "value": 68.9300003051758
+        },
+        {
+            "axis": "Jamaica",
+            "value": 71.379997253418
+        },
+        {
+            "axis": "Kiribati",
+            "value": 42
+        },
+        {
+            "axis": "Maldives",
+            "value": 72.120002746582
+        },
+        {
+            "axis": "Mauritius",
+            "value": 66.1699981689453
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 42
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 42
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 48.4199981689453
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 42
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 79.1399993896484
+        },
+        {
+            "axis": "Samoa",
+            "value": 46.4199981689453
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 59.8899993896484
+        },
+        {
+            "axis": "Seychelles",
+            "value": 42
+        },
+        {
+            "axis": "Singapore",
+            "value": 77.4199981689453
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 85.3399963378906
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 42
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 74.2799987792969
+        },
+        {
+            "axis": "Suriname",
+            "value": 56.8300018310547
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 67.4899978637695
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 49.2599983215332
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 68.5899963378906
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 42
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 42
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 70.5500030517578
+        }
+    ],
+    "Income from coastal tourism (value)\u00a0": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": ""
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": ""
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": ""
+        },
+        {
+            "axis": "Bahrain",
+            "value": ""
+        },
+        {
+            "axis": "Barbados",
+            "value": ""
+        },
+        {
+            "axis": "Belize",
+            "value": ""
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": ""
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": ""
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": ""
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": ""
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": ""
+        },
+        {
+            "axis": "Micronesia",
+            "value": ""
+        },
+        {
+            "axis": "Fiji",
+            "value": ""
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": ""
+        },
+        {
+            "axis": "Guyana",
+            "value": ""
+        },
+        {
+            "axis": "Haiti",
+            "value": ""
+        },
+        {
+            "axis": "Jamaica",
+            "value": ""
+        },
+        {
+            "axis": "Kiribati",
+            "value": ""
+        },
+        {
+            "axis": "Maldives",
+            "value": ""
+        },
+        {
+            "axis": "Mauritius",
+            "value": ""
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": ""
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": ""
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": ""
+        },
+        {
+            "axis": "Samoa",
+            "value": ""
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": ""
+        },
+        {
+            "axis": "Seychelles",
+            "value": ""
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": ""
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": ""
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": ""
+        },
+        {
+            "axis": "Suriname",
+            "value": ""
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": ""
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": ""
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": ""
+        },
+        {
+            "axis": "Vanuatu",
+            "value": ""
+        }
+    ],
+    "Ocean Health Index -": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": "OHI.org\u00a0"
+        },
+        {
+            "axis": "Units",
+            "value": "Index (0-100)"
+        },
+        {
+            "axis": "Anguilla",
+            "value": 73.08
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 77.06
+        },
+        {
+            "axis": "Aruba",
+            "value": 83.02
+        },
+        {
+            "axis": "Bahamas",
+            "value": 80.15
+        },
+        {
+            "axis": "Bahrain",
+            "value": 67.47
+        },
+        {
+            "axis": "Barbados",
+            "value": 64.24
+        },
+        {
+            "axis": "Belize",
+            "value": 60.27
+        },
+        {
+            "axis": "Bermuda",
+            "value": 68.32
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 73.2
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 74.77
+        },
+        {
+            "axis": "Comoros",
+            "value": 64.1
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 69.21
+        },
+        {
+            "axis": "Cuba",
+            "value": 66.95
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": 80.55
+        },
+        {
+            "axis": "Dominica",
+            "value": 54.26
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 75.13
+        },
+        {
+            "axis": "Micronesia",
+            "value": 61.3
+        },
+        {
+            "axis": "Fiji",
+            "value": 70.89
+        },
+        {
+            "axis": "Grenada",
+            "value": 68.49
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 54.57
+        },
+        {
+            "axis": "Guyana",
+            "value": 66.2
+        },
+        {
+            "axis": "Haiti",
+            "value": 52.24
+        },
+        {
+            "axis": "Jamaica",
+            "value": 62.36
+        },
+        {
+            "axis": "Kiribati",
+            "value": 63.84
+        },
+        {
+            "axis": "Maldives",
+            "value": 72.28
+        },
+        {
+            "axis": "Mauritius",
+            "value": 69.17
+        },
+        {
+            "axis": "Montserrat",
+            "value": 70.66
+        },
+        {
+            "axis": "Nauru",
+            "value": 60.59
+        },
+        {
+            "axis": "Niue",
+            "value": 62.89
+        },
+        {
+            "axis": "Palau",
+            "value": 72.12
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 69.78
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 61.11
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 62.54
+        },
+        {
+            "axis": "Samoa",
+            "value": 61.5
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 62.62
+        },
+        {
+            "axis": "Seychelles",
+            "value": 84.72
+        },
+        {
+            "axis": "Singapore",
+            "value": 68.01
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 73.6
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 64.61
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 78.47
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 66.89
+        },
+        {
+            "axis": "Suriname",
+            "value": 65.46
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 72.09
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 61.69
+        },
+        {
+            "axis": "Tokelau",
+            "value": 69.86
+        },
+        {
+            "axis": "Tonga",
+            "value": 75.55
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 66.34
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 79.19
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 75.78
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 65.15
+        }
+    ],
+    "Marine protected area in KM2   -   https://www.protectedplanet.net/country/GRD": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": "WDPA"
+        },
+        {
+            "axis": "Units",
+            "value": "km^2"
+        },
+        {
+            "axis": "Anguilla",
+            "value": "63"
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": "325"
+        },
+        {
+            "axis": "Aruba",
+            "value": "0"
+        },
+        {
+            "axis": "Bahamas",
+            "value": "47,355"
+        },
+        {
+            "axis": "Bahrain",
+            "value": "95"
+        },
+        {
+            "axis": "Barbados",
+            "value": "10"
+        },
+        {
+            "axis": "Belize",
+            "value": "3,994"
+        },
+        {
+            "axis": "Bermuda",
+            "value": "0"
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": "5"
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": "93"
+        },
+        {
+            "axis": "Comoros",
+            "value": "620"
+        },
+        {
+            "axis": "Cook Islands",
+            "value": "1,981,931"
+        },
+        {
+            "axis": "Cuba",
+            "value": "14,090"
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": "NOT AVAILABLE"
+        },
+        {
+            "axis": "Dominica",
+            "value": "10"
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": "48,625"
+        },
+        {
+            "axis": "Micronesia",
+            "value": "475"
+        },
+        {
+            "axis": "Fiji",
+            "value": "11,959"
+        },
+        {
+            "axis": "Grenada",
+            "value": "26"
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": "9,574"
+        },
+        {
+            "axis": "Guyana",
+            "value": "26"
+        },
+        {
+            "axis": "Haiti",
+            "value": "1,813"
+        },
+        {
+            "axis": "Jamaica",
+            "value": "1,860"
+        },
+        {
+            "axis": "Kiribati",
+            "value": "408,797"
+        },
+        {
+            "axis": "Maldives",
+            "value": "623"
+        },
+        {
+            "axis": "Mauritius",
+            "value": "50"
+        },
+        {
+            "axis": "Montserrat",
+            "value": "0"
+        },
+        {
+            "axis": "Nauru",
+            "value": "NOT AVAILABLE"
+        },
+        {
+            "axis": "Niue",
+            "value": "129,207"
+        },
+        {
+            "axis": "Palau",
+            "value": "608,173"
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": "3,344"
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": "5,388"
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": "34"
+        },
+        {
+            "axis": "Samoa",
+            "value": "191"
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": "NOT AVAILABLE"
+        },
+        {
+            "axis": "Seychelles",
+            "value": "439,997"
+        },
+        {
+            "axis": "Singapore",
+            "value": "0"
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": "43"
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": "1,879"
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": "408"
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": "80"
+        },
+        {
+            "axis": "Suriname",
+            "value": "1,981"
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": "3"
+        },
+        {
+            "axis": "Timor Leste",
+            "value": "583"
+        },
+        {
+            "axis": "Tokelau",
+            "value": "10"
+        },
+        {
+            "axis": "Tonga",
+            "value": "390"
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": "37"
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": "150"
+        },
+        {
+            "axis": "Tuvalu",
+            "value": "214"
+        },
+        {
+            "axis": "Vanuatu",
+            "value": "48"
+        }
+    ],
+    "Percent coverage of marine protected areas": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": ""
+        },
+        {
+            "axis": "Units",
+            "value": "%"
+        },
+        {
+            "axis": "Anguilla",
+            "value": 0.0007
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 0.003
+        },
+        {
+            "axis": "Aruba",
+            "value": 0.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 0.0792
+        },
+        {
+            "axis": "Bahrain",
+            "value": 0.0124
+        },
+        {
+            "axis": "Barbados",
+            "value": 0.0001
+        },
+        {
+            "axis": "Belize",
+            "value": 0.1102
+        },
+        {
+            "axis": "Bermuda",
+            "value": 0.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 0.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 0.0008
+        },
+        {
+            "axis": "Comoros",
+            "value": 0.0037
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 1.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 0.0385
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": "NOT AVAILABLE"
+        },
+        {
+            "axis": "Dominica",
+            "value": 0.0003
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 0.1796
+        },
+        {
+            "axis": "Micronesia",
+            "value": 0.0002
+        },
+        {
+            "axis": "Fiji",
+            "value": 0.0092
+        },
+        {
+            "axis": "Grenada",
+            "value": 0.001
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 0.0899
+        },
+        {
+            "axis": "Guyana",
+            "value": 0.0002
+        },
+        {
+            "axis": "Haiti",
+            "value": 0.0146
+        },
+        {
+            "axis": "Jamaica",
+            "value": 0.0075
+        },
+        {
+            "axis": "Kiribati",
+            "value": 0.1182
+        },
+        {
+            "axis": "Maldives",
+            "value": 0.0007
+        },
+        {
+            "axis": "Mauritius",
+            "value": 0.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": 0.0
+        },
+        {
+            "axis": "Nauru",
+            "value": "NOT AVAILABLE"
+        },
+        {
+            "axis": "Niue",
+            "value": 0.406
+        },
+        {
+            "axis": "Palau",
+            "value": 1.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 0.0014
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 0.0027
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 0.0022
+        },
+        {
+            "axis": "Samoa",
+            "value": 0.0014
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": "NOT AVAILABLE"
+        },
+        {
+            "axis": "Seychelles",
+            "value": 0.3282
+        },
+        {
+            "axis": "Singapore",
+            "value": 0.0001
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": 0.087
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 0.0012
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 0.0398
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 0.0022
+        },
+        {
+            "axis": "Suriname",
+            "value": 0.0154
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": 0.0
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 0.0137
+        },
+        {
+            "axis": "Tokelau",
+            "value": 0.0
+        },
+        {
+            "axis": "Tonga",
+            "value": 0.0006
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 0.0005
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 0.001
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 0.0003
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 0.0001
+        }
+    ],
+    "Number of ports ": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": "World Port Source"
+        },
+        {
+            "axis": "Units",
+            "value": "# ports"
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 1.0
+        },
+        {
+            "axis": "Aruba",
+            "value": ""
+        },
+        {
+            "axis": "Bahamas",
+            "value": 8.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 2.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 1.0
+        },
+        {
+            "axis": "Belize",
+            "value": 1.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": ""
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 7.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": ""
+        },
+        {
+            "axis": "Comoros",
+            "value": 3.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": 1.0
+        },
+        {
+            "axis": "Cuba",
+            "value": 37.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 3.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 14.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 2.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 5.0
+        },
+        {
+            "axis": "Grenada",
+            "value": ""
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 2.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 6.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 11.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 15.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 3.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 1.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 1.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 1.0
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": ""
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 19.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": ""
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 4.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 1.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 2.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 1.0
+        },
+        {
+            "axis": "Singapore",
+            "value": ""
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 14.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 2.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 5.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 2.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 1.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 3.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": ""
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": ""
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 1.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 2.0
+        }
+    ],
+    "Fish species, threatened": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": "WDI FAO"
+        },
+        {
+            "axis": "Units",
+            "value": "# species"
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 31.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 24.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 43.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 14.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 29.0
+        },
+        {
+            "axis": "Belize",
+            "value": 45.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": 27.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 35.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 31.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 11.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 44.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 31.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 29.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 25.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 20.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 29.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 41.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 33.0
+        },
+        {
+            "axis": "Haiti",
+            "value": 30.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 30.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 14.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 24.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 21.0
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 11.0
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 21.0
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 61.0
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 18.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 30.0
+        },
+        {
+            "axis": "Samoa",
+            "value": 16.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 25.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 24.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 29.0
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 24.0
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 30.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 29.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 32.0
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 13.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 16.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 37.0
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 30.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 13.0
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 18.0
+        }
+    ],
+    "Total fisheries (capture + aqua) production (metric tons) ": [
+        {
+            "axis": "Datatype",
+            "value": "Blue"
+        },
+        {
+            "axis": "Source",
+            "value": "WDI FAO"
+        },
+        {
+            "axis": "Units",
+            "value": "metric tons"
+        },
+        {
+            "axis": "Anguilla",
+            "value": ""
+        },
+        {
+            "axis": "Antigua and Barbuda",
+            "value": 3010.0
+        },
+        {
+            "axis": "Aruba",
+            "value": 142.0
+        },
+        {
+            "axis": "Bahamas",
+            "value": 11633.0
+        },
+        {
+            "axis": "Bahrain",
+            "value": 15006.0
+        },
+        {
+            "axis": "Barbados",
+            "value": 1760.5
+        },
+        {
+            "axis": "Belize",
+            "value": 92385.0
+        },
+        {
+            "axis": "Bermuda",
+            "value": 410.0
+        },
+        {
+            "axis": "Cabo Verde",
+            "value": 19900.0
+        },
+        {
+            "axis": "Cayman Islands",
+            "value": 125.0
+        },
+        {
+            "axis": "Comoros",
+            "value": 16407.0
+        },
+        {
+            "axis": "Cook Islands",
+            "value": ""
+        },
+        {
+            "axis": "Cuba",
+            "value": 52759.0
+        },
+        {
+            "axis": "Cura\u00e7ao",
+            "value": ""
+        },
+        {
+            "axis": "Dominica",
+            "value": 776.0
+        },
+        {
+            "axis": "Dominican Republic",
+            "value": 16925.0
+        },
+        {
+            "axis": "Micronesia",
+            "value": 88397.0
+        },
+        {
+            "axis": "Fiji",
+            "value": 45417.0
+        },
+        {
+            "axis": "Grenada",
+            "value": 2550.0
+        },
+        {
+            "axis": "Guinea-Bissau",
+            "value": 6700.0
+        },
+        {
+            "axis": "Guyana",
+            "value": 42478.7
+        },
+        {
+            "axis": "Haiti",
+            "value": 17730.0
+        },
+        {
+            "axis": "Jamaica",
+            "value": 17420.0
+        },
+        {
+            "axis": "Kiribati",
+            "value": 176474.0
+        },
+        {
+            "axis": "Maldives",
+            "value": 129191.0
+        },
+        {
+            "axis": "Mauritius",
+            "value": 19083.32
+        },
+        {
+            "axis": "Montserrat",
+            "value": ""
+        },
+        {
+            "axis": "Nauru",
+            "value": 530.3
+        },
+        {
+            "axis": "Niue",
+            "value": ""
+        },
+        {
+            "axis": "Palau",
+            "value": 841.2
+        },
+        {
+            "axis": "Papua New Guinea",
+            "value": 315444.5
+        },
+        {
+            "axis": "Marshall Islands",
+            "value": 64800.0
+        },
+        {
+            "axis": "Saint Lucia",
+            "value": 2129.44
+        },
+        {
+            "axis": "Samoa",
+            "value": 8811.0
+        },
+        {
+            "axis": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "value": 11750.0
+        },
+        {
+            "axis": "Seychelles",
+            "value": 127128.0
+        },
+        {
+            "axis": "Singapore",
+            "value": 7346.361
+        },
+        {
+            "axis": "Sint Maarten",
+            "value": ""
+        },
+        {
+            "axis": "Solomon Islands",
+            "value": 77027.36
+        },
+        {
+            "axis": "St. Kitts and Nevis",
+            "value": 65735.0
+        },
+        {
+            "axis": "St. Vincent and the Grenadines",
+            "value": 23077.0
+        },
+        {
+            "axis": "Suriname",
+            "value": 47115.1
+        },
+        {
+            "axis": "The British Virgin Islands",
+            "value": ""
+        },
+        {
+            "axis": "Timor Leste",
+            "value": 4760.0
+        },
+        {
+            "axis": "Tokelau",
+            "value": ""
+        },
+        {
+            "axis": "Tonga",
+            "value": 1700.0
+        },
+        {
+            "axis": "Trinidad and Tobago",
+            "value": 13038.1
+        },
+        {
+            "axis": "Turks and Caicos",
+            "value": 2780.0
+        },
+        {
+            "axis": "Tuvalu",
+            "value": 7686.5
+        },
+        {
+            "axis": "Vanuatu",
+            "value": 44017.8
+        }
+    ]
+}
