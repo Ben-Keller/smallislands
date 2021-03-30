@@ -655,19 +655,19 @@
     },
     "marianaIslands":{
         "Country":"Mariana Islands",
-        "Region": "Caribbean"
+        "Region": "Pacific"
     },
     "guam":{
         "Country":"Guam",
-        "Region": "Caribbean"
+        "Region": "Pacific"
     },
     "newCaledonia":{
         "Country":"Puerto Rico",
-        "Region": "Caribbean"
+        "Region": "Pacific"
     },
     "americanSamoa":{
         "Country":"American Samoa",
-        "Region": "Caribbean"
+        "Region": "Pacific"
     },
     "usVirginIslands":{
         "Country":"US Virgin Islands",
@@ -675,6 +675,10 @@
     },
     "martinique":{
         "Country":"Martinique",
+        "Region": "Caribbean"
+    },
+    "guadeloupe":{
+        "Country":"Guadeloupe",
         "Region": "Caribbean"
     }
 }
