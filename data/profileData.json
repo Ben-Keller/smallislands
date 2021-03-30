@@ -680,5 +680,9 @@
     "guadeloupe":{
         "Country":"Guadeloupe",
         "Region": "Caribbean"
+    },
+    "frenchPolynesia":{
+        "Country":"French Polynesia",
+        "Region": "Pacific"
     }
 }
