@@ -9,7 +9,7 @@ a:hover {
 }
 
 .cover-container {
-  max-width: 52em;
+  max-width: 70em;
 }
 
 /*
@@ -157,7 +157,7 @@ a:hover {
   font-size: 36px;
   margin-top: -6px;
   text-align: center;
-  color: #d1d1d1;
+  color: white;
   filter: drop-shadow(1px 1px 0px black);
   -webkit-animation: fadein 3s;
   /* Safari, Chrome and Opera > 12.1 */
