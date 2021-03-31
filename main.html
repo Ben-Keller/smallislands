@@ -46,17 +46,22 @@
 
 
   <div id="headerPanel">
-
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-
+    <video autoplay muted loop id="myVideo">
+      <source src="images/blue economy_1.mp4" type="video/mp4">
+    </video>
+    <div class="cover-container d-flex w-150 h-100 p-3 mx-auto flex-column">
+     
       <header class="masthead mb-auto">
 
-        <div class="inner">
+
+     
+
+        <div class="inner" id="headerBar">
           <h3 class="masthead-brand">
             <!--put branding here for upper left corner-->
             <img id="undpLogo" src="icons/UNDP-Logo-White/UNDP-Logo-White-Small.png" height="160px">
           </h3>
-          <nav class="nav nav-masthead justify-content-center">
+          <nav class="nav nav-masthead justify-content-center" id="devTabs">
             <a class="nav-link active" id="homeMode" href="#">Home</a>
             <a class="nav-link" id="devMode" href="#">Dev Mode</a>
             <!-- <a class="nav-link" href="#">Contact</a> -->
@@ -65,9 +70,13 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading">Small Island Developing States</h1>
-        <h1 class="cover-heading">Data Visualization Platform</h1>
-        <p class="lead">CLIMATE ACTION - BLUE ECONOMY - DIGITAL TRANSFORMATION</p>
+        <h1 class="cover-heading">Rising up for Small Island Developing States</h1>
+        <hr style="width:50%;text-align:center;margin-left:164;color:white; border-style:solid;border-width:1;opacity:1;">
+        <h2 class="cover-heading">Data Visualization Platform</h2>
+        <p class="lead">UNDP supports Small Island Developing States (SIDS) through an integrated approach 
+          to accelerate green recovery and transform societies based on three pillars: Climate Action, Blue
+            Economy, and Digital Transformation.</p>
+<!-- CLIMATE ACTION - BLUE ECONOMY - DIGITAL TRANSFORMATION -->
         <!--   <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
         </p>-->
@@ -108,7 +117,7 @@
 
           <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
-            <h5>Compare Countries</h5>
+            <h5>Country Indicators</h5>
           </a>
           <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
 
@@ -765,7 +774,7 @@
   <!--Tooltips-->
   <!--<script src="scripts/tooltips/tooltipPNT.js"></script>-->
   <script src="scripts/tooltips/tooltipTest.js"></script>
-  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
   <script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
