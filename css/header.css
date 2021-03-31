@@ -71,8 +71,19 @@ a:hover {
 
 .cover p {
   padding-top: 40px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
+  text-align: center;
+  filter: drop-shadow(1px 1px 0px black);
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
 }
 
 /*
@@ -85,10 +96,6 @@ a:hover {
 
 /*  header panel */
 #headerPanel {
-  background-image: url("../images/zoom/Seychelles.jpg");
-  background-position: center;
-  width: 100%;
-  background-size: cover;
   margin: 0;
   color: ghostwhite;
 }
@@ -97,6 +104,70 @@ a:hover {
   font-weight: 650;
   font-size: 48px;
   margin-top: -6px;
+  text-align: center;
+  filter: drop-shadow(1px 1px 0px black);
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#headerPanel h2 {
+  font-weight: 650;
+  font-size: 36px;
+  margin-top: -6px;
+  text-align: center;
+  color: #d1d1d1;
+  filter: drop-shadow(1px 1px 0px black);
+  -webkit-animation: fadein 3s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 3s;
+  /* Internet Explorer */
+  -o-animation: fadein 3s;
+  /* Opera < 12.1 */
+  animation: fadein 3s;
 }
 
 #undpLogo {
@@ -109,6 +180,7 @@ a:hover {
 
 .cover h3 {
   font-weight: bold;
+  filter: drop-shadow(1px 1px 0px black);
 }
 
 .infoStuff h4 {
@@ -121,6 +193,36 @@ a:hover {
   object-fit: cover;
   margin-top: 30px;
   width: 100%;
+}
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  background-color: black;
+}
+
+#headerBar {
+  z-index: 5;
+}
+
+#devTabs {
+  opacity: 0;
+}
+
+hr {
+  -webkit-animation: fadein 2s;
+  /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s;
+  /* Firefox < 16 */
+  -ms-animation: fadein 2s;
+  /* Internet Explorer */
+  -o-animation: fadein 2s;
+  /* Opera < 12.1 */
+  animation: fadein 2s;
 }
 
 /*# sourceMappingURL=header.css.map */
