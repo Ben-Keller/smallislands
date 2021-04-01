@@ -7,11 +7,11 @@ div {
   }*/
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../fonts/Proxima-Nova/Proxima Nova Reg.otf") format("opentype");
+  src: url("../fonts/Proxima-Nova/Proxima Nova Reg.woff2") format("woff2");
 }
 @font-face {
   font-family: "Proxima Nova";
-  src: url("../fonts/Proxima-Nova/Proxima Nova Bold.otf") format("opentype");
+  src: url("../fonts/Proxima-Nova/Proxima Nova Bold.woff2") format("woff2");
   font-weight: bold;
 }
 body {
