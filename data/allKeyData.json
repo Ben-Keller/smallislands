@@ -1,0 +1,4452 @@
+{
+    "anguilla": {
+        "Profile": {
+            "Country": "Anguilla",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 15003,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0007
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7308
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 82
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 173
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "antiguaAndBarbuda": {
+        "Profile": {
+            "Country": "Antigua and Barbuda",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 97929,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.003
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7706
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.098039
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.47
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.8897
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.25834
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.449841
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.480726
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 76
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 195
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.6055
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4471
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6176
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7518
+            }
+        ]
+    },
+    "aruba": {
+        "Profile": {
+            "Country": "Aruba",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 106766,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.8302
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 14.85616
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 97
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 137
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "bahamas": {
+        "Profile": {
+            "Country": "Bahamas",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 393244,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0792
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.8015
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.033879
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.28
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.70186
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 8.555106
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.437619
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.463948
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 85
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 96
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.7017
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.6765
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6739
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7546
+            }
+        ]
+    },
+    "bahrain": {
+        "Profile": {
+            "Country": "Bahrain",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 1701575,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0124
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6747
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.186335
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.1
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.75102
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.482622
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.453721
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 99
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 131
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.8213
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.7882
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.8319
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8439
+            }
+        ]
+    },
+    "barbados": {
+        "Profile": {
+            "Country": "Barbados",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 287375,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0001
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6424
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.154639
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.24
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.000304
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.89769
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.008874
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.506055
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.390401
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 82
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 117
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.7279
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.5765
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.7523
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8549
+            }
+        ]
+    },
+    "belize": {
+        "Profile": {
+            "Country": "Belize",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 397628,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.1102
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6027
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.03886
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.26
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.005912
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.84466
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 45.23993
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 20.59045
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.330925
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.478513
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 61
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 102
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4548
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2647
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.4079
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6919
+            }
+        ]
+    },
+    "bermuda": {
+        "Profile": {
+            "Country": "Bermuda",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 62278,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6832
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 98
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 123
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "caboVerde": {
+        "Profile": {
+            "Country": "Cabo Verde",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 555987,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.732
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.108808
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.26
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.002333
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.90446
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 20.2085
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.015592
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.439084
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.445204
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 57
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 101
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5604
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.5
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5476
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6337
+            }
+        ]
+    },
+    "caymanIslands": {
+        "Profile": {
+            "Country": "Cayman Islands",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 65722,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0008
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7477
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 89
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 149
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "comoros": {
+        "Profile": {
+            "Country": "Comoros",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 869601,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0037
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.641
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.132353
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.065
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.74497
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.282032
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.539715
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 20
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 53
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.2799
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.1235
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.2511
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.4652
+            }
+        ]
+    },
+    "cookIslands": {
+        "Profile": {
+            "Country": "Cook Islands",
+            "Region": "Pacific",
+            "Member State (Y/N)": "N",
+            "Population": 17564,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 1
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6921
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.125
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 63
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 34
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "cuba": {
+        "Profile": {
+            "Country": "Cuba",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 11326616,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0385
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6695
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.148594
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.002423
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.66347
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 3.948147
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 7.184623
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.342221
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.436068
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 63
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 51
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4439
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2588
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.2514
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8215
+            }
+        ]
+    },
+    "curacao": {
+        "Profile": {
+            "Country": "Cura\u00e7ao",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 164093,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": "NOT AVAILABLE"
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.8055
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 73
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 113
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "dominica": {
+        "Profile": {
+            "Country": "Dominica",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 71986,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0003
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.5426
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.304054
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.19
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.67465
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 16.17579
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.673332
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.532625
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.441472
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 70
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 117
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.6013
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4471
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6871
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6698
+            }
+        ]
+    },
+    "dominicanRepublic": {
+        "Profile": {
+            "Country": "Dominican Republic",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 10847916,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.1796
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7513
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.163043
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.011339
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.73281
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 11.63244
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 19.21574
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.365457
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.432041
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 75
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 80
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.6782
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.7647
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5279
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7419
+            }
+        ]
+    },
+    "micronesia": {
+        "Profile": {
+            "Country": "Micronesia",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 115023,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0002
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.613
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.004908
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.69708
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 1.601164
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.015781
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.355409
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.61982
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 35
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 22
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.3779
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3529
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.1061
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6747
+            }
+        ]
+    },
+    "fiji": {
+        "Profile": {
+            "Country": "Fiji",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 896445,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0092
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7089
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.06643
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.24
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.007515
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.66834
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 45.01588
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.990369
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.435069
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.437977
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 66
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 139
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.6585
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.5059
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6468
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8227
+            }
+        ]
+    },
+    "grenada": {
+        "Profile": {
+            "Country": "Grenada",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 112523,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.001
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6849
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.67519
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.222069
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.535135
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.381056
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 63
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 114
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5812
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3412
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5449
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8576
+            }
+        ]
+    },
+    "guineaBissau": {
+        "Profile": {
+            "Country": "Guinea-Bissau",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 1968001,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0899
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.5457
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.085714
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.014
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.065437
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.90819
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 11.61993
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.253113
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.620135
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 13
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 79
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.2316
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.0647
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.2037
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.4265
+            }
+        ]
+    },
+    "guyana": {
+        "Profile": {
+            "Country": "Guyana",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 786552,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0002
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.662
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.196078
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.123898
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.87981
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 5.306077
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.323139
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.46655
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 55
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 82
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4909
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4647
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.3619
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6462
+            }
+        ]
+    },
+    "haiti": {
+        "Profile": {
+            "Country": "Haiti",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 11402528,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0146
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.5224
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.093168
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.006434
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.7191
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 7.996146
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.353092
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.232776
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.535532
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 33
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 63
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.2723
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.1882
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.2449
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.3839
+            }
+        ]
+    },
+    "jamaica": {
+        "Profile": {
+            "Country": "Jamaica",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 2961167,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0075
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6236
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.220157
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.002742
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.66599
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 10.26201
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 1.405643
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.398327
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.427433
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 55
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 111
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5392
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3882
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5151
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7142
+            }
+        ]
+    },
+    "kiribati": {
+        "Profile": {
+            "Country": "Kiribati",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 119449,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.1182
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6384
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.03937
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.018
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.77171
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 7.272727
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 11.82105
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.448887
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 36
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 52
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.432
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4941
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.1241
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6778
+            }
+        ]
+    },
+    "maldives": {
+        "Profile": {
+            "Country": "Maldives",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 540544,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0007
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7228
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.023292
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.57
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 2.69e-05
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.84984
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 1.277204
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.051887
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.415902
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.542724
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 71
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 166
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.574
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4353
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5981
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6886
+            }
+        ]
+    },
+    "mauritius": {
+        "Profile": {
+            "Country": "Mauritius",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 1271768,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6917
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.084746
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.12
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.41274
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 22.72272
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.011473
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.571331
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.44518
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 68
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 150
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.7196
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.7
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6677
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7911
+            }
+        ]
+    },
+    "montserrat": {
+        "Profile": {
+            "Country": "Montserrat",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 4992,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7066
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 60
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 183
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "nauru": {
+        "Profile": {
+            "Country": "Nauru",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 10824,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": "NOT AVAILABLE"
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6059
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.5
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.76878
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0.398406
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.459832
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 76
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 140
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.415
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.1706
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.4738
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6006
+            }
+        ]
+    },
+    "niue": {
+        "Profile": {
+            "Country": "Niue",
+            "Region": "Pacific",
+            "Member State (Y/N)": "N",
+            "Population": 1626,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.406
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6289
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 80
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 96
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "palau": {
+        "Profile": {
+            "Country": "Palau",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 18094,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 1
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7212
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.43
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.72744
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 82.94236
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.439824
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 94
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 150
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5109
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2765
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.3745
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8816
+            }
+        ]
+    },
+    "papuaNewGuinea": {
+        "Profile": {
+            "Country": "Papua New Guinea",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 8947024,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0014
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6978
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.055318
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.0001
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.159226
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.83555
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 34.53065
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.65799
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.282087
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.523446
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 12
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 32
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.2827
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2235
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.1233
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.5013
+            }
+        ]
+    },
+    "marshallIslands": {
+        "Profile": {
+            "Country": "Marshall Islands",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 59190,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0027
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6111
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.094
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.83842
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0.233372
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.270441
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.375679
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 39
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 11
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4055
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3412
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.1247
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7506
+            }
+        ]
+    },
+    "saintLucia": {
+        "Profile": {
+            "Country": "Saint Lucia",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 183627,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0022
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6254
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.379747
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.83768
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.93102
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.449028
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.368966
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 55
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 107
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5444
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3824
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5302
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7205
+            }
+        ]
+    },
+    "samoa": {
+        "Profile": {
+            "Country": "Samoa",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 198414,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0014
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.615
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.037221
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.22
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.7668
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 30.35048
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.242263
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.435296
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.495841
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 66
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 73
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4219
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2647
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.2596
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7414
+            }
+        ]
+    },
+    "saoTomeAndPrincipe": {
+        "Profile": {
+            "Country": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 219159,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": "NOT AVAILABLE"
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6262
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.143541
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.79871
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 10.47346
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.244688
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.360187
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.571384
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 31
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 114
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4074
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2471
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.3015
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6736
+            }
+        ]
+    },
+    "seychelles": {
+        "Profile": {
+            "Country": "Seychelles",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 98347,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.3282
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.8472
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.03055
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.68593
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 2.380952
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.051369
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.470054
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.49643
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 74
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 176
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.692
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.6176
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6925
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.766
+            }
+        ]
+    },
+    "singapore": {
+        "Profile": {
+            "Country": "Singapore",
+            "Region": "AIS",
+            "Member State (Y/N)": "Y",
+            "Population": 5850342,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0001
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6801
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.85251
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 1.820887
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 2.463063
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.82906
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.400626
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 88
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 147
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.915
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.9647
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.8899
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8904
+            }
+        ]
+    },
+    "sintMaarten": {
+        "Profile": {
+            "Country": "Sint Maarten",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 42876,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.087
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.736
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 77
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 193
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "solomonIslands": {
+        "Profile": {
+            "Country": "Solomon Islands",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 686884,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0012
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6461
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.039526
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.048
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.190092
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.76186
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 2.26263
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.15532
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.417009
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.584625
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 22
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 71
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.3442
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3235
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.2106
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.4985
+            }
+        ]
+    },
+    "kittsAndNevis": {
+        "Profile": {
+            "Country": "St. Kitts and Nevis",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 53199,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0398
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7847
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.222222
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.73408
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 4.571682
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.250803
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.558746
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.452721
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 72
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 144
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.6352
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3941
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.708
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8035
+            }
+        ]
+    },
+    "stVincent": {
+        "Profile": {
+            "Country": "St. Vincent and the Grenadines",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 110940,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0022
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6689
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.892857
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.76689
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 15.66265
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 0.466563
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.481289
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 60
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 128
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5605
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4706
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.4894
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7214
+            }
+        ]
+    },
+    "suriname": {
+        "Profile": {
+            "Country": "Suriname",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 586632,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0154
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6546
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.07772
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.238131
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.98335
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 60.05314
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 8.483074
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.33483
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.398158
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 62
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 174
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5154
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2882
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5482
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.7098
+            }
+        ]
+    },
+    "britishVirginIslands": {
+        "Profile": {
+            "Country": "The British Virgin Islands",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 30231,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7209
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 83
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 178
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "timorLeste": {
+        "Profile": {
+            "Country": "Timor Leste",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 1318445,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0137
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6169
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.021246
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.18647
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.8535
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 4.423045
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.386779
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.510076
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 39
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 111
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.4649
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.4412
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.3935
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.5599
+            }
+        ]
+    },
+    "tokelau": {
+        "Profile": {
+            "Country": "Tokelau",
+            "Region": "Pacific",
+            "Member State (Y/N)": "N",
+            "Population": 1357,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6986
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 37
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 68
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0
+            }
+        ]
+    },
+    "tonga": {
+        "Profile": {
+            "Country": "Tonga",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 105695,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.0006
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.7555
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.107399
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 7.92e-05
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.72413
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 5.907409
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 1.521651
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.413933
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": 0.568335
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 65
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 106
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5616
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3765
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.48
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.8283
+            }
+        ]
+    },
+    "trinidadAndTobago": {
+        "Profile": {
+            "Country": "Trinidad and Tobago",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "Y",
+            "Population": 1399488,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": 0.796
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": ""
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": ""
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": 0
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": ""
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.80582
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 2.014423
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.393488
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": ""
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 137
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 0.6785
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.6118
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.6803
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.7434
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": ""
+            }
+        ]
+    },
+    "turksAndCaicos": {
+        "Profile": {
+            "Country": "Turks and Caicos",
+            "Region": "Caribbean",
+            "Member State (Y/N)": "N",
+            "Population": 38717,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": ""
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": ""
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": 0
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": ""
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": ""
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": ""
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 114
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": ""
+            }
+        ]
+    },
+    "tuvalu": {
+        "Profile": {
+            "Country": "Tuvalu",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 11792,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": ".."
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 1
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.625
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": ""
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": 0
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": ""
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.83346
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 28.16901
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0.008594
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": ""
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 33
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 0.4209
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.3
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2807
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6821
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": ""
+            }
+        ]
+    },
+    "vanuatu": {
+        "Profile": {
+            "Country": "Vanuatu",
+            "Region": "Pacific",
+            "Member State (Y/N)": "Y",
+            "Population": 307145,
+            "Languages": "",
+            "Surface Area": "",
+            "Income Classification": 0.609
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 2
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.011867
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": ""
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": 0
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": ""
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.661
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 21.25984
+            },
+            {
+                "axis": "Renewable electricity output (% of total electricity output)\u00a0",
+                "value": 0.090717
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": ""
+            },
+            {
+                "axis": "ND-GAIN readiness score",
+                "value": 0.553239
+            },
+            {
+                "axis": "ND-GAIN Vulnerability score",
+                "value": ""
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users, total (% of population)\u00a0- can this be a time series?\u00a0\u00a0",
+                "value": 115
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 0.4403
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.3353
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.3845
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.6012
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": ""
+            }
+        ]
+    }
+}
