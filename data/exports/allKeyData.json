@@ -4948,5 +4948,302 @@
                 "value": ""
             }
         ]
+    },
+    "caribbeanAverage": {
+        "Profile": {
+            "Country": "Caribbean Average",
+            "Region": "",
+            "Member State (Y/N)": "",
+            "Population": 1662001.12,
+            "Languages": "",
+            "Surface Area": 27287.043478260868,
+            "Income Classification": "",
+            "Human Development Index": 0.7414666666666666
+        },
+        "Finance": {
+            "Personal remittances, received (% of GDP)": "",
+            "External debt stocks (% of GNI)": "",
+            "Foreign direct investment, net inflows (BoP, current US$)": "",
+            "Net ODA received per capita (current US$)": "",
+            "Net ODA received (% of GNI)": "",
+            "Trade (% of GDP)": "",
+            "MVI": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.026468181818181814
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6387200000000002
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.13143726086956523
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": 0.0
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.0626086956521739
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.13300033333333333
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.6862900000000001
+            },
+            {
+                "axis": "Renewable electricity output (% of total)\u00a0",
+                "value": 10.126974631578948
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 4.926987066666667
+            },
+            {
+                "axis": "Climate Readiness score (ND-GAIN)",
+                "value": 0.26686004
+            },
+            {
+                "axis": "Vulnerability score (ND-GAIN)",
+                "value": 0.26754717391304345
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users (% of population)",
+                "value": 75.08
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 117.22714
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.35856800000000005
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.28133199999999997
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.344164
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.47145652173913033
+            }
+        ]
+    },
+    "pacificAverage": {
+        "Profile": {
+            "Country": "Pacific Average",
+            "Region": "",
+            "Member State (Y/N)": "",
+            "Population": 800935.6875,
+            "Languages": "",
+            "Surface Area": 41758.46153846154,
+            "Income Classification": "",
+            "Human Development Index": 0.6691
+        },
+        "Finance": {
+            "Personal remittances, received (% of GDP)": "",
+            "External debt stocks (% of GNI)": "",
+            "Foreign direct investment, net inflows (BoP, current US$)": "",
+            "Net ODA received per capita (current US$)": "",
+            "Net ODA received (% of GNI)": "",
+            "Trade (% of GDP)": "",
+            "MVI": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.3703066666666667
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6178916875
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.07117271428571428
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": 0.0
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.07500714285714286
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.2911203142857143
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 4.44942
+            },
+            {
+                "axis": "Renewable electricity output (% of total)\u00a0",
+                "value": 9.820925307692308
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 10.304027000000001
+            },
+            {
+                "axis": "Climate Readiness score (ND-GAIN)",
+                "value": 0.3126901875
+            },
+            {
+                "axis": "Vulnerability score (ND-GAIN)",
+                "value": 0.2671514285714286
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users (% of population)",
+                "value": 54.875
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 69.116325
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.3444
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.2772375
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.28751875
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.5383857142857142
+            }
+        ]
+    },
+    "aisAverage": {
+        "Profile": {
+            "Country": "AIS Average",
+            "Region": "",
+            "Member State (Y/N)": "",
+            "Population": 1452813.7777777778,
+            "Languages": "",
+            "Surface Area": 5253.333333333333,
+            "Income Classification": "",
+            "Human Development Index": 0.717111111111111
+        },
+        "Finance": {
+            "Personal remittances, received (% of GDP)": "",
+            "External debt stocks (% of GNI)": "",
+            "Foreign direct investment, net inflows (BoP, current US$)": "",
+            "Net ODA received per capita (current US$)": "",
+            "Net ODA received (% of GNI)": "",
+            "Trade (% of GDP)": "",
+            "MVI": ""
+        },
+        "Blue": [
+            {
+                "axis": "Percent coverage of marine protected areas",
+                "value": 0.054375
+            },
+            {
+                "axis": "Ocean Health Index",
+                "value": 0.6846
+            },
+            {
+                "axis": "# of ports (per 15km coastline)",
+                "value": 0.08837099999999999
+            },
+            {
+                "axis": "% of global shipping (x100)",
+                "value": ""
+            },
+            {
+                "axis": "Tourism Revenue as a % of GDP",
+                "value": 0.12544444444444444
+            },
+            {
+                "axis": "Total fisheries (capture + aqua) production (value) ",
+                "value": ""
+            }
+        ],
+        "Climate": [
+            {
+                "axis": "Natural resource depletion (% of GNI)\u00a0",
+                "value": 0.022598966666666664
+            },
+            {
+                "axis": "Red List Index (value)\u00a0",
+                "value": 0.7675966666666667
+            },
+            {
+                "axis": "Renewable electricity output (% of total)\u00a0",
+                "value": 6.5426358888888885
+            },
+            {
+                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
+                "value": 2.0654288571428574
+            },
+            {
+                "axis": "Climate Readiness score (ND-GAIN)",
+                "value": 0.4559316666666667
+            },
+            {
+                "axis": "Vulnerability score (ND-GAIN)",
+                "value": 0.5016798888888888
+            }
+        ],
+        "Digital": [
+            {
+                "axis": "Internet users (% of population)",
+                "value": 57.888888888888886
+            },
+            {
+                "axis": "Mobile cellular subscriptions (per 100 people)\u00a0\u00a0",
+                "value": 124.11111111111111
+            },
+            {
+                "axis": "E-government Development Index\u00a0",
+                "value": 0.5779111111111112
+            },
+            {
+                "axis": "Online Service Index\u00a0",
+                "value": 0.49345555555555554
+            },
+            {
+                "axis": "Telecommunications Infrastructure Index\u00a0",
+                "value": 0.5537777777777778
+            },
+            {
+                "axis": "Human Capital Index\u00a0",
+                "value": 0.6865555555555556
+            }
+        ]
     }
 }
