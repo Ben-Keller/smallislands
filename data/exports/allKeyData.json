@@ -1,548 +1,4 @@
-{
-    "anguilla": {
-        "Profile": {
-            "Country": "Anguilla",
-            "Region": "Caribbean",
-            "Member State (Y/N)": "N",
-            "Population": 15003,
-            "Languages": "",
-            "Surface Area": "",
-            "Income Classification": "",
-            "Human Development Index": ""
-        },
-        "Finance": {
-            "Personal remittances, received (% of GDP)": "",
-            "External debt stocks (% of GNI)": "",
-            "Foreign direct investment, net inflows (BoP, current US$)": "",
-            "Net ODA received per capita (current US$)": "",
-            "Net ODA received (% of GNI)": "",
-            "Trade (% of GDP)": "",
-            "Multidimensional Vulnerability Index": ""
-        },
-        "Blue": [
-            {
-                "axis": "Percent coverage of marine protected areas",
-                "value": 0.0007
-            },
-            {
-                "axis": "Ocean Health Index",
-                "value": 0.7308
-            },
-            {
-                "axis": "# of ports (per 15km coastline)",
-                "value": 0
-            },
-            {
-                "axis": "% of global shipping (x100)",
-                "value": ""
-            },
-            {
-                "axis": "Tourism Revenue as a % of GDP",
-                "value": 0
-            },
-            {
-                "axis": "Total fisheries (capture + aqua) production (value) ",
-                "value": ""
-            }
-        ],
-        "Climate": [
-            {
-                "axis": "Natural resource depletion (% of GNI)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Red List Index (value)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Renewable electricity output (% of total)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
-            },
-            {
-                "axis": "Climate Readiness score (ND-GAIN)",
-                "value": 0
-            },
-            {
-                "axis": "Vulnerability score (ND-GAIN)",
-                "value": 0
-            }
-        ],
-        "Digital": [
-            {
-                "axis": "Internet users (% of population)",
-                "value": 0.82
-            },
-            {
-                "axis": "Mobile cellular subscriptions (per 100 people)",
-                "value": 0.865
-            },
-            {
-                "axis": "E-government Development Index",
-                "value": 0
-            },
-            {
-                "axis": "Online Service Index",
-                "value": 0
-            },
-            {
-                "axis": "Telecommunications Infrastructure Index",
-                "value": 0
-            },
-            {
-                "axis": "Human Capital Index",
-                "value": 0
-            }
-        ]
-    },
-    "antiguaAndBarbuda": {
-        "Profile": {
-            "Country": "Antigua and Barbuda",
-            "Region": "Caribbean",
-            "Member State (Y/N)": "Y",
-            "Population": 97929,
-            "Languages": "English, Antiguan creole",
-            "Surface Area": 440,
-            "Income Classification": "High income",
-            "Human Development Index": 0.778
-        },
-        "Finance": {
-            "Personal remittances, received (% of GDP)": 1.538977853,
-            "External debt stocks (% of GNI)": 0,
-            "Foreign direct investment, net inflows (BoP, current US$)": 135127898.8,
-            "Net ODA received per capita (current US$)": 182.6849194,
-            "Net ODA received (% of GNI)": 0,
-            "Trade (% of GDP)": 43.26264768,
-            "Multidimensional Vulnerability Index": 35.5
-        },
-        "Blue": [
-            {
-                "axis": "Percent coverage of marine protected areas",
-                "value": 0.003
-            },
-            {
-                "axis": "Ocean Health Index",
-                "value": 0.7706
-            },
-            {
-                "axis": "# of ports (per 15km coastline)",
-                "value": 0.098039
-            },
-            {
-                "axis": "% of global shipping (x100)",
-                "value": ""
-            },
-            {
-                "axis": "Tourism Revenue as a % of GDP",
-                "value": 0.47
-            },
-            {
-                "axis": "Total fisheries (capture + aqua) production (value) ",
-                "value": ""
-            }
-        ],
-        "Climate": [
-            {
-                "axis": "Natural resource depletion (% of GNI)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Red List Index (value)\u00a0",
-                "value": 0.8897
-            },
-            {
-                "axis": "Renewable electricity output (% of total)\u00a0",
-                "value": 0
-            },
-            {
-                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.25834
-            },
-            {
-                "axis": "Climate Readiness score (ND-GAIN)",
-                "value": 0.449841
-            },
-            {
-                "axis": "Vulnerability score (ND-GAIN)",
-                "value": 0.480726
-            }
-        ],
-        "Digital": [
-            {
-                "axis": "Internet users (% of population)",
-                "value": 0.76
-            },
-            {
-                "axis": "Mobile cellular subscriptions (per 100 people)",
-                "value": 0.975
-            },
-            {
-                "axis": "E-government Development Index",
-                "value": 0.6055
-            },
-            {
-                "axis": "Online Service Index",
-                "value": 0.4471
-            },
-            {
-                "axis": "Telecommunications Infrastructure Index",
-                "value": 0.6176
-            },
-            {
-                "axis": "Human Capital Index",
-                "value": 0.7518
-            }
-        ]
-    },
-    "aruba": {
-        "Profile": {
-            "Country": "Aruba",
-            "Region": "Caribbean",
-            "Member State (Y/N)": "N",
-            "Population": 106766,
-            "Languages": "",
-            "Surface Area": 180,
-            "Income Classification": "High income",
-            "Human Development Index": ""
-        },
-        "Finance": {
-            "Personal remittances, received (% of GDP)": 1.836797823,
-            "External debt stocks (% of GNI)": 0,
-            "Foreign direct investment, net inflows (BoP, current US$)": 135529098.6,
-            "Net ODA received per capita (current US$)": 0,
-            "Net ODA received (% of GNI)": 20.45041077,
-            "Trade (% of GDP)": 0,
-            "Multidimensional Vulnerability Index": ""
-        },
-        "Blue": [
-            {
-                "axis": "Percent coverage of marine protected areas",
-                "value": 0
-            },
-            {
-                "axis": "Ocean Health Index",
-                "value": 0.8302
-            },
-            {
-                "axis": "# of ports (per 15km coastline)",
-                "value": 0
-            },
-            {
-                "axis": "% of global shipping (x100)",
-                "value": ""
-            },
-            {
-                "axis": "Tourism Revenue as a % of GDP",
-                "value": 0
-            },
-            {
-                "axis": "Total fisheries (capture + aqua) production (value) ",
-                "value": ""
-            }
-        ],
-        "Climate": [
-            {
-                "axis": "Natural resource depletion (% of GNI)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Red List Index (value)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Renewable electricity output (% of total)\u00a0",
-                "value": 0.1485616
-            },
-            {
-                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
-            },
-            {
-                "axis": "Climate Readiness score (ND-GAIN)",
-                "value": 0
-            },
-            {
-                "axis": "Vulnerability score (ND-GAIN)",
-                "value": 0
-            }
-        ],
-        "Digital": [
-            {
-                "axis": "Internet users (% of population)",
-                "value": 0.97
-            },
-            {
-                "axis": "Mobile cellular subscriptions (per 100 people)",
-                "value": 0.685
-            },
-            {
-                "axis": "E-government Development Index",
-                "value": 0
-            },
-            {
-                "axis": "Online Service Index",
-                "value": 0
-            },
-            {
-                "axis": "Telecommunications Infrastructure Index",
-                "value": 0
-            },
-            {
-                "axis": "Human Capital Index",
-                "value": 0
-            }
-        ]
-    },
-    "bahamas": {
-        "Profile": {
-            "Country": "Bahamas",
-            "Region": "Caribbean",
-            "Member State (Y/N)": "Y",
-            "Population": 393244,
-            "Languages": "",
-            "Surface Area": 13880,
-            "Income Classification": "High income",
-            "Human Development Index": 0.814
-        },
-        "Finance": {
-            "Personal remittances, received (% of GDP)": 0,
-            "External debt stocks (% of GNI)": 0,
-            "Foreign direct investment, net inflows (BoP, current US$)": 491404689.2,
-            "Net ODA received per capita (current US$)": 0,
-            "Net ODA received (% of GNI)": 1.768649305,
-            "Trade (% of GDP)": 99.22402104,
-            "Multidimensional Vulnerability Index": ""
-        },
-        "Blue": [
-            {
-                "axis": "Percent coverage of marine protected areas",
-                "value": 0.0792
-            },
-            {
-                "axis": "Ocean Health Index",
-                "value": 0.8015
-            },
-            {
-                "axis": "# of ports (per 15km coastline)",
-                "value": 0.033879
-            },
-            {
-                "axis": "% of global shipping (x100)",
-                "value": ""
-            },
-            {
-                "axis": "Tourism Revenue as a % of GDP",
-                "value": 0.28
-            },
-            {
-                "axis": "Total fisheries (capture + aqua) production (value) ",
-                "value": ""
-            }
-        ],
-        "Climate": [
-            {
-                "axis": "Natural resource depletion (% of GNI)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Red List Index (value)\u00a0",
-                "value": 0.70186
-            },
-            {
-                "axis": "Renewable electricity output (% of total)\u00a0",
-                "value": 0
-            },
-            {
-                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 8.555106
-            },
-            {
-                "axis": "Climate Readiness score (ND-GAIN)",
-                "value": 0.437619
-            },
-            {
-                "axis": "Vulnerability score (ND-GAIN)",
-                "value": 0.463948
-            }
-        ],
-        "Digital": [
-            {
-                "axis": "Internet users (% of population)",
-                "value": 0.85
-            },
-            {
-                "axis": "Mobile cellular subscriptions (per 100 people)",
-                "value": 0.48
-            },
-            {
-                "axis": "E-government Development Index",
-                "value": 0.7017
-            },
-            {
-                "axis": "Online Service Index",
-                "value": 0.6765
-            },
-            {
-                "axis": "Telecommunications Infrastructure Index",
-                "value": 0.6739
-            },
-            {
-                "axis": "Human Capital Index",
-                "value": 0.7546
-            }
-        ]
-    },
-    "bahrain": {
-        "Profile": {
-            "Country": "Bahrain",
-            "Region": "AIS",
-            "Member State (Y/N)": "Y",
-            "Population": 1701575,
-            "Languages": "Arabic, English, Farsi, Urdu",
-            "Surface Area": 780,
-            "Income Classification": "High income",
-            "Human Development Index": 0.852
-        },
-        "Finance": {
-            "Personal remittances, received (% of GDP)": 0,
-            "External debt stocks (% of GNI)": 0,
-            "Foreign direct investment, net inflows (BoP, current US$)": 111170212.8,
-            "Net ODA received per capita (current US$)": 0,
-            "Net ODA received (% of GNI)": 0,
-            "Trade (% of GDP)": 77.79774384,
-            "Multidimensional Vulnerability Index": ""
-        },
-        "Blue": [
-            {
-                "axis": "Percent coverage of marine protected areas",
-                "value": 0.0124
-            },
-            {
-                "axis": "Ocean Health Index",
-                "value": 0.6747
-            },
-            {
-                "axis": "# of ports (per 15km coastline)",
-                "value": 0.186335
-            },
-            {
-                "axis": "% of global shipping (x100)",
-                "value": ""
-            },
-            {
-                "axis": "Tourism Revenue as a % of GDP",
-                "value": 0.1
-            },
-            {
-                "axis": "Total fisheries (capture + aqua) production (value) ",
-                "value": ""
-            }
-        ],
-        "Climate": [
-            {
-                "axis": "Natural resource depletion (% of GNI)\u00a0",
-                "value": ""
-            },
-            {
-                "axis": "Red List Index (value)\u00a0",
-                "value": 0.75102
-            },
-            {
-                "axis": "Renewable electricity output (% of total)\u00a0",
-                "value": 0
-            },
-            {
-                "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
-            },
-            {
-                "axis": "Climate Readiness score (ND-GAIN)",
-                "value": 0.482622
-            },
-            {
-                "axis": "Vulnerability score (ND-GAIN)",
-                "value": 0.453721
-            }
-        ],
-        "Digital": [
-            {
-                "axis": "Internet users (% of population)",
-                "value": 0.99
-            },
-            {
-                "axis": "Mobile cellular subscriptions (per 100 people)",
-                "value": 0.655
-            },
-            {
-                "axis": "E-government Development Index",
-                "value": 0.8213
-            },
-            {
-                "axis": "Online Service Index",
-                "value": 0.7882
-            },
-            {
-                "axis": "Telecommunications Infrastructure Index",
-                "value": 0.8319
-            },
-            {
-                "axis": "Human Capital Index",
-                "value": 0.8439
-            }
-        ]
-    },
-    "barbados": {
-        "Profile": {
-            "Country": "Barbados",
-            "Region": "Caribbean",
-            "Member State (Y/N)": "Y",
-            "Population": 287375,
-            "Languages": "English, Bajan (English creole)",
-            "Surface Area": 430,
-            "Income Classification": "High income",
-            "Human Development Index": 0.814
-        },
-        "Finance": {
-            "Personal remittances, received (% of GDP)": 2.129503397,
-            "External debt stocks (% of GNI)": 0,
-            "Foreign direct investment, net inflows (BoP, current US$)": 241596500,
-            "Net ODA received per capita (current US$)": 0,
-            "Net ODA received (% of GNI)": 0,
-            "Trade (% of GDP)": 93.89631987,
-            "Multidimensional Vulnerability Index": 20.7
-        },
-        "Blue": [
-            {
-                "axis": "Percent coverage of marine protected areas",
-                "value": 0.0001
-            },
-            {
-                "axis": "Ocean Health Index",
-                "value": 0.6424
-            },
-            {
-                "axis": "# of ports (per 15km coastline)",
-                "value": 0.154639
-            },
-            {
-                "axis": "% of global shipping (x100)",
-                "value": ""
-            },
-            {
-                "axis": "Tourism Revenue as a % of GDP",
-                "value": 0.24
-            },
-            {
-                "axis": "Total fisheries (capture + aqua) production (value) ",
-                "value": ""
-            }
-        ],
-        "Climate": [
-            {
-                "axis": "Natural resource depletion (% of GNI)\u00a0",
+{"anguilla": {"Profile": {"Country": "Anguilla", "Region": "Caribbean", "Member State (Y/N)": "N", "Population": 15003, "Languages": "", "Surface Area": "", "Income Classification": "", "Human Development Index": ""}, "Finance": {"Personal remittances, received (% of GDP)": "", "External debt stocks (% of GNI)": "", "Foreign direct investment, net inflows (BoP, current US$)": "", "Net ODA received per capita (current US$)": "", "Net ODA received (% of GNI)": "", "Trade (% of GDP)": "", "Multidimensional Vulnerability Index": ""}, "Blue": [{"axis": "Percent coverage of marine protected areas", "value": 0.0007}, {"axis": "Ocean Health Index", "value": 0.7308}, {"axis": "# of ports (per 15km coastline)", "value": 0}, {"axis": "% of global shipping (x100)", "value": ""}, {"axis": "Tourism Revenue as a % of GDP", "value": 0}, {"axis": "Total fisheries (capture + aqua) production (value) ", "value": ""}], "Climate": [{"axis": "Natural resource depletion (% of GNI)\u00a0", "value": ""}, {"axis": "Red List Index (value)\u00a0", "value": ""}, {"axis": "Renewable electricity output (% of total)\u00a0", "value": ""}, {"axis": "Terrestrial and marine protected areas (% of total territorial area)", "value": ""}, {"axis": "Climate Readiness score (ND-GAIN)", "value": 0}, {"axis": "Vulnerability score (ND-GAIN)", "value": 0}], "Digital": [{"axis": "Internet users (% of population)", "value": 0.82}, {"axis": "Mobile cellular subscriptions (per 100 people)", "value": 0.865}, {"axis": "E-government Development Index", "value": 0}, {"axis": "Online Service Index", "value": 0}, {"axis": "Telecommunications Infrastructure Index", "value": 0}, {"axis": "Human Capital Index", "value": 0}]}, "antiguaAndBarbuda": {"Profile": {"Country": "Antigua and Barbuda", "Region": "Caribbean", "Member State (Y/N)": "Y", "Population": 97929, "Languages": "English, Antiguan creole", "Surface Area": 440, "Income Classification": "High income", "Human Development Index": 0.778}, "Finance": {"Personal remittances, received (% of GDP)": 1.538977853, "External debt stocks (% of GNI)": 0, "Foreign direct investment, net inflows (BoP, current US$)": 135127898.8, "Net ODA received per capita (current US$)": 182.6849194, "Net ODA received (% of GNI)": 0, "Trade (% of GDP)": 43.26264768, "Multidimensional Vulnerability Index": 35.5}, "Blue": [{"axis": "Percent coverage of marine protected areas", "value": 0.003}, {"axis": "Ocean Health Index", "value": 0.7706}, {"axis": "# of ports (per 15km coastline)", "value": 0.098039}, {"axis": "% of global shipping (x100)", "value": ""}, {"axis": "Tourism Revenue as a % of GDP", "value": 0.47}, {"axis": "Total fisheries (capture + aqua) production (value) ", "value": ""}], "Climate": [{"axis": "Natural resource depletion (% of GNI)\u00a0", "value": ""}, {"axis": "Red List Index (value)\u00a0", "value": 0.8897}, {"axis": "Renewable electricity output (% of total)\u00a0", "value": 0}, {"axis": "Terrestrial and marine protected areas (% of total territorial area)", "value": 0.0025834}, {"axis": "Climate Readiness score (ND-GAIN)", "value": 0.449841}, {"axis": "Vulnerability score (ND-GAIN)", "value": 0.480726}], "Digital": [{"axis": "Internet users (% of population)", "value": 0.76}, {"axis": "Mobile cellular subscriptions (per 100 people)", "value": 0.975}, {"axis": "E-government Development Index", "value": 0.6055}, {"axis": "Online Service Index", "value": 0.4471}, {"axis": "Telecommunications Infrastructure Index", "value": 0.6176}, {"axis": "Human Capital Index", "value": 0.7518}]}, "aruba": {"Profile": {"Country": "Aruba", "Region": "Caribbean", "Member State (Y/N)": "N", "Population": 106766, "Languages": "", "Surface Area": 180, "Income Classification": "High income", "Human Development Index": ""}, "Finance": {"Personal remittances, received (% of GDP)": 1.836797823, "External debt stocks (% of GNI)": 0, "Foreign direct investment, net inflows (BoP, current US$)": 135529098.6, "Net ODA received per capita (current US$)": 0, "Net ODA received (% of GNI)": 20.45041077, "Trade (% of GDP)": 0, "Multidimensional Vulnerability Index": ""}, "Blue": [{"axis": "Percent coverage of marine protected areas", "value": 0}, {"axis": "Ocean Health Index", "value": 0.8302}, {"axis": "# of ports (per 15km coastline)", "value": 0}, {"axis": "% of global shipping (x100)", "value": ""}, {"axis": "Tourism Revenue as a % of GDP", "value": 0}, {"axis": "Total fisheries (capture + aqua) production (value) ", "value": ""}], "Climate": [{"axis": "Natural resource depletion (% of GNI)\u00a0", "value": ""}, {"axis": "Red List Index (value)\u00a0", "value": ""}, {"axis": "Renewable electricity output (% of total)\u00a0", "value": 0.1485616}, {"axis": "Terrestrial and marine protected areas (% of total territorial area)", "value": 0}, {"axis": "Climate Readiness score (ND-GAIN)", "value": 0}, {"axis": "Vulnerability score (ND-GAIN)", "value": 0}], "Digital": [{"axis": "Internet users (% of population)", "value": 0.97}, {"axis": "Mobile cellular subscriptions (per 100 people)", "value": 0.685}, {"axis": "E-government Development Index", "value": 0}, {"axis": "Online Service Index", "value": 0}, {"axis": "Telecommunications Infrastructure Index", "value": 0}, {"axis": "Human Capital Index", "value": 0}]}, "bahamas": {"Profile": {"Country": "Bahamas", "Region": "Caribbean", "Member State (Y/N)": "Y", "Population": 393244, "Languages": "", "Surface Area": 13880, "Income Classification": "High income", "Human Development Index": 0.814}, "Finance": {"Personal remittances, received (% of GDP)": 0, "External debt stocks (% of GNI)": 0, "Foreign direct investment, net inflows (BoP, current US$)": 491404689.2, "Net ODA received per capita (current US$)": 0, "Net ODA received (% of GNI)": 1.768649305, "Trade (% of GDP)": 99.22402104, "Multidimensional Vulnerability Index": ""}, "Blue": [{"axis": "Percent coverage of marine protected areas", "value": 0.0792}, {"axis": "Ocean Health Index", "value": 0.8015}, {"axis": "# of ports (per 15km coastline)", "value": 0.033879}, {"axis": "% of global shipping (x100)", "value": ""}, {"axis": "Tourism Revenue as a % of GDP", "value": 0.28}, {"axis": "Total fisheries (capture + aqua) production (value) ", "value": ""}], "Climate": [{"axis": "Natural resource depletion (% of GNI)\u00a0", "value": ""}, {"axis": "Red List Index (value)\u00a0", "value": 0.70186}, {"axis": "Renewable electricity output (% of total)\u00a0", "value": 0}, {"axis": "Terrestrial and marine protected areas (% of total territorial area)", "value": 0.08555106}, {"axis": "Climate Readiness score (ND-GAIN)", "value": 0.437619}, {"axis": "Vulnerability score (ND-GAIN)", "value": 0.463948}], "Digital": [{"axis": "Internet users (% of population)", "value": 0.85}, {"axis": "Mobile cellular subscriptions (per 100 people)", "value": 0.48}, {"axis": "E-government Development Index", "value": 0.7017}, {"axis": "Online Service Index", "value": 0.6765}, {"axis": "Telecommunications Infrastructure Index", "value": 0.6739}, {"axis": "Human Capital Index", "value": 0.7546}]}, "bahrain": {"Profile": {"Country": "Bahrain", "Region": "AIS", "Member State (Y/N)": "Y", "Population": 1701575, "Languages": "Arabic, English, Farsi, Urdu", "Surface Area": 780, "Income Classification": "High income", "Human Development Index": 0.852}, "Finance": {"Personal remittances, received (% of GDP)": 0, "External debt stocks (% of GNI)": 0, "Foreign direct investment, net inflows (BoP, current US$)": 111170212.8, "Net ODA received per capita (current US$)": 0, "Net ODA received (% of GNI)": 0, "Trade (% of GDP)": 77.79774384, "Multidimensional Vulnerability Index": ""}, "Blue": [{"axis": "Percent coverage of marine protected areas", "value": 0.0124}, {"axis": "Ocean Health Index", "value": 0.6747}, {"axis": "# of ports (per 15km coastline)", "value": 0.186335}, {"axis": "% of global shipping (x100)", "value": ""}, {"axis": "Tourism Revenue as a % of GDP", "value": 0.1}, {"axis": "Total fisheries (capture + aqua) production (value) ", "value": ""}], "Climate": [{"axis": "Natural resource depletion (% of GNI)\u00a0", "value": ""}, {"axis": "Red List Index (value)\u00a0", "value": 0.75102}, {"axis": "Renewable electricity output (% of total)\u00a0", "value": 0}, {"axis": "Terrestrial and marine protected areas (% of total territorial area)", "value": 0}, {"axis": "Climate Readiness score (ND-GAIN)", "value": 0.482622}, {"axis": "Vulnerability score (ND-GAIN)", "value": 0.453721}], "Digital": [{"axis": "Internet users (% of population)", "value": 0.99}, {"axis": "Mobile cellular subscriptions (per 100 people)", "value": 0.655}, {"axis": "E-government Development Index", "value": 0.8213}, {"axis": "Online Service Index", "value": 0.7882}, {"axis": "Telecommunications Infrastructure Index", "value": 0.8319}, {"axis": "Human Capital Index", "value": 0.8439}]}, "barbados": {"Profile": {"Country": "Barbados", "Region": "Caribbean", "Member State (Y/N)": "Y", "Population": 287375, "Languages": "English, Bajan (English creole)", "Surface Area": 430, "Income Classification": "High income", "Human Development Index": 0.814}, "Finance": {"Personal remittances, received (% of GDP)": 2.129503397, "External debt stocks (% of GNI)": 0, "Foreign direct investment, net inflows (BoP, current US$)": 241596500, "Net ODA received per capita (current US$)": 0, "Net ODA received (% of GNI)": 0, "Trade (% of GDP)": 93.89631987, "Multidimensional Vulnerability Index": 20.7}, "Blue": [{"axis": "Percent coverage of marine protected areas", "value": 0.0001}, {"axis": "Ocean Health Index", "value": 0.6424}, {"axis": "# of ports (per 15km coastline)", "value": 0.154639}, {"axis": "% of global shipping (x100)", "value": ""}, {"axis": "Tourism Revenue as a % of GDP", "value": 0.24}, {"axis": "Total fisheries (capture + aqua) production (value) ", "value": ""}], "Climate": [{"axis": "Natural resource depletion (% of GNI)\u00a0",
                 "value": 0.000304
             },
             {
@@ -555,7 +11,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.008874
+                "value": 8.874e-05
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -654,7 +110,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 20.59045
+                "value": 0.20590450000000002
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -753,7 +209,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -852,7 +308,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.015592
+                "value": 0.00015592
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -951,7 +407,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1050,7 +506,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1149,7 +605,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1248,7 +704,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 7.184623
+                "value": 0.07184623
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1347,7 +803,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1446,7 +902,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.673332
+                "value": 0.00673332
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1545,7 +1001,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 19.21574
+                "value": 0.1921574
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1644,7 +1100,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.015781
+                "value": 0.00015781
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1743,7 +1199,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.990369
+                "value": 0.00990369
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1842,7 +1298,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.222069
+                "value": 0.00222069
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -1941,7 +1397,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 11.61993
+                "value": 0.1161993
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2040,7 +1496,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 5.306077
+                "value": 0.05306077
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2139,7 +1595,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.353092
+                "value": 0.0035309200000000003
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2238,7 +1694,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 1.405643
+                "value": 0.01405643
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2337,7 +1793,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 11.82105
+                "value": 0.1182105
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2436,7 +1892,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.051887
+                "value": 0.00051887
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2535,7 +1991,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.011473
+                "value": 0.00011473000000000001
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2634,7 +2090,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2733,7 +2189,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2832,7 +2288,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -2931,7 +2387,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 82.94236
+                "value": 0.8294235999999999
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3030,7 +2486,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.65799
+                "value": 0.0065799
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3129,7 +2585,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.270441
+                "value": 0.00270441
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3228,7 +2684,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.93102
+                "value": 0.0093102
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3327,7 +2783,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.242263
+                "value": 0.0024226300000000003
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3426,7 +2882,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.244688
+                "value": 0.00244688
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3525,7 +2981,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.051369
+                "value": 0.00051369
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3624,7 +3080,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 2.463063
+                "value": 0.02463063
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3723,7 +3179,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3822,7 +3278,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.15532
+                "value": 0.0015532000000000002
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -3921,7 +3377,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.250803
+                "value": 0.00250803
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4020,7 +3476,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 0.466563
+                "value": 0.0046656300000000005
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4119,7 +3575,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 8.483074
+                "value": 0.08483074
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4218,7 +3674,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4317,7 +3773,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 4.423045
+                "value": 0.044230450000000004
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4416,7 +3872,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4515,7 +3971,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 1.521651
+                "value": 0.01521651
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4614,7 +4070,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4713,7 +4169,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4812,7 +4268,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -4911,7 +4367,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": ""
+                "value": 0
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -5010,7 +4466,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 4.926987066666667
+                "value": 0.049269870666666674
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -5109,7 +4565,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 10.304027000000001
+                "value": 0.10304027000000002
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
@@ -5208,7 +4664,7 @@
             },
             {
                 "axis": "Terrestrial and marine protected areas (% of total territorial area)",
-                "value": 2.0654288571428574
+                "value": 0.020654288571428574
             },
             {
                 "axis": "Climate Readiness score (ND-GAIN)",
