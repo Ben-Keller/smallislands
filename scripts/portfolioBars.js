@@ -23,45 +23,65 @@ var budgetDataFull = {};
 projectData={}
 budgetData={}
 
-
-
 var projectDataFull = {};
-  d3.csv('https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/undpProjectBars.csv', function(data) {
-    projectDataFull[Object.values(data)[0]]=data
-    delete projectDataFull[Object.values(data)[0]]["RegionYear"]
-    
 
-    
 
-}).then(
-    
-    d3.csv('https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/undpBudgetBars.csv', function(data2) {
-        budgetDataFull[Object.values(data2)[0]]=data2
-        delete budgetDataFull[Object.values(data2)[0]]["RegionYear"]
- 
-  }).then(function(){
+Promise.all([
+    d3.csv("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/undpProjectBars.csv"),
+    d3.csv("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/undpBudgetBars.csv"),
+    d3.json("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/fundingCategories.json"),
+    d3.csv("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/sids_db.csv"),
+]).then(function(files) {
+    console.log("promises kept")
+    // files[0] will contain file1.csv
+    // files[1] will contain file2.csv
 
-    
+files[0].forEach(function(el){
+console.log(el["RegionYear"])
+    projectDataFull[el["RegionYear"]]=el;
+    delete projectDataFull[el["RegionYear"]]["RegionYear"];  
+});
+
+files[1].forEach(function(el){
+    console.log(el["RegionYear"])
+        budgetDataFull[el["RegionYear"]]=el;
+        delete budgetDataFull[el["RegionYear"]]["RegionYear"];  
+    });
+
     budgetData=budgetDataFull["Global2012to2021"]
     projectData=projectDataFull["Global2012to2021"]
-    console.log(projectData)
-    console.log(projectDataFull)
-    console.log(budgetData)
-    console.log(budgetDataFull)
-      renderBars();
 
-  }
-  ));
+console.log("ProjectData",projectData)
+console.log("BudgetData",budgetData)
+
+    renderBars(files[2],files[3]);
 
 
-function renderBars(){
+
+    filteredData = files[3].filter(function (d) { return parseInt(d.year) == 2020 });
+    updatePieChart1(dataMap1(filteredData, files[2]));
+    updatePieChart1(dataMap1(filteredData, files[2]));
+
+    updatePieChart2(dataMap2(filteredData));
+    updatePieChart2(dataMap2(filteredData));
+    console.log(files[0])
+
+}).catch(function(err) {
+    // handle error here
+})
+
+
+
+
+
+function renderBars(fundingCategories,sidsDB){
 
 let barsMargin = {top: 60, right: 0, bottom: 0, left: 9};
 let svgWidth = 1120, svgHeight = 200;
 let barsHeight = svgHeight- barsMargin.top- barsMargin.bottom, barsWidth = svgWidth - barsMargin.left - barsMargin.right;
 let sourceNames = [], sourceCount = [];
 
-let x = d3.scaleBand().rangeRound([0, barsWidth]).padding(0.1),
+let x = d3.scaleBand().rangeRound([0, barsWidth]),//.padding(0.1),
     y = d3.scaleLinear().rangeRound([barsHeight, 0]);
 for(let key in projectData){
     if(projectData.hasOwnProperty(key)){
@@ -86,7 +106,7 @@ let sticks = svg.selectAll('.stick')
 
 sticks.append('rect')
     .attr('class', 'stick')
-    .attr("x", function(d) { return x(d)+ x.bandwidth()/10;;})//+ x2.bandwidth()/2.5+ x2.bandwidth()/6;})
+    .attr("x", function(d) { return x(d)+ x.bandwidth()/6;})//+ x2.bandwidth()/2.5+ x2.bandwidth()/6;})
     .attr("y", function(d) { return y(projectData[d])-22; })
     .attr("width", x.bandwidth()/25)
     .attr("height", function(d) { return 22; })
@@ -100,7 +120,7 @@ let bars = svg.selectAll('.bar')
 
 bars.append('rect')
     .attr('class', 'bar')
-    .attr("x", function(d) { return x(d); })
+    .attr("x", function(d) { return x(d)+ x.bandwidth()/16; })
     .attr("y", function(d) { return y(projectData[d]); })
     .attr("width", x.bandwidth()/4)
     .attr("height", function(d) { return barsHeight - y(projectData[d]); })
@@ -123,10 +143,7 @@ projectLabels=bars.append("text")
 
 
 
-
-
-
-let x2 = d3.scaleBand().rangeRound([0, barsWidth]).padding(0.1),
+let x2 = d3.scaleBand().rangeRound([0, barsWidth]),//.padding(0.1),
     y2 = d3.scaleLinear().rangeRound([barsHeight, 0]);
 
     let sourceNames2 = [], sourceCount2 = [];
@@ -160,7 +177,7 @@ let bars2 = svg.selectAll('.bar2')
 
 bars2.append('rect')
     .attr('class', 'bar2')
-    .attr("x", function(d) { return x2(d)+ x2.bandwidth()/2.3;})
+    .attr("x", function(d) { return x2(d)+ x2.bandwidth()/2.2;})
     .attr("y", function(d) { return y2(budgetData[d]); })
     .attr("width", x2.bandwidth()/4)
     .attr("height", function(d) { return barsHeight - y2(budgetData[d]); })
@@ -247,47 +264,70 @@ $("#portfolio2").text("13");
 }
 
 
-year=document.getElementById("yearSelect").value
 
-//region=$('.regionSelect').find("ul li a.selectedRegion").text();
-region=$('.selectedRegion')[0].innerHTML.split(' ')[0]
-
-regionYear=region.concat(year)
-
-console.log(regionYear)
-
-filterBudgetData=budgetDataFull[regionYear]
-filterProjectData=projectDataFull[regionYear]
-
-updateBars(filterBudgetData,filterProjectData)
-
+updateBars()
 
 
 
 });
 
-  
+newOptions="<option value='All'>All Funding Sources</option>"
+for(fund in fundingCategories){
+    newOptions=newOptions+"<option value='"+fund+"'>"+fund+"</option>"
+
+}
+$("#fundingSelect").html(newOptions)
 
 
+$('#fundingCategorySelect').change(function() {
+    var fundingCategory = $(this).val();
+ console.log(fundingCategory)
+ newOptions="<option value='All'>All "+fundingCategory+"</option>"
+ if (fundingCategory == "All") {
+    for(fund in fundingCategories){
+            newOptions=newOptions+"<option value='"+fund+"'>"+fund+"</option>"
+     }
+ }
+ else if (fundingCategory == "Programme Countries") {
+    for(fund in fundingCategories){
+        if(fundingCategories[fund].category=="Government"){
+            newOptions=newOptions+"<option value='"+fund+"'>"+fund+"</option>"
+        }
+     }
+     }
+ else if (fundingCategory == "Donor Countries") {
+    for(fund in fundingCategories){
+        if(fundingCategories[fund].category=="Government"){
+            newOptions=newOptions+"<option value='"+fund+"'>"+fund+"</option>"
+        }
+     }
+         }
+ else{
+     for(fund in fundingCategories){
+        if(fundingCategories[fund].category==fundingCategory){
+            newOptions=newOptions+"<option value='"+fund+"'>"+fund+"</option>"
+        }
+     }
+
+ }
+ $("#fundingSelect").html(newOptions)
+ updateBars();
+});
+
+
+
+
+$('#fundingSelect').change(function() {
+updateBars();
+});
 
 
 
 $('#yearSelect').change(function() {
-    var x = $(this);
- console.log('yeah!')
-year=x.val();
 
-//region=$('.regionSelect').find("ul li a.selectedRegion").text();
-region=$('.selectedRegion')[0].innerHTML.split(' ')[0]
-
-regionYear=region.concat(year)
-
-console.log(regionYear)
-
-filterBudgetData=budgetDataFull[regionYear]
-filterProjectData=projectDataFull[regionYear]
-
-updateBars(filterBudgetData,filterProjectData)
+updateBars();
+	
+			
 
 
 });
@@ -296,8 +336,61 @@ updateBars(filterBudgetData,filterProjectData)
 
 
 
-function updateBars(filterBudgetData,filterProjectData){
+function updateBars(){
+    selectedRegion =$('.selectedRegion')[0].innerHTML.split(' ')[0]
+    selectedYear = $("#yearSelect").val()
+    selectedDonor=$("#fundingSelect").val()
+console.log(selectedRegion,selectedYear,selectedDonor)
+filteredProjects=sidsDB
+if(selectedDonor!="All"){
+filteredProjects=filteredProjects.filter(function (d) { return d.donors.split(";").includes(selectedDonor) });}
+else{
+    selectedFundingCategory=$("#fundingCategorySelect").val();
+    if(selectedFundingCategory!="All")
+    filteredProjects=filteredProjects.filter(function (d) { 
+        fundingCat= d.donors.split(";").map(donor => {
+            try{
+            return fundingCategories[donor].category}
+            catch(error){
+                return;
+            }});
+
+    return fundingCat.includes(selectedFundingCategory) });
+}
+
+
+if(selectedYear!="2012to2021"){
+    filteredProjects=filteredProjects.filter(function(d){return d.year==selectedYear});}
+if(selectedRegion!="Global"){
+    filteredProjects=filteredProjects.filter(function(d){return d.region==selectedRegion});}
+
+console.log(filteredProjects)
+    filterBudgetData={}
+    filterProjectData={}
     
+
+    sdgs=["No poverty","Zero hunger","Good health and well-being","Quality education","Gender equality","Clean water and sanitation","Affordable and clean energy","Decent work and economic growth","Industry, innovation and infrastructure","Reduced inequalities","Sustainable cities and communities","Responsible consumption and production","Climate action","Life below water","Life on land","Peace, justice, and strong institutions","Partnerships for the goals"]
+    
+    for(i=0;i<17;i++){
+
+        sdgFilteredProjects=filteredProjects.filter(function (d) { 
+          //  console.log(d.sdg.split(','))
+            return d.sdg.includes(sdgs[i])});      
+        
+        totalBudget=0
+
+        for(project in sdgFilteredProjects){
+            //console.log(filteredProjects[project])
+            totalBudget=totalBudget+parseInt(sdgFilteredProjects[project].budget)
+        }
+    filterBudgetData["SDG"+(i+1).toString()]=totalBudget
+    filterProjectData["SDG"+(i+1).toString()]=sdgFilteredProjects.length
+    }
+    console.log(filterProjectData)
+    
+
+
+
 sourceCount = [];
 for(let key in filterProjectData){
 if(filterProjectData.hasOwnProperty(key)){
@@ -368,6 +461,9 @@ d3.selectAll(".stick2")
 
 console.log("sumthis",filterBudgetData);
 
+year = document.getElementById("yearSelect").value
+region=$('.selectedRegion')[0].innerHTML.split(' ')[0]
+
 if(year=="2012to2021"){
 
 if(region=="Global"){
@@ -389,14 +485,25 @@ else{
 
 $("#portfolio3").text((sum(filterProjectData)));
 
-}
+
 $("#portfolio4").text(nFormatter(sum(filterBudgetData)));
 }
 
+///update Pie1
+
+
+               
+year = $("#yearSelect").val()
+
+
+updatePieChart1(dataMap1(filteredProjects, fundingCategories));
+updatePieChart2(dataMap2(filteredProjects,fundingCategories));
 
 
 
 }
+
+
 
 function nFormatter(num, digits) {
     var si = [
@@ -424,3 +531,4 @@ function nFormatter(num, digits) {
     }
     return sum;
   }
+}
