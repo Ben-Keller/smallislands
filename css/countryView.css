@@ -48,7 +48,7 @@
 }
 
 .spiderbox {
-  padding: 6px;
+  padding: 0;
   background-clip: content-box;
   border-radius: 25px;
 }
@@ -88,7 +88,7 @@
 }
 
 .coutryInfoBar, #countryProfile {
-  max-height: 180px;
+  max-height: 240px;
   overflow: hidden;
 }
 
@@ -100,9 +100,10 @@
 }
 
 .countryInfoBar {
-  background-image: linear-gradient(to right, #d0cfcf, #F4F5F8 75%);
+  background-color: #dfdddd;
   margin-top: 1%;
-  margin-bottom: 0%;
+  margin-bottom: 2%;
+  padding-right: 0;
 }
 
 .countryInfoBar img {
@@ -204,6 +205,38 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
 select#type option[value=Colibri] {
   background-image: url("../images/infoImages.jpg");
   color: red;
+}
+
+.spiderTooltip {
+  pointer-events: none;
+}
+
+#tooltipIndicator {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+#financeInfo {
+  font-size: 12px;
+  padding: 15px;
+  margin-top: 5px;
+  background-color: #eeebeb;
+}
+
+#countryImageContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+#imageLink {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=countryView.css.map */

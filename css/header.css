@@ -9,7 +9,7 @@ a:hover {
 }
 
 .cover-container {
-  max-width: 70em;
+  max-width: 80em;
 }
 
 /*
@@ -102,7 +102,7 @@ a:hover {
 
 #headerPanel h1 {
   font-weight: 650;
-  font-size: 48px;
+  font-size: 58px;
   margin-top: -6px;
   text-align: center;
   filter: drop-shadow(1px 1px 0px black);
