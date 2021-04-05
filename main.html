@@ -17,8 +17,8 @@
 
   <!-- Custom styles for this template -->
 
-  <link rel="preload" as="font" href="/fonts/Proxima-Nova/Proxima Nova Reg.woff2" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/fonts/Proxima-Nova/Proxima Nova Bold.woff2" type="font/woff2" crossorigin="anonymous">
+  <!-- <link rel="preload" as="font" href="https://github.com/Ben-Keller/smallislands/blob/main/fonts/Proxima-Nova/Proxima%20Nova%20Reg.otf" type="font/opentype" crossorigin="anonymous">
+  <link rel="preload" as="font" href="https://github.com/Ben-Keller/smallislands/blob/main/fonts/Proxima-Nova/Proxima%20Nova%20Bold.otf" type="font/opentype" crossorigin="anonymous"> -->
 
   <link rel="stylesheet" href="css/materialui.css">
 
@@ -45,7 +45,7 @@
 <body>
 
 
- 
+
 
 
 
@@ -53,18 +53,21 @@
     <video autoplay muted loop id="myVideo">
       <source src="images/blue economy_1.mp4" type="video/mp4">
     </video>
+
+    <h3 class="masthead-brand">
+      <!--put branding here for upper left corner-->
+      <img id="undpLogo" src="icons/UNDP-Logo-White/UNDP-Logo-White-Small.png" height="180px" style="margin-left:20px;">
+    </h3>
+
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-     
+
       <header class="masthead mb-auto">
 
 
-     
+
 
         <div class="inner" id="headerBar">
-          <h3 class="masthead-brand">
-            <!--put branding here for upper left corner-->
-            <img id="undpLogo" src="icons/UNDP-Logo-White/UNDP-Logo-White-Small.png" height="160px">
-          </h3>
+
           <nav class="nav nav-masthead justify-content-center" id="devTabs">
             <a class="nav-link active" id="homeMode" href="#">Home</a>
             <a class="nav-link" id="devMode" href="#">Dev Mode</a>
@@ -76,13 +79,13 @@
       <main role="main" class="inner cover">
         <h1 class="cover-heading">
           <!-- Rising up for Small Island Developing States -->
-          RISING UP FOR <br>SMALL ISLAND DEVELOPING STATES</h1>
+          RISING UP FOR <br>SMALL ISLAND DEVELOPING STATES
+        </h1>
         <hr style="width:70%;text-align:center;margin: auto;color:white; border-style:solid;border-width:1;opacity:1;">
         <h2 class="cover-heading">Data Visualization Platform</h2>
-        <p class="lead">UNDP supports Small Island Developing States (SIDS) through an integrated approach 
-          to accelerate green recovery and transform societies based on three pillars: Climate Action, Blue
-            Economy, and Digital Transformation.</p>
-<!-- CLIMATE ACTION - BLUE ECONOMY - DIGITAL TRANSFORMATION -->
+        <p class="lead">UNDP’s integrated approach supports Small Island Developing States to accelerate transformative
+          development based on three pillars: Climate Action, Blue Economy, and Digital Transformation. </p>
+        <!-- CLIMATE ACTION - BLUE ECONOMY - DIGITAL TRANSFORMATION -->
         <!--   <p class="lead">
           <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
         </p>-->
@@ -101,7 +104,7 @@
 
   <!-- <div class="infoSection">
     <img src="images/infoImages.jpg" id="infoImages"> -->
-    <!--   <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoStuff">
+  <!--   <div class="cover-container d-flex w-100 p-3 mx-auto flex-column infoStuff">
 
      <h4> Small Island Developing States </h4>
 
@@ -112,9 +115,9 @@
 
 
 
-  <div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="h-100 mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
     <div class="mdl-grid mdl-grid--no-spacing">
-      <div class="mdl-cell mdl-cell--2-col"  id="verticalMenu">
+      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu">
         <div class="mdl-tabs__tab-bar">
           <a href="#portfolioPanel" class="mdl-tabs__tab is-active">
 
@@ -136,13 +139,13 @@
           <a href="#pillarsPanel" class="mdl-tabs__tab">
 
             <h5>SIDS Offer</h5>
-          </a> 
+          </a>
         </div>
       </div>
 
 
-      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu2"  style="display:none">
-        <div class="mdl-tabs__tab-bar" >
+      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu2" style="display:none">
+        <div class="mdl-tabs__tab-bar">
           <a href="#portfolioPanel" class="mdl-tabs__tab is-active">
 
             <h5>UNDP Portfolio</h5>
@@ -165,12 +168,22 @@
           </a>
 
 
-          <a href="#storyMapPanel" class="mdl-tabs__tab"><h5>Story Map</h5></a>
-          <a href="#machineLearningPanel" class="mdl-tabs__tab"><h5>Machine Learning</h5></a>
-          <a href="#powerBiPanel" class="mdl-tabs__tab"><h5>Power BI</h5></a>
-          <a href="#targetsPanel" class="mdl-tabs__tab"><h5>SIDS Targets</h5></a>
-          <a href="#dataDownloadPanel" class="mdl-tabs__tab"><h5>Data Download</h5></a>
-         
+          <a href="#storyMapPanel" class="mdl-tabs__tab">
+            <h5>Story Map</h5>
+          </a>
+          <a href="#machineLearningPanel" class="mdl-tabs__tab">
+            <h5>Machine Learning</h5>
+          </a>
+          <a href="#powerBiPanel" class="mdl-tabs__tab">
+            <h5>Power BI</h5>
+          </a>
+          <a href="#targetsPanel" class="mdl-tabs__tab">
+            <h5>SIDS Targets</h5>
+          </a>
+          <a href="#dataDownloadPanel" class="mdl-tabs__tab">
+            <h5>Data Download</h5>
+          </a>
+
         </div>
       </div>
 
@@ -185,8 +198,8 @@
 
 
 
-        <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel">
-          
+        <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel" style="overflow:hidden">
+
           <div class="panelTitleRow hoverPortfolio">
             <div class="col-lg-12">
               <h2>UNDP Portfolio in Small Island Developing States</h2>
@@ -196,7 +209,7 @@
             <div class="col-sm-7"></div>
             <div class="col-sm-5">
               <div class="row portfolioOverview">
-                <div class="portfolioStat" >
+                <div class="portfolioStat">
                   <div>
                     <h3 id="portfolio1">50</h3>
                   </div>
@@ -204,7 +217,7 @@
                     <p>UNDP SIDS</p>
                   </div>
                 </div>
-                <div class="portfolioStat" >
+                <div class="portfolioStat">
                   <div>
                     <h3 id="portfolio2">38</h3>
                   </div>
@@ -214,7 +227,7 @@
                 </div>
                 <div class="portfolioStat">
                   <div>
-                    <h3  id="portfolio3">1533</h3>
+                    <h3 id="portfolio3">1533</h3>
                   </div>
                   <div>
                     <p>UNDP Projects</p>
@@ -233,15 +246,35 @@
 
           </div>
           <div class="row" id="spacer">
+
+            <div class="col-lg-10" ></div>
+            <div class="yrSelect col-lg-2" >
+              <ul>
+                <select id="yearSelect"  class="portfolioDropdown">
+                  <option value='2012to2021'>2012 to 2021</option>
+                  <option value='2021'>2021</option>
+                  <option selected value='2020'>2020</option>
+                  <option value='2019'>2019</option>
+                  <option value='2018'>2018</option>
+                  <option value='2017'>2017</option>
+                  <option value='2016'>2016</option>
+                  <option value='2015'>2015</option>
+                  <option value='2014'>2014</option>
+                  <option value='2013'>2013</option>
+                  <option value='2012'>2012</option>
+                </select>
+
+            </div>
+
           </div>
-          <div class="row pies">
+          <!-- <div class="row pies">
             <div id="pieRegion" class="col-md-2 fundPie">
               <h5>Funding by Region</h5><img src="graphics/pieRegion.png"></img>
             </div>
             <div id="pieFunding" class="col-md-3 fundPie">
               <h5>Funding by Category</h5><img src="graphics/pieFunding.png"></img>
             </div>
-          </div>
+          </div> -->
           <div class="row sdgPortfolio">
 
 
@@ -252,8 +285,62 @@
 
             <div id="portfolioBars"></div>
           </div>
-          <div class="row sdgIcons">
-            <div id="sdgIcons"><img src="graphics/sdgs.png" width="100%"></img></div>
+          <div class="row" id="sdgIconRow">
+
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-01.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-02.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-03.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-04.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-05.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-06.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-07.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-08.png" style="width:100%">
+            </div>
+
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-09.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-10.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-11.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-12.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-13.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-14.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-15.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-16.png" style="width:100%">
+            </div>
+            <div class="sdgIcon">
+              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-17.png" style="width:100%">
+            </div>
+
+
           </div>
 
           <div class="row goalSelector">
@@ -287,41 +374,51 @@
             </div>
 
 
-            <div class="fundingSelect col-lg-3 d-flex justify-content-center">
+    
 
+            
 
-            </div>
-
-
-
-            <div class="yrSelect col-lg-2 d-flex justify-content-center">
+            <div class="portfolioDropdown col-lg-2" >
               <ul>
-                <select id="yearSelect">
-                  <option value='2012to2021' select="selected">2012 to 2021</option>
-                  <option value='2021'>2021</option>
-                  <option value='2020'>2020</option>
-                  <option value='2019'>2019</option>
-                  <option value='2018'>2018</option>
-                  <option value='2017'>2017</option>
-                  <option value='2016'>2016</option>
-                  <option value='2015'>2015</option>
-                  <option value='2014'>2014</option>
-                  <option value='2013'>2013</option>
-                  <option value='2012'>2012</option>
+                <select id="fundingCategorySelect" class="portfolioDropdown">
+                  <option value='All'>All Funding Categories</option>
+                  <option value='Programme Countries'>Programme Countries</option>
+                  <option value='Donor Countries'>Donor Countries</option>
+                  <option value='UN Agencies'>UN Agencies</option>
+                  <option value='UN Pooled Funds'>UN Pooled Funds</option>
+                  <option value='European Union'>European Union</option>
+                  <option value='Vertical Funds'>Vertical Funds</option>
+                  <option value='Other'>Other</option>                  
                 </select>
 
             </div>
 
+            <div class="fundingSelection col-lg-3" >
+              <ul>
+                <select id="fundingSelect" class="portfolioDropdown">
+                </select>
 
-
-
-
+            </div>
 
           </div>
 
-       
 
-        </div>
+
+
+
+<div class="pieRow row">
+  <div id="futurePie" class="col-lg-2"></div>
+  <div id="regionPie" class="col-lg-4"></div>
+
+<div id="fundingPie" class="col-lg-4"></div>
+
+</div>
+
+          </div>
+
+
+
+
 
 
 
@@ -329,22 +426,24 @@
 
 
         <div class="container mdl-tabs__panel panel" id="pillarsPanel">
-          
-     
+
+
           <div class="panelTitleRow">
             <div class="col-lg-12">
               <h2>Small Island Development Pillars</h2>
             </div>
           </div>
 
-          
-          
+
+
           <div class="pillars">
 
 
-            
+
             <div class="col-lg-12 description">
-              <h5>UNDP’s SIDS offer – Rising Up for SIDS – presents an integrated approach for tapping into areas with potential to accelerate green recovery and transform societies based on three interconnected pillars: Climate Action, Blue Economy and Digital Transformation.
+              <h5>UNDP’s SIDS offer – Rising Up for SIDS – presents an integrated approach for tapping into areas with
+                potential to accelerate green recovery and transform societies based on three interconnected pillars:
+                Climate Action, Blue Economy and Digital Transformation.
               </h5>
             </div>
 
@@ -354,7 +453,8 @@
               <div class="col-lg-4 shadebox">
                 <h3 style="color:#0DB14B">Climate Action</h3>
                 <img class="rounded-circle" src="icons/climateAction.png">
-                <p>Promoting decarbonized and resilient societies through scaled up climate action and enhanced efforts to mobilize climate finance. </p>
+                <p>Promoting decarbonized and resilient societies through scaled up climate action and enhanced efforts
+                  to mobilize climate finance. </p>
                 <div class="keyResultRow row">
                   <div class="col-md-4 keyResult" id="climateResult1">
                     <h3>28 SIDS</h3>
@@ -370,24 +470,107 @@
                   </div>
                 </div>
 
-                <div id="tooltip1" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.1.1 Clean Energy</h4><h6>Target: 6 million people with access to clean energy</h6><h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip2" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.1.2 Universal Electricity</h4><h6>Targer: 24 SIDS universal access to electricity</h6><h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip3" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.1.3 Renewable Energy</h4><h6>Target:  25 SIDS have at least 25% renewable energy in their power mix</h6><h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip4" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.2.1 Adaptation and Planning</h4><h6>Target: 30 SIDS integrate adaptation into national policy, planning, budget<h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip5" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.2.2 Mobilize Climate Grants</h4><h6>Target: Mobilize USD 500M in grants</h6><h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip6" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.2.3 Adaptation and DRR</h4><h6>Target: 25 SIDS harmonize climate change adaptation and DRR</h6><h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip7" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.3.1 Nature-Based Solutions</h4><h6>Target: 20 SIDS identify nature-based solutions and integrated approaches for climate adaptation and mitigation consistent with national development plans</h6><h6>Target Date: 2022</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip8" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.3.2 Integrated Planning</h4><h6>Target: 20 SIDS to replicate best practices in integrated planning (Ridge-to-Reef; integrated coastal zone management)</h6><h6>Target Date: 2024</h6><div class="arrow" data-popper-arrow></div></div>
-               
-                <div id="tooltip9" class="tooltips" role="tooltip"><h4 style="color:#0DB14B">1.3.3 ELSAs</h4><h6>Target: 20 SIDS use spatial data to develop maps of “essential life support areas”</h6><h6>Target Date: TBC</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip10" class="tooltips" role="tooltip"><h4 style="color:#0d62b1">2.1.1 Blue Economy Strategies</h4><h6>Target:  20-30 SIDS National Blue Economy strategies</h6><h6>Target Date: 2025</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip11" class="tooltips" role="tooltip"><h4 style="color:#0d62b1">2.2.1 On-the-ground BE Pilots</h4><h6>Target: 20-30 SIDS on-the-ground blue economy pilots</h6><h6>Target Date: 2025</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip12" class="tooltips" role="tooltip"><h4 style="color:#0d62b1">2.3.1 Mobilize BE Grants</h4><h6>Target: $30 million or more in new and additional Blue Economy grant finance mobilized</h6><h6>Target Date: 2025</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip13" class="tooltips" role="tooltip"><h4 style="color:#F58220">3.1.1 Digital Strategies</h4><h6>Target: 20 SIDS with digital strategies</h6><h6>Target Date: 2025</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip14" class="tooltips" role="tooltip"><h4 style="color:#F58220">3.2.1 On-the-ground DT Pilots</h4><h6>Target: X Number of SIDS supported to integrate new technologies to EWS</h6><h6>Target Date: 2030</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip15" class="tooltips" role="tooltip"><h4 style="color:#F58220">3.2.2 Accelerator Labs</h4><h6>Target: X Number of SIDS projects that include digitization of public data</h6><h6>Target Date: TBC</h6><div class="arrow" data-popper-arrow></div></div>
-                <div id="tooltip16" class="tooltips" role="tooltip"><h4 style="color:#F58220">3.2.3 Digital Project Budgets</h4><h6>Target: X Number of SIDS with digital identification systems and innovative finance solutions available </h6><h6>Target Date: TBC</h6><div class="arrow" data-popper-arrow></div></div>
-       
+                <div id="tooltip1" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.1.1 Clean Energy</h4>
+                  <h6>Target: 6 million people with access to clean energy</h6>
+                  <h6>Target Date: 2030</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip2" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.1.2 Universal Electricity</h4>
+                  <h6>Targer: 24 SIDS universal access to electricity</h6>
+                  <h6>Target Date: 2030</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip3" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.1.3 Renewable Energy</h4>
+                  <h6>Target: 25 SIDS have at least 25% renewable energy in their power mix</h6>
+                  <h6>Target Date: 2030</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip4" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.2.1 Adaptation and Planning</h4>
+                  <h6>Target: 30 SIDS integrate adaptation into national policy, planning, budget<h6>Target Date: 2030
+                    </h6>
+                    <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip5" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.2.2 Mobilize Climate Grants</h4>
+                  <h6>Target: Mobilize USD 500M in grants</h6>
+                  <h6>Target Date: 2030</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip6" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.2.3 Adaptation and DRR</h4>
+                  <h6>Target: 25 SIDS harmonize climate change adaptation and DRR</h6>
+                  <h6>Target Date: 2030</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip7" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.3.1 Nature-Based Solutions</h4>
+                  <h6>Target: 20 SIDS identify nature-based solutions and integrated approaches for climate adaptation
+                    and mitigation consistent with national development plans</h6>
+                  <h6>Target Date: 2022</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip8" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.3.2 Integrated Planning</h4>
+                  <h6>Target: 20 SIDS to replicate best practices in integrated planning (Ridge-to-Reef; integrated
+                    coastal zone management)</h6>
+                  <h6>Target Date: 2024</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+
+                <div id="tooltip9" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0DB14B">1.3.3 ELSAs</h4>
+                  <h6>Target: 20 SIDS use spatial data to develop maps of “essential life support areas”</h6>
+                  <h6>Target Date: TBC</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip10" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0d62b1">2.1.1 Blue Economy Strategies</h4>
+                  <h6>Target: 20-30 SIDS National Blue Economy strategies</h6>
+                  <h6>Target Date: 2025</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip11" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0d62b1">2.2.1 On-the-ground BE Pilots</h4>
+                  <h6>Target: 20-30 SIDS on-the-ground blue economy pilots</h6>
+                  <h6>Target Date: 2025</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip12" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#0d62b1">2.3.1 Mobilize BE Grants</h4>
+                  <h6>Target: $30 million or more in new and additional Blue Economy grant finance mobilized</h6>
+                  <h6>Target Date: 2025</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip13" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#F58220">3.1.1 Digital Strategies</h4>
+                  <h6>Target: 20 SIDS with digital strategies</h6>
+                  <h6>Target Date: 2025</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip14" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#F58220">3.2.1 On-the-ground DT Pilots</h4>
+                  <h6>Target: X Number of SIDS supported to integrate new technologies to EWS</h6>
+                  <h6>Target Date: 2030</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip15" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#F58220">3.2.2 Accelerator Labs</h4>
+                  <h6>Target: X Number of SIDS projects that include digitization of public data</h6>
+                  <h6>Target Date: TBC</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+                <div id="tooltip16" class="tooltips targetsI" role="tooltip">
+                  <h4 style="color:#F58220">3.2.3 Digital Project Budgets</h4>
+                  <h6>Target: X Number of SIDS with digital identification systems and innovative finance solutions
+                    available </h6>
+                  <h6>Target Date: TBC</h6>
+                  <div class="arrow" data-popper-arrow></div>
+                </div>
+
 
               </div><!-- /.col-lg-4 -->
 
@@ -395,7 +578,8 @@
               <div class="col-lg-4 shadebox">
                 <h3 style="color:#0BC6FF">Blue Economy</h3>
                 <img class="rounded-circle" src="icons/blueEconomy.png">
-                <p>Harnessing the blue economy through an integrated approach rooted in sustainable finance and development. </p>
+                <p>Harnessing the blue economy through an integrated approach rooted in sustainable finance and
+                  development. </p>
                 <div class="keyResultRow row">
                   <div class="col-md-4 keyResult" id="blueResult1">
                     <h3>21</h3>
@@ -414,7 +598,8 @@
               <div class="col-lg-4 shadebox">
                 <h3 style="color:#F58220">Digital Transformation</h3>
                 <img class="rounded-circle" src="icons/digitalTransformation.png">
-                <p>Accelerating digital transformation through a whole-of-society approach that puts people at the centre for inclusive societies and resilient economies. </p>
+                <p>Accelerating digital transformation through a whole-of-society approach that puts people at the
+                  centre for inclusive societies and resilient economies. </p>
                 <div class="keyResultRow row">
                   <div class="col-md-4 keyResult" id="digitalResult1">
                     <h3>10</h3>
@@ -436,21 +621,25 @@
               <div class="col-lg-9 shadebox" id="financeRow">
 
                 <h3 style="color:#000000">Finance</h3>
-                <p>As a cross-cutting enabler of change, supporting the mobilization of financing for development is at the heart of UNDP’s SIDS offer.
-                </p>      </div>
+                <p>As a cross-cutting enabler of change, supporting the mobilization of financing for development is at
+                  the heart of UNDP’s SIDS offer.
+                </p>
+              </div>
 
-                
+
             </div><!-- /.row -->
-            
+
           </div>
-          
+
 
           <div class="container-fluid targets">
-            
-            <h3>SIDS Targets</h3><p></p>
+
+            <h3>SIDS Targets</h3>
+            <p></p>
             <!--<p>The columns will automatically stack on top of each other when the screen is less than 768px wide.</p>
-            -->        <div class="row icon-bar">
-              
+            -->
+            <div class="row icon-bar">
+
               <div class="sidsTarget" id=sidsTarget1><img src="icons/TargetIcons/1.1.1_Clean_Energy.png">
                 <p>Clean Energy</p>
               </div>
@@ -511,8 +700,8 @@
         </div>
 
 
-         <div class="container panel mdl-tabs__panel" id="countryDataPanel">
-         
+        <div class="container panel mdl-tabs__panel" id="countryDataPanel">
+
           <div class="panelTitleRow">
             <div class="col-lg-12">
               <h2>SIDS Country Data</h2>
@@ -573,7 +762,8 @@
             </div>
             <div class="input__select col-lg-3">
               <select id="countryCategory" class="input__small">
-                <option value="all">All SIDS</option> <!--selected disabled hidden   (after val)-->
+                <option value="all">All SIDS</option>
+                <!--selected disabled hidden   (after val)-->
                 <option value="caribbean">Caribbean</option>
                 <option value="ais">AIS</option>
                 <option value="pacific">Pacific</option>
@@ -589,47 +779,67 @@
               <div class="col-lg-3" id="countryProfile">
                 <h4>Country Information</h4>
                 <div id="countryProfileInfo">
-  
+
                 </div>
               </div>
               <div class="col-lg-3" id="countryRelief"><img id="reliefMap"></div>
               <div class="col-lg-3 scrollbar" id="countryStories">
-              
+
               </div>
-              <div class="col-lg-3"><img id="countryImage"><!--src="images/countries/grenada/grenadaBeachside.jpg">--></div>
+              <div class="col-lg-3" id="countryImageContainer"><img id="countryImage">
+                <!--src="images/countries/grenada/grenadaBeachside.jpg">-->
+                <div id="imageLink" style="display:none">
+                  <p>Bottom Center</p>
+                </div>
+              </div>
             </div>
           </div>
 
 
 
           <div class="row">
-      
-            <div class="col-lg-4 spiderbox">
+            <div class="col-lg-3 spiderbox">
               <h3 style="color:#0DB14B">Climate Action</h3>
-              <div id="climateSpider" class="radarChart" style="display: inline-flex;"></div>
+              <div id="climateSpider" class="radarChart" style="text-align:center;"></div>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4 spiderbox">
+            <div class="col-lg-3 spiderbox">
               <h3 style="color:#0BC6FF">Blue Economy</h3>
-              <div id="blueSpider" class="radarChart" style="display: inline-flex;"></div>
+              <div id="blueSpider" class="radarChart" style="text-align:center;"></div>
             </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4 spiderbox">
+            <div class="col-lg-3 spiderbox">
               <h3 style="color:#F58220">Digital Transformation</h3>
-              <div id="digitalSpider" class="radarChart" style="display: inline-flex;"></div>
+              <div id="digitalSpider" class="radarChart" style="text-align:center;"></div>
             </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3" id="financeBox">
+
+              <h3 style="color:#9e0909">Finance</h3>
+              <div id="financeInfo">
+
+              </div>
+
+            </div><!-- /.col-lg-4 -->
+
+            <div id="tooltipIndicator" class="tooltips" role="tooltip">
+              <div id="tooltipIndicatorContent"></div>
+              <div class="arrow" data-popper-arrow></div>
+            </div>
+
           </div><!-- /.row -->
 
 
+          <div class="row">
+            <div class="fundingSelect col-lg-3 d-flex justify-content-center">
+              <div class="inline field">
 
-          <div class="fundingSelect col-lg-3 d-flex justify-content-center">
-            <div class="inline field">
-        
-            <select multiple="" class="label fundingSelect selection fluid dropdown" id="multiCountrySelect">
-              <option value="">Overlay countries and regions</option>
-            </select>
+                <select multiple="" class="label fundingSelect selection fluid dropdown" id="multiCountrySelect">
+                  <option value="">Overlay countries and regions</option>
+                </select>
+              </div>
+
+            </div>
+
+            <div id="spiderLegend" class=col-lg-9></div>
           </div>
-          
-        </div>
-
 
 
 
@@ -641,7 +851,7 @@
 
 
         <div class="container panel mdl-tabs__panel" id="storyMapPanel" class="storyMapPanel">
-<div><img src="images/storyMapMock.jpg"></img></div>
+          <div><img src="images/storyMapMock.jpg"></img></div>
           <!--
           <div class="col-lg-12" id="storyMapTitle">
             <h2>Stories from the Small Island Developing States</h2>
@@ -697,64 +907,74 @@
 
           <div class="col-lg-12" id="geoTitle">
             <h2>Geospatial Data from the UN Biodiversity Lab</h2>
-            <p>    Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+            <p> Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate
+              change. These challenges translate into structural barriers for SIDS to achieve sustainable development –
+              further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
 
           </div>
           <img src="images/geomock.jpg" style="width:100%">
+        </div>
+
+
+
+        <div class="container panel mdl-tabs__panel" id="dataDownloadPanel">
+
+          <div class="col-lg-12" id="dataDownloadTitle">
+            <h2>Download Data</h2>
+            <p> Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate
+              change. These challenges translate into structural barriers for SIDS to achieve sustainable development –
+              further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
+
           </div>
+          <img src="images/dataDownloadMock.jpg" style="width:100%">
 
+        </div>
 
+        <div class="container panel mdl-tabs__panel" id="machineLearningPanel">
 
-          <div class="container panel mdl-tabs__panel" id="dataDownloadPanel">
+          <div class="col-lg-12" id="mlTitle">
+            <h2>Machine Learning</h2>
+            <p> Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate
+              change. These challenges translate into structural barriers for SIDS to achieve sustainable development –
+              further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
 
-            <div class="col-lg-12" id="dataDownloadTitle">
-              <h2>Download Data</h2>
-              <p>      Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
-  
-            </div>
-            <img src="images/dataDownloadMock.jpg" style="width:100%">
+          </div>
+          <img src="images/machineLearningMock.jpg" style="width:100%">
 
-            </div>
+        </div>
 
-            <div class="container panel mdl-tabs__panel" id="machineLearningPanel">
+        <div class="container panel mdl-tabs__panel" id="powerBiPanel">
 
-              <div class="col-lg-12" id="mlTitle">
-                <h2>Machine Learning</h2>
-                <p>      Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
-    
-              </div>
-              <img src="images/machineLearningMock.jpg" style="width:100%">
-       
-              </div>
+          <div class="col-lg-12" id="powerBiTitle">
+            <h2>Power BI</h2>
+            <p> Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate
+              change. These challenges translate into structural barriers for SIDS to achieve sustainable development –
+              further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
 
-              <div class="container panel mdl-tabs__panel" id="powerBiPanel">
+          </div>
+          <img src="images/powerBiMock.jpg" style="width:100%">
 
-                <div class="col-lg-12" id="powerBiTitle">
-                  <h2>Power BI</h2>
-                  <p>     Related to geographic remoteness, small market sizes, and vulnerability to the impacts of climate change. These challenges translate into structural barriers for SIDS to achieve sustainable development – further exacerbated by the socio-economic impacts of the COVID-19 pandemic. </p>
-      
-                </div>
-                <img src="images/powerBiMock.jpg" style="width:100%">
+        </div>
 
-                </div>
+        <div class="container panel mdl-tabs__panel" id="targetsPanel">
 
-                <div class="container panel mdl-tabs__panel" id="targetsPanel">
+          <div class="col-lg-12" id="targetsTitle">
+            <h2>UNDP SIDS Offer Targets</h2>
+            <p>The SIDS Accelerated Modalities of Action, or SAMOA Pathway, was adopted in Apia, Samoa in September 2014
+              to establish a intergovernmental SIDS Partnership Framework and identify 16 targets to guide development.
+            </p>
 
-                  <div class="col-lg-12" id="targetsTitle">
-                    <h2>UNDP SIDS Offer Targets</h2>
-                    <p>The SIDS Accelerated Modalities of Action, or SAMOA Pathway, was adopted in Apia, Samoa in September 2014 to establish a intergovernmental SIDS Partnership Framework and identify 16 targets to guide development. </p>
-        
-                  </div>
-                  <img src="images/targetsMock.jpg" style="width:100%">
+          </div>
+          <img src="images/targetsMock.jpg" style="width:100%">
 
-                  </div>
+        </div>
 
 
       </div>
     </div>
   </div>
 
-  
+
 
 
 
@@ -776,7 +996,7 @@
   <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
 
 
- 
+
   <!--Tooltips-->
   <!--<script src="scripts/tooltips/tooltipPNT.js"></script>-->
   <script src="scripts/tooltips/tooltipTest.js"></script>
@@ -790,9 +1010,11 @@
   <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
   <script src="scripts/portfolioBars.js"></script>
 
+  <script src="scripts/pies.js"></script>
 
 
- 
+
+
 
 </body>
 
