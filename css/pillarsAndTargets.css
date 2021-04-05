@@ -26,7 +26,6 @@
 }
 
 #pillarsPanel .col-lg-4 {
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -165,6 +164,17 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 5px;
+}
+
+#financeRow {
+  padding-top: 0;
+  padding-bottom: 15px;
+  margin-left: 125px;
+  margin-right: 100px;
+}
+
+#financeRow p {
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=pillarsAndTargets.css.map */
