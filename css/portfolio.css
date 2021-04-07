@@ -118,16 +118,6 @@
   display: flex;
 }
 
-.sdgIcon {
-  flex: 5.882%;
-  padding: 5px;
-}
-
-#sdgIconRow {
-  padding-left: 4px;
-  padding-right: 0px;
-}
-
 .portfolioDropdown {
   margin: -4px;
   padding: 7px;
@@ -150,6 +140,22 @@ polyline {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+.sdgIcon {
+  flex: 5.882%;
+  padding: 5px;
+}
+
+.samoaIcon {
+  flex: 5.882%;
+  padding: 5px;
+}
+
+#iconRow {
+  height: 70px;
+  padding-left: 18px;
+  padding-right: 16px;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
