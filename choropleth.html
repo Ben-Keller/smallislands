@@ -1,0 +1,114 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ireland</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/choropleth.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="css/countryView.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container panel mdl-tabs__panel" id="dataDownloadPanel">
+       
+           
+
+        <div class="col-lg-12" id="countryDataTitle" style="padding-top:40px">
+                <h2>SIDS Country Data</h2>
+        </div>
+
+    <div class="row">
+            <div id="indicatorSelectors" class="col-sm-3">
+
+
+
+                <div class="input__select col-lg-12" >
+                    <select id="indicatorCategorySelect" class="indicatorCategorySelect">
+
+                    </select>
+                  </div>
+                  <!-- <div class="input__select col-lg-12" >
+                    <select id="indicatorSelect" class="indicatorSelect">
+                      <option value="all" hidden>All SfsdIDS</option> 
+                      <option value="Population">Population</option>
+                      <option value="Number of Ports ">Number of Ports</option>
+                      <option value="Ocean Health Index -">OHI</option>
+                      
+
+                      <option value="Mobile cellular subscriptions (per 100 people)  ">Mobile cellular subscriptions (per 100 people)  </option>
+                    </select>
+                  </div> -->
+                 
+                  <!-- <div class="input__select col-lg-12" >
+                    <select id="yearSelect" class="yearSelect">
+                      <option value="all" hidden>2020</option> 
+                      <option value="Population">2019</option>
+                      <option value="Number of Ports ">2018</option>
+                      <option value="Ocean Health Index -">2017</option>
+                      
+
+                      <option value="Mobile cellular subscriptions (per 100 people)  ">2016 </option>
+                    </select>
+                  </div>  -->
+
+
+
+
+
+                  <div class="listbox" id="indicatorSelect">
+                    <ul id="listBoox">
+                    </ul>
+                  </div>
+
+
+
+
+
+            </div>
+            
+
+<div class="mapToolCont col-sm-9">
+    <div id="tooltips"></div>
+
+    <div id="map_container"> </div>
+
+ 
+    <div id="legend_container">
+      <img id="regionLegend" src="images/tempChoroLegend.jpg" style="height:40px; margin-left:90px">
+    </div>
+</div>
+</div>
+  
+
+</div>
+
+
+    
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="jsImport/bootstrap.min.js"></script>
+
+    <script src="scripts/tooltips/tooltipChoro.js"></script>
+
+<script src="scripts/metatest.js"></script>
+
+    <script src="scripts/choropleth.js"></script>
+
+</body>
+
+</html>
