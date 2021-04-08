@@ -6,11 +6,7 @@
   filter: drop-shadow(1px 1px 0px purple);
 }
 
-.active {
-  fill: #f29929;
-}
-
-.hover {
+.countryHover {
   fill: #91eefe;
   filter: drop-shadow(1px 1px 0px purple);
   cursor: pointer;
@@ -20,34 +16,13 @@
   filter: drop-shadow(1px 1px 0px black);
 }
 
-.highlight {
+.countryHighlight {
   fill: #fec44f;
 }
 
 .region.NI {
   fill: #aaa;
   stroke: #aaa;
-}
-
-rect {
-  fill: none;
-  pointer-events: all;
-}
-
-.blue {
-  fill: blue;
-}
-
-.red {
-  fill: red;
-}
-
-.green {
-  fill: green;
-}
-
-.black {
-  fill: black;
 }
 
 /* Colors taken from colorbrewer2.org - blue */
@@ -161,13 +136,9 @@ rect {
   fill: #00441b;
 }
 
-.text {
-  stroke: #333;
+.choroText {
   text-anchor: middle;
-  font-family: "sans-serif";
-  stroke-width: 0.5;
-  fill: #333;
-  font-size: 10pt;
+  color: black;
 }
 
 #map_container svg {
@@ -184,14 +155,6 @@ rect {
   padding: 0;
   float: right;
   margin-right: 5px;
-}
-
-.indicatorSelect {
-  height: 40px;
-  width: 70%;
-  margin: 0;
-  padding: 10px;
-  float: right;
 }
 
 .listbox {
@@ -223,7 +186,7 @@ rect {
   background: #4db052;
 }
 
-li {
+.listbox li {
   -webkit-transition: background-color 200ms linear;
   -moz-transition: background-color 200ms linear;
   -o-transition: background-color 200ms linear;
