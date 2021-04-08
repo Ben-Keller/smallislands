@@ -78,7 +78,7 @@ function renderBars(fundingCategories, sidsDB) {
 
 
 
-    let barsMargin = { top: 60, right: 0, bottom: 0, left: 9 };
+    let barsMargin = { top: 60, right: 0, bottom: 0, left: 19 };
     let svgWidth = 1120, svgHeight = 200;
     let barsHeight = svgHeight - barsMargin.top - barsMargin.bottom, barsWidth = svgWidth - barsMargin.left - barsMargin.right;
     let sourceNames = [], sourceCount = [];
@@ -257,7 +257,7 @@ function renderBars(fundingCategories, sidsDB) {
             $('#portfolioPanel').animate({
                 'background-size': '135%',
                 'background-position-x': '-60%',
-                'background-position-y': '-120%'
+                'background-position-y': '-10%'
             }, 1800, function () { console.log('zoomed'); });
             $("#portfolio1").text("25");
             $("#portfolio2").text("16");
@@ -267,7 +267,7 @@ function renderBars(fundingCategories, sidsDB) {
             $('#portfolioPanel').animate({
                 'background-size': '125%',
                 'background-position-x': '50%',
-                'background-position-y': '-120%'
+                'background-position-y': '-50%'
             }, 1600, function () { console.log('zoomed'); });
             $("#portfolio1").text("9");
             $("#portfolio2").text("9");
@@ -275,8 +275,8 @@ function renderBars(fundingCategories, sidsDB) {
         else if (region == "Pacific (RBAP)") {
             $('#portfolioPanel').animate({
                 'background-size': '130%',
-                'background-position-x': '185%',
-                'background-position-y': '-280%'
+                'background-position-x': '200%',
+                'background-position-y': '-80%'
             }, 1600, function () { console.log('zoomed'); });
             $("#portfolio1").text("16");
             $("#portfolio2").text("13");
