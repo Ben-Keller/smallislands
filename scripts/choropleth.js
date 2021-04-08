@@ -271,7 +271,7 @@ thirdLine=wdi[indicator]["year"][tooltipTitle]
     //create tooltip
     // <div id="tooltip1" class="tooltips" role="tooltip"></div>
     //<div class="arrow" data-popper-arrow></div>
-    $('#tooltip'+indicator).html('<h4 style="color:#0DB14B">'+tooltipTitle+'</h4><h6>'+secondLine+'</h6><h6>'+thirdLine+'</h6><div class="arrow" data-popper-arrow></div></div>')
+    $('#tooltipChoro'+(index).toString()).html('<h4 style="color:#0DB14B">'+tooltipTitle+'</h4><h6>'+secondLine+'</h6><h6>'+thirdLine+'</h6><div class="arrow" data-popper-arrow></div></div>')
     // console.log(index+": yo");
   });
 
@@ -421,7 +421,7 @@ catch{tooltipTitle=countryMaps[index].id;
       //create tooltip
       // <div id="tooltip1" class="tooltips" role="tooltip"></div>
       //<div class="arrow" data-popper-arrow></div>
-      $('#tooltips').append('<div class="tooltips" id="tooltip'+countryMaps[index].id+'" role="tooltip"><h4 style="color:#0DB14B">'+tooltipTitle+'</h4><h6 id="tooltipStat">'+secondLine+'</h6><h6>'+thirdLine+'</h6><div class="arrow" data-popper-arrow></div></div>')
+      $('#tooltips').append('<div class="tooltips" id="tooltipChoro'+(index).toString()+'" role="tooltip"><h4 style="color:#0DB14B">'+tooltipTitle+'</h4><h6 id="tooltipStat">'+secondLine+'</h6><h6>'+thirdLine+'</h6><div class="arrow" data-popper-arrow></div></div>')
       // console.log(index+": yo");
     });
 
