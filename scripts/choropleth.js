@@ -1,11 +1,11 @@
 ///initializations
 const mw = '800';
 const mh = '540';
-var main_chart_svg = d3.select("#map_container").append("svg")
+var main_chart_svg = d3.select("#choro_map_container").append("svg")
   .attr('width', mw)
   .attr('height', mh)//'800'//'auto'
-var legend_svg = d3.select("#legend_container");
-legend_svg.append("svg")
+var choro_legend_svg = d3.select("#choro_legend_container");
+choro_legend_svg.append("svg")
   .attr("width", mw)
   .attr("height", 60)
 var hues = ["b","b","b",]
@@ -57,8 +57,12 @@ function initChoropleth(countryProf,xml,wdi) {
   
       var svgMap = xml.getElementsByTagName("g")[0];			/* set svgMap to root g */
       //console.log(svgMap)
-      ireland = d3.select("#map_container").selectAll("*").node().appendChild(svgMap);		/* island of Ireland map */
+      ireland = d3.select("#choro_map_container").selectAll("*").node().appendChild(svgMap);		/* island of Ireland map */
   
+
+  
+
+
 
       d3.select(ireland).selectAll("path")
         .on("mouseover", function (d) {
@@ -71,17 +75,15 @@ function initChoropleth(countryProf,xml,wdi) {
   
           //console.log(bBox,cx,cy)
           //d3.select(this).attr( "transform", "scale("+scale+","+scale+") translate("+(bBox.x-cx*(scale))+","+(bBox.y-cy*(scale))+") ");    
-          if (d3.select(this).classed("active")) return;		/* no need to change class when county is already selected */
-          d3.select(this).attr("class", "hover");
+          if (d3.select(this).classed("countryActive")) return;		/* no need to change class when county is already selected */
+          d3.select(this).attr("class", "countryHover");
         })
         .on("mouseout", function (d) {
-          if (d3.select(this).classed("active")) return;
+          if (d3.select(this).classed("countryAtive")) return;
           d3.select(this).attr("class", function (d) { 			/* reset county color to quantize range */
-            
-            ////need to change this to update to current quantize 
-            
-            return (quantize(rateById.get(this.id)) + " shadow")
-          });
+           
+          
+              });
         })
         .on("click", function (d) {
           zoomed(d3.select(this));
@@ -114,7 +116,7 @@ function initChoropleth(countryProf,xml,wdi) {
         .attr("y", function (d) {
           return (getBoundingBox(d3.select(this.parentNode).select("path"))[2] - 11);
         })
-        .classed("text", true)
+        .classed("choroText", true)
   
         initTooltips();
     
@@ -162,7 +164,7 @@ quantize = d3.scale.quantize()
   .domain([min,max])
   .range(d3.range(9).map(function (i) { return hues[hueNum] + i + "-9"; }));
 
-d3.select("#map_container").selectAll("path")		/* Map Republic counties to rental data */
+d3.select("#choro_map_container").selectAll("path")		/* Map Republic counties to rental data */
 .attr("class", function (d) {
       stat=data[countryDict[this.id].Country]
     return (quantize(stat) + " shadow");
@@ -211,8 +213,8 @@ for(indicator in wdiMeta){
 
   $('.listbox li').click(function(e) {
 		e.preventDefault();
-		$(this).parent().find('li').removeClass('active');
-		$(this).addClass('active');
+		$(this).parent().find('li').removeClass('countryActive');
+		$(this).addClass('countryActive');
     console.log(this.id)
     
     updateChoropleth(this.id);
@@ -221,9 +223,9 @@ for(indicator in wdiMeta){
 
 
     if(choroInit==0){
-      initLegend(wdiMeta);}
+      initChoroLegend(wdiMeta);}
     
-    else{updateLegend(wdiMeta);}
+    else{updateChoroLegend(wdiMeta);}
     
 	});
   
@@ -257,8 +259,8 @@ function updateTooltips(indicator){
 try{
 tooltipTitle=countryDict[countryMaps[index].id].Country}
 catch{tooltipTitle=countryMaps[index].id}
-console.log(tooltipTitle)
-console.log(wdi[indicator]["year"])
+// console.log(tooltipTitle)
+// console.log(wdi[indicator]["year"])
 try{
 secondLine=wdi[indicator]["data"][tooltipTitle].toFixed(2)}
 catch(error){secondLine="No Data"}
@@ -275,12 +277,12 @@ thirdLine=wdi[indicator]["year"][tooltipTitle]
     // console.log(index+": yo");
   });
 
-  console.log($('#tooltips'))
+  // console.log($('#tooltips'))
 
-  const tooltips = $(".tooltips")
-    .each(function (index) {
-      //console.log(index+": tt");
-    });
+  // const tooltips = $(".tooltips")
+  //   .each(function (index) {
+  //     //console.log(index+": tt");
+  //   });
 
 }
 
@@ -299,18 +301,18 @@ function regionColors(region,member){
     else {return "black"}
 }
 
-function initLegend(wdiMeta){
+function initChoroLegend(wdiMeta){
 
 $("#regionLegend").remove()
 
 console.log("init legend")
 
-  var legend = d3.select("#legend_container").selectAll('*').selectAll('g.legendEntry')
+  var choroLegend = d3.select("#choro_legend_container").selectAll('*').selectAll('g.choroLegendEntry')
   .data(quantize.range())
   .enter()
-  .append('g').attr('class', 'legendEntry');
+  .append('g').attr('class', 'choroLegendEntry');
 
-legend
+choroLegend
   .append('rect')
   .attr("x", function (d, i) {
     return i * -70 + 620;
@@ -322,11 +324,11 @@ legend
   .on("click", function (d) {
     if (lastActive == "") {
       resetAll();
-      d3.select(ireland).selectAll("." + d).attr("class", "highlight");		/* Highlight all counties in range selected */
+      d3.select(ireland).selectAll("." + d).attr("class", "countryHighlight");		/* Highlight all counties in range selected */
     }
   });
 
-legend
+choroLegend
   .append('text').attr("class","textNum")
   .attr("x", function (d, i) {
     return i * -70 + 610;
@@ -340,20 +342,20 @@ legend
   })
   .style("font-size", "12px");
 
-legend.append('text').attr("x",680).attr("y",30).text("0.0").style("font-size", "12px");
+choroLegend.append('text').attr("x",680).attr("y",30).text("0.0").style("font-size", "12px");
 
 choroInit=1;
 
 
 
-legend
-  .append('text').attr("class","legendTitle")
+choroLegend
+  .append('text').attr("class","choroLegendTitle")
   .attr("x", 360)
   .attr("y", 10).attr("text-anchor","middle")
   .text(function (d, i) {
     //extent will be a two-element array, format it however you want:
     //return format(extent[0]) + " - " + format(+extent[1])
-    indi=$(".active")[0].id
+    indi=$(".countryActive")[0].id
     return wdiMeta[indi]["Indicator Name"]//["name"];//.toFixed(2))//extent[0].toFixed(2) + " - " + 
   })
   .style("font-size", "12px")
@@ -361,7 +363,7 @@ legend
 
 }
   
-function updateLegend(wdiMeta){
+function updateChoroLegend(wdiMeta){
     console.log("updating legend")
 
 // hueNum=2
@@ -370,24 +372,24 @@ function updateLegend(wdiMeta){
 //     .domain([min,max])
 //     .range(d3.range(9).map(function (i) { return hues[hueNum] + i + "-9"; }));
 
-  var legend = d3.select("#legend_container").selectAll('g.legendEntry')
+  var choroLegend = d3.select("#choro_legend_container").selectAll('g.choroLegendEntry')
 .data(quantize.range())
 
-legend.selectAll(".legendTitle")
+choroLegend.selectAll(".choroLegendTitle")
 .text(function (d, i) {
   //extent will be a two-element array, format it however you want:
   //return format(extent[0]) + " - " + format(+extent[1])
-  indi=$(".active")[0].id
+  indi=$(".countryActive")[0].id
   return wdiMeta[indi]["Indicator Name"]//["name"];//.toFixed(2))//extent[0].toFixed(2) + " - " + 
 })
 
-legend
+choroLegend
 .selectAll('rect')
 .attr("class", function (d) { 
   console.log(d);
   return d; });
 
-legend
+choroLegend
 .selectAll('.textNum')
 .text(function (d, i) {
   var extent = quantize.invertExtent(d);
@@ -395,7 +397,7 @@ legend
   return (nFormatter(extent[1],2))//extent[0].toFixed(2) + " - " + 
 })
 
-legend.append('text').attr("x",750).attr("y",30).text("0.0").style("font-size", "12px");
+choroLegend.append('text').attr("x",750).attr("y",30).text("0.0").style("font-size", "12px");
 
     //update legend numbers
      // update Title Above Legend
@@ -407,9 +409,9 @@ function initTooltips(){
     const countryMaps = $("#allSids path")
 
     countryMaps.each(function (index) {
-
+      console.log(countryDict[countryMaps[index].id].Country)
 try{
-  console.log(countryDict[countryMaps[index].id])
+
 tooltipTitle=countryDict[countryMaps[index].id].Country;
 secondLine=countryDict[countryMaps[index].id].Region+" region";
 thirdLine="Population: "+countryDict[countryMaps[index].id].Population.toString();}
@@ -421,13 +423,13 @@ catch{tooltipTitle=countryMaps[index].id;
       //create tooltip
       // <div id="tooltip1" class="tooltips" role="tooltip"></div>
       //<div class="arrow" data-popper-arrow></div>
-      $('#tooltips').append('<div class="tooltips" id="tooltipChoro'+(index).toString()+'" role="tooltip"><h4 style="color:#0DB14B">'+tooltipTitle+'</h4><h6 id="tooltipStat">'+secondLine+'</h6><h6>'+thirdLine+'</h6><div class="arrow" data-popper-arrow></div></div>')
+      $('#choroTooltips').append('<div class="choroTooltip tooltips" id="tooltipChoro'+(index).toString()+'" role="tooltip"><h4 style="color:#0DB14B">'+tooltipTitle+'</h4><h6 id="tooltipStat">'+secondLine+'</h6><h6>'+thirdLine+'</h6><div class="arrow" data-popper-arrow></div></div>')
       // console.log(index+": yo");
     });
 
-    console.log($('#tooltips'))
+    console.log($('.choroTooltip'))
 
-    const tooltips = $(".tooltips")
+    const choroTooltips = $(".choroTooltip")
       .each(function (index) {
         //console.log(index+": tt");
       });
@@ -437,7 +439,7 @@ catch{tooltipTitle=countryMaps[index].id;
     popperInstance = new Array();
 
     for (i = 0; i < countryMaps.length; i++) {
-      popperInstance[i] = Popper.createPopper(countryMaps[i], tooltips[i],
+      popperInstance[i] = Popper.createPopper(countryMaps[i], choroTooltips[i],
         {
           placement: 'top',
           modifiers: [
@@ -450,7 +452,7 @@ catch{tooltipTitle=countryMaps[index].id;
     function hide() {
       //map to all
       for (j = 0; j < countryMaps.length; j++) {
-        tooltips[j].removeAttribute('data-show');
+        choroTooltips[j].removeAttribute('data-show');
       }
     }
 
@@ -468,7 +470,7 @@ catch{tooltipTitle=countryMaps[index].id;
 
     function hovered(j) {
       // console.log("i",j)
-      tooltips[j].setAttribute('data-show', '');
+      choroTooltips[j].setAttribute('data-show', '');
       popperInstance[j].update();
     }
 
@@ -499,7 +501,7 @@ function zoomed(d) {
   /* vertically centred.								*/
 
   var xy = getBoundingBox(d);	/* get top left co-ordinates and width and height 	*/
-  if (d.classed("active")) {	/* if county is active reset map scale and county colour */
+  if (d.classed("countryActive")) {	/* if county is active reset map scale and county colour */
     d.attr("class", function (d) {
       return quantize(rateById.get(this.id))
     });
@@ -520,7 +522,7 @@ function zoomed(d) {
 
     main_chart_svg.selectAll("#viewport")
       .transition().duration(750).attr("transform", "scale(" + scale + ")translate(" + tx + "," + ty + ")");
-    d.attr("class", "active");
+    d.attr("class", "countryActive");
     lastActive = d.attr("id");
   }
 }
@@ -535,10 +537,8 @@ function reset(selection) {
 
 function resetAll() {
   /* resets the color of all counties */
-  d3.select(ireland).selectAll("path")
-    .attr("class", function (d) {
-      return quantize(rateById.get(this.id))
-    });
+   indi=$(".countryActive")[0].id
+            updateChoropleth(wdiMeta[indi]["Indicator Name"])
 }
 
 function getBoundingBox(selection) {
