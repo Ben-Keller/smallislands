@@ -37,6 +37,7 @@
   <link href="css/storyMap.css" rel="stylesheet">
   <link href="css/header.css" rel="stylesheet">
   <link href="css/pillarsAndTargets.css" rel="stylesheet">
+  <!-- <link href="css/choropleth.css" rel="stylesheet"> -->
 
 </head>
 
@@ -122,19 +123,22 @@
 
             <h5>UNDP Portfolio</h5>
           </a>
-          <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
-
-            <h5>Country Profiles</h5>
-          </a>
+         
           <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
             <h5>Country Indicators</h5>
           </a>
+          <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
+
+            <h5>Country Profiles</h5>
+          </a>
           
-          <a href="#geoPanel" class="mdl-tabs__tab">
+          
+          <!-- <a href="#geoPanel" class="mdl-tabs__tab">
+
 
             <h5>Geospatial Data</h5>
-          </a>
+          </a> -->
           <!-- <a href="#pillarsPanel" class="mdl-tabs__tab">
 
             <h5>SIDS Offer</h5>
@@ -409,7 +413,7 @@
               <ul>
                 <li id="samoa"><a>SAMOA Pathway</a></li>
                 <li id="sdg"><a class="selectedGoal">Sustainable Development Goals</a></li>
-                <li id="undpss"><a>UNDP Signature Solutions</a></li>
+                <!-- <li id="undpss"><a>UNDP Signature Solutions</a></li> -->
 
                 <div class="goalShader"></div>
               </ul>
@@ -760,6 +764,48 @@
         </div>
 
 
+
+
+
+   <!-- <div class="container panel mdl-tabs__panel" id="countryDataPanel">
+                 
+
+        <div class="col-lg-12" id="countryDataTitle" style="padding-top:40px">
+                <h2>SIDS Country Data</h2>
+        </div>
+
+    <div class="row">
+            <div id="indicatorSelectors" class="col-sm-3">
+
+                <div class="input__select col-lg-12" >
+                    <select id="indicatorCategorySelect" class="indicatorCategorySelect">
+
+                    </select>
+                  </div>
+
+                  <div class="listbox" id="indicatorSelect">
+                    <ul id="listBoox">
+                    </ul>
+                  </div>
+
+            </div>
+            
+<div class="mapToolCont col-sm-9">
+    <div id="tooltips"></div>
+
+    <div id="map_container"> </div>
+
+ 
+    <div id="legend_container">
+      <img id="regionLegend" src="images/tempChoroLegend.jpg" style="height:40px; margin-left:90px">
+    </div>
+</div>
+</div>
+  
+
+</div> -->
+
+
         <div class="container panel mdl-tabs__panel" id="countryDataPanel">
 
           <div class="panelTitleRow">
@@ -1054,6 +1100,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
   <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
+  
 
 
 
@@ -1071,6 +1118,7 @@
   <script src="scripts/portfolioBars.js"></script>
 
   <script src="scripts/pies.js"></script>
+  <!-- <script src="scripts/choropleth.js"></script> -->
 
 
 
