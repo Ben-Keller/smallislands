@@ -42,6 +42,7 @@ Promise.all([
     console.log("promises kept")
     // files[0] will contain file1.csv
     // files[1] will contain file2.csv
+    console.log("jsonnn",files[0])
 
     renderBars(files[0], files[1]);
 
@@ -68,6 +69,13 @@ function renderBars(fundingCategories, sidsDB) {
     filterBudgetData = dat[0]
     filterProjectData = dat[1]
     console.log(filterProjectData)
+
+    filteredProjects=dat[2]
+    updatePieChart1(dataMap1(filteredProjects));
+    updatePieChart2(dataMap2(filteredProjects));
+    updatePieChart1(dataMap1(filteredProjects,fundingCategories));
+    updatePieChart2(dataMap2(filteredProjects));
+
 
 
     let barsMargin = { top: 60, right: 0, bottom: 0, left: 9 };
@@ -458,7 +466,7 @@ function renderBars(fundingCategories, sidsDB) {
         console.log(filterProjectData)
         console.log(filterBudgetData)
 
-        return ([filterBudgetData, filterProjectData]);
+        return ([filterBudgetData, filterProjectData,filteredProjects]);
 
     }
 
@@ -469,7 +477,7 @@ function renderBars(fundingCategories, sidsDB) {
         dat = filterData()
         filterBudgetData = dat[0]
         filterProjectData = dat[1]
-
+        filteredProjects=dat[2]
 
         sourceCount = [];
         for (let key in filterProjectData) {
