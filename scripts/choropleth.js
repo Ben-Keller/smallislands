@@ -101,7 +101,7 @@ function initChoropleth(countryProf, xml, wdi) {
       d3.select(this.parentNode).attr("id", this.id);
     });
 
-  /* Now add a text box to the group with content equal to the id of the group */
+    setTimeout(function(){/* Now add a text box to the group with content equal to the id of the group */
   d3.select('#allSids').selectAll("g")
     .append("svg:text")
     .text(function (d) {
@@ -122,6 +122,7 @@ function initChoropleth(countryProf, xml, wdi) {
       return (getBoundingBox(d3.select(this.parentNode).select("path"))[2] - 11);
     })
     .classed("choroText", true)
+  },100);
 
   initTooltips();
 
