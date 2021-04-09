@@ -101,7 +101,7 @@ function initChoropleth(countryProf, xml, wdi) {
       d3.select(this.parentNode).attr("id", this.id);
     });
 
-    setTimeout(function(){/* Now add a text box to the group with content equal to the id of the group */
+  setTimeout(function(){/* Now add a text box to the group with content equal to the id of the group */
   d3.select('#allSids').selectAll("g")
     .append("svg:text")
     .text(function (d) {
@@ -575,7 +575,11 @@ function zoomed(d,country) {
   /* vertically centred.								*/
 
   var xy = getBoundingBox(d);	/* get top left co-ordinates and width and height 	*/
-  if (d.classed("countryActive")) {	/* if county is active reset map scale and county colour */
+  
+  
+  
+  
+  // if (d.classed("countryActive")) {	/* if county is active reset map scale and county colour */
 
     ///open country profile page to that country
 
@@ -604,24 +608,24 @@ function zoomed(d,country) {
 
 
 
-  } else {			/* zoom into new county      */
-    // console.log("huh")
-    // resetAll();			/* reset county colors	     */
+  // } else {			/* zoom into new county      */
+  //   // console.log("huh")
+  //   // resetAll();			/* reset county colors	     */
 
-    /* scale is the max number of times bounding box will fit into container, capped at 3 times */
-    scale = Math.min(mw / xy[1], mh / xy[3], 3);
+  //   /* scale is the max number of times bounding box will fit into container, capped at 3 times */
+  //   scale = Math.min(mw / xy[1], mh / xy[3], 3);
 
-    /* tx and ty are the translations of the x and y co-ordinates */
-    /* the translation centers the bounding box in the container  */
-    var tx = -xy[0] + (mw - xy[1] * scale) / (2 * scale);
-    var ty = -xy[2] + (mh - xy[3] * scale) / (2 * scale);
+  //   /* tx and ty are the translations of the x and y co-ordinates */
+  //   /* the translation centers the bounding box in the container  */
+  //   var tx = -xy[0] + (mw - xy[1] * scale) / (2 * scale);
+  //   var ty = -xy[2] + (mh - xy[3] * scale) / (2 * scale);
 
-    main_chart_svg.selectAll("#viewport")
-      .transition().duration(750).attr("transform", "scale(" + scale + ")translate(" + tx + "," + ty + ")");
-      d.node().classList.add("countryActive");
-    console.log(d)
-    lastActiveCountry = d.attr("id");
-  }
+  //   main_chart_svg.selectAll("#viewport")
+  //     .transition().duration(750).attr("transform", "scale(" + scale + ")translate(" + tx + "," + ty + ")");
+  //     d.node().classList.add("countryActive");
+  //   console.log(d)
+  //   lastActiveCountry = d.attr("id");
+  // }
 }
 
 function reset(selection) {

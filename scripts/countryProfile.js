@@ -20,11 +20,10 @@ $.getJSON('https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/e
 	console.log(photoLinks);
 })
 
-
-
-fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/photoLinks.json")
-	.then(res => res.json())
-	.then(data => console.log(data))
+var metadata=[]
+$.getJSON("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/keyMetadata.json",function(dat){
+	metadata.push(dat);
+});
 
 fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/allKeyData.json")
 	.then(res => res.json())
@@ -364,14 +363,26 @@ function countryProfileInit(allKeyData) {
 				// popperInstance[j].update();
 				// tooltip3
 				// .attr("display","block")
-				document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#0DB14B">' + d + '</h4><h6>Target: 6 million people with access to clean energy</h6><h6>Target Date: 2030</h6>'
+				try{
+				sourceLink=metadata[0][d].sourceLink}
+				catch(error){sourceLink="Link"}
+				try{
+					sourceName=metadata[0][d].sourceName}
+					catch(error){sourceName="Source"}
+
+				document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#0DB14B">' + d + '</h4><h6>'+sourceName+'</h6><a href="'+sourceLink+'"><h6 style="color:blue">'+sourceLink+'</h6></a>'
 				tooltip3.setAttribute('data-show', '');
 				popperInstance[d].update();
 
 			})
 			.on('mouseout', function (d, i) {
 				tooltip3.removeAttribute('data-show');
+			})
+			.on('click',function(d,i){
+				window.open(metadata[0][d].sourceLink, '_blank');
+				
 			});
+
 		const tooltip3 = $("#tooltipIndicator")[0]
 
 		axis.selectAll("text").each(function (d, i) {
