@@ -141,9 +141,15 @@
   color: black;
 }
 
-#map_container svg {
+#choro_legend_container {
+  margin: 0;
+  padding: 0;
+}
+
+#choro_map_container svg {
   margin-top: 20px;
   padding-top: 10px;
+  overflow: visible;
 }
 
 .indicatorCategorySelect {
@@ -182,8 +188,10 @@
   background-color: #bbb;
 }
 
-.listbox li.active {
+.listbox li.indiActive {
   background: #4db052;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .listbox li {
@@ -209,8 +217,9 @@
 
 #indicatorSelect {
   width: 220px;
-  height: 500px;
-  margin: 10px;
+  height: 350px;
+  margin: 0;
+  padding: 0;
   font-size: 12px;
 }
 
@@ -224,6 +233,27 @@
 
 .c97002B {
   fill: #97002B;
+}
+
+.nodata {
+  fill: #F4F5F8;
+}
+
+#choroInfoBox p {
+  font-size: 14px;
+  text-align: left;
+}
+
+#choroInfoBox {
+  height: 200px;
+  margin: 0;
+  padding: 0;
+  padding-top: 6px;
+  overflow-y: scroll;
+}
+
+#choroInfoBox::-webkit-scrollbar-track {
+  background: #F4F5F8;
 }
 
 /*# sourceMappingURL=choropleth.css.map */
