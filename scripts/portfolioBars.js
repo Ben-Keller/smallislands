@@ -42,7 +42,7 @@ Promise.all([
     console.log("promises kept")
     // files[0] will contain file1.csv
     // files[1] will contain file2.csv
-    console.log("jsonnn",files[0])
+    console.log("jsonnn", files[0])
 
     renderBars(files[0], files[1]);
 
@@ -70,10 +70,12 @@ function renderBars(fundingCategories, sidsDB) {
     filterProjectData = dat[1]
     console.log(filterProjectData)
 
-    filteredProjects=dat[2]
-    updatePieChart1(dataMap1(filteredProjects));
-    updatePieChart2(dataMap2(filteredProjects));
+    filteredProjects = dat[2]
+
+    initPieChart1(dataMap1(filteredProjects, fundingCategories));
     updatePieChart1(dataMap1(filteredProjects,fundingCategories));
+       
+    initPieChart2(dataMap2(filteredProjects))
     updatePieChart2(dataMap2(filteredProjects));
 
 
@@ -215,21 +217,21 @@ function renderBars(fundingCategories, sidsDB) {
 
         updateBars()
 
-        selectedGoal=$('.selectedGoal')[0].innerHTML
-        if(selectedGoal=="Sustainable Development Goals"){
-        $("#samoaIconRow").fadeOut(50);
-        setTimeout(function(){$("#sdgIconRow").fadeIn(150)},50);
+        selectedGoal = $('.selectedGoal')[0].innerHTML
+        if (selectedGoal == "Sustainable Development Goals") {
+            $("#samoaIconRow").fadeOut(50);
+            setTimeout(function () { $("#sdgIconRow").fadeIn(150) }, 50);
         }
-        else if(selectedGoal=="SAMOA Pathway"){
+        else if (selectedGoal == "SAMOA Pathway") {
             $("#sdgIconRow").fadeOut(50)
-            setTimeout(function(){$("#samoaIconRow").fadeIn(150)},50);
-                }
+            setTimeout(function () { $("#samoaIconRow").fadeIn(150) }, 50);
+        }
 
     });
 
     $('#regionSelect ul li').click(function () {
 
-       
+
 
         var x = $(this);
 
@@ -293,7 +295,13 @@ function renderBars(fundingCategories, sidsDB) {
     }
     $("#fundingSelect").html(newOptions)
 
-
+sidsList=["Antigua and Barbuda",    "Aruba",
+    "Bahrain",    "Barbados",    "Belize",    "Cape Verde",    "Comoros",    "Cook Islands",    "Cuba",    "Dominica",    "Dominican Republic",
+    "Grenada",    "Guinea-Bissau",    "Guyana",    "Haiti",    "Jamaica",    "Kiribati",    "Maldives",    "Marshall Islands",
+    "Mauritius",    "Micronesia",    "Nauru",    "Republic of Palau",    "Papua New Guinea",    "Samoa",    "Sao Tome and Principe",    "Seychelles",
+    "Solomon Islands",    "St. Kitts and Nevis",    "St. Vincent and the Grenadines",    "Saint Lucia","Suriname",    "Timor-Leste",
+    "Trinidad and Tobago",  "Tokelau", "Niue","Tonga","Puerto Rico","Palau",  "Tuvalu",    "Vanuatu","Cuba","Bahamas","Fiji","Bermuda"]
+    
     $('#fundingCategorySelect').change(function () {
         var fundingCategory = $(this).val();
 
@@ -305,7 +313,7 @@ function renderBars(fundingCategories, sidsDB) {
         }
         else if (fundingCategory == "Programme Countries") {
             for (fund in fundingCategories) {
-                if (fundingCategories[fund].category == "Government") {
+                if (fundingCategories[fund].category == "Government" && sidsList.includes(fundingCategories[fund].subCategory)) {
                     newOptions = newOptions + "<option value='" + fund + "'>" + fund + "</option>"
                 }
             }
@@ -369,7 +377,42 @@ function renderBars(fundingCategories, sidsDB) {
         }
         else {
             selectedFundingCategory = $("#fundingCategorySelect").val();
-            if (selectedFundingCategory != "All")
+            if (selectedFundingCategory != "All"){
+
+                if (selectedFundingCategory == "Programme Countries" || selectedFundingCategory == "Donor Countries" ){
+                    filteredProjects = filteredProjects.filter(function (d) {
+                        
+                       fundingCat= d.donors.split(";").map(donor => {
+                        try {
+                           if(d.country==fundingCategories[donor].subCategory){
+                                return "Programme Countries"
+                            }
+                            else{
+                                return "Donor Countries"
+                            }
+
+                        }
+                            catch (error) {
+                                return;
+                            }
+                        });
+    
+
+                        ///this returns all government projects, not just programme governments. need to also check if project is in country of gov
+                        if (selectedFundingCategory == "Donor Countries"){
+                        return fundingCat.includes("Donor Countries")
+                        }
+                        if (selectedFundingCategory == "Programme Countries"){
+                            return fundingCat.includes("Programme Countries")
+                            }
+
+
+                    });
+                }
+                else{
+
+
+
                 filteredProjects = filteredProjects.filter(function (d) {
                     fundingCat = d.donors.split(";").map(donor => {
                         try {
@@ -383,7 +426,8 @@ function renderBars(fundingCategories, sidsDB) {
                     return fundingCat.includes(selectedFundingCategory)
                 });
         }
-
+    }
+}
 
         if (selectedYear != "2012to2021") {
             filteredProjects = filteredProjects.filter(function (d) { return d.year == selectedYear });
@@ -466,7 +510,7 @@ function renderBars(fundingCategories, sidsDB) {
         console.log(filterProjectData)
         console.log(filterBudgetData)
 
-        return ([filterBudgetData, filterProjectData,filteredProjects]);
+        return ([filterBudgetData, filterProjectData, filteredProjects]);
 
     }
 
@@ -477,7 +521,7 @@ function renderBars(fundingCategories, sidsDB) {
         dat = filterData()
         filterBudgetData = dat[0]
         filterProjectData = dat[1]
-        filteredProjects=dat[2]
+        filteredProjects = dat[2]
 
         sourceCount = [];
         for (let key in filterProjectData) {
@@ -505,42 +549,42 @@ function renderBars(fundingCategories, sidsDB) {
         y2.domain([0, d3.max(sourceCount2, function (d) { return d; })]);
 
 
-            if(selectedGoal=="SAMOA Pathway"){
+        if (selectedGoal == "SAMOA Pathway") {
 
-                bins=16
-            }else if(selectedGoal=="Sustainable Development Goals"){
-                bins=17    
-               }
+            bins = 16
+        } else if (selectedGoal == "Sustainable Development Goals") {
+            bins = 17
+        }
 
         d3.selectAll(".bar")
             .transition()
             .duration(750)
             .attr("height", function (d) { return barsHeight - y(filterProjectData[d]); })
             .attr("y", function (d) { return y(filterProjectData[d]); })
-            .attr("x", function (d) { return x(d)*17/bins + x.bandwidth() / 16; })
+            .attr("x", function (d) { return x(d) * 17 / bins + x.bandwidth() / 16; })
 
         d3.selectAll(".bar2")
             .transition()
             .duration(750)
             .attr("height", function (d) { return barsHeight - y2(filterBudgetData[d]); })
             .attr("y", function (d) { return y2(filterBudgetData[d]); })
-            .attr("x", function (d) { return x2(d)*17/bins + x.bandwidth() /2.2;})
-        
-        
+            .attr("x", function (d) { return x2(d) * 17 / bins + x.bandwidth() / 2.2; })
+
+
         d3.selectAll(".stick")
             .transition()
             .duration(750)
-            .attr("x", function (d) { return x(d)*17/bins + x.bandwidth() / 6; })
+            .attr("x", function (d) { return x(d) * 17 / bins + x.bandwidth() / 6; })
             .attr("y", function (d) { return y(filterProjectData[d]) - 22; })
 
         d3.selectAll(".stick2")
             .transition()
             .duration(750)
-            .attr("x", function (d) { return x2(d)*17/bins + x2.bandwidth() / 2.2 + x2.bandwidth() / 10; })
+            .attr("x", function (d) { return x2(d) * 17 / bins + x2.bandwidth() / 2.2 + x2.bandwidth() / 10; })
             .attr("y", function (d) { return y2(filterBudgetData[d]) - 8; })
-        
 
-       
+
+
 
 
         projectLabels
@@ -553,7 +597,7 @@ function renderBars(fundingCategories, sidsDB) {
                 return filterProjectData[d].toString().concat(" Projects");
             })
             .attr("x", function (d) {
-                return x(d)*17/bins + x.bandwidth() / 8;
+                return x(d) * 17 / bins + x.bandwidth() / 8;
             })
 
         budgetLabels
@@ -566,7 +610,7 @@ function renderBars(fundingCategories, sidsDB) {
                 return nFormatter(filterBudgetData[d]).concat(" USD");
             })
             .attr("x", function (d) {
-                return x2(d)*17/bins + x2.bandwidth() / 8 + x2.bandwidth() / 2.3;
+                return x2(d) * 17 / bins + x2.bandwidth() / 8 + x2.bandwidth() / 2.3;
             })
 
 
@@ -615,22 +659,6 @@ function renderBars(fundingCategories, sidsDB) {
 
 
 
-    function nFormatter(num, digits) {
-        var si = [
-            { value: 1, symbol: "" },
-            { value: 1E3, symbol: "k" },
-            { value: 1E6, symbol: "M" },
-            { value: 1E9, symbol: "B" }
-        ];
-        var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-        var i;
-        for (i = si.length - 1; i > 0; i--) {
-            if (num >= si[i].value) {
-                break;
-            }
-        }
-        return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
-    }
 
     function sum(obj) {
         var sum = 0;
@@ -641,4 +669,31 @@ function renderBars(fundingCategories, sidsDB) {
         }
         return sum;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+function nFormatter(num, digits) {
+	var si = [
+		{ value: 1, symbol: "" },
+		{ value: 1E3, symbol: "k" },
+		{ value: 1E6, symbol: "M" },
+		{ value: 1E9, symbol: "B" }
+	];
+	var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+	var i;
+	for (i = si.length - 1; i > 0; i--) {
+		if (num >= si[i].value) {
+			break;
+		}
+	}
+	return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
 }

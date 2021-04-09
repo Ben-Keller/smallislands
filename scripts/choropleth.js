@@ -1,6 +1,6 @@
 ///initializations
 const mw = '800';
-const mh = '540';
+const mh = '580';
 var main_chart_svg = d3.select("#choro_map_container").append("svg")
   .attr('width', mw)
   .attr('height', mh)//'800'//'auto'
@@ -11,13 +11,13 @@ choro_legend_svg.append("svg")
 var hues = ["b", "b", "b",]
 //var hue = "g";	/* b=blue, g=green, r=red colours - from ColorBrewer */
 var rateById = d3.map();
-var lastActive = "";
+var lastActiveCountry = "";
 var ireland;
 var data;
-var defaultScale = 0.78;	/* default scale of map - fits nicely on standard screen */
+var defaultScale = 0.75;	/* default scale of map - fits nicely on standard screen */
 var scale = 3;		/* maximum size to zoom county */
 var quantize = d3.scale.quantize()
-var countryDict = []
+var countryJson = []
 var choroInit = 0;
 
 
@@ -28,29 +28,29 @@ function drawRegionLegend() {
 
 function initChoropleth(countryProf, xml, wdi) {
 
-  countryDict = countryProf
+  countryJson = countryProf
 
   console.log(wdi)
 
 
-  console.log("CountryDict", countryDict)
+  console.log("countryJson", countryJson)
 
   //console.log(rateById)
 
 
   main_chart_svg.append('line')
-    .style("stroke", "gray").style("stroke-width", 1).attr("x1", 60).attr("y1", 250).attr("x2", 680).attr("y2", 250);
+    .style("stroke", "gray").style("stroke-width", 1).attr("x1", 80).attr("y1", 275).attr("x2", 740).attr("y2", 275);
 
   main_chart_svg
   main_chart_svg.append('line')
-    .style("stroke", "gray").style("stroke-width", 1).attr("x1", 60).attr("y1", 345).attr("x2", 680).attr("y2", 345);
+    .style("stroke", "gray").style("stroke-width", 1).attr("x1",80).attr("y1", 376).attr("x2", 740).attr("y2", 376);
 
   main_chart_svg
-    .append('text').attr("x", 730).attr("y", 430).text("Pacific").style("fill", "#" + regionColors("Pacific", "Y").substring(1)).style("font-size", "18px").style("font-weight", 1000);
+    .append('text').attr("x",800).attr("y", 480).text("Pacific").style("fill", "#" + regionColors("Pacific", "Y").substring(1)).style("font-size", "18px").style("font-weight", 1000);
   main_chart_svg
-    .append('text').attr("x", 715).attr("y", 120).text("Caribbean").style("font-size", "18px").style("font-weight", 1000).style("fill", "#" + regionColors("Caribbean", "Y").substring(1));
+    .append('text').attr("x", 785).attr("y", 140).text("Caribbean").style("font-size", "18px").style("font-weight", 1000).style("fill", "#" + regionColors("Caribbean", "Y").substring(1));
   main_chart_svg
-    .append('text').attr("x", 740).attr("y", 300).text("AIS").style("fill", "#" + regionColors("AIS", "Y").substring(1)).style("font-size", "18px").style("font-weight", 1000);
+    .append('text').attr("x", 810).attr("y", 340).text("AIS").style("fill", "#" + regionColors("AIS", "Y").substring(1)).style("font-size", "18px").style("font-weight", 1000);
 
 
   // var countyTable = tabulate(data, ["county", "rental"]);		/* render the data table */
@@ -80,14 +80,19 @@ function initChoropleth(countryProf, xml, wdi) {
     })
     .on("mouseout", function (d) {
       if (d3.select(this).classed("countryActive")) return;
-      d3.select(this).attr("class", function (da) { 			/* reset county color to quantize range */
+      d3.select(this).attr("class", function (da) {
+
+        
+        console.log("da",da);
+        console.log(this); 			/* reset county color to quantize range */
         console.log(this.id)
-        return (regionColors(countryDict[this.id].Region, countryDict[this.id]["Member State (Y/N)"]) + " shadow");
+        console.log(countryJson)
+        return (regionColors(countryJson[this.id].Region, countryJson[this.id]["Member State (Y/N)"]) + " shadow");
       });
     })
     .on("click", function (d) {
-      zoomed(d3.select(this));
-      d3.select(this).style("fill", "blue");
+      zoomed(d3.select(this),this.id,countryJson[this.id].Region);
+      //d3.select(this).style("fill", "blue");
     });
 
   /* Let's add an id to each group that wraps a path */
@@ -101,7 +106,7 @@ function initChoropleth(countryProf, xml, wdi) {
     .append("svg:text")
     .text(function (d) {
       try {
-        return countryDict[this.parentNode.id].Country;
+        return countryJson[this.parentNode.id].Country;
       }
       catch {
         return this.parentNode.id;
@@ -124,7 +129,7 @@ function initChoropleth(countryProf, xml, wdi) {
     .attr("class", function (d) {
       //console.log(this.id)
 
-      return (regionColors(countryDict[this.id].Region, countryDict[this.id]["Member State (Y/N)"]) + " shadow");
+      return (regionColors(countryJson[this.id].Region, countryJson[this.id]["Member State (Y/N)"]) + " shadow");
     });
 
 
@@ -170,7 +175,7 @@ function initChoropleth(countryProf, xml, wdi) {
       d3.select(ireland).selectAll("path").on("mouseout", function (d) {
       if (d3.select(this).classed("countryActive")) return;
       d3.select(this).attr("class", function (da) { 			/* reset county color to quantize range */
-        stat = data[countryDict[this.id].Country]
+        stat = data[countryJson[this.id].Country]
         if(typeof stat=="undefined" || stat=="No Data"){
           //hide country name
 
@@ -189,8 +194,8 @@ function initChoropleth(countryProf, xml, wdi) {
 
     d3.select("#choro_map_container").selectAll("path")		/* Map Republic counties to rental data */
       .attr("class", function (d) {
-        stat = data[countryDict[this.id].Country];
-        console.log(stat)
+        stat = data[countryJson[this.id].Country];
+       // console.log(stat)
         if(typeof stat=="undefined" || stat=="No Data"){
           //hide country name
 
@@ -249,13 +254,17 @@ function initChoropleth(countryProf, xml, wdi) {
 
       $('.listbox li').click(function (e) {
         e.preventDefault();
-        $(this).parent().find('li').removeClass('countryActive');
-        $(this).addClass('countryActive');
-        console.log(this.id)
+        $(this).parent().find('li').removeClass('indiActive');
+        $(this).addClass('indiActive');
+        console.log(wdiMeta[this.id])
 
         updateChoropleth(this.id);
 
         updateTooltips(this.id);
+
+        
+
+        $("#choroIndiText").text(wdiMeta[this.id]["Long definition"])
 
 
         if (choroInit == 0) {
@@ -294,7 +303,7 @@ function initChoropleth(countryProf, xml, wdi) {
     countryMaps.each(function (index) {
 
       try {
-        tooltipTitle = countryDict[countryMaps[index].id].Country
+        tooltipTitle = countryJson[countryMaps[index].id].Country
       }
       catch { tooltipTitle = countryMaps[index].id }
       // console.log(tooltipTitle)
@@ -361,7 +370,7 @@ function initChoroLegend(wdiMeta) {
     .attr("height", 12)
     .attr("class", function (d) { return d; })
     .on("click", function (d) {
-      if (lastActive == "") {
+      if (lastActiveCountry == "") {
         resetAll();
         d3.select(ireland).selectAll("." + d).attr("class", "countryHighlight");		/* Highlight all counties in range selected */
       }
@@ -381,7 +390,7 @@ function initChoroLegend(wdiMeta) {
     })
     .style("font-size", "12px");
 
-  choroLegend.append('text').attr("x", 680).attr("y", 30).text("0.0").style("font-size", "12px");
+//  choroLegend.append('text').attr("x", 680).attr("y", 30).text("0.0").style("font-size", "12px");
 
   choroInit = 1;
 
@@ -390,15 +399,15 @@ function initChoroLegend(wdiMeta) {
   choroLegend
     .append('text').attr("class", "choroLegendTitle")
     .attr("x", 360)
-    .attr("y", 10).attr("text-anchor", "middle")
+    .attr("y", 14).attr("text-anchor", "middle")
     .text(function (d, i) {
       //extent will be a two-element array, format it however you want:
       //return format(extent[0]) + " - " + format(+extent[1])
-      indi = $(".countryActive")[0].id
+      indi = $(".indiActive")[0].id
       return wdiMeta[indi]["Indicator Name"]//["name"];//.toFixed(2))//extent[0].toFixed(2) + " - " + 
     })
-    .style("font-size", "12px")
-    .style("font-weight", "bold");
+    .style("font-size", "14px")
+    .style("font-weight", "500");
 
 }
 
@@ -418,7 +427,7 @@ function updateChoroLegend(wdiMeta) {
     .text(function (d, i) {
       //extent will be a two-element array, format it however you want:
       //return format(extent[0]) + " - " + format(+extent[1])
-      indi = $(".countryActive")[0].id
+      indi = $(".indiActive")[0].id
       return wdiMeta[indi]["Indicator Name"]//["name"];//.toFixed(2))//extent[0].toFixed(2) + " - " + 
     })
 
@@ -437,7 +446,7 @@ function updateChoroLegend(wdiMeta) {
       return (nFormatter(extent[1], 2))//extent[0].toFixed(2) + " - " + 
     })
 
-  choroLegend.append('text').attr("x", 750).attr("y", 30).text("0.0").style("font-size", "12px");
+ // choroLegend.append('text').attr("x", 750).attr("y", 30).text("0.0").style("font-size", "12px");
 
   //update legend numbers
   // update Title Above Legend
@@ -449,12 +458,12 @@ function initTooltips() {
   const countryMaps = $("#allSids path")
 
   countryMaps.each(function (index) {
-    console.log(countryDict[countryMaps[index].id].Country)
+    //console.log(countryJson[countryMaps[index].id].Country)
     try {
 
-      tooltipTitle = countryDict[countryMaps[index].id].Country;
-      secondLine = countryDict[countryMaps[index].id].Region + " region";
-      thirdLine = "Population: " + countryDict[countryMaps[index].id].Population.toString();
+      tooltipTitle = countryJson[countryMaps[index].id].Country;
+      secondLine = countryJson[countryMaps[index].id].Region + " region";
+      thirdLine = "Population: " + countryJson[countryMaps[index].id].Population.toString();
     }
     catch {
       tooltipTitle = countryMaps[index].id;
@@ -534,7 +543,25 @@ function initTooltips() {
 
 
 
-function zoomed(d) {
+function setSelectedId(s, v) {
+
+  for (var i = 0; i < s.options.length; i++) {
+    //console.log(s.options[i].value,v)
+    if (s.options[i].value == v) {
+      //console.log("here")
+      s.options[i].selected = true;
+
+      return;
+
+    }
+
+  }
+
+}
+
+
+
+function zoomed(d,country) {
   console.log("zooming")
 
   /* Thanks to http://complextosimple.blogspot.ie/2012/10/zoom-and-center-with-d3.html 	*/
@@ -548,15 +575,37 @@ function zoomed(d) {
 
   var xy = getBoundingBox(d);	/* get top left co-ordinates and width and height 	*/
   if (d.classed("countryActive")) {	/* if county is active reset map scale and county colour */
-    d.attr("class", function (d) {
-      return quantize(rateById.get(this.id))
-    });
+
+    ///open country profile page to that country
+
     main_chart_svg.selectAll("#viewport")
-      .transition().duration(750).attr("transform", "scale(" + defaultScale + ")");
+    .transition().duration(750).attr("transform", "scale(" + defaultScale + ")");
     lastActive = "";
 
+    console.log(country)
+
+ d.attr("class", function (d) {
+      return quantize(rateById.get(this.id))
+    });
+
+    setSelectedId(document.getElementById('countryCategory'),"all")
+    setSelectedId(document.getElementById('countrySelect'), country)
+
+
+   $(".mdl-tabs__tab").removeClass("is-active")
+   $("#countryViewTab").addClass("is-active")
+
+    $("#countryViewTab h5").click()
+
+
+   
+    
+
+
+
   } else {			/* zoom into new county      */
-    resetAll();			/* reset county colors	     */
+    // console.log("huh")
+    // resetAll();			/* reset county colors	     */
 
     /* scale is the max number of times bounding box will fit into container, capped at 3 times */
     scale = Math.min(mw / xy[1], mh / xy[3], 3);
@@ -568,8 +617,9 @@ function zoomed(d) {
 
     main_chart_svg.selectAll("#viewport")
       .transition().duration(750).attr("transform", "scale(" + scale + ")translate(" + tx + "," + ty + ")");
-    d.attr("class", "countryActive");
-    lastActive = d.attr("id");
+      d.node().classList.add("countryActive");
+    console.log(d)
+    lastActiveCountry = d.attr("id");
   }
 }
 
@@ -581,11 +631,11 @@ function reset(selection) {
     });
 }
 
-function resetAll() {
-  /* resets the color of all counties */
-  indi = $(".countryActive")[0].id
-  updateChoropleth(wdiMeta[indi]["Indicator Name"])
-}
+// function resetAll() {
+//   /* resets the color of all counties */
+//   indi = $(".indiActive")[0].id
+//   updateChoropleth(wdiMeta[indi]["Indicator Name"])
+// }
 
 function getBoundingBox(selection) {
   /* get x,y co-ordinates of top-left of bounding box and width and height */
@@ -601,7 +651,7 @@ function getBoundingBox(selection) {
 
 Promise.all([
   d3.json("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/profileData.json"),
-  d3.xml("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/maps/sidsSVG.svg"),
+  d3.xml("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/maps/sidsSVG2.svg"),
   d3.json("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/recentWdiSidsFull.json")
 ]).then(function (files) {
   console.log("done")
