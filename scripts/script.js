@@ -28,11 +28,7 @@ window.onload = function(){
 
 
 
-  
-
-
-
-  
+    
 
  $('#vizSelect ul li').click(function() {
       var x = $(this);
@@ -57,13 +53,13 @@ $('.goalShader').css({
 
 
 
-$('#countryDataTab').click(function(){
-         var x= $("#choropleth");
-$('.vizShader').css({
-         'width': x.width()+64,
-         'left':x.position().left
-        });
-    });
+// $('#countryDataTab').click(function(){
+//          var x= $("#choropleth");
+// $('.vizShader').css({
+//          'width': x.width()+64,
+//          'left':x.position().left
+//         });
+//     });
 
 ////setup devmode button
 
