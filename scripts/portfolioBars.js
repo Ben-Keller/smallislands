@@ -442,6 +442,9 @@ sidsList=["Antigua and Barbuda",    "Aruba",
         if (selectedYear != "2012to2021") {
             filteredProjects = filteredProjects.filter(function (d) { return d.year == selectedYear });
         }
+	    else{
+            filteredProjects = filteredProjects.filter(function (d) { return Number.isInteger(parseInt(d.year))});
+        }
         if (selectedRegion != "Global") {
             filteredProjects = filteredProjects.filter(function (d) {
                 return d.region == selectedRegion
