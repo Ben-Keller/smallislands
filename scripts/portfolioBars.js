@@ -79,6 +79,16 @@ function renderBars(fundingCategories, sidsDB) {
     updatePieChart2(dataMap2(filteredProjects));
 
 
+            var distinct = []
+            var totalBudg=0
+            for (project in filteredProjects){
+                totalBudg+=parseInt(filteredProjects[project].budget)
+               if (!distinct.includes(filteredProjects[project].title)){
+                  distinct.push(filteredProjects[project].title)}}
+
+            $("#portfolio3").text(distinct.length)//(sum(filterProjectData)));
+console.log("budg",totalBudg)
+            $("#portfolio4").text(nFormatter(totalBudg,1));
 
     let barsMargin = { top: 60, right: 0, bottom: 0, left: 19 };
     let svgWidth = 1120, svgHeight = 200;
@@ -618,30 +628,17 @@ sidsList=["Antigua and Barbuda",    "Aruba",
         year = document.getElementById("yearSelect").value
         region = $('.selectedRegion')[0].innerHTML.split(' ')[0]
 
-        if (year == "2012to2021") {
+        
+            var distinct = []
+            var totalBudg=0
+            for (project in filteredProjects){
+                totalBudg+=parseInt(filteredProjects[project].budget)
+               if (!distinct.includes(filteredProjects[project].title)){
+                  distinct.push(filteredProjects[project].title)}}
 
-            if (region == "Global") {
-                $("#portfolio3").text("1533");
-            }
-            if (region == "Caribbean") {
-                $("#portfolio3").text("720");
-            }
-            if (region == "Pacific") {
-                $("#portfolio3").text("327");
-            }
-            if (region == "AIS") {
-                $("#portfolio3").text("464");
-            }
-
-        }
-
-        else {
-
-            $("#portfolio3").text((sum(filterProjectData)));
-
-
-            $("#portfolio4").text(nFormatter(sum(filterBudgetData)));
-        }
+            $("#portfolio3").text(distinct.length)//(sum(filterProjectData)));
+console.log("budg",totalBudg)
+            $("#portfolio4").text(nFormatter(totalBudg,1));
 
         ///update Pie1
 
