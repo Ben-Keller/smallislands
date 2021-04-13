@@ -1,22 +1,17 @@
 
-let colors = [
-    "#E5243B",
-    "#DDA63A",
-    "#4C9F38",
-    "#C5192D",
-    "#FF3A21",
-    "#26BDE2",
-    "#FCC30B",
-    "#A21942",
-    "#FD6925",
-    "#DD1367",
-    "#FD9D24",
-    "#BF8B2E",
-    "#3F7E44",
-    "#0A97D9",
-    "#56C02B",
-    "#00689D",
-    "#19486A"
+let sdgColors = [ "#E5243B", "#DDA63A",  "#4C9F38",  "#C5192D",  "#FF3A21",
+    "#26BDE2",  "#FCC30B",  "#A21942",  "#FD6925",  "#DD1367",  "#FD9D24",
+    "#BF8B2E",  "#3F7E44",  "#0A97D9",  "#56C02B",  "#00689D",  "#19486A"
+]
+
+let samoaColors = [ "#A21942", "#3F7E44",  "#FCC30B",  "#19486A",  "#0A97D9",
+    "#DDA63A",  "#26BDE2",  "#FD6925",  "#BF8B2E",  "#FD9D24",  "#4C9F38",
+    "#FF3A21",  "#DD1367",  "#0A97D9",  "#00689D",  "#00A99D",  "#F4F5F8"
+]
+
+let ssColors = [ "#E3253C", "#0076B0",  "#F26A2C",  "#417F45",  "#FAB715",
+    "#EF412C",  "#F4F5F8",  "#F4F5F8",  "#F4F5F8",  "#F4F5F8",  "#F4F5F8",
+    "#F4F5F8",  "#F4F5F8",  "#F4F5F8",  "#F4F5F8",  "#F4F5F8",  "#F4F5F8"
 ]
 
 sdgToSamoa = { 1: [1], 2: [6], 3: [11], 4: [12, 13], 5: [13], 6: [7], 7: [3], 8: [1], 9: [1, 8], 10: [12, 13], 11: [1, 4, 8, 10], 12: [9, 10], 13: [2, 4], 14: [5, 10, 14], 15: [10, 15], 16: [1, 13], 17: [16] }
@@ -24,10 +19,11 @@ samoaPriorities = ["Sustainable, inclusive and equitable economic growth", "Clim
     "Disaster Risk Reduction", "Oceans and Seas", "Food Security and Nutrition", "Water and Sanitation", "Sustainable Transportation",
     "Sustainable Consumption and Production", "Chemical and Waste management", "Health and NCDs",
     "Gender Equality", "Social Development", "Biodiversity", "Invasive species", "Means of Implementation"]
-
+    ss=["Keeping people out of poverty","Strengthen effective, inclusive and accountable governance","Enhance national prevention and recovery capacities for resilient societies","Promote nature-based solutions for a sustainable planet","Close the energy gap","Strenghten gender equality and the empowerment of women and girls"]
 sdgs = ["No poverty", "Zero hunger", "Good health and well-being", "Quality education", "Gender equality", "Clean water and sanitation", "Affordable and clean energy", "Decent work and economic growth", "Industry, innovation and infrastructure", "Reduced inequalities", "Sustainable cities and communities", "Responsible consumption and production", "Climate action", "Life below water", "Life on land", "Peace, justice, and strong institutions", "Partnerships for the goals"]
 
 $("#samoaIconRow").hide();
+$("#SSIconRow").hide();
 
 var budgetDataFull = {};
 projectData = {}
@@ -65,6 +61,8 @@ Promise.all([
 
 function renderBars(fundingCategories, sidsDB) {
 
+  
+
     dat = filterData()
     filterBudgetData = dat[0]
     filterProjectData = dat[1]
@@ -79,16 +77,16 @@ function renderBars(fundingCategories, sidsDB) {
     updatePieChart2(dataMap2(filteredProjects));
 
 
-            var distinct = []
-            var totalBudg=0
-            for (project in filteredProjects){
-                totalBudg+=parseInt(filteredProjects[project].budget)
-               if (!distinct.includes(filteredProjects[project].title)){
-                  distinct.push(filteredProjects[project].title)}}
+    var distinct = []
+    var totalBudg=0
+    for (project in filteredProjects){
+        totalBudg+=parseInt(filteredProjects[project].budget)
+       if (!distinct.includes(filteredProjects[project].title)){
+          distinct.push(filteredProjects[project].title)}}
 
-            $("#portfolio3").text(distinct.length)//(sum(filterProjectData)));
+    $("#portfolio3").text(distinct.length)//(sum(filterProjectData)));
 console.log("budg",totalBudg)
-            $("#portfolio4").text(nFormatter(totalBudg,1));
+    $("#portfolio4").text(nFormatter(totalBudg,1));
 
     let barsMargin = { top: 60, right: 0, bottom: 0, left: 19 };
     let svgWidth = 1120, svgHeight = 200;
@@ -123,7 +121,7 @@ console.log("budg",totalBudg)
         .attr("x", function (d) { return x(d) + x.bandwidth() / 6; })//+ x2.bandwidth()/2.5+ x2.bandwidth()/6;})
         .attr("y", function (d) { return y(filterProjectData[d]) - 22; })
         .attr("width", x.bandwidth() / 25)
-        .attr("height", function (d) { return 22; })
+        .attr("height", 22)
         .style("opacity", 0.4);
 
     // Create rectangles
@@ -138,7 +136,7 @@ console.log("budg",totalBudg)
         .attr("y", function (d) { return y(filterProjectData[d]); })
         .attr("width", x.bandwidth() / 4)
         .attr("height", function (d) { return barsHeight - y(filterProjectData[d]); })
-        .attr("fill", function (d, i) { return colors[i] })
+        .attr("fill", function (d, i) { return sdgColors[i] })
 
     projectLabels = bars.append("text")
         .text(function (d) {
@@ -179,7 +177,7 @@ console.log("budg",totalBudg)
         .attr("x", function (d) { return x2(d) + x2.bandwidth() / 2.2 + x2.bandwidth() / 10; })
         .attr("y", function (d) { return y2(filterBudgetData[d]) - 8; })
         .attr("width", x2.bandwidth() / 25)
-        .attr("height", function (d) { return 8; })
+        .attr("height", 8)
         .style("opacity", 0.4);
 
     // Create rectangles
@@ -194,7 +192,7 @@ console.log("budg",totalBudg)
         .attr("y", function (d) { return y2(filterBudgetData[d]); })
         .attr("width", x2.bandwidth() / 4)
         .attr("height", function (d) { return barsHeight - y2(filterBudgetData[d]); })
-        .attr("fill", function (d, i) { return colors[i] })
+        .attr("fill", function (d, i) { return sdgColors[i] })
         .style("opacity", 0.5);
 
 
@@ -213,6 +211,11 @@ console.log("budg",totalBudg)
         .attr("fill", "black")
         .attr("text-anchor", "middle");
 
+
+        
+
+
+
     $('#goalSelect ul li').click(function () {
         var x = $(this);
 
@@ -225,17 +228,30 @@ console.log("budg",totalBudg)
         $(this).children('a').addClass('selectedGoal');
         console.log(this)
 
-        updateBars()
+        
 
         selectedGoal = $('.selectedGoal')[0].innerHTML
+
+        console.log(selectedGoal)
+
         if (selectedGoal == "Sustainable Development Goals") {
             $("#samoaIconRow").fadeOut(50);
+            $("#SSIconRow").fadeOut(50)
             setTimeout(function () { $("#sdgIconRow").fadeIn(150) }, 50);
         }
         else if (selectedGoal == "SAMOA Pathway") {
             $("#sdgIconRow").fadeOut(50)
+            $("#SSIconRow").fadeOut(50)
             setTimeout(function () { $("#samoaIconRow").fadeIn(150) }, 50);
         }
+        else if (selectedGoal == "UNDP Signature Solutions") {
+            console.log("ssss")
+            $("#sdgIconRow").fadeOut(50)
+            $("#samoaIconRow").fadeOut(50)
+            setTimeout(function () { $("#SSIconRow").fadeIn(150) }, 50);
+        }
+
+        updateBars()
 
     });
 
@@ -295,6 +311,7 @@ console.log("budg",totalBudg)
         }
 
         updateBars()
+        
 
     });
 
@@ -442,7 +459,7 @@ sidsList=["Antigua and Barbuda",    "Aruba",
         if (selectedYear != "2012to2021") {
             filteredProjects = filteredProjects.filter(function (d) { return d.year == selectedYear });
         }
-	    else{
+        else{
             filteredProjects = filteredProjects.filter(function (d) { return Number.isInteger(parseInt(d.year))});
         }
         if (selectedRegion != "Global") {
@@ -458,6 +475,7 @@ sidsList=["Antigua and Barbuda",    "Aruba",
 
         selectedGoal = $('.selectedGoal')[0].innerHTML
 
+  
 
         if (selectedGoal == "Sustainable Development Goals") {
             console.log("sdgsss")
@@ -478,7 +496,27 @@ sidsList=["Antigua and Barbuda",    "Aruba",
                 filterProjectData["bar" + (i + 1).toString()] = sdgFilteredProjects.length
             }
 
+        }
 
+     
+        else if (selectedGoal == "UNDP Signature Solutions") {
+            console.log("solutions")
+
+            for (i = 0; i < 6; i++) {
+
+                ssFilteredProjects = filteredProjects.filter(function (d) {
+                    return d.solution.includes(ss[i])
+                });
+
+                totalBudget = 0
+
+
+                for (project in ssFilteredProjects) {
+                    totalBudget = totalBudget + parseInt(ssFilteredProjects[project].budget)
+                }
+                filterBudgetData["bar" + (i + 1).toString()] = totalBudget
+                filterProjectData["bar" + (i + 1).toString()] = ssFilteredProjects.length
+            }
 
         }
 
@@ -532,6 +570,8 @@ sidsList=["Antigua and Barbuda",    "Aruba",
     function updateBars() {
 
         dat = filterData()
+console.log(dat)
+
         filterBudgetData = dat[0]
         filterProjectData = dat[1]
         filteredProjects = dat[2]
@@ -563,67 +603,134 @@ sidsList=["Antigua and Barbuda",    "Aruba",
 
 
         if (selectedGoal == "SAMOA Pathway") {
-
+            colors=samoaColors
             bins = 16
+            xOffset=0
         } else if (selectedGoal == "Sustainable Development Goals") {
             bins = 17
+            xOffset=0
+            colors=sdgColors
         }
+        else if (selectedGoal == "UNDP Signature Solutions") {
+            xOffset=45
+            bins = 6
+            colors=ssColors
+        }
+
+        
 
         d3.selectAll(".bar")
             .transition()
             .duration(750)
-            .attr("height", function (d) { return barsHeight - y(filterProjectData[d]); })
-            .attr("y", function (d) { return y(filterProjectData[d]); })
-            .attr("x", function (d) { return x(d) * 17 / bins + x.bandwidth() / 16; })
+            .attr("height", function (d,i) { 
+                if(i<bins){
+                return barsHeight - y(filterProjectData[d]);}
+                else{return 0}
+            })
+            .attr("y", function (d,i) { 
+                if(i<bins){
+                return y(filterProjectData[d]);}
+                else{return 0}
+            })
+            .attr("x", function (d) { return x(d) * 17 / bins + x.bandwidth() / 16 +xOffset; })
+            .attr("fill", function (d, i) { return colors[i] })
 
         d3.selectAll(".bar2")
             .transition()
             .duration(750)
-            .attr("height", function (d) { return barsHeight - y2(filterBudgetData[d]); })
-            .attr("y", function (d) { return y2(filterBudgetData[d]); })
-            .attr("x", function (d) { return x2(d) * 17 / bins + x.bandwidth() / 2.2; })
-
+            .attr("height", function (d,i) { 
+                if(i<bins){
+                return barsHeight - y2(filterBudgetData[d]);}
+                else{return 0}
+            })
+            .attr("y", function (d,i) { 
+                if(i<bins){
+                return y2(filterBudgetData[d]);}
+                else{return 0}
+            })
+            .attr("x", function (d) { return x2(d) * 17 / bins + x.bandwidth() / 2.2+xOffset; })
+            .attr("fill", function (d, i) { return colors[i] })
 
         d3.selectAll(".stick")
             .transition()
             .duration(750)
-            .attr("x", function (d) { return x(d) * 17 / bins + x.bandwidth() / 6; })
-            .attr("y", function (d) { return y(filterProjectData[d]) - 22; })
+            .attr("x", function (d) { return x(d) * 17 / bins + x.bandwidth() / 6 +xOffset; })
+            .attr("y", function (d,i) {
+                if(i<bins){ 
+                return y(filterProjectData[d]) - 22;}
+                else{return 0}
+            })
+            .attr("height",function(d,i){
+                if(i<bins){
+                if(filterProjectData[d]>0){ return 22} 
+                else{return 0}}
+                else{return 0}
+            })
 
         d3.selectAll(".stick2")
             .transition()
             .duration(750)
-            .attr("x", function (d) { return x2(d) * 17 / bins + x2.bandwidth() / 2.2 + x2.bandwidth() / 10; })
-            .attr("y", function (d) { return y2(filterBudgetData[d]) - 8; })
+            .attr("x", function (d) { return x2(d) * 17 / bins + x2.bandwidth() / 2.2 + x2.bandwidth() / 10 +xOffset; })
+            .attr("y", function (d,i) {
+                if(i<bins){
+                 return y2(filterBudgetData[d]) - 8;}
+                else{return 0}
+                })
+            .attr("height",function(d,i){
+                if(i<bins){
+                if(filterProjectData[d]>0){ return 8} 
+                else{return 0}}
+                else{return 0}
+            })
 
+              
 
-
+console.log(filterProjectData)
 
 
         projectLabels
             .transition()
             .duration(750)
-            .attr("y", function (d) {
-                return y(filterProjectData[d]) - 24;
+            .attr("y", function (d,i) {
+                if(i<bins){
+                return y(filterProjectData[d]) - 24;}
+                else{return 0}
+               
             })
-            .text(function (d) {
-                return filterProjectData[d].toString().concat(" Projects");
+            .text(function (d,i) {
+                if(i<bins){
+                    if(filterProjectData[d]>0){
+                return filterProjectData[d].toString().concat(" Projects");}
+                else{return ""}
+            }
+                else{
+                    return "";
+                }
             })
             .attr("x", function (d) {
-                return x(d) * 17 / bins + x.bandwidth() / 8;
+                return x(d) * 17 / bins + x.bandwidth() / 8 +xOffset;
             })
 
         budgetLabels
             .transition()
             .duration(750)
-            .attr("y", function (d) {
-                return y2(filterBudgetData[d]) - 10;
+            .attr("y", function (d,i) {
+                if(i<bins){
+                return y2(filterBudgetData[d]) - 10;}
+                else{return 0}
             })
-            .text(function (d) {
-                return nFormatter(filterBudgetData[d]).concat(" USD");
+            .text(function (d,i) {
+                if(i<bins){
+                    if(filterBudgetData[d]>0){
+                return nFormatter(filterBudgetData[d]).concat(" USD");}
+                else{return ""}
+            }
+                else{
+                    return ""
+                }
             })
             .attr("x", function (d) {
-                return x2(d) * 17 / bins + x2.bandwidth() / 8 + x2.bandwidth() / 2.3;
+                return x2(d) * 17 / bins + x2.bandwidth() / 8 + x2.bandwidth() / 2.3 +xOffset;
             })
 
 
@@ -631,7 +738,7 @@ sidsList=["Antigua and Barbuda",    "Aruba",
         year = document.getElementById("yearSelect").value
         region = $('.selectedRegion')[0].innerHTML.split(' ')[0]
 
-        
+
             var distinct = []
             var totalBudg=0
             for (project in filteredProjects){
@@ -642,6 +749,7 @@ sidsList=["Antigua and Barbuda",    "Aruba",
             $("#portfolio3").text(distinct.length)//(sum(filterProjectData)));
 console.log("budg",totalBudg)
             $("#portfolio4").text(nFormatter(totalBudg,1));
+        // }
 
         ///update Pie1
 
@@ -654,6 +762,9 @@ console.log("budg",totalBudg)
         updatePieChart2(dataMap2(filteredProjects, fundingCategories));
 
 
+
+
+        updateProjectTooltips(filteredProjects)
 
     }
 
@@ -669,14 +780,11 @@ console.log("budg",totalBudg)
         }
         return sum;
     }
+
+
+    
+    initProjectTooltips()
 }
-
-
-
-
-
-
-
 
 
 
@@ -697,3 +805,140 @@ function nFormatter(num, digits) {
 	}
 	return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
 }
+
+
+// wheelzoom(document.querySelector('img#portfolioPanel'));
+
+//$("#portfolioPanel").backgroundDraggable();
+
+function updateProjectTooltips(filteredProjects){
+    const projectTooltips = $(".projectTooltip")
+      .each(function (index) {
+        tooltipTitle = "Projects";
+        secondLine = sdgs[index]
+        thirdLine = "Project 2"
+
+        sdgFilteredProjects = filteredProjects.filter(function (d) {
+
+            return d.sdg.includes(sdgs[index])
+        });
+
+
+        projectList=""
+
+        for(project in sdgFilteredProjects){
+            projectList+="<h6><b>"+(parseInt(project)+1).toString()+") </b>"+sdgFilteredProjects[project].title+"</h6>"
+        }
+
+        // sdgFilteredProjects.eac
+        //     projectList=projectList+
+        // )
+        $('#jjtooltipProject' + (index).toString()).html('<h4 style="color:#0DB14B">' +
+         "SDG "+index.toString()+" - "+sdgs[index]+ '</h4>'+projectList)
+//+ '</h4><h6>' + secondLine + '</h6><h6>' + thirdLine + '</h6>
+        //$('#tooltipProject' + (index).toString()).multiline(projectList)
+        // <h4 style="color:#0DB14B">' + tooltipTitle + 
+        // '</h4><h6 id="tooltipStat">' + secondLine + '</h6><h6>' + index + 
+        // '</h6><div class="arrow" data-popper-arrow></div></div>')
+    
+      });
+}
+    
+
+function initProjectTooltips() {
+    const bars = $(".bar")
+  
+    console.log("bars",bars)
+
+    bars.each(function (index) {
+console.log("bars",index)
+        tooltipTitle = "Projects";
+        secondLine = sdgs[index]
+        thirdLine = "Project 2"
+ 
+      $('#projectTooltips').append('<div class="projectTooltip tooltips" id="tooltipProject' + 
+      (index).toString() + '" role="tooltip"><div class="jjprojectTooltip" id="jjtooltipProject' + 
+      (index).toString()+'"><h4 style="color:#0DB14B">'
+       + tooltipTitle + '</h4><h6 id="tooltipStat">' + secondLine + '</h6><h6>'
+       + thirdLine + '</h6></div><div class="arrow" data-popper-arrow></div></div>')
+      // console.log(index+": yo");
+    });
+    
+    const projectTooltips = $(".projectTooltip")
+      .each(function (index) {
+        //console.log(index+": tt");
+      });
+  
+    //console.log(tooltips)
+  
+    projectPopperInstance = new Array();
+  
+    for (i = 0; i < bars.length; i++) {
+      projectPopperInstance[i] = Popper.createPopper(bars[i], projectTooltips[i],
+        {
+          placement: 'right',
+          modifiers: [
+            {
+              name: 'offset',
+              options: {
+                offset: [0, 0],
+              },
+            },],
+        });
+    }
+  
+    function hide() {
+      //map to all
+      for (j = 0; j < bars.length; j++) {
+        projectTooltips[j].removeAttribute('data-show');
+      }
+    }
+
+    function hovered(j) {
+
+        projectTooltips[j].setAttribute('data-show', '');
+        projectPopperInstance[j].update();;
+      }
+
+    const showEvents = ['mouseenter', 'focus'];
+    const hideEvents = ['mouseleave', 'blur'];
+  
+    showEvents.forEach(event => {
+      for (j = 0; j < bars.length; j++) {
+ 
+        bars[j].addEventListener(event, hovered.bind(null, j));
+        projectTooltips[j].addEventListener(event, hovered.bind(null, j));
+      }
+    });
+  
+   
+  
+    hideEvents.forEach(event => {
+      //map to all?
+      for (j = 0; j < bars.length; j++) {
+        //    console.log("i",j)
+        bars[j].addEventListener(event, hide);
+        projectTooltips[j].addEventListener(event, hide);
+      }
+    });
+  
+  }
+
+
+
+var portfolioHeaders = {
+    id: 'Project ID',////.replace(/,/g, ''), // remove commas to avoid errors
+    country: "Country",
+    region: "Region",
+    year: "Year",
+    title: "Project Title",
+    budget: "Budget",
+    expense: "Expense",
+    sdg: "SDGs",
+    solution: "Signature Solution",
+    donors: "Funding Sources",
+};
+
+$("#portfolioCsvButton").click(function(){ console.log(filteredProjects);
+    exportCSVFile(portfolioHeaders,filteredProjects,'sids_projects_'+selectedRegion+"_"+selectedYear,"")}) //download(filteredProjects); });
+

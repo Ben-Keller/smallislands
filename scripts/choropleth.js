@@ -24,6 +24,7 @@ var choroInit = 0;
 function drawRegionLegend() {
   ///draw region legend
   console.log("region legend drawn")
+  $("#indicatorExport").hide()
 }
 
 function initChoropleth(countryProf, xml, wdi) {
@@ -82,11 +83,6 @@ function initChoropleth(countryProf, xml, wdi) {
       if (d3.select(this).classed("countryActive")) return;
       d3.select(this).attr("class", function (da) {
 
-        
-        console.log("da",da);
-        console.log(this); 			/* reset county color to quantize range */
-        console.log(this.id)
-        console.log(countryJson)
         return (regionColors(countryJson[this.id].Region, countryJson[this.id]["Member State (Y/N)"]) + " shadow");
       });
     })
@@ -101,8 +97,22 @@ function initChoropleth(countryProf, xml, wdi) {
       d3.select(this.parentNode).attr("id", this.id);
     });
 
-  setTimeout(function(){/* Now add a text box to the group with content equal to the id of the group */
-  d3.select('#allSids').selectAll("g")
+
+
+  initTooltips();
+
+  d3.select(ireland).selectAll("path")		/* Map Republic counties to rental data */
+    .attr("class", function (d) {
+      //console.log(this.id)
+
+      return (regionColors(countryJson[this.id].Region, countryJson[this.id]["Member State (Y/N)"]) + " shadow");
+    });
+
+  appendCountryTitles()
+
+
+  function appendCountryTitles(){
+    d3.select('#allSids').selectAll("g")
     .append("svg:text")
     .text(function (d) {
       try {
@@ -122,17 +132,7 @@ function initChoropleth(countryProf, xml, wdi) {
       return (getBoundingBox(d3.select(this.parentNode).select("path"))[2] - 11);
     })
     .classed("choroText", true)
-  },100);
-
-  initTooltips();
-
-  d3.select(ireland).selectAll("path")		/* Map Republic counties to rental data */
-    .attr("class", function (d) {
-      //console.log(this.id)
-
-      return (regionColors(countryJson[this.id].Region, countryJson[this.id]["Member State (Y/N)"]) + " shadow");
-    });
-
+  }
 
   function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -140,6 +140,19 @@ function initChoropleth(countryProf, xml, wdi) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
   }
 
+  $("#indicatorCsvButton").click(function(){
+    console.log("exporting indicator data")
+    newIndicators=[]
+    for (const [key, value] of Object.entries(indicatorData)) {
+      newIndicators.push({"Country":key,"Value":value})
+    }
+    console.log(wdiMeta[indicator].Source)//indicator)
+
+    note="Indicator: "+wdiMeta[indicator]["Indicator Name"]+","+wdiMeta[indicator].Source
+
+    exportCSVFile({Country:"Country",Value:"Value"},newIndicators,"indicator_data",note)}) //download(filteredProjects); });
+
+  
   function updateChoropleth(indicator) {
 
     hueNum = getRandomInt(0, 3)
@@ -151,9 +164,9 @@ function initChoropleth(countryProf, xml, wdi) {
     console.log(indicator)
     console.log(wdi[indicator])
 
-    data = wdi[indicator]["data"]//[selectedYear]
+    indicatorData = wdi[indicator]["data"]//[selectedYear]
 
-    console.log(data)
+
 
     // d3.map(data, function (d) { "jajaja",console.log(d);
     //     rateById.set(d.CountryCode, +d[indicator]) });	/* create the data map */
@@ -161,10 +174,10 @@ function initChoropleth(countryProf, xml, wdi) {
     /* break the data values into 9 ranges of €100 each   */
     /* max and min values already known so 400-1300 works */
 
-    max = Math.max(...Object.values(data).filter(function (el) {
+    max = Math.max(...Object.values(indicatorData).filter(function (el) {
       return !isNaN(parseFloat(el)) && isFinite(el);
     }))
-    min = Math.min(...Object.values(data).filter(function (el) {
+    min = Math.min(...Object.values(indicatorData).filter(function (el) {
       return !isNaN(parseFloat(el)) && isFinite(el);
     }))
     // max=
@@ -176,7 +189,7 @@ function initChoropleth(countryProf, xml, wdi) {
       d3.select(ireland).selectAll("path").on("mouseout", function (d) {
       if (d3.select(this).classed("countryActive")) return;
       d3.select(this).attr("class", function (da) { 			/* reset county color to quantize range */
-        stat = data[countryJson[this.id].Country]
+        stat = indicatorData[countryJson[this.id].Country]
         if(typeof stat=="undefined" || stat=="No Data"){
           //hide country name
 
@@ -195,7 +208,7 @@ function initChoropleth(countryProf, xml, wdi) {
 
     d3.select("#choro_map_container").selectAll("path")		/* Map Republic counties to rental data */
       .attr("class", function (d) {
-        stat = data[countryJson[this.id].Country];
+        stat = indicatorData[countryJson[this.id].Country];
        // console.log(stat)
         if(typeof stat=="undefined" || stat=="No Data"){
           //hide country name
@@ -212,12 +225,13 @@ function initChoropleth(countryProf, xml, wdi) {
 
   }
 
-
-
+wdiMeta=[]
   Promise.all([
     d3.json("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/wdiMeta2.json")
-
+    
   ]).then(function (files) {
+    wdiMeta.push(files[0]);
+    wdiMeta=wdiMeta[0]
     initIndicatorOptions(files[0])
     //updateIndicatorOptions("Environment");
 
@@ -225,8 +239,6 @@ function initChoropleth(countryProf, xml, wdi) {
   }).catch(function (err) {
     // handle error here
   })
-
-
 
 
   function initIndicatorOptions(wdiMeta) {
@@ -340,8 +352,6 @@ function initChoropleth(countryProf, xml, wdi) {
 }
 
 
-
-
 function regionColors(region, member) {
   if (member == "N") { return "black" }
   else if (region == "Caribbean") { return "c008080"; }
@@ -351,7 +361,7 @@ function regionColors(region, member) {
 }
 
 function initChoroLegend(wdiMeta) {
-
+  $("#indicatorExport").show()
   $("#regionLegend").remove()
 
   console.log("init legend")
@@ -408,7 +418,7 @@ function initChoroLegend(wdiMeta) {
       return wdiMeta[indi]["Indicator Name"]//["name"];//.toFixed(2))//extent[0].toFixed(2) + " - " + 
     })
     .style("font-size", "14px")
-    .style("font-weight", "500");
+    .style("font-weight", "regular");
 
 }
 
@@ -480,8 +490,6 @@ function initTooltips() {
     // console.log(index+": yo");
   });
 
-  console.log($('.choroTooltip'))
-
   const choroTooltips = $(".choroTooltip")
     .each(function (index) {
       //console.log(index+": tt");
@@ -542,8 +550,6 @@ function initTooltips() {
 
 }
 
-
-
 function setSelectedId(s, v) {
 
   for (var i = 0; i < s.options.length; i++) {
@@ -559,8 +565,6 @@ function setSelectedId(s, v) {
   }
 
 }
-
-
 
 function zoomed(d,country) {
   console.log("zooming")
@@ -603,7 +607,6 @@ function zoomed(d,country) {
     $("#countryViewTab h5").click()
 
 
-   
     
 
 
@@ -652,8 +655,6 @@ function getBoundingBox(selection) {
 }
 
 
-
-
 Promise.all([
   d3.json("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/profileData.json"),
   d3.xml("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/maps/sidsSVG2.svg"),
@@ -669,11 +670,6 @@ Promise.all([
 }).catch(function (err) {
   // handle error here
 })
-
-
-
-
-
 
 
 categories = ["Environment", "Health", "Poverty", "Education", "Gender", "Social Protection & Labor",

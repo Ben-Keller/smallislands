@@ -34,6 +34,55 @@ function countryProfileInit(allKeyData) {
 
 	document.getElementById("countrySelect").addEventListener("change", compileCountryData);
 
+
+	$("#countryCsvButton").click(function(){
+
+		countryExport=[]
+		pillars=["Blue","Climate","Digital"]
+		infos=["Finance","Profile"]
+
+		console.log(countryCode)
+		console.log(countryList)
+		
+		for(pillar in pillars){
+			for(indicator in allKeyData[countryCode][pillars[pillar]]){
+				newIndi={}
+				el=allKeyData[countryCode][pillars[pillar]][indicator]
+				newIndi["axis"]=el.axis
+				for(country in countryList){
+					country=countryList[country]
+					el=allKeyData[country][pillars[pillar]][indicator]
+					newIndi[country]=el.value
+				}
+				countryExport.push(newIndi)
+			}
+		}
+
+		for(category in infos){
+			for(indicator in allKeyData[countryCode][infos[category]]){
+				newIndi={}
+				newIndi["axis"]=indicator
+				for(country in countryList){
+					country=countryList[country]
+					el=allKeyData[country][infos[category]][indicator]
+					newIndi[country]=el
+				}
+				countryExport.push(newIndi)
+			}
+		}
+		
+		console.log(countryExport)
+		console.log(allKeyData[countryCode])
+
+		headers={}
+		headers["axis"]="Indicator"
+		for(country in countryList){
+			headers[countryList[country]]=allKeyData[countryList[country]].Profile.Country
+		}
+console.log(allKeyData)
+		exportCSVFile(headers,countryExport,"sids_profile_data","")}) //download(filteredProjects); });
+	
+
 	function compileCountryData() {
 		var x = document.getElementById("countrySelect");
 		countryCode = x.value;
@@ -185,7 +234,6 @@ function countryProfileInit(allKeyData) {
 			data.push({ name: countryList[i], axes: allKeyData[countryList[i]][pillar] })
 		}
 		//data=[{name:"Barbados",axes:data["Barbados"]},{name:"Cuba",axes:data["Cuba"]},{name:"Guinea-Bissau",axes:data["Guinea-Bissau"]}]
-		console.log(data)
 
 		const wrap = (text, width) => {
 			text.each(function () {
@@ -743,6 +791,7 @@ function countryProfileInit(allKeyData) {
 		console.log(oldCountry)
 		console.log(optionValues.indexOf(oldCountry))
 		if (optionValues.indexOf(oldCountry) >= 0) {
+			//setTimeout here is a temporary fix so the initial selection waits until options are populated
 			setTimeout(function () {
 				setSelectedId(document.getElementById('countrySelect'), oldCountry);
 			}, .01);
@@ -765,16 +814,16 @@ function countryProfileInit(allKeyData) {
 
 	///Country profile multiselect
 
-	$('.label.fundingSelect.dropdown')
+	$('.label.countryMultiSelect.dropdown')
 		.dropdown();
 
 
-	$('.label.fundingSelect.dropdown').dropdown({
+	$('.label.countryMultiSelect.dropdown').dropdown({
 		onChange: function () {
 
 			countryCode = document.getElementById("countrySelect").value;
 
-			countryList = [countryCode].concat($(".label.fundingSelect.dropdown").dropdown("get value"));
+			countryList = [countryCode].concat($(".label.countryMultiSelect.dropdown").dropdown("get value"));
 
 
 			svg_radar1 = RadarChart("#climateSpider", radarChartOptionsClimate, countryList, "Climate");
@@ -786,13 +835,13 @@ function countryProfileInit(allKeyData) {
 		}
 	});
 
-	$('.no.label.fundingSelect.dropdown')
+	$('.no.label.countryMultiSelect.dropdown')
 		.dropdown({
 			useLabels: false
 		});
 
-	$('.fundingSelect.button').on('click', function () {
-		$('.fundingSelect.dropdown')
+	$('.countryMultiSelect.button').on('click', function () {
+		$('.countryMultiSelect.dropdown')
 			.dropdown('restore defaults')
 	})
 
@@ -811,19 +860,5 @@ function countryProfileInit(allKeyData) {
 
 }
 
-function nFormatter(num, digits) {
-	var si = [
-		{ value: 1, symbol: "" },
-		{ value: 1E3, symbol: "k" },
-		{ value: 1E6, symbol: "M" },
-		{ value: 1E9, symbol: "B" }
-	];
-	var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
-	var i;
-	for (i = si.length - 1; i > 0; i--) {
-		if (num >= si[i].value) {
-			break;
-		}
-	}
-	return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
-}
+
+
