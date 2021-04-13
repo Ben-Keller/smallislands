@@ -6,16 +6,6 @@
   margin-right: 33%;
 }
 
-.pies {
-  margin-bottom: -100px;
-  padding: 0;
-  margin-left: 10px;
-}
-
-.fundPie img {
-  width: 75%;
-}
-
 #pieRegion h5 {
   text-align: right;
   font-size: 13px;
@@ -106,22 +96,8 @@
   border-radius: 10px;
 }
 
-.fundingSelect {
-  font-size: 8px;
-}
-
-.fundingSelect.dropdown {
-  max-width: 800px;
-}
-
 .row {
   display: flex;
-}
-
-.portfolioDropdown {
-  margin: -4px;
-  padding: 7px;
-  float: center;
 }
 
 path.slice {
@@ -142,6 +118,58 @@ polyline {
   padding: 0;
 }
 
+#portfolioBars {
+  overflow: visible;
+}
+
+/*format for region selector*/
+.slidebox ul {
+  margin: 0;
+  margin-top: 4px;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.slidebox ul li {
+  list-style: none;
+  float: left;
+  margin: 0 12px;
+  cursor: pointer;
+}
+
+.slidebox ul li a {
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#vizSelect ul li {
+  padding: 4px 28px 4px 28px;
+}
+
+#regionSelect ul li, #goalSelect ul li {
+  padding: 4px 12px 4px;
+}
+
+#fundingCategorySelect {
+  height: 24px;
+  margin-top: 4px;
+  float: center;
+  font-size: 12px;
+}
+
+#fundingSelect {
+  max-height: 24px;
+  height: 100%;
+  margin-top: 4px;
+  float: center;
+  font-size: 12px;
+}
+
 .sdgIcon {
   flex: 5.882%;
   padding: 5px;
@@ -158,8 +186,12 @@ polyline {
   padding-right: 16px;
 }
 
-#portfolioBars {
-  overflow: visible;
+.jjprojectTooltip {
+  max-height: 300px;
+  max-width: 500px;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
