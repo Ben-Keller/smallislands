@@ -49,6 +49,17 @@ function countryProfileInit(allKeyData) {
 				newIndi={}
 				el=allKeyData[countryCode][pillars[pillar]][indicator]
 				newIndi["axis"]=el.axis
+
+
+
+				try{
+				console.log(metadata[0][el.axis]["sourceName"])
+				newIndi["source"]=metadata[0][el.axis]["sourceName"]}
+				catch(error){
+					console.log("no source for "+el.axis)
+					newIndi["source"]=""
+				}
+
 				for(country in countryList){
 					country=countryList[country]
 					el=allKeyData[country][pillars[pillar]][indicator]
@@ -62,6 +73,14 @@ function countryProfileInit(allKeyData) {
 			for(indicator in allKeyData[countryCode][infos[category]]){
 				newIndi={}
 				newIndi["axis"]=indicator
+				try{
+					console.log(metadata[0][el.axis]["sourceName"])
+					newIndi["source"]=metadata[0][el.axis]["sourceName"]}
+					catch(error){
+						console.log("no source for "+el.axis)
+						newIndi["source"]=""
+					}
+
 				for(country in countryList){
 					country=countryList[country]
 					el=allKeyData[country][infos[category]][indicator]
@@ -76,6 +95,7 @@ function countryProfileInit(allKeyData) {
 
 		headers={}
 		headers["axis"]="Indicator"
+		headers["source"]="Source"
 		for(country in countryList){
 			headers[countryList[country]]=allKeyData[countryList[country]].Profile.Country
 		}
