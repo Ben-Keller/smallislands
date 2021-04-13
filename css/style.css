@@ -82,11 +82,11 @@ body {
 }
 
 .tooltips[data-popper-placement^=left] > .arrow {
-  right: -4px;
+  right: -5px;
 }
 
 .tooltips[data-popper-placement^=right] > .arrow {
-  left: -4px;
+  left: -5px;
 }
 
 .tooltips {
@@ -96,44 +96,11 @@ body {
   padding: 12px;
   border-radius: 4px;
   display: none;
-  z-index: 99;
+  z-index: 102;
 }
 
 .tooltips[data-show] {
   display: block;
-}
-
-/*format for region selector*/
-ul {
-  margin: 0;
-  margin-top: 3px;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  z-index: 99;
-  background-color: #ffffff;
-  display: inline-block;
-  border-radius: 10px;
-}
-
-ul li {
-  list-style: none;
-  float: left;
-  margin: 0 12px;
-  cursor: pointer;
-}
-
-ul li a {
-  font-size: 12px;
-  text-decoration: none;
-}
-
-#vizSelect ul li {
-  padding: 4px 28px 4px 28px;
-}
-
-#regionSelect ul li, #goalSelect ul li {
-  padding: 4px 12px 4px;
 }
 
 /*scrollbar stuff*/
@@ -227,6 +194,13 @@ h2 {
 
 #undpLogo {
   cursor: pointer;
+}
+
+.csvButton {
+  width: 80px;
+  margin: 0;
+  padding: 0;
+  float: right;
 }
 
 /*# sourceMappingURL=style.css.map */
