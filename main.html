@@ -11,10 +11,6 @@
 
 
 
-
-
-
-
   <!-- Custom styles for this template -->
 
   <!-- <link rel="preload" as="font" href="https://github.com/Ben-Keller/smallislands/blob/main/fonts/Proxima-Nova/Proxima%20Nova%20Reg.otf" type="font/opentype" crossorigin="anonymous">
@@ -25,6 +21,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
 
   <!-- Bootstrap core CSS -->
+  
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <link href="css/style.css" rel="stylesheet">
@@ -45,11 +42,6 @@
 
 <body>
 
-
-
-
-
-
   <div id="headerPanel">
     <video autoplay muted loop id="myVideo">
       <source src="images/blue economy_1.mp4" type="video/mp4">
@@ -63,8 +55,6 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
       <header class="masthead mb-auto">
-
-
 
 
         <div class="inner" id="headerBar">
@@ -195,15 +185,9 @@
 
       <div class="mdl-cell mdl-cell--10-col">
 
-
-
-
-
-
-
-        <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel" style="overflow:hidden">
-
-          <div class="panelTitleRow hoverPortfolio">
+        <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel">
+          <div id="projectTooltips" style="width:100%"></div>
+          <div class="panelTitleRow ">
             <div class="col-lg-12">
               <h2>UNDP Portfolio in Small Island Developing States</h2>
             </div>
@@ -270,24 +254,17 @@
             </div>
 
           </div>
-          <!-- <div class="row pies">
-            <div id="pieRegion" class="col-md-2 fundPie">
-              <h5>Funding by Region</h5><img src="graphics/pieRegion.png"></img>
-            </div>
-            <div id="pieFunding" class="col-md-3 fundPie">
-              <h5>Funding by Category</h5><img src="graphics/pieFunding.png"></img>
-            </div>
-          </div> -->
+
+          
+
           <div class="row sdgPortfolio">
 
-
-
-            <!--hoverrrrrr-->
-
-
+            
 
             <div id="portfolioBars"></div>
           </div>
+    
+         
 
           <div class="row" id="iconRow">
           <div class="row" id="sdgIconRow">
@@ -405,15 +382,44 @@
 
 
 
+
+        <div class="row" id="SSIconRow">
+          
+          <div class="sdgIcon">
+            <img src="icons/SSicons/1x/povertySS.png" style="width:100%">
+          </div>
+          <div class="sdgIcon">
+            <img src="icons/SSicons/1x/governanceSS.png" style="width:100%">
+          </div>
+          <div class="sdgIcon">
+            <img src="icons/SSicons/1x/resilienceSS.png" style="width:100%">
+          </div>
+          <div class="sdgIcon">
+            <img src="icons/SSicons/1x/environmentSS.png" style="width:100%">
+          </div>
+          <div class="sdgIcon">
+            <img src="icons/SSicons/1x/energySS.png" style="width:100%">
+          </div>
+          <div class="sdgIcon">
+            <img src="icons/SSicons/1x/genderSS.png" style="width:100%">
+          </div>
+          
+
+
+        </div>
+
+        
+
+
           </div>
 
           <div class="row goalSelector">
 
-            <div class="col-lg-12 d-flex justify-content-center" id="goalSelect">
+            <div class="col-lg-12 d-flex justify-content-center slidebox" id="goalSelect">
               <ul>
                 <li id="samoa"><a>SAMOA Pathway</a></li>
                 <li id="sdg"><a class="selectedGoal">Sustainable Development Goals</a></li>
-                <!-- <li id="undpss"><a>UNDP Signature Solutions</a></li> -->
+                <li id="undpss"><a>UNDP Signature Solutions</a></li>
 
                 <div class="goalShader"></div>
               </ul>
@@ -426,7 +432,7 @@
 
           <div class="row portfolioFilterRow">
 
-            <div class="col-lg-7 d-flex justify-content-center" id="regionSelect">
+            <div class="col-lg-6 d-flex justify-content-center slidebox" id="regionSelect">
               <ul>
                 <li id="global"><a class="selectedRegion">Global</a></li>
                 <li id="caribbean"><a>Caribbean (RBLAC)</a></li>
@@ -457,31 +463,32 @@
 
             </div>
 
-            <div class="fundingSelection col-lg-3" >
+            <div class="fundingSelection col-lg-4" >
               <ul>
                 <select id="fundingSelect" class="portfolioDropdown">
                 </select>
 
             </div>
-
+           
           </div>
 
-
+          
 
 
 
 <div class="pieRow row">
-  <div id="futurePie" class="col-lg-2"></div>
-  <div id="regionPie" class="col-lg-4"></div>
+  <!-- <div id="futurePie" class="col-lg-2"></div> -->
+  <div id="regionPie" class="pie col-lg-5"></div>
 
-<div id="fundingPie" class="col-lg-4"></div>
+<div id="fundingPie" class="pie col-lg-5"></div>
+<div id="portfolioExport" class="col-lg-2"><button id="portfolioCsvButton" class="csvButton" type="button">Export csv</button></div>
 
 </div>
 
           </div>
 
 
-
+         
 
 
 
@@ -798,10 +805,12 @@
 
     <div id="choro_map_container"> </div>
 
- 
-    <div id="choro_legend_container">
+ <div class="row">
+    <div id="choro_legend_container" style="width:90%">
       <img id="regionLegend" src="images/tempChoroLegend.jpg" style="height:40px; margin-left:160px; padding:0;">
     </div>
+    <div id="indicatorExport" style="width:10%"><button id="indicatorCsvButton" class="csvButton" type="button">Export csv</button></div>
+  </div>
 </div>
 </div>
   
@@ -937,20 +946,21 @@
 
 
           <div class="row">
-            <div class="fundingSelect col-lg-3 d-flex justify-content-center">
+            <div class="col-lg-3 d-flex justify-content-center">
               <div class="inline field">
 
-                <select multiple="" class="label fundingSelect selection fluid dropdown" id="multiCountrySelect">
+                <select multiple="" class="label countryMultiSelect selection fluid dropdown" id="multiCountrySelect">
                   <option value="">Overlay countries and regions</option>
                 </select>
               </div>
 
             </div>
+            <div id="countryExport" class="col-lg-9"><button id="countryCsvButton" class="csvButton" type="button">Export csv</button></div>
 
-            <div id="spiderLegend" class=col-lg-9></div>
+            <!-- <div id="spiderLegend" class=col-lg-9></div> -->
           </div>
 
-
+         
 
 
         </div>
@@ -1120,6 +1130,8 @@
   <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
 
 
+  <!-- <script src="scripts/wheelzoom.js"></script>
+  <script src="scripts/dragBack.js"></script> -->
 
   <script src="scripts/portfolioBars.js"></script>
 
@@ -1128,6 +1140,8 @@
   <script src="scripts/pies.js"></script>
 
   <script src="scripts/choropleth.js"></script>
+
+  <script src="scripts/createCsv.js"></script>
   
 
 
