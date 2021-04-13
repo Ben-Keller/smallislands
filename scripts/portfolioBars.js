@@ -69,7 +69,7 @@ function renderBars(fundingCategories, sidsDB) {
     console.log(filterProjectData)
 
     filteredProjects = dat[2]
-
+   
     initPieChart1(dataMap1(filteredProjects, fundingCategories));
     updatePieChart1(dataMap1(filteredProjects,fundingCategories));
        
@@ -648,7 +648,7 @@ console.log(dat)
                 return y2(filterBudgetData[d]);}
                 else{return 0}
             })
-            .attr("x", function (d) { return x2(d) * 17 / bins + x.bandwidth() / 2.2+xOffset; })
+            .attr("x", function (d) { return x2(d) * 17 / bins + x.bandwidth() / 2.2+xOffset*1.1; })
             .attr("fill", function (d, i) { return colors[i] })
 
         d3.selectAll(".stick")
@@ -670,7 +670,7 @@ console.log(dat)
         d3.selectAll(".stick2")
             .transition()
             .duration(750)
-            .attr("x", function (d) { return x2(d) * 17 / bins + x2.bandwidth() / 2.2 + x2.bandwidth() / 10 +xOffset; })
+            .attr("x", function (d) { return x2(d) * 17 / bins + x2.bandwidth() / 2.2 + x2.bandwidth() / 10 +xOffset*1.1; })
             .attr("y", function (d,i) {
                 if(i<bins){
                  return y2(filterBudgetData[d]) - 8;}
@@ -686,6 +686,7 @@ console.log(dat)
               
 
 console.log(filterProjectData)
+
 
 
         projectLabels
@@ -716,7 +717,18 @@ console.log(filterProjectData)
             .duration(750)
             .attr("y", function (d,i) {
                 if(i<bins){
-                return y2(filterBudgetData[d]) - 10;}
+                return y2(filterBudgetData[d]) - 10;
+            
+            //
+            // if(y2(filterBudgetData[d]) - 10 > y(filterProjectData[d]) - 34){
+            //     return
+            // }
+            // else{ return y2(filterBudgetData[d]) - 10;}
+
+        
+    
+            
+            }
                 else{return 0}
             })
             .text(function (d,i) {
@@ -730,7 +742,7 @@ console.log(filterProjectData)
                 }
             })
             .attr("x", function (d) {
-                return x2(d) * 17 / bins + x2.bandwidth() / 8 + x2.bandwidth() / 2.3 +xOffset;
+                return x2(d) * 17 / bins + x2.bandwidth() / 8 + x2.bandwidth() / 2.3 +xOffset*1.1;
             })
 
 
@@ -784,6 +796,7 @@ console.log("budg",totalBudg)
 
     
     initProjectTooltips()
+    updateProjectTooltips(filteredProjects)
 }
 
 
