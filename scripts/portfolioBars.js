@@ -89,7 +89,7 @@ console.log("budg",totalBudg)
     $("#portfolio4").text(nFormatter(totalBudg,1));
 
     let barsMargin = { top: 60, right: 0, bottom: 0, left: 19 };
-    let svgWidth = 1120, svgHeight = 200;
+    let svgWidth = 1120, svgHeight = 160;
     let barsHeight = svgHeight - barsMargin.top - barsMargin.bottom, barsWidth = svgWidth - barsMargin.left - barsMargin.right;
     let sourceNames = [], sourceCount = [];
 
@@ -130,6 +130,8 @@ console.log("budg",totalBudg)
         .enter()
         .append("g");
 
+            // Create rectangles
+ 
     bars.append('rect')
         .attr('class', 'bar')
         .attr("x", function (d) { return x(d) + x.bandwidth() / 16; })
@@ -137,6 +139,8 @@ console.log("budg",totalBudg)
         .attr("width", x.bandwidth() / 4)
         .attr("height", function (d) { return barsHeight - y(filterProjectData[d]); })
         .attr("fill", function (d, i) { return sdgColors[i] })
+
+   
 
     projectLabels = bars.append("text")
         .text(function (d) {
@@ -211,8 +215,19 @@ console.log("budg",totalBudg)
         .attr("fill", "black")
         .attr("text-anchor", "middle");
 
-
-        
+        let hoverbars = svg.selectAll('.hoverbar')
+        .data(sourceNames)
+        .enter()
+        .append("g");
+    
+        hoverbars.append('rect')
+        .attr('class', 'hoverbar')
+        .attr("x", function (d) { return x(d)-6; })
+        .attr("y", function (d) { return y(filterProjectData[d])-30; })
+        .attr("width", x.bandwidth())
+        .attr("height", function (d) { return barsHeight - y(filterProjectData[d])+30; })
+        .attr("opacity",0)
+       
 
 
 
@@ -244,7 +259,7 @@ console.log("budg",totalBudg)
             $("#SSIconRow").fadeOut(50)
             setTimeout(function () { $("#samoaIconRow").fadeIn(150) }, 50);
         }
-        else if (selectedGoal == "UNDP Signature Solutions") {
+        else if (selectedGoal == "Signature Solutions") {
             console.log("ssss")
             $("#sdgIconRow").fadeOut(50)
             $("#samoaIconRow").fadeOut(50)
@@ -255,16 +270,46 @@ console.log("budg",totalBudg)
 
     });
 
+
+$('#global').click(function () {
+
+console.log("global")
+
+    var x = $(this);
+
+    $('.selectedRegion').removeClass('selectedRegion');
+    $(this).children('a').addClass('selectedRegion');
+    console.log(this)
+
+    region = this.innerText
+    //zoom to new region
+
+        $('#portfolioPanel').animate({
+            'background-size': '100%',
+            'background-position-x': '0%',
+                'background-position-y': '-4%'
+        }, 1500, function () { console.log('zoomed'); });
+        $("#portfolio1").text("50");
+        $("#portfolio2").text("38");
+    
+
+    updateBars()
+    
+
+});
+
+
+
     $('#regionSelect ul li').click(function () {
 
 
 
         var x = $(this);
 
-        $('.regionShader').stop().animate({
-            'width': x.width() + 32,
-            'left': x.position().left
-        }, 400);
+        // $('.regionShader').stop().animate({
+        //     'width': x.width() + 32,
+        //     'left': x.position().left
+        // }, 400);
 
         $('.selectedRegion').removeClass('selectedRegion');
         $(this).children('a').addClass('selectedRegion');
@@ -272,21 +317,12 @@ console.log("budg",totalBudg)
 
         region = this.innerText
         //zoom to new region
-        if (region == "Global") {
-            $('#portfolioPanel').animate({
-                'background-size': '95%',
-                'background-position-x': '0%',
-                'background-position-y': '-4%'
-            }, 1800, function () { console.log('zoomed'); });
-            $("#portfolio1").text("50");
-            $("#portfolio2").text("38");
-        }
-        else if (region == "Caribbean (RBLAC)") {
+        if (region == "Caribbean (RBLAC)") {
             $('#portfolioPanel').animate({
                 'background-size': '135%',
                 'background-position-x': '-60%',
                 'background-position-y': '-10%'
-            }, 1800, function () { console.log('zoomed'); });
+            }, 1500, function () { console.log('zoomed'); });
             $("#portfolio1").text("25");
             $("#portfolio2").text("16");
 
@@ -499,7 +535,7 @@ sidsList=["Antigua and Barbuda",    "Aruba",
         }
 
      
-        else if (selectedGoal == "UNDP Signature Solutions") {
+        else if (selectedGoal == "Signature Solutions") {
             console.log("solutions")
 
             for (i = 0; i < 6; i++) {
@@ -611,7 +647,7 @@ console.log(dat)
             xOffset=0
             colors=sdgColors
         }
-        else if (selectedGoal == "UNDP Signature Solutions") {
+        else if (selectedGoal == "Signature Solutions") {
             xOffset=45
             bins = 6
             colors=ssColors
@@ -765,16 +801,11 @@ console.log("budg",totalBudg)
 
         ///update Pie1
 
-
-
         year = $("#yearSelect").val()
 
 
         updatePieChart1(dataMap1(filteredProjects, fundingCategories));
         updatePieChart2(dataMap2(filteredProjects, fundingCategories));
-
-
-
 
         updateProjectTooltips(filteredProjects)
 
@@ -797,6 +828,71 @@ console.log("budg",totalBudg)
     
     initProjectTooltips()
     updateProjectTooltips(filteredProjects)
+
+
+
+
+
+
+/////
+////
+
+console.log("slice")
+
+console.log("slice",slice)
+
+slice = d3.select("#regionPie").select(".slices")//.selectAll("path.slice")
+		.data(pie2(pieData), key);
+console.log(slice)
+
+    pieData=dataMap1(filteredProjects, fundingCategories)
+
+
+slice.on('click',function(d){
+    region=d.data.category.toLowerCase()
+    console.log(region)
+
+    $('.selectedRegion').removeClass('selectedRegion');
+    $('#'+region).children('a').addClass('selectedRegion');
+
+    //zoom to new region
+    if (region == "caribbean") {
+        $('#portfolioPanel').animate({
+            'background-size': '135%',
+            'background-position-x': '-60%',
+            'background-position-y': '-10%'
+        }, 1500, function () { console.log('zoomed'); });
+        $("#portfolio1").text("25");
+        $("#portfolio2").text("16");
+
+    }
+    else if (region == "ais") {
+        $('#portfolioPanel').animate({
+            'background-size': '125%',
+            'background-position-x': '50%',
+            'background-position-y': '-50%'
+        }, 1600, function () { console.log('zoomed'); });
+        $("#portfolio1").text("9");
+        $("#portfolio2").text("9");
+    }
+    else if (region == "pacific") {
+        $('#portfolioPanel').animate({
+            'background-size': '130%',
+            'background-position-x': '200%',
+            'background-position-y': '-80%'
+        }, 1600, function () { console.log('zoomed'); });
+        $("#portfolio1").text("16");
+        $("#portfolio2").text("13");
+    }
+
+    
+});
+///
+///
+///
+
+
+
 }
 
 
@@ -859,7 +955,7 @@ function updateProjectTooltips(filteredProjects){
     
 
 function initProjectTooltips() {
-    const bars = $(".bar")
+    const bars = $(".hoverbar")
   
     console.log("bars",bars)
 
@@ -952,6 +1048,13 @@ var portfolioHeaders = {
     donors: "Funding Sources",
 };
 
-$("#portfolioCsvButton").click(function(){ console.log(filteredProjects);
-    exportCSVFile(portfolioHeaders,filteredProjects,'sids_projects_'+selectedRegion+"_"+selectedYear,"")}) //download(filteredProjects); });
-
+$("#portfolioExport").change(function(){ 
+    console.log(filteredProjects);
+if( $("#portfolioExport").val()=="projects"){
+    exportCSVFile(portfolioHeaders,filteredProjects,'sids_projects_'+selectedRegion+"_"+selectedYear,"") //download(filteredProjects); });
+}
+else{
+    ///export budget
+}
+$("#portfolioExport").val("export");
+})

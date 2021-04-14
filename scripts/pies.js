@@ -9,13 +9,16 @@ svg1.append("g")
 svg1.append("g")
 	.attr("class", "lines");
 
-var width = 300,
-	height = 110,
+var width = 560,
+	height = 120,
 	radius = Math.min(width, height) / 2;
 
 var pie1 = d3.pie()
+// .startAngle(Math.PI / 1.5)
+// .endAngle(Math.PI * 2 + Math.PI /1.5)
 	.sort(null)
 	.value(function (d) {
+	
 		return d.value;
 	});
 
@@ -27,7 +30,7 @@ var outerArc = d3.arc()
 	.innerRadius(radius * 0.9)
 	.outerRadius(radius * 0.9);
 
-svg1.attr("transform", "translate(" + width / 2 + "," + height / 1.8 + ")");
+svg1.attr("transform", "translate(" + width / 2.7 + "," + height / 1.8 + ")");
 
 var key1 = function (d) { return d.data.category; };
 
@@ -35,10 +38,15 @@ var color1 = d3.scaleOrdinal()
 	.domain(["European Union", "Donor Countries", "Programme Countries", "UN Agencies", "UN Pooled Funds", "Vertical Funds", "Other"])
 	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#ac4f5f"]);
 
+
+	function midAngle(d) {
+		return d.startAngle + (d.endAngle - d.startAngle) /2;
+	}
+
 function dataMap1(filteredData, fundingCategories) {
 	var labels1 = color1.domain();
 	labelMap1 = labels1.map(function (label) {
-		//console.log(label)
+
 		summ = 0
 		for (project in filteredData) {
 			donors = filteredData[project]["donors"].split(';');//["budget"])
@@ -86,18 +94,16 @@ function dataMap1(filteredData, fundingCategories) {
 
 function initPieChart1(pieData){
 
-	console.log("a")
 	/* ------- PIE SLICES -------*/
 	var slice = svg1.select(".slices").selectAll("path.slice")
 		.data(pie1(pieData), key);
 
 
-		console.log("azzz")
-
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color1(d.data.category); })
-		.attr("class", "slice");
+		.attr("class", "slice")
+		
 
 	slice
 		.transition().duration(1000)
@@ -109,16 +115,17 @@ function initPieChart1(pieData){
 				return arc(interpolate(t));
 			};
 		})
+	
 
 	slice.exit()
 		.remove();
-		console.log("awer")
+
 
 	/* ------- TEXT LABELS -------*/
 
 	var text = svg1.select(".labels").selectAll("text")
 		.data(pie1(pieData), key1);
-		console.log("asdf")
+
 
 
 	text.enter()
@@ -130,10 +137,7 @@ function initPieChart1(pieData){
 			return d.data.category + " - " + nFormatter(d.data.value, 1);
 		});
 
-	function midAngle(d) {
-		return d.startAngle + (d.endAngle - d.startAngle) / 2;
-	}
-	console.log("bb")
+	
 	text.transition().duration(1000)
 		.attrTween("transform", function (d) {
 			this._current = this._current || d;
@@ -182,7 +186,7 @@ polyline.transition().duration(1000)
 
 polyline.exit()
 	.remove();
-	console.log("addd")
+
 
 }
 
@@ -190,18 +194,18 @@ function updatePieChart1(pieData) {
 
 
 
-console.log("a")
+
 	/* ------- PIE SLICES -------*/
 	var slice = svg1.select(".slices").selectAll("path.slice")
 		.data(pie1(pieData), key);
 
 
-		console.log("azzz")
+	
 
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color1(d.data.category); })
-		.attr("class", "slice");
+		.attr("class", "slice")
 
 	slice
 		.transition().duration(1000)
@@ -216,24 +220,20 @@ console.log("a")
 
 	slice.exit()
 		.remove();
-		console.log("awer")
+
 
 	/* ------- TEXT LABELS -------*/
 
 	var text = svg1.select(".labels").selectAll("text")
 		.data(pie1(pieData), key1);
-		console.log("asdf")
+	
 
 
 	text.text(function (d) {
-			//				console.log(d)
-			return d.data.category + " - " + nFormatter(d.data.value, 1);
+		if(d.data.value==0){return "";}else{
+			return d.data.category + " - " + nFormatter(d.data.value, 1);}
 		});
 
-	function midAngle(d) {
-		return d.startAngle + (d.endAngle - d.startAngle) / 2;
-	}
-	console.log("bb")
 	text.transition().duration(1000)
 		.attrTween("transform", function (d) {
 			this._current = this._current || d;
@@ -259,8 +259,6 @@ console.log("a")
 	text.exit()
 		.remove();
 
-		console.log("c")
-
 	/* ------- SLICE TO TEXT POLYLINES -------*/
 
 	var polyline = svg1.select(".lines").selectAll("polyline")
@@ -272,10 +270,12 @@ console.log("a")
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
+				if(d.data.value==0){return 0;}else{
+	
 				var d2 = interpolate(t);
 				var pos = outerArc.centroid(d2);
 				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-				return [arc.centroid(d2), outerArc.centroid(d2), pos];
+				return [arc.centroid(d2), outerArc.centroid(d2), pos];}
 			};
 		});
 
@@ -316,7 +316,7 @@ var outerArc = d3.arc()
 	.innerRadius(radius * 0.9)
 	.outerRadius(radius * 0.9);
 
-svg2.attr("transform", "translate(" + width / 2.5 + "," + height / 1.8 + ")");
+svg2.attr("transform", "translate(" + width / 2.2 + "," + height / 1.8 + ")");
 
 var key = function (d) { return d.data.category; };
 
@@ -366,12 +366,14 @@ function initPieChart2(pieData){
 
 	/* ------- PIE SLICES -------*/
 	var slice = svg2.select(".slices").selectAll("path.slice")
-		.data(pie2(pieData), key);
+		.data(pie2(pieData), key)
+		.on('mouseover',console.log("clickckc"));
 
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color2(d.data.category); })
-		.attr("class", "slice");
+		.attr("class", "slice")
+		.on('mouseover',console.log("clidfgdfgckckc"));
 
 	slice
 		.transition().duration(1000)
@@ -401,14 +403,11 @@ function initPieChart2(pieData){
 		.attr("dy", ".35em")
 		.attr("font-size", "10px")
 		.text(function (d) {
-			return d.data.category + " - " + nFormatter(d.data.value, 1);
+			if(d.data.value==0){return "";}else{
+			return d.data.category + " - " + nFormatter(d.data.value, 1);}
 		});
 	
 
-		function midAngle(d) {
-			return d.startAngle + (d.endAngle - d.startAngle) / 2;
-		}
-	
 		text.transition().duration(1000)
 			.attrTween("transform", function (d) {
 				this._current = this._current || d;
@@ -463,6 +462,9 @@ function initPieChart2(pieData){
 
 
 
+
+
+
 function updatePieChart2(pieData) {
 
 	/* ------- PIE SLICES -------*/
@@ -472,7 +474,8 @@ function updatePieChart2(pieData) {
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color2(d.data.category); })
-		.attr("class", "slice");
+		.attr("class", "slice")
+		.on('mouseover',console.log("clidfgdfgckckc"));
 
 	slice
 		.transition().duration(1000)
@@ -484,6 +487,46 @@ function updatePieChart2(pieData) {
 				return arc(interpolate(t));
 			};
 		})
+
+	slice.on('click',function(d){
+		region=d.data.category.toLowerCase()
+		console.log(region)
+	
+		$('.selectedRegion').removeClass('selectedRegion');
+        $('#'+region).children('a').addClass('selectedRegion');
+
+        //zoom to new region
+        if (region == "caribbean") {
+            $('#portfolioPanel').animate({
+                'background-size': '135%',
+                'background-position-x': '-60%',
+                'background-position-y': '-10%'
+            }, 1500, function () { console.log('zoomed'); });
+            $("#portfolio1").text("25");
+            $("#portfolio2").text("16");
+
+        }
+        else if (region == "ais") {
+            $('#portfolioPanel').animate({
+                'background-size': '125%',
+                'background-position-x': '50%',
+                'background-position-y': '-50%'
+            }, 1600, function () { console.log('zoomed'); });
+            $("#portfolio1").text("9");
+            $("#portfolio2").text("9");
+        }
+        else if (region == "pacific") {
+            $('#portfolioPanel').animate({
+                'background-size': '130%',
+                'background-position-x': '200%',
+                'background-position-y': '-80%'
+            }, 1600, function () { console.log('zoomed'); });
+            $("#portfolio1").text("16");
+            $("#portfolio2").text("13");
+        }
+
+        
+	});
 
 	slice.exit()
 		.remove();
@@ -497,12 +540,11 @@ function updatePieChart2(pieData) {
 
 
 	text.text(function (d) {
-			return d.data.category + " - " + nFormatter(d.data.value, 1);
+		if(d.data.value==0){return "";}else{
+			return d.data.category + " - " + nFormatter(d.data.value, 1);}
 		});
 
-	function midAngle(d) {
-		return d.startAngle + (d.endAngle - d.startAngle) / 2;
-	}
+
 
 	text.transition().duration(1000)
 		.attrTween("transform", function (d) {
@@ -540,10 +582,11 @@ function updatePieChart2(pieData) {
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
+				if(d.data.value==0){return 0;}else{
 				var d2 = interpolate(t);
 				var pos = outerArc.centroid(d2);
 				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-				return [arc.centroid(d2), outerArc.centroid(d2), pos];
+				return [arc.centroid(d2), outerArc.centroid(d2), pos];}
 			};
 		});
 
@@ -551,4 +594,103 @@ function updatePieChart2(pieData) {
 		.remove();
 };
 
+
+
+
+
+
+
+
+
+var pieEventObj = {
+								
+	'mouseover': function(d, i, j) {
+		pathAnim(d3.select(this), 1);
+
+	   /* var thisDonut = charts.select('.type' + j);
+		thisDonut.select('.value').text(function(donut_d) {
+			return d.data.val.toFixed(1) + donut_d.unit;
+		});
+		thisDonut.select('.percentage').text(function(donut_d) {
+			return (d.data.val/donut_d.total*100).toFixed(2) + '%';
+		});*/
+	},
+	
+	'mouseout': function(d, i, j) {
+		var thisPath = d3.select(this);
+		if (!thisPath.classed('clicked')) {
+			pathAnim(thisPath, 0);
+		}
+		/*var thisDonut = charts.select('.type' + j);
+		setCenterText(thisDonut);*/
+	},
+	
+
+	'click': function(d, i, j) {
+	   
+
+		var thisPath = d3.select(this);
+		var clicked = thisPath.classed('clicked');
+		pathAnim(thisPath, ~~(!clicked));
+		thisPath.classed('clicked', !clicked);
+
+		//setCenterText(thisDonut);
+	}
+};
+ 
+var pathAnim = function(path, dir) {
+switch(dir) {
+	case 0:
+		path.transition()
+			.duration(500)
+			.ease('bounce')
+			.attr('d', d3.arc()
+				.innerRadius((radius-100))
+				.outerRadius(radius-50)
+			);
+		break;
+
+	case 1:
+		path.transition()
+			.attr('d', d3.svg.arc()
+				.innerRadius((radius-100))
+				.outerRadius((radius-50) * 1.08)
+			);
+		break;
+}
+}             
+ 
+// var arc = d3.arc()
+// .innerRadius(radius - 100)
+// .outerRadius(function(){
+// return (d3.select(this).classed('clicked'))? (radius - 50) * 1.08
+// 															   : (radius - 50);
+// });
+
+// var svg = d3.select("body").append("svg")
+// .attr("width", width)
+// .attr("height", height)
+// .append("g")
+// .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
+// var paths = svg.selectAll("path")
+// .data(pie1(dataset.apples));
+
+
+
+// paths
+// 	.transition()
+// 	.duration(1000)
+// 	.attr('d', arc);
+
+// paths.enter()
+// 	.append('svg:path')
+// 		.attr('d', arc)
+// 		.style('fill', function(d, i) {
+// 			return color(i);
+// 		})
+// 		.style('stroke', '#FFFFFF')
+// 		.on(eventObj)
+
+// paths.exit().remove();
 
