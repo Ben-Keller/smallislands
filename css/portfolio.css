@@ -23,11 +23,12 @@
 }
 
 #portfolioPanel {
-  background-image: url("../graphics/sidsMap.png");
+  background-image: url("../graphics/sidsMapNewest-01.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-position: center;
   background-position-x: 0;
-  background-position-y: -4%;
+  background-position-y: -40px;
   width: 100%;
 }
 
@@ -242,6 +243,24 @@ polyline {
   overflow-y: auto;
   overflow-wrap: break-word;
   overflow-x: hidden;
+}
+
+.barsLabels {
+  font-family: sans-serif;
+  font-size: 10px;
+  text-shadow: -1px 1px 2px #F4F5F8, 1px 1px 2px #F4F5F8, 1px -1px 2px #F4F5F8, -1px -1px 2px #F4F5F8;
+  fill: black;
+}
+
+.slices {
+  cursor: pointer;
+}
+
+.projectTooltipColumn {
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
