@@ -14,11 +14,11 @@ var width = 560,
 	radius = Math.min(width, height) / 2;
 
 var pie1 = d3.pie()
-// .startAngle(Math.PI / 1.5)
-// .endAngle(Math.PI * 2 + Math.PI /1.5)
+	// .startAngle(Math.PI / 1.5)
+	// .endAngle(Math.PI * 2 + Math.PI /1.5)
 	.sort(null)
 	.value(function (d) {
-	
+
 		return d.value;
 	});
 
@@ -39,9 +39,9 @@ var color1 = d3.scaleOrdinal()
 	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#ac4f5f"]);
 
 
-	function midAngle(d) {
-		return d.startAngle + (d.endAngle - d.startAngle) /2;
-	}
+function midAngle(d) {
+	return d.startAngle + (d.endAngle - d.startAngle) / 2;
+}
 
 function dataMap1(filteredData, fundingCategories) {
 	var labels1 = color1.domain();
@@ -92,18 +92,16 @@ function dataMap1(filteredData, fundingCategories) {
 	return labelMap1;
 }
 
-function initPieChart1(pieData){
+function initPieChart1(pieData) {
 
 	/* ------- PIE SLICES -------*/
 	var slice = svg1.select(".slices").selectAll("path.slice")
 		.data(pie1(pieData), key);
 
-
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color1(d.data.category); })
-		.attr("class", "slice")
-		
+		.attr("class", "slice")  
 
 	slice
 		.transition().duration(1000)
@@ -112,21 +110,17 @@ function initPieChart1(pieData){
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
-				return arc(interpolate(t));
+			return arc(interpolate(t));
 			};
 		})
-	
 
 	slice.exit()
 		.remove();
-
 
 	/* ------- TEXT LABELS -------*/
 
 	var text = svg1.select(".labels").selectAll("text")
 		.data(pie1(pieData), key1);
-
-
 
 	text.enter()
 		.append("text")
@@ -134,10 +128,10 @@ function initPieChart1(pieData){
 		.attr("font-size", "10px")
 		.text(function (d) {
 			//				console.log(d)
+			
 			return d.data.category + " - " + nFormatter(d.data.value, 1);
 		});
 
-	
 	text.transition().duration(1000)
 		.attrTween("transform", function (d) {
 			this._current = this._current || d;
@@ -163,30 +157,48 @@ function initPieChart1(pieData){
 	text.exit()
 		.remove();
 
-		/* ------- SLICE TO TEXT POLYLINES -------*/
+	/* ------- SLICE TO TEXT POLYLINES -------*/
 
 	var polyline = svg1.select(".lines").selectAll("polyline")
-	.data(pie1(pieData), key1);
+		.data(pie1(pieData), key1);
 
-polyline.enter()
-	.append("polyline");
+	polyline.enter()
+		.append("polyline");
 
-polyline.transition().duration(1000)
-	.attrTween("points", function (d) {
-		this._current = this._current || d;
-		var interpolate = d3.interpolate(this._current, d);
-		this._current = interpolate(0);
-		return function (t) {
-			var d2 = interpolate(t);
-			var pos = outerArc.centroid(d2);
-			pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-			return [arc.centroid(d2), outerArc.centroid(d2), pos];
-		};
-	});
+	polyline.transition().duration(1000)
+		.attrTween("points", function (d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function (t) {
+				var d2 = interpolate(t);
+				var pos = outerArc.centroid(d2);
+				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+				return [arc.centroid(d2), outerArc.centroid(d2), pos];
+			};
+		});
 
-polyline.exit()
-	.remove();
+	polyline.exit()
+		.remove();
 
+
+}
+
+
+
+function setSelectedId(s, v) {
+
+	for (var i = 0; i < s.options.length; i++) {
+		//console.log(s.options[i].value, v)
+		if (s.options[i].value == v) {
+			//console.log("here")
+			s.options[i].selected = true;
+
+			return;
+
+		}
+
+	}
 
 }
 
@@ -197,10 +209,8 @@ function updatePieChart1(pieData) {
 
 	/* ------- PIE SLICES -------*/
 	var slice = svg1.select(".slices").selectAll("path.slice")
-		.data(pie1(pieData), key);
-
-
-	
+		.data(pie1(pieData), key)
+		
 
 	slice.enter()
 		.insert("path")
@@ -218,6 +228,33 @@ function updatePieChart1(pieData) {
 			};
 		})
 
+	slice.on('click', function (d) {
+		oldFund = $("#fundingCategorySelect").find(":selected").text();
+		fund = d.data.category//.toLowerCase()
+		if (fund != oldFund) {
+
+			console.log(fund)
+			setSelectedId(document.getElementById('fundingCategorySelect'), fund)
+			$('#fundingCategorySelect')
+				.trigger('change');
+		}
+		else {
+			setSelectedId(document.getElementById('fundingCategorySelect'), "All")
+			$('#fundingCategorySelect')
+				.trigger('change');
+		}
+	});
+
+	slice.on('mouseover', function() {
+
+		svg1.selectAll("path").style('opacity', 0.5);
+		d3.select(this)
+		  .style('opacity', 1);
+	  })
+	  .on('mouseout', function() {
+		svg1.selectAll("path").style('opacity', 1);
+	  });
+
 	slice.exit()
 		.remove();
 
@@ -226,13 +263,18 @@ function updatePieChart1(pieData) {
 
 	var text = svg1.select(".labels").selectAll("text")
 		.data(pie1(pieData), key1);
-	
 
+		sumall=0
+		for(source in pieData){
+	sumall+=pieData[source].value
+	}
 
 	text.text(function (d) {
-		if(d.data.value==0){return "";}else{
-			return d.data.category + " - " + nFormatter(d.data.value, 1);}
-		});
+		//console.log(d.data.category,d.data.value/sumall)
+		if (d.data.value/sumall<0.0236) { return ""; } else {
+			return d.data.category + " - " + nFormatter(d.data.value, 1);
+		}
+	});
 
 	text.transition().duration(1000)
 		.attrTween("transform", function (d) {
@@ -266,22 +308,24 @@ function updatePieChart1(pieData) {
 
 	polyline.transition().duration(1000)
 		.attrTween("points", function (d) {
+			//console.log(d.data.value,sumall)
 			this._current = this._current || d;
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
-				if(d.data.value==0){return 0;}else{
-	
-				var d2 = interpolate(t);
-				var pos = outerArc.centroid(d2);
-				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-				return [arc.centroid(d2), outerArc.centroid(d2), pos];}
+				if (d.data.value/sumall<0.0236) { return 0; } else {
+					
+					var d2 = interpolate(t);
+					var pos = outerArc.centroid(d2);
+					pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+					return [arc.centroid(d2), outerArc.centroid(d2), pos];
+				}
 			};
 		});
 
 	polyline.exit()
 		.remove();
-		console.log("addd")
+	//console.log("addd")
 };
 
 
@@ -362,18 +406,18 @@ function dataMap2(filteredData, regionCategories) {
 
 
 
-function initPieChart2(pieData){
+function initPieChart2(pieData) {
 
 	/* ------- PIE SLICES -------*/
 	var slice = svg2.select(".slices").selectAll("path.slice")
 		.data(pie2(pieData), key)
-		.on('mouseover',console.log("clickckc"));
+		.on('mouseover', console.log("clickckc"));
 
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color2(d.data.category); })
 		.attr("class", "slice")
-		.on('mouseover',console.log("clidfgdfgckckc"));
+		.on('mouseover', console.log("clidfgdfgckckc"));
 
 	slice
 		.transition().duration(1000)
@@ -396,66 +440,67 @@ function initPieChart2(pieData){
 
 	console.log(pieData)
 
-	
+
 
 	text.enter()
 		.append("text")
 		.attr("dy", ".35em")
 		.attr("font-size", "10px")
 		.text(function (d) {
-			if(d.data.value==0){return "";}else{
-			return d.data.category + " - " + nFormatter(d.data.value, 1);}
+			if (d.data.value == 0) { return ""; } else {
+				return d.data.category + " - " + nFormatter(d.data.value, 1);
+			}
 		});
-	
 
-		text.transition().duration(1000)
-			.attrTween("transform", function (d) {
-				this._current = this._current || d;
-				var interpolate = d3.interpolate(this._current, d);
-				this._current = interpolate(0);
-				return function (t) {
-					var d2 = interpolate(t);
-					var pos = outerArc.centroid(d2);
-					pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
-					return "translate(" + pos + ")";
-				};
-			})
-			.styleTween("text-anchor", function (d) {
-				this._current = this._current || d;
-				var interpolate = d3.interpolate(this._current, d);
-				this._current = interpolate(0);
-				return function (t) {
-					var d2 = interpolate(t);
-					return midAngle(d2) < Math.PI ? "start" : "end";
-				};
-			});
-	
-			text.exit()
-			.remove();
-	
-		/* ------- SLICE TO TEXT POLYLINES -------*/
-	
-		var polyline = svg2.select(".lines").selectAll("polyline")
-			.data(pie2(pieData), key);
-	
-		polyline.enter()
-			.append("polyline");
-	
-		polyline.transition().duration(1000)
-			.attrTween("points", function (d) {
-				this._current = this._current || d;
-				var interpolate = d3.interpolate(this._current, d);
-				this._current = interpolate(0);
-				return function (t) {
-					var d2 = interpolate(t);
-					var pos = outerArc.centroid(d2);
-					pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-					return [arc.centroid(d2), outerArc.centroid(d2), pos];
-				};
-			});
-	
-		polyline.exit()
-			.remove();
+
+	text.transition().duration(1000)
+		.attrTween("transform", function (d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function (t) {
+				var d2 = interpolate(t);
+				var pos = outerArc.centroid(d2);
+				pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
+				return "translate(" + pos + ")";
+			};
+		})
+		.styleTween("text-anchor", function (d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function (t) {
+				var d2 = interpolate(t);
+				return midAngle(d2) < Math.PI ? "start" : "end";
+			};
+		});
+
+	text.exit()
+		.remove();
+
+	/* ------- SLICE TO TEXT POLYLINES -------*/
+
+	var polyline = svg2.select(".lines").selectAll("polyline")
+		.data(pie2(pieData), key);
+
+	polyline.enter()
+		.append("polyline");
+
+	polyline.transition().duration(1000)
+		.attrTween("points", function (d) {
+			this._current = this._current || d;
+			var interpolate = d3.interpolate(this._current, d);
+			this._current = interpolate(0);
+			return function (t) {
+				var d2 = interpolate(t);
+				var pos = outerArc.centroid(d2);
+				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+				return [arc.centroid(d2), outerArc.centroid(d2), pos];
+			};
+		});
+
+	polyline.exit()
+		.remove();
 }
 
 
@@ -475,7 +520,7 @@ function updatePieChart2(pieData) {
 		.insert("path")
 		.style("fill", function (d) { return color2(d.data.category); })
 		.attr("class", "slice")
-		.on('mouseover',console.log("clidfgdfgckckc"));
+		.on('mouseover', console.log("clidfgdfgckckc"));
 
 	slice
 		.transition().duration(1000)
@@ -488,45 +533,34 @@ function updatePieChart2(pieData) {
 			};
 		})
 
-	slice.on('click',function(d){
-		region=d.data.category.toLowerCase()
-		console.log(region)
-	
-		$('.selectedRegion').removeClass('selectedRegion');
-        $('#'+region).children('a').addClass('selectedRegion');
+	slice.on('click', function (d) {
 
-        //zoom to new region
-        if (region == "caribbean") {
-            $('#portfolioPanel').animate({
-                'background-size': '135%',
-                'background-position-x': '-60%',
-                'background-position-y': '-10%'
-            }, 1500, function () { console.log('zoomed'); });
-            $("#portfolio1").text("25");
-            $("#portfolio2").text("16");
+		oldRegion = $('.selectedRegion')[0].innerHTML.split(' ')[0].toLowerCase()
 
-        }
-        else if (region == "ais") {
-            $('#portfolioPanel').animate({
-                'background-size': '125%',
-                'background-position-x': '50%',
-                'background-position-y': '-50%'
-            }, 1600, function () { console.log('zoomed'); });
-            $("#portfolio1").text("9");
-            $("#portfolio2").text("9");
-        }
-        else if (region == "pacific") {
-            $('#portfolioPanel').animate({
-                'background-size': '130%',
-                'background-position-x': '200%',
-                'background-position-y': '-80%'
-            }, 1600, function () { console.log('zoomed'); });
-            $("#portfolio1").text("16");
-            $("#portfolio2").text("13");
-        }
 
-        
+		region = d.data.category.toLowerCase()
+
+		console.log(oldRegion, region, oldRegion == region)
+
+
+		newRegion = region
+		if (region == oldRegion) {
+			newRegion = "global"
+		}
+		$('#' + newRegion).children('a').trigger('click');
+
 	});
+
+	slice.on('mouseover', function() {
+
+		svg2.selectAll("path").style('opacity', 0.5);
+		d3.select(this)
+		  .style('opacity', 1);
+	  })
+	  .on('mouseout', function() {
+		svg2.selectAll("path").style('opacity', 1);
+	  });
+
 
 	slice.exit()
 		.remove();
@@ -540,9 +574,10 @@ function updatePieChart2(pieData) {
 
 
 	text.text(function (d) {
-		if(d.data.value==0){return "";}else{
-			return d.data.category + " - " + nFormatter(d.data.value, 1);}
-		});
+		if (d.data.value == 0) { return ""; } else {
+			return d.data.category + " - " + nFormatter(d.data.value, 1);
+		}
+	});
 
 
 
@@ -582,11 +617,12 @@ function updatePieChart2(pieData) {
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
-				if(d.data.value==0){return 0;}else{
-				var d2 = interpolate(t);
-				var pos = outerArc.centroid(d2);
-				pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-				return [arc.centroid(d2), outerArc.centroid(d2), pos];}
+				if (d.data.value == 0) { return 0; } else {
+					var d2 = interpolate(t);
+					var pos = outerArc.centroid(d2);
+					pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+					return [arc.centroid(d2), outerArc.centroid(d2), pos];
+				}
 			};
 		});
 
@@ -603,20 +639,20 @@ function updatePieChart2(pieData) {
 
 
 var pieEventObj = {
-								
-	'mouseover': function(d, i, j) {
+
+	'mouseover': function (d, i, j) {
 		pathAnim(d3.select(this), 1);
 
-	   /* var thisDonut = charts.select('.type' + j);
-		thisDonut.select('.value').text(function(donut_d) {
-			return d.data.val.toFixed(1) + donut_d.unit;
-		});
-		thisDonut.select('.percentage').text(function(donut_d) {
-			return (d.data.val/donut_d.total*100).toFixed(2) + '%';
-		});*/
+		/* var thisDonut = charts.select('.type' + j);
+		 thisDonut.select('.value').text(function(donut_d) {
+			 return d.data.val.toFixed(1) + donut_d.unit;
+		 });
+		 thisDonut.select('.percentage').text(function(donut_d) {
+			 return (d.data.val/donut_d.total*100).toFixed(2) + '%';
+		 });*/
 	},
-	
-	'mouseout': function(d, i, j) {
+
+	'mouseout': function (d, i, j) {
 		var thisPath = d3.select(this);
 		if (!thisPath.classed('clicked')) {
 			pathAnim(thisPath, 0);
@@ -624,10 +660,10 @@ var pieEventObj = {
 		/*var thisDonut = charts.select('.type' + j);
 		setCenterText(thisDonut);*/
 	},
-	
 
-	'click': function(d, i, j) {
-	   
+
+	'click': function (d, i, j) {
+
 
 		var thisPath = d3.select(this);
 		var clicked = thisPath.classed('clicked');
@@ -637,29 +673,29 @@ var pieEventObj = {
 		//setCenterText(thisDonut);
 	}
 };
- 
-var pathAnim = function(path, dir) {
-switch(dir) {
-	case 0:
-		path.transition()
-			.duration(500)
-			.ease('bounce')
-			.attr('d', d3.arc()
-				.innerRadius((radius-100))
-				.outerRadius(radius-50)
-			);
-		break;
 
-	case 1:
-		path.transition()
-			.attr('d', d3.svg.arc()
-				.innerRadius((radius-100))
-				.outerRadius((radius-50) * 1.08)
-			);
-		break;
+var pathAnim = function (path, dir) {
+	switch (dir) {
+		case 0:
+			path.transition()
+				.duration(500)
+				.ease('bounce')
+				.attr('d', d3.arc()
+					.innerRadius((radius - 100))
+					.outerRadius(radius - 50)
+				);
+			break;
+
+		case 1:
+			path.transition()
+				.attr('d', d3.svg.arc()
+					.innerRadius((radius - 100))
+					.outerRadius((radius - 50) * 1.08)
+				);
+			break;
+	}
 }
-}             
- 
+
 // var arc = d3.arc()
 // .innerRadius(radius - 100)
 // .outerRadius(function(){
