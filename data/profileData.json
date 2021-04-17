@@ -1,4 +1,52 @@
 {
+    "guadeloupe":{
+        "Country": "Guadeloupe",
+        "Region": "Caribbean",
+        "Population": 15003.0
+    },
+    "usVirginIslands":{
+        "Country": "US Virgin Islands",
+        "Region": "Caribbean",
+        "Population": 15003.0
+    },
+    "martinique":{
+        "Country": "Martinique",
+        "Region": "Caribbean",
+        "Population": 15003.0
+    },
+    "puertoRico":{
+        "Country": "Puerto Rico",
+        "Region": "Caribbean",
+        "Population": 15003.0
+    },
+    "americanSamoa":{
+        "Country": "American Samoa",
+        "Region": "Caribbean",
+        "Population": 15003.0
+    },
+    "newCaledonia":{
+        "Country": "New Caledonia",
+        "Region": "Pacific",
+        "Population": 15003.0
+    },
+    "frenchPolynesia":{
+        "Country": "French Polynesia",
+        "Region": "Pacific",
+        "Population": 15003.0
+    },
+    "marianaIslands":{
+        "Country": "Mariana Islands",
+        "Region": "Pacific",
+        "Population": 15003.0
+    },
+    "guam":{
+        "Country": "Guam",
+        "Region": "Pacific",
+        "Population": 15003.0
+    },
+
+
+
     "anguilla": {
         "Country": "Anguilla",
         "Region": "Caribbean",
@@ -648,41 +696,5 @@
         "Surface Area": 0.0,
         "Economic  Zone Area": 0.0,
         "Human Development Index\u00a0": 0.609
-    },
-    "puertoRico":{
-        "Country":"Puerto Rico",
-        "Region": "Caribbean"
-    },
-    "marianaIslands":{
-        "Country":"Mariana Islands",
-        "Region": "Pacific"
-    },
-    "guam":{
-        "Country":"Guam",
-        "Region": "Pacific"
-    },
-    "newCaledonia":{
-        "Country":"Puerto Rico",
-        "Region": "Pacific"
-    },
-    "americanSamoa":{
-        "Country":"American Samoa",
-        "Region": "Pacific"
-    },
-    "usVirginIslands":{
-        "Country":"US Virgin Islands",
-        "Region": "Caribbean"
-    },
-    "martinique":{
-        "Country":"Martinique",
-        "Region": "Caribbean"
-    },
-    "guadeloupe":{
-        "Country":"Guadeloupe",
-        "Region": "Caribbean"
-    },
-    "frenchPolynesia":{
-        "Country":"French Polynesia",
-        "Region": "Pacific"
     }
 }
