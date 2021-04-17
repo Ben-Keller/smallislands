@@ -2,47 +2,47 @@
     "guadeloupe":{
         "Country": "Guadeloupe",
         "Region": "Caribbean",
-        "Population": 15003.0
+        "Population": 395700
     },
     "usVirginIslands":{
         "Country": "US Virgin Islands",
         "Region": "Caribbean",
-        "Population": 15003.0
+        "Population": 106631
     },
     "martinique":{
         "Country": "Martinique",
         "Region": "Caribbean",
-        "Population": 15003.0
+        "Population":376480
     },
     "puertoRico":{
         "Country": "Puerto Rico",
         "Region": "Caribbean",
-        "Population": 15003.0
+        "Population": 3194000
     },
     "americanSamoa":{
         "Country": "American Samoa",
         "Region": "Caribbean",
-        "Population": 15003.0
+        "Population": 55312
     },
     "newCaledonia":{
         "Country": "New Caledonia",
         "Region": "Pacific",
-        "Population": 15003.0
+        "Population": 287800
     },
     "frenchPolynesia":{
         "Country": "French Polynesia",
         "Region": "Pacific",
-        "Population": 15003.0
+        "Population": 279287
     },
     "marianaIslands":{
         "Country": "Mariana Islands",
         "Region": "Pacific",
-        "Population": 15003.0
+        "Population": 57216
     },
     "guam":{
         "Country": "Guam",
         "Region": "Pacific",
-        "Population": 15003.0
+        "Population": 167294
     },
 
 
