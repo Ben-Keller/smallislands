@@ -586,7 +586,7 @@ $("#regionPie").click(function(){
         if(selectedRegion=="global"){
             updatePortfolioBackground("")
         }else{
-            updatePortfolioBackground(selectedRegion)
+            updatePortfolioBackground(selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1))
         }
                 zoomToRegion(selectedRegion)
                 updateBars()
