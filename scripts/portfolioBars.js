@@ -585,8 +585,15 @@ $("#regionPie").click(function(){
             console.log(selectedRegion)
         if(selectedRegion=="global"){
             updatePortfolioBackground("")
-        }else{
-            updatePortfolioBackground(selectedRegion.charAt(0).toUpperCase() + selectedRegion.slice(1))
+        }
+        if(selectedRegion=="ais"){
+            updatePortfolioBackground("AIS")
+        }
+        if(selectedRegion=="pacific"){
+            updatePortfolioBackground("Pacific")
+        }
+        if(selectedRegion=="caribbean"){
+            updatePortfolioBackground("Caribbean")
         }
                 zoomToRegion(selectedRegion)
                 updateBars()
