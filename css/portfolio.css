@@ -191,6 +191,14 @@ polyline {
   padding: 3px;
 }
 
+.ssIcon {
+  flex: 5.882%;
+  padding-bottom: 0;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+}
+
 .samoaIcon {
   flex: 5.882%;
   padding: 3px;
