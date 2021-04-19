@@ -203,4 +203,8 @@ h2 {
   float: right;
 }
 
+.hidden {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

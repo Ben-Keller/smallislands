@@ -33,9 +33,8 @@
 }
 
 .portfolioStat {
-  width: 24%;
+  width: 24.25%;
   background-color: white;
-  margin-right: 1%;
   border-radius: 10px;
   margin-bottom: 6px;
 }
@@ -68,11 +67,6 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-top: 15px;
-}
-
-#portfolioPanel .col-lg-4 {
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 #portfolioPanel h1 {
@@ -115,36 +109,7 @@ polyline {
 /*format for region selector*/
 #portfolioBars {
   overflow: visible;
-}
-
-#global {
-  opacity: 0%;
-}
-
-#regionselect {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-#regionSelect ul li {
-  height: 100%;
-  opacity: 0%;
-  list-style: none;
-  float: left;
-  margin: 0;
-  padding: 0;
   cursor: pointer;
-}
-
-#regionSelect ul {
-  position: relative;
-  overflow: hidden;
-  z-index: 99;
-  display: inline-block;
-  width: 100%;
-  margin: 0;
-  padding: 0;
 }
 
 /*format for goal selector*/
@@ -176,7 +141,7 @@ polyline {
   padding: 4px 28px 4px 28px;
 }
 
-#regionSelect ul li, #goalSelect ul li {
+#goalSelect ul li {
   padding: 6px 12px 4px;
 }
 
@@ -187,6 +152,7 @@ polyline {
 #yearSelect {
   height: 28px;
   font-size: 14px;
+  width: 100%;
 }
 
 #fundingCategorySelect {
@@ -208,7 +174,7 @@ polyline {
   float: center;
 }
 
-#portfolioExport {
+.exportDropdown {
   border-radius: 6px;
   float: right;
   margin-top: 8px;
@@ -261,6 +227,11 @@ polyline {
   padding: 0;
   padding-left: 15px;
   font-size: 10px;
+}
+
+.regionClickBox {
+  opacity: 0%;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=portfolio.css.map */
