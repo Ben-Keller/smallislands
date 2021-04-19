@@ -30,6 +30,8 @@ var outerArc = d3.arc()
 	.innerRadius(radius * 0.9)
 	.outerRadius(radius * 0.9);
 
+var pieChartRegion="global"
+
 svg1.attr("transform", "translate(" + width / 2.7 + "," + height / 1.8 + ")");
 
 var key1 = function (d) { return d.data.category; };
@@ -44,6 +46,7 @@ function midAngle(d) {
 }
 
 function dataMap1(filteredData, fundingCategories) {
+	console.timeLog()
 	var labels1 = color1.domain();
 	labelMap1 = labels1.map(function (label) {
 
@@ -313,12 +316,16 @@ function updatePieChart1(pieData) {
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
-				if (d.data.value/sumall<0.0236) { return 0; } else {
-					
+				
 					var d2 = interpolate(t);
 					var pos = outerArc.centroid(d2);
 					pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+					if (d.data.value/sumall<0.0236) { 
+						return [arc.centroid(d2),arc.centroid(d2),arc.centroid(d2)]
+				} else {
+					
 					return [arc.centroid(d2), outerArc.centroid(d2), pos];
+
 				}
 			};
 		});
@@ -411,13 +418,11 @@ function initPieChart2(pieData) {
 	/* ------- PIE SLICES -------*/
 	var slice = svg2.select(".slices").selectAll("path.slice")
 		.data(pie2(pieData), key)
-		.on('mouseover', console.log("clickckc"));
 
 	slice.enter()
 		.insert("path")
 		.style("fill", function (d) { return color2(d.data.category); })
 		.attr("class", "slice")
-		.on('mouseover', console.log("clidfgdfgckckc"));
 
 	slice
 		.transition().duration(1000)
@@ -438,7 +443,7 @@ function initPieChart2(pieData) {
 	var text = svg2.select(".labels").selectAll("text")
 		.data(pie2(pieData), key);
 
-	console.log(pieData)
+	//console.log(pieData)
 
 
 
@@ -520,7 +525,6 @@ function updatePieChart2(pieData) {
 		.insert("path")
 		.style("fill", function (d) { return color2(d.data.category); })
 		.attr("class", "slice")
-		.on('mouseover', console.log("clidfgdfgckckc"));
 
 	slice
 		.transition().duration(1000)
@@ -535,19 +539,20 @@ function updatePieChart2(pieData) {
 
 	slice.on('click', function (d) {
 
-		oldRegion = $('.selectedRegion')[0].innerHTML.split(' ')[0].toLowerCase()
+		oldRegion = selectedRegion
 
 
 		region = d.data.category.toLowerCase()
 
-		console.log(oldRegion, region, oldRegion == region)
+	//	console.log(oldRegion, region, oldRegion == region)
 
 
 		newRegion = region
 		if (region == oldRegion) {
 			newRegion = "global"
 		}
-		$('#' + newRegion).children('a').trigger('click');
+		console.log(newRegion)
+		pieChartRegion=newRegion
 
 	});
 
@@ -570,7 +575,7 @@ function updatePieChart2(pieData) {
 	var text = svg2.select(".labels").selectAll("text")
 		.data(pie2(pieData), key);
 
-	console.log(pieData)
+	//console.log(pieData)
 
 
 	text.text(function (d) {
@@ -617,10 +622,14 @@ function updatePieChart2(pieData) {
 			var interpolate = d3.interpolate(this._current, d);
 			this._current = interpolate(0);
 			return function (t) {
-				if (d.data.value == 0) { return 0; } else {
+				
 					var d2 = interpolate(t);
 					var pos = outerArc.centroid(d2);
 					pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
+					if (d.data.value/sumall<0.0236) { 
+						return [arc.centroid(d2),arc.centroid(d2),arc.centroid(d2)]
+				} else {
+					
 					return [arc.centroid(d2), outerArc.centroid(d2), pos];
 				}
 			};
