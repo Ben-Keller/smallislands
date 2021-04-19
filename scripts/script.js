@@ -1,4 +1,4 @@
-window.onload = function(){
+// window.onload = function(){
   
   
   var v1="<option value='all-sources'>All sources</option><option value='emilo-muc'>Münchner Kaffe</option><option value='emilo-muc-bio'>Münchner Kaffee BIO</option><option value='emilo-coli'>Colibri</option><option value='emilo-wall'>Wallaby</option><option value='emilo-lua'>Luani</option><option value='emilo-tuc'>Tucano BIO</option><option value='emilo-cora'>Corallo Decaf</option>"
@@ -41,10 +41,7 @@ window.onload = function(){
 
 //style horizontal shaders to be behind chosen elements
 
- var x= $("#global");
-$('.regionShader').css({ 
-  'width': x.width()+32,
-         'left' : x.position().left});
+
      
       var x= $("#sdg");
 $('.goalShader').css({
@@ -81,7 +78,7 @@ $('#homeMode').click(function() {
   
 });
 
-}
+//}
 
 
 $("#undpLogo").click(function(){
@@ -135,3 +132,7 @@ function responsivefy(svg) {
     }
   }
 
+
+//   $("#countryDataTab").click(function () {
+//   $("#countryDataPanel").removeClass('hidden')
+// });

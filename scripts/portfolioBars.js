@@ -29,21 +29,22 @@ $("#samoaIconRow").hide();
 $("#SSIconRow").hide();
 
 var oldHeight=0
+selectedRegion="global"
 
 fundingCategories=[]
 Promise.all([
     d3.json("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/fundingCategories.json"),
     d3.csv("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/sids_db.csv")
 ]).then(function (files) {
-    console.log("promises kept")
+    //console.log("promises kept")
     // files[0] will contain file1.csv
     // files[1] will contain file2.csv
-    console.log("jsonnn", files[0])
+    //console.log("jsonnn", files[0])
 fundingCategories.push(files[0])
 fundingCategories=fundingCategories[0]
     renderBars(files[0], files[1]);
 
-
+console.timeLog()
     // filteredData = files[1].filter(function (d) { return parseInt(d.year) == 2020 });
     // updatePieChart1(dataMap1(filteredData, files[2]));
     // updatePieChart1(dataMap1(filteredData, files[2]));
@@ -67,7 +68,7 @@ function renderBars(fundingCategories, sidsDB) {
     dat = filterData()
     filterBudgetData = dat[0]
     filterProjectData = dat[1]
-    console.log(filterProjectData)
+    //console.log(filterProjectData)
 
     filteredProjects = dat[2]
 
@@ -88,7 +89,7 @@ function renderBars(fundingCategories, sidsDB) {
     }
 
     $("#portfolio3").text(distinct.length)//(sum(filterProjectData)));
-    console.log("budg", totalBudg)
+    //console.log("budg", totalBudg)
     $("#portfolio4").text(nFormatter(totalBudg, 1));
 
     let barsMargin = { top: 60, right: 0, bottom: 0, left: 19 };
@@ -99,7 +100,7 @@ function renderBars(fundingCategories, sidsDB) {
     let x = d3.scaleBand().rangeRound([0, barsWidth]),//.padding(0.1),
         y = d3.scaleLinear().rangeRound([barsHeight, 0]);
 
-    console.log(x)
+   // console.log(x)
     for (let key in filterProjectData) {
         if (filterProjectData.hasOwnProperty(key)) {
             sourceNames.push(key);
@@ -246,13 +247,13 @@ function renderBars(fundingCategories, sidsDB) {
 
         $('.selectedGoal').removeClass('selectedGoal');
         $(this).children('a').addClass('selectedGoal');
-        console.log(this)
+       // console.log(this)
 
 
 
         selectedGoal = $('.selectedGoal')[0].innerHTML
 
-        console.log(selectedGoal)
+        //console.log(selectedGoal)
 
         if (selectedGoal == "Sustainable Development Goals") {
             $("#samoaIconRow").fadeOut(50);
@@ -270,83 +271,50 @@ function renderBars(fundingCategories, sidsDB) {
             $("#samoaIconRow").fadeOut(50)
             setTimeout(function () { $("#SSIconRow").fadeIn(150) }, 50);
         }
-
+        console.timeLog()
         updateBars()
 
     });
 
-    function updatePortfolioBackground(region) {
-        img = 'graphics/sidsMapNewest' + region + '-01.png'
-        var img_tag = new Image();
-        // when preload is complete, apply the image to the div
-        img_tag.onload = function () {
-            document.querySelector('#portfolioPanel').style.backgroundImage = 'url(' + img + ')';
-        }
-        // setting 'src' actually starts the preload
-        img_tag.src = img;
-    }
-
-
-    $('#global').click(function () {
-
-        console.log("global")
-
-        var x = $(this);
-        console.log(x)
-        $('.selectedRegion').removeClass('selectedRegion');
-        $(this).children('a').addClass('selectedRegion');
-        console.log(this)
-
-        region = this.id
-        //zoom to new region
-        zoomToRegion(region)
-        updateBars()
-        console.log(region)
-
-
-        updatePortfolioBackground("")
-
-
-    });
-
-
-    $('#caribbean').click(function () {
-        updatePortfolioBackground("Caribbean")
-    });
-    $('#ais').click(function () {
-        updatePortfolioBackground("AIS")
-    });
-    $('#pacific').click(function () {
-        updatePortfolioBackground("Pacific")
-    });
-
-
-    $('#regionSelect ul li').click(function () {
 
 
 
-        var x = $(this);
-
-        // $('.regionShader').stop().animate({
-        //     'width': x.width() + 32,
-        //     'left': x.position().left
-        // }, 400);
-        console.log(x)
-        $('.selectedRegion').removeClass('selectedRegion');
-        $(this).children('a').addClass('selectedRegion');
-        console.log(this)
-
-        region = this.id
-        //zoom to new region
-        zoomToRegion(region)
-        updateBars()
-        console.log(region)
+regionClickMap={"global":{1:"caribbean",2:"global",3:"caribbean",4:"ais",5:"pacific"},
+"caribbean":{1:"global",2:"global",3:"global",4:"caribbean",5:"ais"},
+"ais":{1:"caribbean",2:"global",3:"caribbean",4:"ais",5:"pacific"},
+"pacific":{1:"global",2:"global",3:"ais",4:"pacific",5:"global"}}
 
 
 
+    $("#regionClick1").click(function() {      
+        regionClick(1);
+    })
+    $("#regionClick2").click(function() {      
+        regionClick(2);
+    })
+    $("#regionClick3").click(function() {      
+        regionClick(3);
+    })
+    $("#regionClick4").click(function() {      
+        regionClick(4);
+    })
+    $("#regionClick5").click(function() {      
+        regionClick(5);
+    })
+    $("#regionClick6").click(function() {      
+        regionClick(5);
+    })
 
+    $("#portfolioBars").click(function(event) { 
 
-    });
+        if (event.target.nodeName=="svg"){
+
+        regionClick(2);}
+    })
+
+   // $('#regionSelect ul li').click(
+        
+
 
     newOptions = "<option value='All'>All Funding Sources</option>"
     for (fund in fundingCategories) {
@@ -425,7 +393,6 @@ function renderBars(fundingCategories, sidsDB) {
 
     function filterData() {
 
-        selectedRegion = $('.selectedRegion')[0].innerHTML.split(' ')[0]
         selectedYear = $("#yearSelect").val()
         selectedDonor = $("#fundingSelect").val()
 
@@ -434,7 +401,7 @@ function renderBars(fundingCategories, sidsDB) {
             selectedDonor = "All"
         }
 
-        console.log(selectedRegion, selectedYear, selectedDonor)
+       // console.log(selectedRegion, selectedYear, selectedDonor)
         filteredProjects = sidsDB
         if (selectedDonor != "All") {
             filteredProjects = filteredProjects.filter(function (d) { return d.donors.split(";").includes(selectedDonor) });
@@ -499,9 +466,9 @@ function renderBars(fundingCategories, sidsDB) {
         else {
             filteredProjects = filteredProjects.filter(function (d) { return Number.isInteger(parseInt(d.year)) });
         }
-        if (selectedRegion != "Global") {
+        if (selectedRegion != "global") {
             filteredProjects = filteredProjects.filter(function (d) {
-                return d.region == selectedRegion
+                return d.region.toLowerCase() == selectedRegion
             });
         }
 
@@ -559,7 +526,7 @@ function renderBars(fundingCategories, sidsDB) {
 
         else if (selectedGoal == "SAMOA Pathway") {
 
-            console.log("samoaaaaa")
+           // console.log("samoaaaaa")
 
             filterBudgetData = {
                 "bar1": 0, "bar2": 0, "bar3": 0, "bar4": 0, "bar5": 0, "bar6": 0, "bar7": 0, "bar8": 0, "bar9": 0, "bar10": 0, "bar11": 0,
@@ -597,17 +564,50 @@ function renderBars(fundingCategories, sidsDB) {
 
         // console.log(filterProjectData)
         // console.log(filterBudgetData)
-
+        console.timeLog()
         return ([filterBudgetData, filterProjectData, filteredProjects]);
-
+        
     }
 
+$("#regionPie").click(function(){
+    regionClick(7,pieChartRegion)
+})
 
+    
+    function regionClick(regionClickBox,clickedRegion="none") {
+    console.log(clickedRegion)
+        if(clickedRegion!="none"){
+            console.log(clickedRegion)
+            selectedRegion=clickedRegion
+        }
+            else{
+            selectedRegion=regionClickMap[selectedRegion][regionClickBox]}
+            console.log(selectedRegion)
+        if(selectedRegion=="global"){
+            updatePortfolioBackground("")
+        }else{
+            updatePortfolioBackground(selectedRegion)
+        }
+                zoomToRegion(selectedRegion)
+                updateBars()
+            }
+        
+        
+            function updatePortfolioBackground(region) {
+                img = 'graphics/sidsMapNewest' + region + '-01.png'
+                var img_tag = new Image();
+                // when preload is complete, apply the image to the div
+                img_tag.onload = function () {
+                    document.querySelector('#portfolioPanel').style.backgroundImage = 'url(' + img + ')';
+                }
+                // setting 'src' actually starts the preload
+                img_tag.src = img;
+            }
 
     function updateBars() {
-
+        console.timeLog()
         dat = filterData()
-        console.log(dat)
+     //   console.log(dat)
 
         filterBudgetData = dat[0]
         filterProjectData = dat[1]
@@ -718,15 +718,13 @@ val= y2(filterBudgetData[d])-barLabelsHeight(d, i,"budg")-2
                     else{return 0}
             })
 
-        console.log(filterProjectData)
-
-
-        console.log(sourceNames)
+        selectedGoal = $('.selectedGoal')[0].innerHTML
+     
         d3.selectAll('.hoverbar')
         .transition()
         .duration(750)
             .attr("height", function (d) { 
-                if(y(filterProjectData[d])==100){
+                if(y(filterProjectData[d])==100||selectedGoal=="Signature Solutions"||selectedGoal=="SAMOA Pathway"){
                     return 0;
                 }
             j= barsHeight - y(filterProjectData[d]) + 30; 
@@ -840,7 +838,7 @@ else if(type=="proj"){return 100-projVal-offset}
 
 
         year = document.getElementById("yearSelect").value
-        region = $('.selectedRegion')[0].innerHTML.split(' ')[0]
+      
 
 
         var distinctProjects = []
@@ -860,7 +858,7 @@ else if(type=="proj"){return 100-projVal-offset}
 
         $("#portfolio1").text(distinctCountries.length)//(sum(filterProjectData)));
         $("#portfolio3").text(distinctProjects.length)//(sum(filterProjectData)));
-        console.log("budg", totalBudg)
+        //console.log("budg", totalBudg)
         $("#portfolio4").text(nFormatter(totalBudg, 1));
         // }
 
@@ -898,6 +896,18 @@ else if(type=="proj"){return 100-projVal-offset}
     updateBars()
 
 
+
+
+
+
+
+
+
+
+
+    
+
+
 }
 
 // $(function() { 
@@ -914,6 +924,8 @@ else if(type=="proj"){return 100-projVal-offset}
 //         });
 //     });
 // }); 
+
+
 
 
 
@@ -1122,7 +1134,7 @@ var summaryHeaders = {
 $("#portfolioExport").change(function () {
 
 summaryexport =summaryExportRender(filteredProjects, fundingCategories)
-console.log(summaryExport)
+//console.log(summaryExport)
     //console.log(filteredProjects);
     if ($("#portfolioExport").val() == "projects") {
         note="This dataset is the list of UNDP projects filtered by the "+ selectedRegion +" region, the year(s) " + selectedYear+", and the funding category "+selectedFundingCategory+". All data is used with permission from the UNDP open data portal."

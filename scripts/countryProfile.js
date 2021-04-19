@@ -1,4 +1,4 @@
-
+console.time()
 // countryDictTemp=[]
 
 // fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/profileData.json")
@@ -17,33 +17,57 @@ $.getJSON('https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/e
 	//console.log(dat);
 	photoLinks.push(dat);
 	// // photoLinks=data2;
-	console.log(photoLinks);
+//	console.log(photoLinks);
+console.timeLog()
 })
 
 var metadata=[]
 $.getJSON("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/keyMetadata.json",function(dat){
 	metadata.push(dat);
+	console.timeLog()
 });
 
 fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/allKeyData.json")
 	.then(res => res.json())
 	.then(data => countryProfileInit(data))
+	.then(console.timeLog())
 
 function countryProfileInit(allKeyData) {
-	console.log(photoLinks[0])
+//	console.log(photoLinks[0])
 
 	document.getElementById("countrySelect").addEventListener("change", compileCountryData);
 
 
-	$("#countryCsvButton").click(function(){
+	$("#countryExport").change(function(){
 
 		countryExport=[]
-		pillars=["Blue","Climate","Digital"]
-		infos=["Finance","Profile"]
+		pillars=["MVI","Climate","Blue","Digital",]
+		//infos=["Profile","Finance"]
 
-		console.log(countryCode)
-		console.log(countryList)
+	//	console.log(countryCode)
+	//	console.log(countryList)
 		
+
+	//for(category in ["Profile"]){
+		for(indicator in allKeyData[countryCode]["Profile"]){
+			newIndi={}
+			newIndi["axis"]=indicator
+			try{
+			//	console.log(metadata[0][el.axis]["sourceName"])
+				newIndi["source"]=metadata[0][el.axis]["sourceName"]}
+				catch(error){
+				//	console.log("no source for "+el.axis)
+					newIndi["source"]=""
+				}
+			for(country in countryList){
+				country=countryList[country]
+				el=allKeyData[country]["Profile"][indicator]
+				newIndi[country]=el
+			}
+			countryExport.push(newIndi)
+		}
+	
+
 		for(pillar in pillars){
 			for(indicator in allKeyData[countryCode][pillars[pillar]]){
 				newIndi={}
@@ -53,7 +77,7 @@ function countryProfileInit(allKeyData) {
 
 
 				try{
-				console.log(metadata[0][el.axis]["sourceName"])
+		//		console.log(metadata[0][el.axis]["sourceName"])
 				newIndi["source"]=metadata[0][el.axis]["sourceName"]}
 				catch(error){
 					console.log("no source for "+el.axis)
@@ -69,29 +93,30 @@ function countryProfileInit(allKeyData) {
 			}
 		}
 
-		for(category in infos){
-			for(indicator in allKeyData[countryCode][infos[category]]){
+		//could be refactored, same code as "profile" above
+		//for(category in ["Finance"]){
+			for(indicator in allKeyData[countryCode]["Finance"]){
 				newIndi={}
 				newIndi["axis"]=indicator
 				try{
-					console.log(metadata[0][el.axis]["sourceName"])
+				//	console.log(metadata[0][el.axis]["sourceName"])
 					newIndi["source"]=metadata[0][el.axis]["sourceName"]}
 					catch(error){
-						console.log("no source for "+el.axis)
+					//	console.log("no source for "+el.axis)
 						newIndi["source"]=""
 					}
-
 				for(country in countryList){
 					country=countryList[country]
-					el=allKeyData[country][infos[category]][indicator]
+					el=allKeyData[country]["Finance"][indicator]
 					newIndi[country]=el
 				}
 				countryExport.push(newIndi)
 			}
-		}
 		
-		console.log(countryExport)
-		console.log(allKeyData[countryCode])
+		
+		
+		//console.log(countryExport)
+		//console.log(allKeyData[countryCode])
 
 		headers={}
 		headers["axis"]="Indicator"
@@ -99,8 +124,12 @@ function countryProfileInit(allKeyData) {
 		for(country in countryList){
 			headers[countryList[country]]=allKeyData[countryList[country]].Profile.Country
 		}
-console.log(allKeyData)
-		exportCSVFile(headers,countryExport,"sids_profile_data","")}) //download(filteredProjects); });
+//console.log(allKeyData)
+		exportCSVFile(headers,countryExport,"sids_profile_data","")
+	
+	$("#countryExport").val("export")
+	
+	}) //download(filteredProjects); });
 	
 
 	function compileCountryData() {
@@ -113,6 +142,7 @@ console.log(allKeyData)
 		blueData = allKeyData[countryCode]["Blue"]
 		digitalData = allKeyData[countryCode]["Digital"]
 		financeData = allKeyData[countryCode]["Finance"]
+		mviData = allKeyData[countryCode]["MVI"]
 
 		//console.log(allKeyData.barbados)
 
@@ -124,22 +154,30 @@ console.log(allKeyData)
                   <b>Languages: </b>", countryDict["Languages"], "<br>\
                   <b>Surface Area: </b>", countryDict["Surface Area"], "<br>\
                   <b>HDI: </b>", countryDict["Human Development Index"]));
+		$("#countryProfileTitle").html("<h4>"+countryName+"</h4>")
+
 		$("#reliefMap").attr("src", "maps/relief/".concat(countryCode, "Relief.png"))
+	
 		$("#countryImage").attr("src", "images/countryPhotos/".concat(countryCode, ".jpg"))
-		$("#countryImage").hover(
-			function () {
-				$(this).css("filter", "brightness(80%)");
-				console.log(photoLinks[0])
-				console.log(photoLinks[0][countryName])
-				$("#imageLink").text(photoLinks[0][countryName]);
-				$("#imageLink").css("display","block");
+	///disabled for now, but this is where the links appear when hovering on coutnry images
+
+		// $("#countryImage").hover(
+		// 	function () {
+		// 		$(this).css("filter", "brightness(80%)");
+		// //		console.log(photoLinks[0])
+		// //		console.log(photoLinks[0][countryName])
+		// 		$("#imageLink").text(photoLinks[0][countryName]);
+		// 		$("#imageLink").css("display","block");
 				
-			},
-			function () {
-				 $(this).css("filter", "brightness(100%)");
-				 $("#imageLink").css("display","none");
-				 }
-		)
+		// 	},
+		// 	function () {
+		// 		 $(this).css("filter", "brightness(100%)");
+		// 		 $("#imageLink").css("display","none");
+		// 		 }
+		// )
+
+
+
 
 		// console.log(financeData)
 		financeText = ""
@@ -161,15 +199,15 @@ console.log(allKeyData)
 
 		// update stories 
 
-		document.getElementById("countryStories").innerHTML = "<h4>Stories from ".concat(countryDict["Country"], "</h5>\
-  <p>", countryDict["Country"], " pioneers US$ 12.5 million agreement to prevent deforestation and maintain trajectory\
-    towards resilience\
-  </p>\
-  <p> ", countryDict["Country"], " placing gender equality at the center of private sector and disaster management\
-  </p>\
-  <p>Circular economy opportunities can\
-    reduce GHG emissions with 44% in ", countryDict["Country"], "\
-  </p>");
+// 		document.getElementById("countryStories").innerHTML = "<h4>Stories from ".concat(countryDict["Country"], "</h5>\
+//   <p>", countryDict["Country"], " pioneers US$ 12.5 million agreement to prevent deforestation and maintain trajectory\
+//     towards resilience\
+//   </p>\
+//   <p> ", countryDict["Country"], " placing gender equality at the center of private sector and disaster management\
+//   </p>\
+//   <p>Circular economy opportunities can\
+//     reduce GHG emissions with 44% in ", countryDict["Country"], "\
+//   </p>");
 
 
 		// update all 3 spider charts
@@ -181,6 +219,7 @@ console.log(allKeyData)
 
 		svg_radar3 = RadarChart("#digitalSpider", radarChartOptionsDigital, countryList, "Digital");
 
+		svg_radar4 = RadarChart("#mviSpider", radarChartOptionsMVI, countryList, "MVI");
 
 	}
 
@@ -230,6 +269,22 @@ console.log(allKeyData)
 	};
 
 
+	var radarChartOptionsMVI = {
+		w: 150,
+		h: 90,
+		margin: margin,
+		maxValue: 1,
+		levels: 5,
+		spin: 0,
+		textFormat:1.2,
+		opacityArea:0.2,
+		roundStrokes: false,
+		color: d3.scale.ordinal()
+			.range(["#8f0045 ", "#EDC951", "#CC333F", "#00A0B0", "#FFFFFF"])//,
+		//legend: { title: 'Legend', translateX: 140, translateY: 0 }
+	};
+
+
 	/////////////////////////////////////////////////////////
 	/////////////// The Radar Chart Function ////////////////
 	/// mthh - 2017 /////////////////////////////////////////
@@ -246,8 +301,8 @@ console.log(allKeyData)
 
 		data = []
 		for (i = 0; i < countryList.length; i++) {
-			console.log(countryList[i])
-			console.log(allKeyData[countryList[i]])
+		//	console.log(countryList[i])
+		//	console.log(allKeyData[countryList[i]])
 
 			////need to convert countryList[i] to code
 
@@ -298,7 +353,8 @@ console.log(allKeyData)
 			format: '.2%',
 			unit: '',
 			legend: false,
-			spin: 0
+			spin: 0,
+			textFormat:1
 		};
 
 		//Put all of the options into a variable called cfg
@@ -392,7 +448,8 @@ console.log(allKeyData)
 			.attr("dy", "0.4em")
 			.style("font-size", "10px")
 			.attr("fill", "#737373")
-			.text(d => Format(maxValue * d / cfg.levels) + cfg.unit);
+			.text(d => maxValue * d / cfg.levels) 
+			//.text(d => Format(maxValue * d / cfg.levels) + cfg.unit);
 
 		/////////////////////////////////////////////////////////
 		//////////////////// Draw the axes //////////////////////
@@ -414,31 +471,49 @@ console.log(allKeyData)
 			.style("stroke", "white")
 			.style("stroke-width", "2px");
 
+
 		//Append the labels at each axis
 		axis.append("text")
 			.attr("class", "legend")
 			.style("font-size", "10px")
 			.attr("text-anchor", "middle")
 			.attr("dy", "0.35em")
-			.attr("x", (d, i) => rScale(maxValue * cfg.labelFactor) * cos(angleSlice * i - HALF_PI - cfg.spin))
-			.attr("y", (d, i) => -15 + rScale(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("x", (d, i) => cfg.textFormat*rScale(maxValue * cfg.labelFactor) * cos(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("y", (d, i) => -15/cfg.textFormat**2 + cfg.textFormat*rScale(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
 			.text(d => d)
 			.call(wrap, cfg.wrapWidth)
 			.on('mouseover', function (d, i) {
 
-				console.log(d)
+			//	console.log(d)
 				// tooltips[j].setAttribute('data-show', '');
 				// popperInstance[j].update();
 				// tooltip3
 				// .attr("display","block")
-				try{
-				sourceLink=metadata[0][d].sourceLink}
+
+				try{sourceLink=metadata[0][d].sourceLink}
 				catch(error){sourceLink="Link"}
 				try{
-					sourceName=metadata[0][d].sourceName}
+					pillarData=allKeyData[countryList[0]][pillar]
+					for(el in pillarData){
+						if (pillarData[el].axis==d){
+							indicatorValue=pillarData[el].value
+						}
+					}
+
+				}
+				catch(error){indicatorValue=7}
+			
+				try{
+					sourceName=metadata[0][d].sourceName;
+					
+					
+				}
+					
 					catch(error){sourceName="Source"}
 
-				document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#0DB14B">' + d + '</h4><h6>'+sourceName+'</h6><a href="'+sourceLink+'"><h6 style="color:blue">'+sourceLink+'</h6></a>'
+					
+
+				document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#0DB14B">' + d + '</h4><h6>'+"Source: "+sourceName+'</h6><a href="'+sourceLink+'"><h6 style="color:blue">'+"Value: "+indicatorValue+'</h6></a>'
 				tooltip3.setAttribute('data-show', '');
 				popperInstance[d].update();
 
@@ -607,7 +682,7 @@ console.log(allKeyData)
 			.attr("height", 40)
 
 		if (cfg.legend !== false && typeof cfg.legend === "object") {
-			console.log("legended")
+			//console.log("legended")
 			let legendZone = svgLegend;//.append('g');
 			let names = data.map(el => el.name);
 			if (cfg.legend.title) {
@@ -807,9 +882,9 @@ console.log(allKeyData)
 		$('#multiCountrySelect option').each(function () {
 			optionValues.push($(this).val());
 		});
-		console.log(optionValues);
-		console.log(oldCountry)
-		console.log(optionValues.indexOf(oldCountry))
+	///	console.log(optionValues);
+	//	console.log(oldCountry)
+	//	console.log(optionValues.indexOf(oldCountry))
 		if (optionValues.indexOf(oldCountry) >= 0) {
 			//setTimeout here is a temporary fix so the initial selection waits until options are populated
 			setTimeout(function () {
@@ -851,6 +926,9 @@ console.log(allKeyData)
 			svg_radar2 = RadarChart("#blueSpider", radarChartOptionsBlue, countryList, "Blue");
 
 			svg_radar3 = RadarChart("#digitalSpider", radarChartOptionsDigital, countryList, "Digital");
+
+			svg_radar4 = RadarChart("#mviSpider", radarChartOptionsMVI, countryList, "MVI");
+
 
 		}
 	});
