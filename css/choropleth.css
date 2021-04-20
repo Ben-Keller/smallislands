@@ -282,4 +282,16 @@
   width: 8px;
 }
 
+.textNum, .textNumEnd {
+  font-family: sans-serif;
+  fill: black;
+  font-size: 12px;
+}
+
+.choroLegendTitle {
+  font-family: sans-serif;
+  fill: black;
+  font-size: 14px;
+}
+
 /*# sourceMappingURL=choropleth.css.map */
