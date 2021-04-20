@@ -14,7 +14,7 @@ var rateById = d3.map();
 var lastActiveCountry = "";
 var ireland;
 var data;
-var defaultScale = 0.75;	/* default scale of map - fits nicely on standard screen */
+var defaultScale = 0.72;	/* default scale of map - fits nicely on standard screen */
 var scale = 3;		/* maximum size to zoom county */
 var quantize = d3.scale.quantize()
 var countryJson = []
@@ -66,16 +66,7 @@ function initChoropleth(countryProf, xml, wdi) {
 
 
   d3.select(ireland).selectAll("path")
-    .on("mouseover", function (d) {
-
-      scale = 2;
-
-      var bBox = this.getBBox();
-      cx = bBox.x - bBox.width / 2;
-      cy = bBox.y - bBox.height / 2;
-
-      //console.log(bBox,cx,cy)
-      //d3.select(this).attr( "transform", "scale("+scale+","+scale+") translate("+(bBox.x-cx*(scale))+","+(bBox.y-cy*(scale))+") ");    
+    .on("mouseover", function (d) {     
       if (d3.select(this).classed("countryActive")) return;		/* no need to change class when county is already selected */
       d3.select(this).attr("class", "countryHover");
     })
@@ -200,11 +191,55 @@ function initChoropleth(countryProf, xml, wdi) {
 
     console.log(indicator,wdi)
     indicatorData = wdi[indicator]["data"]//[selectedYear]
+    console.log(indicatorData)
+
+
+    //enter indicator data directly to each svg, based on function looking for same name
+
+
+
+
+
+//     d3.select(ireland).selectAll("path")
+//     .transition()
+//     .duration(900)
+//     .attr("transform", function(d){
+//       //console.log(d)
+       
+
+//       max=1
+//       min=0
+
+
+
+//       scale = .5;
+
+//       var bBox = this.getBBox();
+//       cx = bBox.x + bBox.width / 2;
+//       cy = bBox.y + bBox.height / 2;
+
+//       //console.log(bBox,cx,cy)
+//       //d3.select(this).attr( "transform", "scale("+scale+","+scale+") translate("+(bBox.x-cx*(scale))+","+(bBox.y-cy*(scale))+") ");    
+//       //console.log(this.id)
+
+//       val=indicatorData[countryJson[this.id].Country]
+
+//       //remove values with no data
+//       indicatorValues=Object.values(indicatorData).filter(function(el) {
+//  return !isNaN(parseFloat(el)) && isFinite(el);
+//     });
+//     maxx=Math.max(...indicatorValues)
+//       minn=Math.min(...indicatorValues)
+//       normValue=(val-minn)/(maxx-minn)
+
+//       return "scale("+scale+","+scale+")translate("+(-cx)+","+ (-cy+normValue*1200)+")";
+//     } ) 
+   
+
+
+
 
     
-
-
-
     // d3.map(data, function (d) { "jajaja",console.log(d);
     //     rateById.set(d.CountryCode, +d[indicator]) });	/* create the data map */
 
@@ -440,6 +475,13 @@ updateSubcategories(category);
 
 
 
+function convertChoroToBar(){
+  console.log("done")
+}
+
+$('#choroInfoBox').click(function(){convertChoroToBar()})
+
+
 }
 
 
@@ -465,7 +507,7 @@ function initChoroLegend(wdiMeta) {
   choroLegend
     .append('rect')
     .attr("x", function (d, i) {
-      return i * -70 + 620;
+      return i * 70+40;
     })
     .attr("y", 35)
     .attr("width", 70)
@@ -481,16 +523,23 @@ function initChoroLegend(wdiMeta) {
   choroLegend
     .append('text').attr("class", "textNum")
     .attr("x", function (d, i) {
-      return i * -70 + 610;
+      return i * 70+30;
     }) //leave 5 pixel space after the <rect>
     .attr("y", 30)
     .text(function (d, i) {
+      console.log(d)
       var extent = quantize.invertExtent(d);
       //extent will be a two-element array, format it however you want:
       //return format(extent[0]) + " - " + format(+extent[1])
       return (nFormatter(extent[1], 2))//.toFixed(2))//extent[0].toFixed(2) + " - " + 
     })
-    .style("font-size", "12px");
+
+
+    choroLegend
+    .append('text').attr("class", "textNumEnd")
+    .attr("x",660)
+    .attr("y", 30)
+    .text(nFormatter(2*quantize.invertExtent("b8-9")[1]-quantize.invertExtent("b7-9")[1],2))
 
 //  choroLegend.append('text').attr("x", 680).attr("y", 30).text("0.0").style("font-size", "12px");
 
@@ -508,8 +557,7 @@ function initChoroLegend(wdiMeta) {
       indi = $(".indiActive")[0].id
       return wdiMeta[indi]["Indicator Name"]//["name"];//.toFixed(2))//extent[0].toFixed(2) + " - " + 
     })
-    .style("font-size", "14px")
-    .style("font-weight", "regular");
+    
 
 }
 
@@ -547,6 +595,13 @@ function updateChoroLegend(wdiMeta) {
       //extent will be a two-element array, format it however you want:
       return (nFormatter(extent[1], 2))//extent[0].toFixed(2) + " - " + 
     })
+
+    choroLegend
+    .selectAll('.textNumEnd')
+    .text(nFormatter(2*quantize.invertExtent("b8-9")[1]-quantize.invertExtent("b7-9")[1],2))
+
+//  choroLegend.append('text').attr("x", 680).attr("y", 30).text("0.0").style("font-size", "12px");
+
 
  // choroLegend.append('text').attr("x", 750).attr("y", 30).text("0.0").style("font-size", "12px");
 
@@ -794,3 +849,30 @@ function nFormatter(num, digits) {
   }
   return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
 }
+
+
+
+
+// $('#vizSelect ul li').click(function () {
+//   var x = $(this);
+
+//   $('.vizShader').stop().animate({
+//       'width': x.width() + 32,
+//       'left': x.position().left
+//   }, 400);
+
+//   $('.selectedViz').removeClass('selectedViz');
+//   $(this).children('a').addClass('selectedViz');
+//  // console.log(this)
+
+
+
+//   selectedViz = $('.selectedViz')[0].innerHTML
+
+//   //console.log(selectedGoal)
+
+//   if (selectedViz == "Bar Chart") {
+//      console.log("bar")
+//   }
+// });
+
