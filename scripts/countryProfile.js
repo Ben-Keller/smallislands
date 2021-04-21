@@ -41,7 +41,7 @@ function countryProfileInit(allKeyData) {
 	$("#countryExport").change(function(){
 
 		countryExport=[]
-		pillars=["MVI","Climate","Blue","Digital",]
+		pillars=["MVI","Climate","Blue","Digital"]
 		//infos=["Profile","Finance"]
 
 	//	console.log(countryCode)
@@ -132,23 +132,34 @@ function countryProfileInit(allKeyData) {
 	}) //download(filteredProjects); });
 	
 
+	function numberWithCommas(x) {
+		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
 	function compileCountryData() {
 		var x = document.getElementById("countrySelect");
 		countryCode = x.value;
-		//   console.log(countryCode);
 		countryName = allKeyData[countryCode].Profile.Country
 		countryDict = allKeyData[countryCode]["Profile"]
+		
+		
+		///these are not curerntly in use?
 		climateData = allKeyData[countryCode]["Climate"]
+		climateDataRank = //process some by rank
+
+		console.log(climateData)
 		blueData = allKeyData[countryCode]["Blue"]
+		blueDataRank= //process some rank
 		digitalData = allKeyData[countryCode]["Digital"]
 		financeData = allKeyData[countryCode]["Finance"]
 		mviData = allKeyData[countryCode]["MVI"]
+		mvi2Data = allKeyData[countryCode]["MVI2"]
 
 		//console.log(allKeyData.barbados)
 
 
 		// update country info 
-		$("#countryProfileInfo").html("<b>Population: </b>".concat(countryDict["Population"].toString(), "<br>\
+		$("#countryProfileInfo").html("<b>Population: </b>".concat(numberWithCommas(countryDict["Population"]).toString(), "<br>\
                   <b>Region: </b>", countryDict["Region"], "<br>\
                   <b>Income Group: </b>", countryDict["Income Classification"], "<br>\
                   <b>Languages: </b>", countryDict["Languages"], "<br>\
@@ -182,7 +193,10 @@ function countryProfileInit(allKeyData) {
 		// console.log(financeData)
 		financeText = ""
 		Object.keys(financeData).forEach(function (d) {
-			financeText = financeText + "<b>" + d + ": </b>" + nFormatter(financeData[d], 2) + "<br>";
+			//should remove this check for finance data if 0, just temp until I clean up the finance data input 
+			if(financeData[d]==""||financeData[d]==0){val="No Data"}
+			else{val=nFormatter(financeData[d], 2)}
+			financeText = financeText + "<b>" + d + ": </b>" + val + "<br>";
 		});
 		// console.log("finance",financeText)
 		document.getElementById('financeInfo').innerHTML = financeText
@@ -213,11 +227,11 @@ function countryProfileInit(allKeyData) {
 		// update all 3 spider charts
 		countryList = [countryCode]
 
-		svg_radar1 = RadarChart("#climateSpider", radarChartOptionsClimate, countryList, "Climate");
+		svg_radar1 = RadarChart("#climateSpider", radarChartOptionsClimate, countryList, "ClimateRank");
 
-		svg_radar2 = RadarChart("#blueSpider", radarChartOptionsBlue, countryList, "Blue");
+		svg_radar2 = RadarChart("#blueSpider", radarChartOptionsBlue, countryList, "BlueRank");
 
-		svg_radar3 = RadarChart("#digitalSpider", radarChartOptionsDigital, countryList, "Digital");
+		svg_radar3 = RadarChart("#digitalSpider", radarChartOptionsDigital, countryList, "DigitalRank");
 
 		svg_radar4 = RadarChart("#mviSpider", radarChartOptionsMVI, countryList, "MVI");
 
@@ -231,10 +245,10 @@ function countryProfileInit(allKeyData) {
 		width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
 		height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 
-
+pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 	var radarChartOptionsClimate = {
-		w: 180,
-		h: 200,
+		w: 200,
+		h: 180,
 		margin: margin,
 		maxValue: 1,
 		levels: 5,
@@ -244,8 +258,8 @@ function countryProfileInit(allKeyData) {
 		//				legend: { title: 'Organization XYZ', translateX: 120, translateY: 140 },
 	};
 	var radarChartOptionsBlue = {
-		w: 180,
-		h: 200,
+		w: 200,
+		h: 180,
 		margin: margin,
 		maxValue: 1,
 		levels: 5,
@@ -256,8 +270,8 @@ function countryProfileInit(allKeyData) {
 		legend: { title: 'Legend', translateX: 0, translateY: 0 },
 	};
 	var radarChartOptionsDigital = {
-		w: 180,
-		h: 200,
+		w: 200,
+		h: 180,
 		margin: margin,
 		maxValue: 1,
 		levels: 5,
@@ -270,11 +284,11 @@ function countryProfileInit(allKeyData) {
 
 
 	var radarChartOptionsMVI = {
-		w: 150,
-		h: 90,
+		w: 140,
+		h: 100,
 		margin: margin,
 		maxValue: 1,
-		levels: 5,
+		levels: 4,
 		spin: 0,
 		textFormat:1.2,
 		opacityArea:0.2,
@@ -376,6 +390,7 @@ function countryProfileInit(allKeyData) {
 			}
 		}
 		maxValue = Math.max(cfg.maxValue, maxValue);
+		if(pillar=="MVI"){maxValue=80;}
 
 		const allAxis = data[0].axes.map((i, j) => i.axis),	//Names of each axis
 			total = allAxis.length,					//The number of different axes
@@ -383,11 +398,18 @@ function countryProfileInit(allKeyData) {
 			Format = d3.format(cfg.format),			 	//Formatting
 			angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
 
-		//Scale for the radius
-		const rScale = d3.scale.linear()
+
+			rScaleNormal = d3.scale.linear()
 			.range([0, radius])
 			.domain([0, maxValue]);
-
+		//Scale for the radius
+		if(pillar=="MVI"){
+		 rScale = rScaleNormal;
+		}else{
+		 rScale = d3.scale.linear()
+			.range([0, radius])
+			.domain([maxValue,1]);
+		}
 		/////////////////////////////////////////////////////////
 		//////////// Create the container SVG and g /////////////
 		/////////////////////////////////////////////////////////
@@ -448,7 +470,12 @@ function countryProfileInit(allKeyData) {
 			.attr("dy", "0.4em")
 			.style("font-size", "10px")
 			.attr("fill", "#737373")
-			.text(d => maxValue * d / cfg.levels) 
+
+		if(pillar=="MVI"){
+			axisGrid.selectAll(".axisLabel").text(d => maxValue * d / cfg.levels) }
+		else{
+			axisGrid.selectAll(".axisLabel").text(d => rankFormat(nFormatter(maxValue-maxValue * d / cfg.levels+1))) }
+		
 			//.text(d => Format(maxValue * d / cfg.levels) + cfg.unit);
 
 		/////////////////////////////////////////////////////////
@@ -465,8 +492,8 @@ function countryProfileInit(allKeyData) {
 		axis.append("line")
 			.attr("x1", 0)
 			.attr("y1", 0)
-			.attr("x2", (d, i) => rScale(maxValue * 1.1) * cos(angleSlice * i - HALF_PI - cfg.spin))
-			.attr("y2", (d, i) => rScale(maxValue * 1.1) * sin(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("x2", (d, i) => rScaleNormal(maxValue * 1.1) * cos(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("y2", (d, i) => rScaleNormal(maxValue * 1.1) * sin(angleSlice * i - HALF_PI - cfg.spin))
 			.attr("class", "line")
 			.style("stroke", "white")
 			.style("stroke-width", "2px");
@@ -478,8 +505,8 @@ function countryProfileInit(allKeyData) {
 			.style("font-size", "10px")
 			.attr("text-anchor", "middle")
 			.attr("dy", "0.35em")
-			.attr("x", (d, i) => cfg.textFormat*rScale(maxValue * cfg.labelFactor) * cos(angleSlice * i - HALF_PI - cfg.spin))
-			.attr("y", (d, i) => -15/cfg.textFormat**2 + cfg.textFormat*rScale(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("x", (d, i) => cfg.textFormat*rScaleNormal(maxValue * cfg.labelFactor) * cos(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("y", (d, i) => -15/cfg.textFormat**3 + rScaleNormal(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
 			.text(d => d)
 			.call(wrap, cfg.wrapWidth)
 			.on('mouseover', function (d, i) {
@@ -501,7 +528,7 @@ function countryProfileInit(allKeyData) {
 					}
 
 				}
-				catch(error){indicatorValue=7}
+				catch(error){indicatorValue="No Data"}
 			
 				try{
 					sourceName=metadata[0][d].sourceName;
@@ -512,11 +539,36 @@ function countryProfileInit(allKeyData) {
 					catch(error){sourceName="Source"}
 
 					
+if(pillar=="MVI"){
+mviSubMap={"Geographical Vulnerability":["FDI inflows as percentage of GDP","Agriculture and fishing as share of GDP"],
+"Financial Vulnerability":["Victims of disasters","Remoteness","Share of population in low elevated coastal zones"],
+"Economic Vulnerability":["Export concentration","Export Instability","Agricultural Instability"],
+"Environmental Vulnerability":["Tourism revenues as share of exports","Remittances as percentage of GDP"]}
+ subMVIlist=""
+ //console.log(allKeyData)
+ console.log(mviSubMap[d])
+for(indi in mviSubMap[d]){
+	console.log(mviSubMap[d][indi])
+	console.log(mvi2Data)
+	subMVIlist+='<h6 style="color:black">'+mviSubMap[d][indi]+": "+nFormatter(mvi2Data[mviSubMap[d][indi]],2)+'</h6>'
+	
+}
 
-				document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#0DB14B">' + d + '</h4><h6>'+"Source: "+sourceName+'</h6><a href="'+sourceLink+'"><h6 style="color:blue">'+"Value: "+indicatorValue+'</h6></a>'
+	document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#8f0045">' + d + 
+	'</h4>'+subMVIlist+'<h6>Source: UNDP'+'</h6><a href="'+sourceLink+'"></a>'
+
+}else{
+	value=allKeyData[countryCode][pillar.slice(0,-4)].filter(obj => {return obj.axis === d})[0].value//[
+	pillarColor=pillarColors[pillar.slice(0,-4)]
+			document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:'+pillarColor+'">' + d + 
+				'</h4><h6>'+"Source: "+sourceName+'</h6><a href="'+sourceLink+
+				'"><h6 style="color:black">'+"Rank: "+rankFormat(indicatorValue.toString())+'</h6></a>'+
+				'<h6 style="color:blue">'+"Value: "+value+'</h6></a>';
+				
+
 				tooltip3.setAttribute('data-show', '');
 				popperInstance[d].update();
-
+				}
 			})
 			.on('mouseout', function (d, i) {
 				tooltip3.removeAttribute('data-show');
@@ -921,11 +973,11 @@ function countryProfileInit(allKeyData) {
 			countryList = [countryCode].concat($(".label.countryMultiSelect.dropdown").dropdown("get value"));
 
 
-			svg_radar1 = RadarChart("#climateSpider", radarChartOptionsClimate, countryList, "Climate");
+			svg_radar1 = RadarChart("#climateSpider", radarChartOptionsClimate, countryList, "ClimateRank");
 
-			svg_radar2 = RadarChart("#blueSpider", radarChartOptionsBlue, countryList, "Blue");
+			svg_radar2 = RadarChart("#blueSpider", radarChartOptionsBlue, countryList, "BlueRank");
 
-			svg_radar3 = RadarChart("#digitalSpider", radarChartOptionsDigital, countryList, "Digital");
+			svg_radar3 = RadarChart("#digitalSpider", radarChartOptionsDigital, countryList, "DigitalRank");
 
 			svg_radar4 = RadarChart("#mviSpider", radarChartOptionsMVI, countryList, "MVI");
 
@@ -960,3 +1012,13 @@ function countryProfileInit(allKeyData) {
 
 
 
+function rankFormat(num){
+	number=parseInt(num)
+if (num<20 && num>10){
+	return num.toString()+"th"
+}
+	else if(num.slice(-1)==1){return num.toString()+"st"}
+	else if (num.slice(-1)==2){return num.toString()+"nd"}
+	else if (num.slice(-1)==3){return num.toString()+"rd"}
+	else{return num.toString()+"th"}
+}
