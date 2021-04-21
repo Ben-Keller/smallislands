@@ -709,7 +709,7 @@ for(indi in mviSubMap[d]){
 					.attr('y', this.cy.baseVal.value - 10)
 					.transition()
 					.style('display', 'block')
-					.text(Format(d.value) + cfg.unit);
+					.text(rankFormat(d.value.toString()) + cfg.unit);
 			})
 			.on("mouseout", function () {
 				tooltip.transition()
