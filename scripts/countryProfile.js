@@ -565,10 +565,10 @@ for(indi in mviSubMap[d]){
 				'"><h6 style="color:black">'+"Rank: "+rankFormat(indicatorValue.toString())+'</h6></a>'+
 				'<h6 style="color:blue">'+"Value: "+value+'</h6></a>';
 				
-
+			}
 				tooltip3.setAttribute('data-show', '');
 				popperInstance[d].update();
-				}
+			
 			})
 			.on('mouseout', function (d, i) {
 				tooltip3.removeAttribute('data-show');
@@ -707,9 +707,16 @@ for(indi in mviSubMap[d]){
 				tooltip
 					.attr('x', this.cx.baseVal.value)
 					.attr('y', this.cy.baseVal.value - 10)
-					.transition()
+					if(pillar=="MVI"){
+					tooltip.transition()
+					.style('display', 'block')
+					.text(d.value+cfg.unit);
+					}else{
+					tooltip.transition()
 					.style('display', 'block')
 					.text(rankFormat(d.value.toString()) + cfg.unit);
+					}
+					
 			})
 			.on("mouseout", function () {
 				tooltip.transition()
