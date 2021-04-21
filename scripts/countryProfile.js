@@ -391,6 +391,11 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		}
 		maxValue = Math.max(cfg.maxValue, maxValue);
 		if(pillar=="MVI"){maxValue=80;}
+		else{
+			//temp solution to lock sids ranks at 42 - but shouldn't this be 50?
+			maxValue= 42; 
+
+		}
 
 		const allAxis = data[0].axes.map((i, j) => i.axis),	//Names of each axis
 			total = allAxis.length,					//The number of different axes
