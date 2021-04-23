@@ -143,11 +143,12 @@
 
 #choro_legend_container {
   margin: 0;
+  margin-top: 20px;
   padding: 0;
 }
 
 #choro_map_container svg {
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: -5px;
   padding-bottom: 0px;
   padding-top: 10px;
@@ -292,6 +293,11 @@
   font-family: sans-serif;
   fill: black;
   font-size: 14px;
+}
+
+#indicatorExportDiv {
+  float: right;
+  margin-top: -50px;
 }
 
 /*# sourceMappingURL=choropleth.css.map */

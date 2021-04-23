@@ -44,7 +44,10 @@
 
 #countryViewPanel p {
   font-size: 12px;
-  text-align: center;
+  text-align: left;
+  display: inline;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
 }
 
 .spiderbox {
@@ -87,27 +90,30 @@
   overflow-x: hidden;
 }
 
-.coutryInfoBar, #countryProfile {
-  max-height: 240px;
+.countryInfoBar, #countryProfile {
+  max-height: 260px;
   overflow: hidden;
 }
 
 #countryImage, #countryRelief {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  overflow: hidden;
+}
+
+#countryImage {
+  padding: 0;
+  margin: 0;
 }
 
 .countryInfoBar {
   background-color: #e4e1e1;
-  margin-top: 1%;
-  margin-bottom: 2%;
+  margin-top: 2.5%;
+  margin-bottom: 3%;
   padding-right: 0;
 }
 
 .countryInfoBar img {
-  max-height: 180px;
+  max-height: 200px;
   overflow-x: hidden;
   display: block;
   margin-left: auto;
@@ -223,13 +229,12 @@ select#type option[value=Colibri] {
   padding: 18px;
   margin-top: 5px;
   background-color: #eeebeb;
-  height: 260px;
+  height: 220px;
 }
 
 #countryImageContainer {
-  position: relative;
-  text-align: center;
-  color: white;
+  padding: 0;
+  margin: 0;
 }
 
 #imageLink {
@@ -243,16 +248,20 @@ select#type option[value=Colibri] {
 #multiCountrySelectBox {
   margin-top: 12px;
   padding: 0;
-  font-size: 16px;
-  color: red;
 }
 
 .countryMultiSelect {
-  width: 46%;
-  float: right;
-  margin-left: 12.5% !important;
+  min-width: 76%;
   font-size: 13px !important;
   text-align: center !important;
+}
+
+#mviSpider {
+  margin-top: -20px;
+}
+
+#countryExportDiv {
+  float: right;
 }
 
 /*# sourceMappingURL=countryView.css.map */
