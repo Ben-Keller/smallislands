@@ -202,7 +202,7 @@
               <div class="row portfolioOverview">
                 <div class="portfolioStat" style="margin-right:1%;">
                   <div>
-                    <h3 id="portfolio1">31</h3>
+                    <h3 id="portfolio1">50</h3>
                   </div>
                   <div>
                     <p>SIDS with UNDP Projects</p>
@@ -528,6 +528,11 @@
    
    
 
+
+       
+
+
+
     <div class="row">
             <div id="indicatorSelectorCol" class="col-sm-3">
 
@@ -555,7 +560,24 @@
 
             </div>
             
+
+
+            
 <div class="mapToolCont col-sm-9">
+
+
+  <div class="row">
+    <div id="choro_legend_container" style="height:50px; width:90%">
+      <img id="regionLegend" src="images/tempChoroLegend.jpg" style="height:85%; margin-left:120px; margin-top:5px; padding:0;">
+    </div>
+
+
+    <!-- <div id="indicatorExport"style="width:10%"><button id="indicatorCsvButton" class="csvButton" type="button">Export csv</button></div>
+   -->
+
+</div>
+
+
   <!-- <div class="col-lg-9 d-flex justify-content-center slidebox" id="vizSelect">
          
         
@@ -574,15 +596,7 @@
 
     <div id="choro_map_container"> </div>
 
- <div class="row">
-    <div id="choro_legend_container" style="width:90%">
-      <img id="regionLegend" src="images/tempChoroLegend.jpg" style="height:40px; margin-left:160px; margin-top:5px; padding:0;">
-    </div>
-
-
-    <!-- <div id="indicatorExport"style="width:10%"><button id="indicatorCsvButton" class="csvButton" type="button">Export csv</button></div>
-   -->
-    <div id="indicatorExportDiv" class="col-lg-1">
+    <div id="indicatorExportDiv" class="col-lg-12">
       <!-- <button id="portfolioCsvButton" class="csvButton" type="button">Export csv</button></div> -->
       <ul>
         <select id="indicatorExport" class="exportDropdown" >
@@ -591,20 +605,12 @@
           
         
           </select>
-          </ul>
-
-
-
-  </div>
-  
-  
-  
-  
+          </ul>  
   </div>
 </div>
-</div>
   
 
+</div>
 </div>
 
 
@@ -651,7 +657,8 @@
               <!-- <div class="col-lg-2 scrollbar" id="countryStories">
 
               </div> -->
-              <div class="col-lg-3 spiderbox">
+              <div class="col-lg-3 spiderbox" style="text-align:center">
+                <h4 id="mviTitle" style="margin-top:12px;">Multidimensional Vulnerability</h4>
                 <div id="mviSpider" class="radarChart" style="text-align:center"></div>
               </div>
               <div class="col-lg-3" id="countryImageContainer"><img id="countryImage">
@@ -663,8 +670,15 @@
             </div>
           </div>
 
+          <div class="col-lg-9 d-flex justify-content-center" id=multiCountrySelectBox>
+          
+           
+              <select multiple="" class="label gray countryMultiSelect dropdown" id="multiCountrySelect">
+                <option value="">Overlay countries and regions to compare indicator rankings among SIDS.</option>
+              </select>
+          
 
-
+          </div>
           <div class="row">
             <div class="col-lg-3 spiderbox">
               <h3 style="color:#0DB14B">Climate Action</h3>
@@ -685,10 +699,26 @@
 
               </div>
 
+
+
+              <div id="countryExportDiv" class="col-lg-3">
+                <ul>
+                  <select id="countryExport" class="exportDropdown" >
+                    <option value='export' selected hidden>Export</option>
+                    <option value='summary'>Summary csv</option>
+                  
+                    </select>
+                    </ul>
+         
+  
+  
+            </div>
+
+
             </div><!-- /.col-lg-4 -->
 
             <div id="tooltipIndicator" class="tooltips" role="tooltip">
-              <div id="tooltipIndicatorContent"></div>
+              <div id="tooltipIndicatorContent" style="max-width:350px;"></div>
               <div class="arrow" data-popper-arrow></div>
             </div>
 
@@ -696,30 +726,11 @@
 
 
           <div class="row">
-            <div class="col-lg-11 d-flex justify-content-center" id=multiCountrySelectBox>
-          
-
-                <select multiple="" class="label countryMultiSelect dropdown" id="multiCountrySelect">
-                  <option value="">Overlay countries and regions</option>
-                </select>
-            
-
-            </div>
+       
             <!-- <div id="countryExport" class="col-lg-3"><button id="countryCsvButton" class="csvButton" type="button">Export csv</button></div> -->
 
 
-            <div id="countryExportDiv" class="col-lg-1">
-              <ul>
-                <select id="countryExport" class="exportDropdown" >
-                  <option value='export' selected hidden>Export</option>
-                  <option value='summary'>Summary csv</option>
-                
-                  </select>
-                  </ul>
-       
-
-
-          </div>
+           
 
             <!-- <div id="spiderLegend" class=col-lg-9></div> -->
           </div>
