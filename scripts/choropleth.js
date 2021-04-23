@@ -448,11 +448,11 @@ updateSubcategories(category);
       // console.log(tooltipTitle)
       // console.log(wdi[indicator]["year"])
       try {
-        secondLine = wdi[indicator]["data"][tooltipTitle].toFixed(2)
+        secondLine = "Value: "+wdi[indicator]["data"][tooltipTitle].toFixed(2)
       }
       catch (error) { secondLine = "No Data" }
-      thirdLine = wdi[indicator]["year"][tooltipTitle]
-
+      thirdLine =  "Year: "+wdi[indicator]["year"][tooltipTitle]
+      regionColor=regionColors(countryJson[countryMaps[index].id].Region,"Y").substring(1)
       // console.log(wdi[indicator]["def"])
       // console.log(wdi[indicator]["year"])
 
@@ -460,7 +460,7 @@ updateSubcategories(category);
       //create tooltip
       // <div id="tooltip1" class="tooltips" role="tooltip"></div>
       //<div class="arrow" data-popper-arrow></div>
-      $('#tooltipChoro' + (index).toString()).html('<h4 style="color:#0DB14B">' + tooltipTitle + '</h4><h6>' + secondLine + '</h6><h6>' + thirdLine + '</h6><div class="arrow" data-popper-arrow></div></div>')
+      $('#tooltipChoro' + (index).toString()).html('<h4 style="color:#'+regionColor+'">' + tooltipTitle + '</h4><h6>' + secondLine + '</h6><h6>' + thirdLine + '</h6><div class="arrow" data-popper-arrow></div></div>')
       // console.log(index+": yo");
     });
 
@@ -507,11 +507,11 @@ function initChoroLegend(wdiMeta) {
   choroLegend
     .append('rect')
     .attr("x", function (d, i) {
-      return i * 70+40;
+      return i * 70+70;
     })
     .attr("y", 35)
     .attr("width", 70)
-    .attr("height", 12)
+    .attr("height", 10)
     .attr("class", function (d) { return d; })
     .on("click", function (d) {
       if (lastActiveCountry == "") {
@@ -523,7 +523,7 @@ function initChoroLegend(wdiMeta) {
   choroLegend
     .append('text').attr("class", "textNum")
     .attr("x", function (d, i) {
-      return i * 70+30;
+      return i * 70+60;
     }) //leave 5 pixel space after the <rect>
     .attr("y", 30)
     .text(function (d, i) {
@@ -537,7 +537,7 @@ function initChoroLegend(wdiMeta) {
 
     choroLegend
     .append('text').attr("class", "textNumEnd")
-    .attr("x",660)
+    .attr("x",690)
     .attr("y", 30)
     .text(nFormatter(2*quantize.invertExtent("b8-9")[1]-quantize.invertExtent("b7-9")[1],2))
 

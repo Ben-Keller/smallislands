@@ -20,8 +20,8 @@ samoaPriorities = ["Sustainable, inclusive and equitable economic growth", "Clim
     "Sustainable Consumption and Production", "Chemical and Waste management", "Health and NCDs",
     "Gender Equality", "Social Development", "Biodiversity", "Invasive species", "Means of Implementation"]
 ss = ["Keeping people out of poverty", "Strengthen effective, inclusive and accountable governance", "Enhance national prevention and recovery capacities for resilient societies", "Promote nature-based solutions for a sustainable planet", "Close the energy gap", "Strenghten gender equality and the empowerment of women and girls"]
-sdgs = ["No poverty", "Zero hunger", "Good health and well-being", "Quality education", "Gender equality", "Clean water and sanitation", "Affordable and clean energy", "Decent work and economic growth", "Industry, innovation and infrastructure", "Reduced inequalities", "Sustainable cities and communities", "Responsible consumption and production", "Climate action", "Life below water", "Life on land", "Peace, justice, and strong institutions", "Partnerships for the goals"]
-samoaDescriptions = ["DD Sustainable, inclusive and equitable economic growth", "DD Climate Change", "Sustainable Energy",
+sdgs = ["No poverty", "Zero hunger", "Good health and well-being", "Quality education", "Gender equality", "Clean water and sanitation", "Affordable and clean energy", "Decent work and economic growth", "Industry, innovation and infrastructure", "Reduced inequalities", "Sustainable cities and communities", "Responsible consumption and production", "Climate action", "Life below water", "Life on Land", "Peace, justice, and strong institutions", "Partnerships for the goals"]
+samoaDescriptions = ["Sustainable, inclusive and equitable economic growth", "Climate Change", "Sustainable Energy",
     "Disaster Risk Reduction", "Oceans and Seas", "Food Security and Nutrition", "Water and Sanitation", "Sustainable Transportation",
     "Sustainable Consumption and Production", "Chemical and Waste management", "Health and NCDs",
     "Gender Equality", "Social Development", "Biodiversity", "Invasive species", "Means of Implementation"]
@@ -335,31 +335,37 @@ regionClickMap={"global":{1:"caribbean",2:"global",3:"caribbean",4:"ais",5:"paci
 
         newOptions = "<option value='All'>All " + fundingCategory + "</option>"
 
-        
+        stringFilteredProjects=JSON.stringify(filteredProjects)
+        console.log(stringFilteredProjects.includes("UNITED NATIONS"))
 
         if (fundingCategory == "All") {
             newOptions = "<option value='All'>All Funding Sources</option>"
             for (fund in fundingCategories) {
-                newOptions = newOptions + "<option value='" + fund + "'>" + fund + "</option>"
+                
+                if(stringFilteredProjects.includes(fund)){
+                    newOptions = newOptions + "<option value='" + fund + "'>" + fund + "</option>"
+                }
             }
         }
         else if (fundingCategory == "Programme Countries") {
             for (fund in fundingCategories) {
-                if (fundingCategories[fund].category == "Government" && sidsList.includes(fundingCategories[fund].subCategory)) {
+                console.log(fund)
+                console.log("UNITED NATIONS")
+                if (fundingCategories[fund].category == "Government" && sidsList.includes(fundingCategories[fund].subCategory)&&stringFilteredProjects.includes(fund)) {
                     newOptions = newOptions + "<option value='" + fund + "'>" + fund + "</option>"
                 }
             }
         }
         else if (fundingCategory == "Donor Countries") {
             for (fund in fundingCategories) {
-                if (fundingCategories[fund].category == "Government") {
+                if (fundingCategories[fund].category == "Government" &&stringFilteredProjects.includes(fund)) {
                     newOptions = newOptions + "<option value='" + fund + "'>" + fund + "</option>"
                 }
             }
         }
         else {
             for (fund in fundingCategories) {
-                if (fundingCategories[fund].category == fundingCategory) {
+                if (fundingCategories[fund].category == fundingCategory && stringFilteredProjects.includes(fund)) {
                     newOptions = newOptions + "<option value='" + fund + "'>" + fund + "</option>"
                 }
             }
@@ -863,7 +869,7 @@ else if(type=="proj"){return 100-projVal-offset}
 
 
 
-        $("#portfolio1").text(distinctCountries.length)//(sum(filterProjectData)));
+      //  $("#portfolio1").text(distinctCountries.length)//(sum(filterProjectData)));
         $("#portfolio3").text(distinctProjects.length)//(sum(filterProjectData)));
         //console.log("budg", totalBudg)
         $("#portfolio4").text(nFormatter(totalBudg, 1));
@@ -945,7 +951,7 @@ function zoomToRegion(region) {
             'background-position-x': '0%',
             'background-position-y': '-40px'
         }, 1500, function () { console.log('zoomed'); });
-        //$("#portfolio1").text("50");
+        $("#portfolio1").text("50");
         $("#portfolio2").text("38");
     }
 
@@ -955,7 +961,7 @@ function zoomToRegion(region) {
             'background-position-x': '-35%',
             'background-position-y': '-60px'
         }, 1500, function () { console.log('zoomed'); });
-        //$("#portfolio1").text("25");
+        $("#portfolio1").text("25");
         $("#portfolio2").text("16");
 
     }
@@ -965,7 +971,7 @@ function zoomToRegion(region) {
             'background-position-x': '50%',
             'background-position-y': '-100px'
         }, 1600, function () { console.log('zoomed'); });
-        //$("#portfolio1").text("9");
+        $("#portfolio1").text("9");
         $("#portfolio2").text("9");
     }
     else if (region == "pacific") {
@@ -974,7 +980,7 @@ function zoomToRegion(region) {
             'background-position-x': '210%',
             'background-position-y': '-140px'
         }, 1600, function () { console.log('zoomed'); });
-        //$("#portfolio1").text("16");
+        $("#portfolio1").text("16");
         $("#portfolio2").text("13");
     }
 
@@ -1017,7 +1023,11 @@ function updateProjectTooltips(filteredProjects) {
             projectList = ""
 
             for (project in sdgFilteredProjects) {
-                projectList += '<div class="projectTooltipColumn col-lg-8">'+"<b>" + (parseInt(project) + 1).toString() + ") </b>" + sdgFilteredProjects[project].title 
+                projectYearString=""
+                if(selectedYear=="2012to2021"){
+                    projectYearString=" ("+sdgFilteredProjects[project].year+") "
+                }
+                projectList += '<div class="projectTooltipColumn col-lg-8">'+"<b>" + (parseInt(project) + 1).toString() + ") </b>" + sdgFilteredProjects[project].title +projectYearString
               +"</div>"+'<div class="projectTooltipColumn col-lg-2">'+ 
               sdgFilteredProjects[project].country
               +'</div><div class="projectTooltipColumn col-lg-2">'+ 
@@ -1161,15 +1171,18 @@ function initSamoaTooltips() {
     const samoas = $(".samoaIcon")
 
     samoas.each(function (index) {
-        tooltipTitle = "Projects";
-        secondLine = samoaDescriptions[index]
-        thirdLine = "Project 2"
+        tooltipTitle =(parseInt(index)+1).toString()+") "+samoaDescriptions[index];
+        //secondLine = samoaDescriptions[index]
+        //thirdLine = "Project 2"
 
         $('#samoaTooltips').append('<div class="samoaTooltip tooltips" id="tooltipSamoa' +
             (index).toString() + '" role="tooltip"><div class="jjsamoaTooltip" id="jjtooltipSamoa' +
-            (index).toString() + '"><h4 style="color:#0DB14B">'
-            + tooltipTitle + '</h4><h6 id="tooltipStat">' + secondLine + '</h6><h6>'
-            + thirdLine + '</h6></div><div class="arrow" data-popper-arrow></div></div>')
+            (index).toString() + '"><h4 style="color:'
+            +samoaColors[index]
+            + '; font-weight:bold">'+tooltipTitle + '</h4>'+
+            //<h6 id="tooltipStat">' + secondLine + '</h6><h6>'
+            //+ thirdLine + '</h6>
+            '</div><div class="arrow" data-popper-arrow></div></div>')
         // console.log(index+": yo");
     });
 
@@ -1215,7 +1228,7 @@ function initSamoaTooltips() {
     showEvents.forEach(event => {
         for (j = 0; j < samoas.length; j++) {
             samoas[j].addEventListener(event, hovered.bind(null, j));
-            samoaTooltips[j].addEventListener(event, hovered.bind(null, j));
+            //samoaTooltips[j].addEventListener(event, hovered.bind(null, j));
         }
     });
 
@@ -1226,7 +1239,7 @@ function initSamoaTooltips() {
         for (j = 0; j < samoas.length; j++) {
             //    console.log("i",j)
             samoas[j].addEventListener(event, hide);
-            samoaTooltips[j].addEventListener(event, hide);
+           // samoaTooltips[j].addEventListener(event, hide);
         }
     });
 

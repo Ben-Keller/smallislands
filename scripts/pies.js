@@ -37,7 +37,7 @@ svg1.attr("transform", "translate(" + width / 2.7 + "," + height / 1.8 + ")");
 var key1 = function (d) { return d.data.category; };
 
 var color1 = d3.scaleOrdinal()
-	.domain(["European Union", "Donor Countries", "Programme Countries", "UN Agencies", "UN Pooled Funds", "Vertical Funds", "Other"])
+	.domain(["Vertical Funds", "Donor Countries", "Programme Countries", "UN Pooled Funds", "UN Agencies","European Union",  "Other"])
 	.range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00", "#ac4f5f"]);
 
 
@@ -128,7 +128,7 @@ function initPieChart1(pieData) {
 	text.enter()
 		.append("text")
 		.attr("dy", ".35em")
-		.attr("font-size", "10px")
+		.attr("font-size", "12px")
 		.text(function (d) {
 			//				console.log(d)
 			
@@ -450,7 +450,7 @@ function initPieChart2(pieData) {
 	text.enter()
 		.append("text")
 		.attr("dy", ".35em")
-		.attr("font-size", "10px")
+		.attr("font-size", "12px")
 		.text(function (d) {
 			if (d.data.value == 0) { return ""; } else {
 				return d.data.category + " - " + nFormatter(d.data.value, 1);

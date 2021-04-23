@@ -25,6 +25,7 @@ var metadata=[]
 $.getJSON("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/keyMetadata.json",function(dat){
 	metadata.push(dat);
 	console.timeLog()
+	console.log(metadata[0])
 });
 
 fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/allKeyData.json")
@@ -250,7 +251,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		w: 200,
 		h: 180,
 		margin: margin,
-		maxValue: 1,
+		
 		levels: 5,
 		spin: 0,
 		roundStrokes: false,
@@ -261,7 +262,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		w: 200,
 		h: 180,
 		margin: margin,
-		maxValue: 1,
+		
 		levels: 5,
 		spin: 0,//3.1415/6,
 		roundStrokes: false,
@@ -273,7 +274,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		w: 200,
 		h: 180,
 		margin: margin,
-		maxValue: 1,
+		
 		levels: 5,
 		spin: 0,
 		roundStrokes: false,
@@ -287,7 +288,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		w: 140,
 		h: 100,
 		margin: margin,
-		maxValue: 1,
+		maxValue: 80,
 		levels: 4,
 		spin: 0,
 		textFormat:1.2,
@@ -390,7 +391,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 			}
 		}
 		maxValue = Math.max(cfg.maxValue, maxValue);
-		if(pillar=="MVI"){maxValue=80;}
+
 		
 
 		const allAxis = data[0].axes.map((i, j) => i.axis),	//Names of each axis
@@ -533,11 +534,18 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 			
 				try{
 					sourceName=metadata[0][d].sourceName;
-					
-					
-				}
+
+					}
 					
 					catch(error){sourceName="Source"}
+console.log(metadata)
+					try{
+						
+					longDefinition=metadata[0][d].longDefinition
+					}
+					catch(error){
+						longDefinition=d
+					}
 
 					
 if(pillar=="MVI"){
@@ -562,9 +570,9 @@ for(indi in mviSubMap[d]){
 	value=allKeyData[countryCode][pillar.slice(0,-4)].filter(obj => {return obj.axis === d})[0].value//[
 	pillarColor=pillarColors[pillar.slice(0,-4)]
 			document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:'+pillarColor+'">' + d + 
-				'</h4><h6>'+"Source: "+sourceName+'</h6><a href="'+sourceLink+
+				'</h4><h6 style="display:inline">Definition: '+'</h6><p>'+longDefinition+'</p><h6 style="margin-top:4px;">'+"Source: "+sourceName+'</h6><a href="'+sourceLink+
 				'"><h6 style="color:black">'+"Rank: "+rankFormat(indicatorValue.toString())+'</h6></a>'+
-				'<h6 style="color:blue">'+"Value: "+value+'</h6></a>';
+				'<h6 style="color:blue">'+"Value: "+parseFloat(value.toFixed(3))+'</h6></a>';
 				
 			}
 				tooltip3.setAttribute('data-show', '');
@@ -651,7 +659,7 @@ for(indi in mviSubMap[d]){
 			.attr('x', 0)
 			.attr('y', 0)
 			.attr("class", "spiderTooltip")
-			.style("font-size", "12px")
+			.style("font-size", "14px")
 			.style("font-weight", "bold")
 			.style('display', 'none')
 			.attr("text-anchor", "middle")
@@ -709,14 +717,21 @@ for(indi in mviSubMap[d]){
 					.attr('x', this.cx.baseVal.value)
 					.attr('y', this.cy.baseVal.value - 10)
 					if(pillar=="MVI"){
-					tooltip.transition()
+				tooltip.transition()
 					.style('display', 'block')
 					.text(d.value+cfg.unit);
 					}else{
-					tooltip.transition()
+				tooltip.transition()
 					.style('display', 'block')
-					.text(rankFormat(d.value.toString()) + cfg.unit);
-					}
+					.text(function(){
+						value=nFormatter(allKeyData[countryCode][pillar.slice(0,-4)].filter(obj => {return obj.axis === d.axis})[0].value,2)
+						if(isNaN(value)){
+							return ""
+						}
+						else{
+						return value+", "+rankFormat(d.value.toString()) + cfg.unit;}
+						})	
+					}	
 					
 			})
 			.on("mouseout", function () {
@@ -728,7 +743,8 @@ for(indi in mviSubMap[d]){
 			.attr('x', 0)
 			.attr('y', 0)
 			.attr("class", "spiderTooltip")
-			.style("font-size", "12px")
+			.style("font-size", "14px")
+			.style("font-weight","bold")
 			.style('display', 'none')
 			.attr("text-anchor", "middle")
 			.attr("dy", "0.35em")
@@ -852,7 +868,7 @@ for(indi in mviSubMap[d]){
 <option value='grenada'>Grenada</option>\
 <option value='guyana'>Guyana</option>\
 <option value='haiti'>Haiti</option>\
-<option value='belize'>Jamaica</option>\
+<option value='jamaica'>Jamaica</option>\
 <option value='montserrat'>Montserrat</option>\
 <option value='saintLucia'>Saint Lucia</option>\
 <option value='sintMaarten'>Sint Maarten</option>\
@@ -891,7 +907,7 @@ for(indi in mviSubMap[d]){
 <option value='tuvalu'>Tuvalu</option>\
 <option value='vanuatu'>Vanuatu</option>"
 
-	var all2 = '<option value="">Overlay countries and regions</option>\
+	var all2 = '<option value="">Overlay countries to compare indicator rank among SIDS</option>\
 <option value="caribbeanAverage">Caribbean Average</option>\
 <option value="aisAverage">AIS Average</option>\
 <option value="pacificAverage">Pacific Average</option>'+ all
