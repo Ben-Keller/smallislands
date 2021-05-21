@@ -1,28 +1,18 @@
-console.time()
-// countryDictTemp=[]
+console.time();
 
-// fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/profileData.json")
-// .then(res => res.json())
-// .then(data =>countryDictTemp.push(data))
+keyIndicatorPopperInstance = new Array();
 
-// fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/blueData.json")
-// .then(res => res.json())
-// .then(data =>keyData.push(data))
-
-// fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/digitalData.json")
-// .then(res => res.json())
-// .then(data=>keyData.push(data))
 var photoLinks = []
 $.getJSON('https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/photoLinks.json', function (dat) {
 	//console.log(dat);
 	photoLinks.push(dat);
 	// // photoLinks=data2;
-//	console.log(photoLinks);
-console.timeLog()
+	//	console.log(photoLinks);
+	console.timeLog()
 })
 
-var metadata=[]
-$.getJSON("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/keyMetadata.json",function(dat){
+var metadata = []
+$.getJSON("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/exports/keyMetadata.json", function (dat) {
 	metadata.push(dat);
 	console.timeLog()
 	console.log(metadata[0])
@@ -34,61 +24,62 @@ fetch("https://raw.githubusercontent.com/Ben-Keller/smallislands/main/data/expor
 	.then(console.timeLog())
 
 function countryProfileInit(allKeyData) {
-//	console.log(photoLinks[0])
+	//	console.log(photoLinks[0])
 
 	document.getElementById("countrySelect").addEventListener("change", compileCountryData);
 
+	$("#countryExport").change(function () {
 
-	$("#countryExport").change(function(){
-
-		countryExport=[]
-		pillars=["MVI","Climate","Blue","Digital"]
+		countryExport = []
+		pillars = ["MVI", "Climate", "Blue", "Digital"]
 		//infos=["Profile","Finance"]
 
-	//	console.log(countryCode)
-	//	console.log(countryList)
-		
+		//	console.log(countryCode)
+		//	console.log(countryList)
 
-	//for(category in ["Profile"]){
-		for(indicator in allKeyData[countryCode]["Profile"]){
-			newIndi={}
-			newIndi["axis"]=indicator
-			try{
-			//	console.log(metadata[0][el.axis]["sourceName"])
-				newIndi["source"]=metadata[0][el.axis]["sourceName"]}
-				catch(error){
+
+		//for(category in ["Profile"]){
+		for (indicator in allKeyData[countryCode]["Profile"]) {
+			newIndi = {}
+			newIndi["axis"] = indicator
+			try {
+				//	console.log(metadata[0][el.axis]["sourceName"])
+				newIndi["source"] = metadata[0][el.axis]["sourceName"]
+			}
+			catch (error) {
 				//	console.log("no source for "+el.axis)
-					newIndi["source"]=""
-				}
-			for(country in countryList){
-				country=countryList[country]
-				el=allKeyData[country]["Profile"][indicator]
-				newIndi[country]=el
+				newIndi["source"] = ""
+			}
+			for (country in countryList) {
+				country = countryList[country]
+				el = allKeyData[country]["Profile"][indicator]
+				newIndi[country] = el
 			}
 			countryExport.push(newIndi)
 		}
-	
-
-		for(pillar in pillars){
-			for(indicator in allKeyData[countryCode][pillars[pillar]]){
-				newIndi={}
-				el=allKeyData[countryCode][pillars[pillar]][indicator]
-				newIndi["axis"]=el.axis
 
 
+		for (pillar in pillars) {
+			for (indicator in allKeyData[countryCode][pillars[pillar]]) {
+				newIndi = {}
+				el = allKeyData[countryCode][pillars[pillar]][indicator]
+				newIndi["axis"] = el.axis
 
-				try{
-		//		console.log(metadata[0][el.axis]["sourceName"])
-				newIndi["source"]=metadata[0][el.axis]["sourceName"]}
-				catch(error){
-					console.log("no source for "+el.axis)
-					newIndi["source"]=""
+
+
+				try {
+					//		console.log(metadata[0][el.axis]["sourceName"])
+					newIndi["source"] = metadata[0][el.axis]["sourceName"]
+				}
+				catch (error) {
+					console.log("no source for " + el.axis)
+					newIndi["source"] = ""
 				}
 
-				for(country in countryList){
-					country=countryList[country]
-					el=allKeyData[country][pillars[pillar]][indicator]
-					newIndi[country]=el.value
+				for (country in countryList) {
+					country = countryList[country]
+					el = allKeyData[country][pillars[pillar]][indicator]
+					newIndi[country] = el.value
 				}
 				countryExport.push(newIndi)
 			}
@@ -96,42 +87,42 @@ function countryProfileInit(allKeyData) {
 
 		//could be refactored, same code as "profile" above
 		//for(category in ["Finance"]){
-			for(indicator in allKeyData[countryCode]["Finance"]){
-				newIndi={}
-				newIndi["axis"]=indicator
-				try{
+		for (indicator in allKeyData[countryCode]["Finance"]) {
+			newIndi = {}
+			newIndi["axis"] = indicator
+			try {
 				//	console.log(metadata[0][el.axis]["sourceName"])
-					newIndi["source"]=metadata[0][el.axis]["sourceName"]}
-					catch(error){
-					//	console.log("no source for "+el.axis)
-						newIndi["source"]=""
-					}
-				for(country in countryList){
-					country=countryList[country]
-					el=allKeyData[country]["Finance"][indicator]
-					newIndi[country]=el
-				}
-				countryExport.push(newIndi)
+				newIndi["source"] = metadata[0][el.axis]["sourceName"]
 			}
-		
-		
-		
+			catch (error) {
+				//	console.log("no source for "+el.axis)
+				newIndi["source"] = ""
+			}
+			for (country in countryList) {
+				country = countryList[country]
+				el = allKeyData[country]["Finance"][indicator]
+				newIndi[country] = el
+			}
+			countryExport.push(newIndi)
+		}
+
+
+
 		//console.log(countryExport)
 		//console.log(allKeyData[countryCode])
 
-		headers={}
-		headers["axis"]="Indicator"
-		headers["source"]="Source"
-		for(country in countryList){
-			headers[countryList[country]]=allKeyData[countryList[country]].Profile.Country
+		headers = {}
+		headers["axis"] = "Indicator"
+		headers["source"] = "Source"
+		for (country in countryList) {
+			headers[countryList[country]] = allKeyData[countryList[country]].Profile.Country
 		}
-//console.log(allKeyData)
-		exportCSVFile(headers,countryExport,"sids_profile_data","")
-	
-	$("#countryExport").val("export")
-	
+		//console.log(allKeyData)
+		exportCSVFile(headers, countryExport, "sids_profile_data", "")
+
+		$("#countryExport").val("export")
+
 	}) //download(filteredProjects); });
-	
 
 	function numberWithCommas(x) {
 		return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -142,16 +133,16 @@ function countryProfileInit(allKeyData) {
 		countryCode = x.value;
 		countryName = allKeyData[countryCode].Profile.Country
 		countryDict = allKeyData[countryCode]["Profile"]
-		
-		
+
+
 		///these are not curerntly in use?
 		climateData = allKeyData[countryCode]["Climate"]
 		climateDataRank = //process some by rank
 
-		console.log(climateData)
+			console.log(climateData)
 		blueData = allKeyData[countryCode]["Blue"]
-		blueDataRank= //process some rank
-		digitalData = allKeyData[countryCode]["Digital"]
+		blueDataRank = //process some rank
+			digitalData = allKeyData[countryCode]["Digital"]
 		financeData = allKeyData[countryCode]["Finance"]
 		mviData = allKeyData[countryCode]["MVI"]
 		mvi2Data = allKeyData[countryCode]["MVI2"]
@@ -166,12 +157,12 @@ function countryProfileInit(allKeyData) {
                   <b>Languages: </b>", countryDict["Languages"], "<br>\
                   <b>Surface Area: </b>", countryDict["Surface Area"], "<br>\
                   <b>HDI: </b>", countryDict["Human Development Index"]));
-		$("#countryProfileTitle").html("<h4>"+countryName+"</h4>")
+		$("#countryProfileTitle").html("<h4>" + countryName + "</h4>")
 
 		$("#reliefMap").attr("src", "maps/relief/".concat(countryCode, "Relief.png"))
-	
+
 		$("#countryImage").attr("src", "images/countryPhotos/".concat(countryCode, ".jpg"))
-	///disabled for now, but this is where the links appear when hovering on coutnry images
+		///disabled for now, but this is where the links appear when hovering on coutnry images
 
 		// $("#countryImage").hover(
 		// 	function () {
@@ -180,7 +171,7 @@ function countryProfileInit(allKeyData) {
 		// //		console.log(photoLinks[0][countryName])
 		// 		$("#imageLink").text(photoLinks[0][countryName]);
 		// 		$("#imageLink").css("display","block");
-				
+
 		// 	},
 		// 	function () {
 		// 		 $(this).css("filter", "brightness(100%)");
@@ -195,8 +186,8 @@ function countryProfileInit(allKeyData) {
 		financeText = ""
 		Object.keys(financeData).forEach(function (d) {
 			//should remove this check for finance data if 0, just temp until I clean up the finance data input 
-			if(financeData[d]==""||financeData[d]==0){val="No Data"}
-			else{val=nFormatter(financeData[d], 2)}
+			if (financeData[d] == "" || financeData[d] == 0) { val = "No Data" }
+			else { val = nFormatter(financeData[d], 2) }
 			financeText = financeText + "<b>" + d + ": </b>" + val + "<br>";
 		});
 		// console.log("finance",financeText)
@@ -214,15 +205,15 @@ function countryProfileInit(allKeyData) {
 
 		// update stories 
 
-// 		document.getElementById("countryStories").innerHTML = "<h4>Stories from ".concat(countryDict["Country"], "</h5>\
-//   <p>", countryDict["Country"], " pioneers US$ 12.5 million agreement to prevent deforestation and maintain trajectory\
-//     towards resilience\
-//   </p>\
-//   <p> ", countryDict["Country"], " placing gender equality at the center of private sector and disaster management\
-//   </p>\
-//   <p>Circular economy opportunities can\
-//     reduce GHG emissions with 44% in ", countryDict["Country"], "\
-//   </p>");
+		// 		document.getElementById("countryStories").innerHTML = "<h4>Stories from ".concat(countryDict["Country"], "</h5>\
+		//   <p>", countryDict["Country"], " pioneers US$ 12.5 million agreement to prevent deforestation and maintain trajectory\
+		//     towards resilience\
+		//   </p>\
+		//   <p> ", countryDict["Country"], " placing gender equality at the center of private sector and disaster management\
+		//   </p>\
+		//   <p>Circular economy opportunities can\
+		//     reduce GHG emissions with 44% in ", countryDict["Country"], "\
+		//   </p>");
 
 
 		// update all 3 spider charts
@@ -246,12 +237,12 @@ function countryProfileInit(allKeyData) {
 		width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
 		height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20);
 
-pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
+	pillarColors = { "Blue": "#0BC6FF", "Climate": "#0DB14B", "Digital": "#F58220" }
 	var radarChartOptionsClimate = {
 		w: 200,
 		h: 180,
 		margin: margin,
-		
+
 		levels: 5,
 		spin: 0,
 		roundStrokes: false,
@@ -262,7 +253,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		w: 200,
 		h: 180,
 		margin: margin,
-		
+
 		levels: 5,
 		spin: 0,//3.1415/6,
 		roundStrokes: false,
@@ -274,7 +265,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		w: 200,
 		h: 180,
 		margin: margin,
-		
+
 		levels: 5,
 		spin: 0,
 		roundStrokes: false,
@@ -283,7 +274,6 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		//legend: { title: 'Legend', translateX: 140, translateY: 0 }
 	};
 
-
 	var radarChartOptionsMVI = {
 		w: 140,
 		h: 100,
@@ -291,14 +281,13 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		maxValue: 80,
 		levels: 4,
 		spin: 0,
-		textFormat:1.2,
-		opacityArea:0.2,
+		textFormat: 1.2,
+		opacityArea: 0.2,
 		roundStrokes: false,
 		color: d3.scale.ordinal()
 			.range(["#8f0045 ", "#EDC951", "#CC333F", "#00A0B0", "#FFFFFF"])//,
 		//legend: { title: 'Legend', translateX: 140, translateY: 0 }
 	};
-
 
 	/////////////////////////////////////////////////////////
 	/////////////// The Radar Chart Function ////////////////
@@ -307,17 +296,16 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 	// (VisualCinnamon.com) and modified for d3 v4 //////////
 	/////////////////////////////////////////////////////////
 
-
 	sin = Math.sin;
 	cos = Math.cos;
 	HALF_PI = Math.PI / 2;
 
 	function RadarChart(parent_selector, options, countryList, pillar) {
-
+		
 		data = []
 		for (i = 0; i < countryList.length; i++) {
-		//	console.log(countryList[i])
-		//	console.log(allKeyData[countryList[i]])
+			//	console.log(countryList[i])
+			//	console.log(allKeyData[countryList[i]])
 
 			////need to convert countryList[i] to code
 
@@ -369,7 +357,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 			unit: '',
 			legend: false,
 			spin: 0,
-			textFormat:1
+			textFormat: 1
 		};
 
 		//Put all of the options into a variable called cfg
@@ -392,7 +380,7 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 		}
 		maxValue = Math.max(cfg.maxValue, maxValue);
 
-		
+
 
 		const allAxis = data[0].axes.map((i, j) => i.axis),	//Names of each axis
 			total = allAxis.length,					//The number of different axes
@@ -401,16 +389,16 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 			angleSlice = Math.PI * 2 / total;		//The width in radians of each "slice"
 
 
-			rScaleNormal = d3.scale.linear()
+		rScaleNormal = d3.scale.linear()
 			.range([0, radius])
 			.domain([0, maxValue]);
 		//Scale for the radius
-		if(pillar=="MVI"){
-		 rScale = rScaleNormal;
-		}else{
-		 rScale = d3.scale.linear()
-			.range([0, radius])
-			.domain([maxValue,1]);
+		if (pillar == "MVI") {
+			rScale = rScaleNormal;
+		} else {
+			rScale = d3.scale.linear()
+				.range([0, radius])
+				.domain([maxValue, 1]);
 		}
 		/////////////////////////////////////////////////////////
 		//////////// Create the container SVG and g /////////////
@@ -473,12 +461,14 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 			.style("font-size", "10px")
 			.attr("fill", "#737373")
 
-		if(pillar=="MVI"){
-			axisGrid.selectAll(".axisLabel").text(d => maxValue * d / cfg.levels) }
-		else{
-			axisGrid.selectAll(".axisLabel").text(d => rankFormat(nFormatter(maxValue-maxValue * d / cfg.levels+1))) }
-		
-			//.text(d => Format(maxValue * d / cfg.levels) + cfg.unit);
+		if (pillar == "MVI") {
+			axisGrid.selectAll(".axisLabel").text(d => maxValue * d / cfg.levels)
+		}
+		else {
+			axisGrid.selectAll(".axisLabel").text(d => rankFormat(nFormatter(maxValue - maxValue * d / cfg.levels + 1)))
+		}
+
+		//.text(d => Format(maxValue * d / cfg.levels) + cfg.unit);
 
 		/////////////////////////////////////////////////////////
 		//////////////////// Draw the axes //////////////////////
@@ -507,84 +497,80 @@ pillarColors={"Blue":"#0BC6FF","Climate":"#0DB14B","Digital":"#F58220"}
 			.style("font-size", "10px")
 			.attr("text-anchor", "middle")
 			.attr("dy", "0.35em")
-			.attr("x", (d, i) => cfg.textFormat*rScaleNormal(maxValue * cfg.labelFactor) * cos(angleSlice * i - HALF_PI - cfg.spin))
-			.attr("y", (d, i) => -15/cfg.textFormat**3 + rScaleNormal(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("x", (d, i) => cfg.textFormat * rScaleNormal(maxValue * cfg.labelFactor) * cos(angleSlice * i - HALF_PI - cfg.spin))
+			.attr("y", (d, i) => -15 / cfg.textFormat ** 3 + rScaleNormal(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
 			.text(d => d)
 			.call(wrap, cfg.wrapWidth)
 			.on('mouseover', function (d, i) {
 
-			//	console.log(d)
-				// tooltips[j].setAttribute('data-show', '');
-				// popperInstance[j].update();
-				// tooltip3
-				// .attr("display","block")
-
-				try{sourceLink=metadata[0][d].sourceLink}
-				catch(error){sourceLink="Link"}
-				try{
-					pillarData=allKeyData[countryList[0]][pillar]
-					for(el in pillarData){
-						if (pillarData[el].axis==d){
-							indicatorValue=pillarData[el].value
+				try { sourceLink = metadata[0][d].sourceLink }
+				catch (error) { sourceLink = "Link" }
+				try {
+					pillarData = allKeyData[countryList[0]][pillar]
+					for (el in pillarData) {
+						if (pillarData[el].axis == d) {
+							indicatorValue = pillarData[el].value
 						}
 					}
 
 				}
-				catch(error){indicatorValue="No Data"}
-			
-				try{
-					sourceName=metadata[0][d].sourceName;
+				catch (error) { indicatorValue = "No Data" }
+
+				try {
+					sourceName = metadata[0][d].sourceName;
+
+				}
+
+				catch (error) { sourceName = "Source" }
+				console.log(metadata)
+				try {
+
+					longDefinition = metadata[0][d].longDefinition
+				}
+				catch (error) {
+					longDefinition = d
+				}
+
+
+				if (pillar == "MVI") {
+					mviSubMap = {
+						"Geographical Vulnerability": ["FDI inflows as percentage of GDP", "Agriculture and fishing as share of GDP"],
+						"Financial Vulnerability": ["Victims of disasters", "Remoteness", "Share of population in low elevated coastal zones"],
+						"Economic Vulnerability": ["Export concentration", "Export Instability", "Agricultural Instability"],
+						"Environmental Vulnerability": ["Tourism revenues as share of exports", "Remittances as percentage of GDP"]
+					}
+					subMVIlist = ""
+					//console.log(allKeyData)
+					console.log(mviSubMap[d])
+					for (indi in mviSubMap[d]) {
+						console.log(mviSubMap[d][indi])
+						console.log(mvi2Data)
+						subMVIlist += '<h6 style="color:black">' + mviSubMap[d][indi] + ": " + nFormatter(mvi2Data[mviSubMap[d][indi]], 2) + '</h6>'
 
 					}
-					
-					catch(error){sourceName="Source"}
-console.log(metadata)
-					try{
-						
-					longDefinition=metadata[0][d].longDefinition
-					}
-					catch(error){
-						longDefinition=d
-					}
 
-					
-if(pillar=="MVI"){
-mviSubMap={"Geographical Vulnerability":["FDI inflows as percentage of GDP","Agriculture and fishing as share of GDP"],
-"Financial Vulnerability":["Victims of disasters","Remoteness","Share of population in low elevated coastal zones"],
-"Economic Vulnerability":["Export concentration","Export Instability","Agricultural Instability"],
-"Environmental Vulnerability":["Tourism revenues as share of exports","Remittances as percentage of GDP"]}
- subMVIlist=""
- //console.log(allKeyData)
- console.log(mviSubMap[d])
-for(indi in mviSubMap[d]){
-	console.log(mviSubMap[d][indi])
-	console.log(mvi2Data)
-	subMVIlist+='<h6 style="color:black">'+mviSubMap[d][indi]+": "+nFormatter(mvi2Data[mviSubMap[d][indi]],2)+'</h6>'
-	
-}
+					document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#8f0045">' + d +
+						'</h4>' + subMVIlist + '<h6>Source: UNDP' + '</h6><a href="' + sourceLink + '"></a>'
 
-	document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#8f0045">' + d + 
-	'</h4>'+subMVIlist+'<h6>Source: UNDP'+'</h6><a href="'+sourceLink+'"></a>'
+				} else {
+					value = allKeyData[countryCode][pillar.slice(0, -4)].filter(obj => { return obj.axis === d })[0].value//[
+					pillarColor = pillarColors[pillar.slice(0, -4)]
+					document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:' + pillarColor + '">' + d +
+						'</h4><h6 style="display:inline">Definition: ' + '</h6><p>' + longDefinition + '</p><h6 style="margin-top:4px;">' + "Source: " + sourceName + '</h6><a href="' + sourceLink +
+						'"><h6 style="color:black">' + "Rank: " + rankFormat(indicatorValue.toString()) + '</h6></a>' +
+						'<h6 style="color:blue">' + "Value: " + parseFloat(value.toFixed(3)) + '</h6></a>';
 
-}else{
-	value=allKeyData[countryCode][pillar.slice(0,-4)].filter(obj => {return obj.axis === d})[0].value//[
-	pillarColor=pillarColors[pillar.slice(0,-4)]
-			document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:'+pillarColor+'">' + d + 
-				'</h4><h6 style="display:inline">Definition: '+'</h6><p>'+longDefinition+'</p><h6 style="margin-top:4px;">'+"Source: "+sourceName+'</h6><a href="'+sourceLink+
-				'"><h6 style="color:black">'+"Rank: "+rankFormat(indicatorValue.toString())+'</h6></a>'+
-				'<h6 style="color:blue">'+"Value: "+parseFloat(value.toFixed(3))+'</h6></a>';
-				
-			}
+				}
 				tooltip3.setAttribute('data-show', '');
-				popperInstance[d].update();
-			
+				keyIndicatorPopperInstance[d].update();
+
 			})
 			.on('mouseout', function (d, i) {
 				tooltip3.removeAttribute('data-show');
 			})
-			.on('click',function(d,i){
+			.on('click', function (d, i) {
 				window.open(metadata[0][d].sourceLink, '_blank');
-				
+
 			});
 
 		const tooltip3 = $("#tooltipIndicator")[0]
@@ -593,7 +579,7 @@ for(indi in mviSubMap[d]){
 			//   console.log(d);
 			//   console.log(this);
 
-			popperInstance[d] = Popper.createPopper(this, tooltip3, {
+			keyIndicatorPopperInstance[d] = Popper.createPopper(this, tooltip3, {
 				placement: 'top', modifiers: [
 					{ name: 'offset', options: { offset: [0, 8], }, },],
 			});
@@ -716,23 +702,24 @@ for(indi in mviSubMap[d]){
 				tooltip
 					.attr('x', this.cx.baseVal.value)
 					.attr('y', this.cy.baseVal.value - 10)
-					if(pillar=="MVI"){
-				tooltip.transition()
-					.style('display', 'block')
-					.text(d.value+cfg.unit);
-					}else{
-				tooltip.transition()
-					.style('display', 'block')
-					.text(function(){
-						value=nFormatter(allKeyData[countryCode][pillar.slice(0,-4)].filter(obj => {return obj.axis === d.axis})[0].value,2)
-						if(isNaN(value)){
-							return ""
-						}
-						else{
-						return value+", "+rankFormat(d.value.toString()) + cfg.unit;}
-						})	
-					}	
-					
+				if (pillar == "MVI") {
+					tooltip.transition()
+						.style('display', 'block')
+						.text(d.value + cfg.unit);
+				} else {
+					tooltip.transition()
+						.style('display', 'block')
+						.text(function () {
+							value = nFormatter(allKeyData[countryCode][pillar.slice(0, -4)].filter(obj => { return obj.axis === d.axis })[0].value, 2)
+							if (isNaN(value)) {
+								return ""
+							}
+							else {
+								return value + ", " + rankFormat(d.value.toString()) + cfg.unit;
+							}
+						})
+				}
+
 			})
 			.on("mouseout", function () {
 				tooltip.transition()
@@ -744,7 +731,7 @@ for(indi in mviSubMap[d]){
 			.attr('y', 0)
 			.attr("class", "spiderTooltip")
 			.style("font-size", "14px")
-			.style("font-weight","bold")
+			.style("font-weight", "bold")
 			.style('display', 'none')
 			.attr("text-anchor", "middle")
 			.attr("dy", "0.35em")
@@ -918,22 +905,6 @@ for(indi in mviSubMap[d]){
 	var pacific2 = '<option value="">Overlay countries and regions</option>\
  <option value="caribbean">Pacific Average</option>'+ pacific
 
-	function setSelectedId(s, v) {
-
-		for (var i = 0; i < s.options.length; i++) {
-			//console.log(s.options[i].value,v)
-			if (s.options[i].value == v) {
-				//console.log("here")
-				s.options[i].selected = true;
-
-				return;
-
-			}
-
-		}
-
-	}
-
 	$("#countryCategory").change(function () {
 		oldCountry = document.getElementById("countrySelect").value;
 		let val = $(this).val();
@@ -958,9 +929,9 @@ for(indi in mviSubMap[d]){
 		$('#multiCountrySelect option').each(function () {
 			optionValues.push($(this).val());
 		});
-	///	console.log(optionValues);
-	//	console.log(oldCountry)
-	//	console.log(optionValues.indexOf(oldCountry))
+		///	console.log(optionValues);
+		//	console.log(oldCountry)
+		//	console.log(optionValues.indexOf(oldCountry))
 		if (optionValues.indexOf(oldCountry) >= 0) {
 			//setTimeout here is a temporary fix so the initial selection waits until options are populated
 			setTimeout(function () {
@@ -972,7 +943,6 @@ for(indi in mviSubMap[d]){
 		}
 	});
 
-
 	////initilalize countryView
 
 	$("#countrySelect").html(all);
@@ -981,13 +951,10 @@ for(indi in mviSubMap[d]){
 	//set option
 	//automatically generate content
 
-
-
 	///Country profile multiselect
 
 	$('.label.countryMultiSelect.dropdown')
 		.dropdown();
-
 
 	$('.label.countryMultiSelect.dropdown').dropdown({
 		onChange: function () {
@@ -1034,15 +1001,13 @@ for(indi in mviSubMap[d]){
 
 }
 
-
-
-function rankFormat(num){
-	number=parseInt(num)
-if (num<20 && num>10){
-	return num.toString()+"th"
-}
-	else if(num.slice(-1)==1){return num.toString()+"st"}
-	else if (num.slice(-1)==2){return num.toString()+"nd"}
-	else if (num.slice(-1)==3){return num.toString()+"rd"}
-	else{return num.toString()+"th"}
+function rankFormat(num) {
+	number = parseInt(num)
+	if (num < 20 && num > 10) {
+		return num.toString() + "th"
+	}
+	else if (num.slice(-1) == 1) { return num.toString() + "st" }
+	else if (num.slice(-1) == 2) { return num.toString() + "nd" }
+	else if (num.slice(-1) == 3) { return num.toString() + "rd" }
+	else { return num.toString() + "th" }
 }
