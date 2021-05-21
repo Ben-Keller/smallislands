@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
 
   <!-- Bootstrap core CSS -->
-  
+
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <link href="css/style.css" rel="stylesheet">
@@ -105,25 +105,26 @@
 
 
 
-  <div class="h-100 mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect" >
-    <div id="fullDashboard" class="mdl-grid mdl-grid--no-spacing" >
-      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu" >
+  <div class="h-100 mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+    <div id="fullDashboard" class="mdl-grid mdl-grid--no-spacing">
+      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu">
         <div class="mdl-tabs__tab-bar">
           <a href="#portfolioPanel" class="mdl-tabs__tab is-active" id="portfolioTab">
 
             <h5>UNDP Portfolio</h5>
           </a>
-         
-        
-          <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
 
-            <h5>Country Profiles</h5>
-          </a>
           <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
             <h5>Country Indicators</h5>
           </a>
-          
+
+          <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
+
+            <h5>Country Profiles</h5>
+          </a>
+        
+
           <!-- <a href="#geoPanel" class="mdl-tabs__tab">
 
 
@@ -186,8 +187,8 @@
       <div class="mdl-cell mdl-cell--10-col">
 
         <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel">
-          <div id="projectTooltips" style="width:100%"></div>
-          <div id="samoaTooltips" style="width:100%"></div>
+          <div id="projectTooltips"></div>
+          <div id="samoaTooltips" ></div>
           <div class="panelTitleRow ">
             <div class="col-lg-12">
               <h2>UNDP Portfolio in Small Island Developing States</h2>
@@ -195,7 +196,7 @@
           </div>
           <div id="portfolioStats" class="row">
             <div class="regionClickBox col-sm-3" id="regionClick1">1</div>
-    
+
             <div class="regionClickBox col-sm-4" id="regionClick2">2</div>
 
             <div class="col-sm-5">
@@ -224,7 +225,7 @@
                     <p>UNDP Projects</p>
                   </div>
                 </div>
-                <div class="portfolioStat" >
+                <div class="portfolioStat">
                   <div>
                     <h3 id="portfolio4">3.04B</h3>
                   </div>
@@ -238,205 +239,205 @@
           </div>
           <div class="row" id="spacer">
 
-            <div class="col-lg-10" style="padding:0; margin:0; height:100%;" >
+            <div class="col-lg-10" style="padding:0; margin:0; height:100%;">
 
               <div class="col-lg-12 row" id="regionSelect" style="padding:0; margin:0; height:100%;">
-        
-                  
-                  <div id="regionClick3" class="regionClickBox col-lg-4">3</div>
-                  <div id="regionClick4" class="regionClickBox col-lg-5">4</div>
-                  <div id="regionClick5" class="regionClickBox col-lg-3">5</div>
 
-    
+
+                <div id="regionClick3" class="regionClickBox col-lg-4">3</div>
+                <div id="regionClick4" class="regionClickBox col-lg-5">4</div>
+                <div id="regionClick5" class="regionClickBox col-lg-3">5</div>
+
+
               </div>
 
             </div>
-<div class="col-lg-2" style="margin:0;padding:0;">
+            <div class="col-lg-2" style="margin:0;padding:0;">
 
-            <div class="yrSelect">
-              <ul>
-                <select id="yearSelect"  class="portfolioDropdown">
-                  <option value='2012to2021'>2012 to 2021</option>
-                  <option selected value='2021'>2021</option>
-                  <option value='2020'>2020</option>
-                  <option value='2019'>2019</option>
-                  <option value='2018'>2018</option>
-                  <option value='2017'>2017</option>
-                  <option value='2016'>2016</option>
-                  <option value='2015'>2015</option>
-                  <option value='2014'>2014</option>
-                  <option value='2013'>2013</option>
-                  <option value='2012'>2012</option>
-                </select>
+              <div class="yrSelect">
+                <ul>
+                  <select id="yearSelect" class="portfolioDropdown">
+                    <option value='2012to2021'>2012 to 2021</option>
+                    <option selected value='2021'>2021</option>
+                    <option value='2020'>2020</option>
+                    <option value='2019'>2019</option>
+                    <option value='2018'>2018</option>
+                    <option value='2017'>2017</option>
+                    <option value='2016'>2016</option>
+                    <option value='2015'>2015</option>
+                    <option value='2014'>2014</option>
+                    <option value='2013'>2013</option>
+                    <option value='2012'>2012</option>
+                  </select>
 
-</ul>
-</div>
+                </ul>
+              </div>
 
-<div id="regionClick6" class="regionClickBox" style="height:100%">5</div>
-</div>
-
-
-
+              <div id="regionClick6" class="regionClickBox" style="height:100%">5</div>
             </div>
 
 
- 
 
-   
-          
+          </div>
+
+
+
+
+
+
 
           <div class="row sdgPortfolio">
 
-            
+
 
             <div id="portfolioBars"></div>
           </div>
-    
-         
+
+
 
           <div class="row" id="iconRow">
-          <div class="row" id="sdgIconRow">
+            <div class="row" id="sdgIconRow">
 
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-01.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-02.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-03.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-04.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-05.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-06.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-07.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-08.png" style="width:100%">
-            </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-01.png">
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-02.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-03.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-04.png">
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-05.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-06.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-07.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-08.png" >
+              </div>
 
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-09.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-10.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-11.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-12.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-13.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-14.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-15.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-16.png" style="width:100%">
-            </div>
-            <div class="sdgIcon">
-              <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-17.png" style="width:100%">
-            </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-09.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-10.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-11.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-12.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-13.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-14.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-15.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-16.png" >
+              </div>
+              <div class="sdgIcon">
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-17.png" >
+              </div>
 
-          </div>
-
-
-          <div class="row" id="samoaIconRow">
-          
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 1samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 2samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 3samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 4samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 5samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 6samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 7samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 8samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 9samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 10samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 11samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 12samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 13samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 14samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 15samoaIcons.png" style="width:100%">
-          </div>
-          <div class="samoaIcon">
-            <img src="icons/samoaIcons/100w/Asset 16samoaIcons.png" style="width:100%">
-          </div>
-         
+            </div>
 
 
-        </div>
+            <div class="row" id="samoaIconRow">
+
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 1samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 2samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 3samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 4samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 5samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 6samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 7samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 8samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 9samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 10samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 11samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 12samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 13samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 14samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 15samoaIcons.png">
+              </div>
+              <div class="samoaIcon">
+                <img src="icons/samoaIcons/100w/Asset 16samoaIcons.png">
+              </div>
 
 
 
-
-        <div class="row" id="SSIconRow">
-          
-          <div class="ssIcon">
-            <img src="icons/SSicons/1x/povertySS.png" style="width:100%">
-          </div>
-          <div class="ssIcon">
-            <img src="icons/SSicons/1x/governanceSS.png" style="width:100%">
-          </div>
-          <div class="ssIcon">
-            <img src="icons/SSicons/1x/resilienceSS.png" style="width:100%">
-          </div>
-          <div class="ssIcon">
-            <img src="icons/SSicons/1x/environmentSS.png" style="width:100%">
-          </div>
-          <div class="ssIcon">
-            <img src="icons/SSicons/1x/energySS.png" style="width:100%">
-          </div>
-          <div class="ssIcon">
-            <img src="icons/SSicons/1x/genderSS.png" style="width:100%">
-          </div>
-          
+            </div>
 
 
-        </div>
 
-        
+
+            <div class="row" id="SSIconRow">
+
+              <div class="ssIcon">
+                <img src="icons/SSicons/1x/povertySS.png">
+              </div>
+              <div class="ssIcon">
+                <img src="icons/SSicons/1x/governanceSS.png">
+              </div>
+              <div class="ssIcon">
+                <img src="icons/SSicons/1x/resilienceSS.png">
+              </div>
+              <div class="ssIcon">
+                <img src="icons/SSicons/1x/environmentSS.png">
+              </div>
+              <div class="ssIcon">
+                <img src="icons/SSicons/1x/energySS.png">
+              </div>
+              <div class="ssIcon">
+                <img src="icons/SSicons/1x/genderSS.png">
+              </div>
+
+
+
+            </div>
+
+
 
 
           </div>
@@ -450,138 +451,153 @@
 
 
             <div id="spaceDiv" class="col-lg-2"></div>
-              <div class="col-lg-8 d-flex justify-content-center slidebox" id="goalSelect">
-                <ul>
-                  <li id="samoa"><a>SAMOA Pathway</a></li>
-                  <li id="sdg"><a class="selectedGoal">Sustainable Development Goals</a></li>
-                  <li id="undpss"><a>Signature Solutions</a></li>
-  
-                  <div class="goalShader"></div>
-                </ul>
-  
-              </div>
-           
+            <div class="col-lg-8 d-flex justify-content-center slidebox" id="goalSelect">
+              <ul>
+                <li id="samoa"><a>SAMOA Pathway</a></li>
+                <li id="sdg"><a class="selectedGoal">Sustainable Development Goals</a></li>
+                <li id="undpss"><a>Signature Solutions</a></li>
 
-          
+                <div class="goalShader"></div>
+              </ul>
+
+            </div>
+
+
+
             <div id="portfolioExportDiv" class="col-lg-2">
               <!-- <button id="portfolioCsvButton" class="csvButton" type="button">Export csv</button></div> -->
               <ul>
-                <select id="portfolioExport" class="exportDropdown" >
+                <select id="portfolioExport" class="exportDropdown">
                   <option value='export' selected hidden>Export</option>
                   <option value='summary'>Summary csv</option>
                   <option value='projects'>Projects list</option>
-                
-                  </select>
-                  </ul>
-       
+
+                </select>
+              </ul>
 
 
-          </div>
-
-            
-</div>
-    
-
-          
-
-
-
-<div class="pieRow row">
-  <div id="regionPie" class="pie col-lg-4"></div>
-
-<div id="fundingPie" class="pie col-lg-5"></div>
-
-
-<div class="fundCategory col-lg-2" >
-  <ul>
-    <select id="fundingCategorySelect"  class="portfolioDropdown">
-      <option value='All'>All Funding Categories</option>
-      <option value='Programme Countries'>Programme Countries</option>
-      <option value='Donor Countries'>Donor Countries</option>
-      <option value='UN Agencies'>UN Agencies</option>
-      <option value='UN Pooled Funds'>UN Pooled Funds</option>
-      <option value='European Union'>European Union</option>
-      <option value='Vertical Funds'>Vertical Funds</option>
-      <option value='Other'>Other</option>                  
-    </select>
-</ul>
-
-  <ul>
-    <select id="fundingSelect" class="portfolioDropdown"  style="max-width:100%">
-    </select>
-</ul>
-</div>
-
-          </div>
-
-
-         
-        </div>
-
-   <div class="container panel mdl-tabs__panel hidden" id="countryDataPanel" >
-                 
-
-        <div class="col-lg-12" id="countryDataTitle" style="padding-top:40px">
-                <h2>SIDS Development Indicators</h2>
-        </div>
-
-   
-   
-
-
-       
-
-
-
-    <div class="row">
-            <div id="indicatorSelectorCol" class="col-sm-3">
-
-                <div class="input__select" >
-                    <select id="indicatorCategorySelect" class="indicatorFilter">
-
-                    </select>
-                  </div>
-                  <div class="input__select" >
-                    <select id="indicatorSubcategorySelect" class="indicatorFilter">
-
-                    </select>
-                  </div>
-
-                  <div class="listbox " id="indicatorSelect">
-                    <ul id="listBoox">
-                    </ul>
-                  </div>
-                  <div id="choroInfoBox"><h4 id="choroInfoTitle">Select an Indicator</h4>
-<p id="choroIndiText"></p>
-<p id="choroIndiSource">Indicators are provided for the 58 SIDS from sources including the World Bank, UNDP, FAO, and others.
-<br><br>Key Indicators have been selected to reflect progress across the pillars of the SIDS offer.  
-</p>
-                  </div>
 
             </div>
-            
 
 
-            
-<div class="mapToolCont col-sm-9">
+          </div>
 
 
-  <div class="row">
-    <div id="choro_legend_container" style="height:50px; width:90%">
-      <img id="regionLegend" src="images/tempChoroLegend.jpg" style="height:85%; margin-left:120px; margin-top:5px; padding:0;">
-    </div>
 
 
-    <!-- <div id="indicatorExport"style="width:10%"><button id="indicatorCsvButton" class="csvButton" type="button">Export csv</button></div>
-   -->
-
-</div>
 
 
-  <!-- <div class="col-lg-9 d-flex justify-content-center slidebox" id="vizSelect">
+          <div class="pieRow row">
+            <div id="regionPie" class="pie col-lg-4"></div>
+
+            <div id="fundingPie" class="pie col-lg-5"></div>
+
+
+            <div class="fundCategory col-lg-2">
+              <ul>
+                <select id="fundingCategorySelect" class="portfolioDropdown">
+                  <option value='All'>All Funding Categories</option>
+                  <option value='Programme Countries'>Programme Countries</option>
+                  <option value='Donor Countries'>Donor Countries</option>
+                  <option value='UN Agencies'>UN Agencies</option>
+                  <option value='UN Pooled Funds'>UN Pooled Funds</option>
+                  <option value='European Union'>European Union</option>
+                  <option value='Vertical Funds'>Vertical Funds</option>
+                  <option value='Other'>Other</option>
+                </select>
+              </ul>
+
+              <ul>
+                <select id="fundingSelect" class="portfolioDropdown">
+                </select>
+              </ul>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+        <div class="container panel mdl-tabs__panel hidden" id="countryDataPanel">
+
+
+          <div class="col-lg-12" id="countryDataTitle">
+            <h2>SIDS Development Indicators</h2>
+          </div>
+
+
+
+
+
+
+
+
+
+          <div class="row">
+            <div id="indicatorSelectorCol" class="col-sm-3">
+
+              <div class="input__select">
+                <select id="indicatorCategorySelect" class="indicatorFilter">
+
+                </select>
+              </div>
+              <div class="input__select">
+                <select id="indicatorSubcategorySelect" class="indicatorFilter">
+
+                </select>
+              </div>
+
+              <div class="listbox " id="indicatorSelect">
+                <ul id="listBoox">
+                </ul>
+              </div>
+              <div id="choroInfoBox">
+                <h4 id="choroInfoTitle">Select an Indicator</h4>
+                <p id="choroIndiText"></p>
+                <p id="choroIndiSource">Indicators are provided for the 58 SIDS from sources including the World Bank,
+                  UNDP, FAO, and others.
+                  <br><br>Key Indicators have been selected to reflect progress across the pillars of the SIDS offer.
+                </p>
+              </div>
+
+              <div id="indicatorSelectBox2">
+                -- Second Indicator -- 
+              <div class="input__select">
+                <select id="indicatorCategorySelect2" class="indicatorFilter">
+
+                </select>
+              </div>
+              <div class="input__select">
+                <select id="indicatorSubcategorySelect2" class="indicatorFilter">
+
+                </select>
+              </div>
+
+              <div class="listbox " id="indicatorSelect2">
+                <ul id="listBoox2">
+                </ul>
+              </div>
+            </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="mapToolCont col-sm-9">
+
+
+             
+
+
+              <div class="col-lg-12 d-flex justify-content-center slidebox" id="vizSelect">
          
         
     <ul>
+      <li id="globalLi"><a>Global View</a></li>
       <li id="choroLi"><a class="selectedViz">Choropleth</a></li>
       <li id="barLi"><a >Bar Chart</a></li>
       <li id="timeLi"><a>Time Series</a></li>
@@ -589,29 +605,36 @@
 
       <div class="vizShader"></div>
     </ul>
-  </div> -->
-
-
-    <div id="choroTooltips"></div>
-
-    <div id="choro_map_container"> </div>
-
-    <div id="indicatorExportDiv" class="col-lg-12">
-      <!-- <button id="portfolioCsvButton" class="csvButton" type="button">Export csv</button></div> -->
-      <ul>
-        <select id="indicatorExport" class="exportDropdown" >
-          <option value='export' selected hidden>Export</option>
-          <option value='summary'>Indicator csv</option>
-          
-        
-          </select>
-          </ul>  
   </div>
-</div>
-  
 
-</div>
-</div>
+  <div class="row">
+    <div id="choro_legend_container">
+      <img id="regionLegend" src="images/tempChoroLegend.jpg">
+    </div>
+
+  </div>
+
+
+              <div id="choroTooltips"></div>
+
+              <div id="choro_map_container"> </div>
+
+              <div id="indicatorExportDiv" class="col-lg-12">
+                <!-- <button id="portfolioCsvButton" class="csvButton" type="button">Export csv</button></div> -->
+                <ul>
+                  <select id="indicatorExport" class="exportDropdown">
+                    <option value='export' selected hidden>Export</option>
+                    <option value='summary'>Indicator csv</option>
+
+
+                  </select>
+                </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
 
 
 
@@ -644,159 +667,159 @@
 
 
           </div>
-<div id="fullCountryViewInfo">
-          <div class="col-lg-12 countryInfoBar">
-            <div class="row">
-              <div class="col-lg-3" id="countryProfile">
-                <h4 id="countryProfileTitle">Country Information</h4>
-                <div id="countryProfileInfo">
+          <div id="fullCountryViewInfo">
+            <div class="col-lg-12 countryInfoBar">
+              <div class="row">
+                <div class="col-lg-3" id="countryProfile">
+                  <h4 id="countryProfileTitle">Country Information</h4>
+                  <div id="countryProfileInfo">
 
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-3" id="countryRelief"><img id="reliefMap"></div>
-              <!-- <div class="col-lg-2 scrollbar" id="countryStories">
+                <div class="col-lg-3" id="countryRelief"><img id="reliefMap"></div>
+                <!-- <div class="col-lg-2 scrollbar" id="countryStories">
 
               </div> -->
-              <div class="col-lg-3 spiderbox" style="text-align:center">
-                <h4 id="mviTitle" style="margin-top:12px;">Multidimensional Vulnerability</h4>
-                <div id="mviSpider" class="radarChart" style="text-align:center"></div>
-              </div>
-              <div class="col-lg-3" id="countryImageContainer"><img id="countryImage">
-                <!--src="images/countries/grenada/grenadaBeachside.jpg">-->
-                <div id="imageLink" style="display:none">
-                  <p>Bottom Center</p>
+                <div class="col-lg-3 spiderbox" style="text-align:center">
+                  <h4 id="mviTitle" style="margin-top:12px;">Multidimensional Vulnerability</h4>
+                  <div id="mviSpider" class="radarChart"></div>
+                </div>
+                <div class="col-lg-3" id="countryImageContainer"><img id="countryImage">
+                  <!--src="images/countries/grenada/grenadaBeachside.jpg">-->
+                  <div id="imageLink" style="display:none">
+                    <p>Bottom Center</p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-9 d-flex justify-content-center" id=multiCountrySelectBox>
-          
-           
+            <div class="col-lg-9 d-flex justify-content-center" id=multiCountrySelectBox>
+
+
               <select multiple="" class="label gray countryMultiSelect dropdown" id="multiCountrySelect">
                 <option value="">Overlay countries and regions to compare indicator rankings among SIDS.</option>
               </select>
-          
 
-          </div>
-          <div class="row">
-            <div class="col-lg-3 spiderbox">
-              <h3 style="color:#0DB14B">Climate Action</h3>
-              <div id="climateSpider" class="radarChart" style="text-align:center;"></div>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3 spiderbox">
-              <h3 style="color:#0BC6FF">Blue Economy</h3>
-              <div id="blueSpider" class="radarChart" style="text-align:center;"></div>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3 spiderbox">
-              <h3 style="color:#F58220">Digital Transformation</h3>
-              <div id="digitalSpider" class="radarChart" style="text-align:center;"></div>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-3" id="financeBox">
 
-              <h3 style="color:#9e0909">Finance</h3>
-              <div id="financeInfo">
+            </div>
+            <div class="row">
+              <div class="col-lg-3 spiderbox">
+                <h3 style="color:#0DB14B">Climate Action</h3>
+                <div id="climateSpider" class="radarChart" style="text-align:center;"></div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-3 spiderbox">
+                <h3 style="color:#0BC6FF">Blue Economy</h3>
+                <div id="blueSpider" class="radarChart" style="text-align:center;"></div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-3 spiderbox">
+                <h3 style="color:#F58220">Digital Transformation</h3>
+                <div id="digitalSpider" class="radarChart" style="text-align:center;"></div>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-3" id="financeBox">
 
+                <h3 style="color:#9e0909">Finance</h3>
+                <div id="financeInfo">
+
+                </div>
+
+
+
+                <div id="countryExportDiv" class="col-lg-3">
+                  <ul>
+                    <select id="countryExport" class="exportDropdown">
+                      <option value='export' selected hidden>Export</option>
+                      <option value='summary'>Summary csv</option>
+
+                    </select>
+                  </ul>
+
+
+
+                </div>
+
+
+              </div><!-- /.col-lg-4 -->
+
+              <div id="tooltipIndicator" class="tooltips" role="tooltip">
+                <div id="tooltipIndicatorContent"></div>
+                <div class="arrow" data-popper-arrow></div>
               </div>
 
+            </div><!-- /.row -->
 
 
-              <div id="countryExportDiv" class="col-lg-3">
-                <ul>
-                  <select id="countryExport" class="exportDropdown" >
-                    <option value='export' selected hidden>Export</option>
-                    <option value='summary'>Summary csv</option>
-                  
-                    </select>
-                    </ul>
-         
-  
-  
+            <div class="row">
+
+              <!-- <div id="countryExport" class="col-lg-3"><button id="countryCsvButton" class="csvButton" type="button">Export csv</button></div> -->
+
+
+
+
+              <!-- <div id="spiderLegend" class=col-lg-9></div> -->
             </div>
 
 
-            </div><!-- /.col-lg-4 -->
+            <div id="fullCountryViewInfo">
 
-            <div id="tooltipIndicator" class="tooltips" role="tooltip">
-              <div id="tooltipIndicatorContent" style="max-width:350px;"></div>
-              <div class="arrow" data-popper-arrow></div>
+
             </div>
 
-          </div><!-- /.row -->
 
 
-          <div class="row">
-       
-            <!-- <div id="countryExport" class="col-lg-3"><button id="countryCsvButton" class="csvButton" type="button">Export csv</button></div> -->
-
-
-           
-
-            <!-- <div id="spiderLegend" class=col-lg-9></div> -->
           </div>
-
-         
-          <div id="fullCountryViewInfo">
-
-
         </div>
 
 
 
       </div>
-    </div>
-
-
-    
-  </div>
 
 
 
-  <footer class="footerImg">
-    <!-- <img src="images/footer-02.jpg" style="width:100%"> -->
-  </footer>
+      <footer class="footerImg">
+       
+      </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <!-- <script>window.jQuery || document.write('<script src="../scripts"><\/script>')</script> -->
-  <script src="jsImport/popper.min.js"></script>
-  <script src="jsImport/bootstrap.min.js"></script>
-  <script src="https://unpkg.com/@popperjs/core@2"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
-  <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
-  
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <!-- <script>window.jQuery || document.write('<script src="../scripts"><\/script>')</script> -->
+      <script src="jsImport/popper.min.js"></script>
+      <script src="jsImport/bootstrap.min.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2"></script>
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
+      <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
 
-  <!--Tooltips-->
-  <!--<script src="scripts/tooltips/tooltipPNT.js"></script>-->
-  <!-- <script src="scripts/html2canvas.js"></script>
+
+      <!--Tooltips-->
+      <!--<script src="scripts/tooltips/tooltipPNT.js"></script>-->
+      <!-- <script src="scripts/html2canvas.js"></script>
   <script src="scripts/FileSaver.js"></script> -->
 
-  <!-- <script src="scripts/tooltips/tooltipTest.js"></script> -->
+      <!-- <script src="scripts/tooltips/tooltipTest.js"></script> -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 
-  <script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
-  <script src="scripts/countryProfile.js"></script>
-  <script src="scripts/script.js"></script>
+      <script src="https://d3js.org/d3-path.v1.min.js" charset="utf-8"></script>
+      <script src="scripts/countryProfile.js"></script>
+      <script src="scripts/script.js"></script>
 
-  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+      <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
 
 
-  <!-- <script src="scripts/wheelzoom.js"></script>
+      <!-- <script src="scripts/wheelzoom.js"></script>
   <script src="scripts/dragBack.js"></script> -->
 
-  <script src="scripts/portfolioBars.js"></script>
+      <script src="scripts/portfolioBars.js"></script>
 
 
-  <script src="scripts/pies.js"></script>
+      <script src="scripts/pies.js"></script>
 
-  <script src="scripts/choropleth.js"></script>
+      <script src="scripts/choropleth.js"></script>
 
-  <script src="scripts/createCsv.js"></script>
-  
+      <script src="scripts/createCsv.js"></script>
+
 
 
 </body>
