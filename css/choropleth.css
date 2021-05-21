@@ -162,17 +162,21 @@
   margin-bottom: 5px;
 }
 
-#indicatorSubCategorySelect {
+#indicatorSubCategorySelect, #indicatorSubCategorySelect2 {
   font-size: 14px;
   height: 30px;
   width: 100%;
 }
 
-#indicatorCategorySelect {
+#indicatorCategorySelect, #indicatorCategorySelect2 {
   font-size: 16px;
   height: 40px;
   margin-top: 28px;
   width: 100%;
+}
+
+#indicatorSelectBox2 {
+  display: none;
 }
 
 .listbox {
@@ -203,6 +207,12 @@
   font-weight: bold;
 }
 
+.listbox li.indiActive2 {
+  background: #b14cb6;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .listbox li {
   -webkit-transition: background-color 200ms linear;
   -moz-transition: background-color 200ms linear;
@@ -222,6 +232,14 @@
 #indicatorSelect {
   width: 100%;
   height: 300px;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+#indicatorSelect2 {
+  width: 100%;
+  height: 100px;
   margin: 0;
   padding: 0;
   font-size: 12px;
@@ -298,6 +316,36 @@
 #indicatorExportDiv {
   float: right;
   margin-top: -50px;
+}
+
+#tooltipIndicatorContent {
+  max-width: 350px;
+}
+
+#choro_legend_container {
+  height: 50px;
+  width: 90%;
+}
+
+#regionLegend {
+  height: 85%;
+  margin-left: 120px;
+  margin-top: 5px;
+  padding: 0;
+}
+
+#countryDataPanel h2 {
+  padding-top: 40px;
+}
+
+.vizShader {
+  background-color: #E9ECF6;
+  position: absolute;
+  height: 24px;
+  z-index: -1;
+  margin: 4px 6px;
+  padding: 0px 4px 3px 32px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=choropleth.css.map */
