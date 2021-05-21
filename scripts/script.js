@@ -30,14 +30,7 @@
 
     
 
- $('#vizSelect ul li').click(function() {
-      var x = $(this);
-      document.getElementById("test").innerHTML = this.innerText;
-        $('.vizShader').stop().animate({
-         'width': x.width()+64,
-         'left' : x.position().left
-      }, 400);
- });
+
 
 //style horizontal shaders to be behind chosen elements
 
@@ -47,6 +40,12 @@
 $('.goalShader').css({
          'width': x.width()+32,
          'left':x.position().left});
+
+         var y= $("#choroLi");
+         $('.vizShader').css({
+                  'width': y.width()+32,
+                  'left':y.position().left});
+         
 
 
 
@@ -136,3 +135,37 @@ function responsivefy(svg) {
 //   $("#countryDataTab").click(function () {
 //   $("#countryDataPanel").removeClass('hidden')
 // });
+
+
+function setSelectedId(s, v) {
+
+	for (var i = 0; i < s.options.length; i++) {
+		//console.log(s.options[i].value, v)
+		if (s.options[i].value == v) {
+			//console.log("here")
+			s.options[i].selected = true;
+
+			return;
+
+		}
+
+	}
+
+}
+
+function nFormatter(num, digits) {
+    var si = [
+      { value: 1, symbol: "" },
+      { value: 1E3, symbol: "k" },
+      { value: 1E6, symbol: "M" },
+      { value: 1E9, symbol: "B" }
+    ];
+    var rx = /\.0+$|(\.[0-9]*[1-9])0+$/;
+    var i;
+    for (i = si.length - 1; i > 0; i--) {
+      if (num >= si[i].value) {
+        break;
+      }
+    }
+    return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
+  }
