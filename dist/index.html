@@ -1,0 +1,695 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+	<meta charset="utf-8">
+	<title>Geospatial UI</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="/undp_favicon.208074ca.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css" integrity="sha512-Ez0cGzNzHR1tYAv56860NLspgUGuQw16GiOOp/I2LuTmpSK9xDXlgJz3XN4cnpXWDmkNBKXR/VDMTCnAaEooxA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" href="styles.css">-->
+
+<link rel="stylesheet" href="dashboard.e31bb0bc.css"></head>
+
+<body>
+	
+	<!--<div id='password' class='password'>
+		<input type="text" id="fname" name="fname"><br><br>
+	  </div> -->
+	
+	<!-- Logos Section Start -->
+	<div class="logos row-flex align-items-center">
+		<div class="UNDP-logo"></div>
+		<div class="rising-up-for-sids"></div>
+	</div>
+	<!-- Top Right Column -->
+	<div class="col-flex top-right">
+
+		<div class="row-flex" style="justify-content:flex-end;">
+			<div class="country-select-menu" id="country-select-id">
+				<select id="country-select">
+					<option value="Select Country or Region">Select Country or Region</option>
+					<!--<option value="USA">USA</option>
+					<option value="UK">UK</option>
+					<option value="IND">IND</option>
+					<option value="ABC">ABC</option>
+					<option value="EFG">EFG</option> -->
+				</select>
+				<span class="downarrow"></span>
+			</div>
+			<!--<div class="icon1"></div>-->
+		</div>
+
+		<div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
+			
+			<div class="add-overlay-menu">
+				<select name="overlay-select" id="add-overlay">
+					<option value="Select Country or Region">Add overlays</option>
+					<option value="admin1">Admin Regions 1</option>
+					<option value="admin2">Admin Regions 2</option>
+					
+				</select>
+				<span class="downarrow"></span>
+			</div>
+			<div id="icon3d" style="display: none;" class="icon2"></div>
+		</div>
+
+		<div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
+			<div class="plot-select-menu">
+				<select name="hexbin-change" id="plot-select">
+					<option selected="" value="hex5">5km hexbins</option>
+					<option value="hex10">10km hexbin</option>
+					<option value="admin1">Admin 1 Regions</option>
+					<option value="admin2">Admin 2 Regions</option>
+				</select>
+				<span class="selection-dropdown-arrow up left-arrow"></span>
+				<span class="selection-dropdown-arrow down right-arrow"></span>
+			</div>
+			<div class="icon3"></div>
+		</div>
+
+		<!--<div class="row-flex add-chart-button-wrap">
+			<div class="add-chart-button row-flex align-items-center">
+				<div class="plus-sign"></div>
+				<div class="text-add-chart">Add chart</div>
+			</div>
+		</div>-->
+
+	</div>
+	<!-- Top right Column End -->
+
+	<div class="container main-wrapper">
+		<!-- Collapse button -->
+		<div class="collapse-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+				<path fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path>
+			</svg>
+		</div>
+		<!-- Top tooltips  -->
+		<!--<div class="row tooltip-top sids">
+			<div class="head-img">
+				<img src="./assets/img/icons/sidsOfferPillars.png" class="sids-tooltip-head-img">
+			</div>
+			<div class="tooltip-text-section">
+				<p> The Gridded Population of the World, Version 4 (GPWv4) consists of estimates of human population
+					(number of persons per pixel) human population (number of persons per pixel)
+				</p>
+				<strong> Reference: CIESIN, Columbia University (2018) -</strong>
+			</div>
+		</div>
+		<div class="row tooltip-top samoa">
+			<div class="head-img">
+				<img src="./assets/img/icons/samoaPathway.png" class="sids-tooltip-head-img">
+			</div>
+			<div class="tooltip-text-section">
+				<p> The Gridded Population of the World, Version 4 (GPWv4) consists of estimates of human population
+					(number of persons per pixel) human population (number of persons per pixel)
+				</p>
+				<strong> Reference: CIESIN, Columbia University (2018) -</strong>
+			</div>
+		</div>
+		<div class="row tooltip-top sdgs">
+			<div class="head-img">
+				<img src="./assets/img/icons/SDGs.png" class="sids-tooltip-head-img">
+			</div>
+			<div class="tooltip-text-section">
+				<p> The Gridded Population of the World, Version 4 (GPWv4) consists of estimates of human population
+					(number of persons per pixel) human population (number of persons per pixel)
+				</p>
+				<strong> Reference: CIESIN, Columbia University (2018) -</strong>
+			</div>
+		</div> -->
+		<!-- END TOP Tooltips -->
+
+		<div class="app-body">
+			<!--<div class="row">
+				<div class="col-6"> -->
+
+					<!-- Selection option for this is in JSON object called 'selection_scroller_options' -->
+					<!--<div id="selection-scroller-option" class="selection-scroller">
+						<div class="scroller-option-up scroller-option tab-nav" data-tooltip-target=".tooltip-top.sids"
+							data-target="#tab1" data-idx='0'>
+							<span>SIDS offer Pillars</span>
+						</div>
+
+						<div class="scroller-option active tab-nav" data-target="#tab2"
+							data-tooltip-target=".tooltip-top.sdgs" data-idx="1">
+							<span>SDGs</span>
+						</div>
+
+						<div class="scroller-option-down scroller-option tab-nav"
+							data-tooltip-target=".tooltip-top.samoa" data-target="#tab3" data-idx='2'>
+							<span>SAMOA Pathway</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-6 p-0"> -->
+					<!-- Button Selection
+					<div class="button-selection tab" id="tab1">
+						<div class="d-flex align-items-center">
+							<img src="./assets/img/icons/blueEconomy.png" class="button-icon img-fluid">
+							<a href="#" class="btn btn-1 button-option-select-1 BE active" data-value="Blue Economy">
+								Blue Economy
+							</a>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="./assets/img/icons/climateAction.png" class="button-icon img-fluid">
+							<a href="#" class="btn btn-2 button-option-select-1 CA" data-value="Climate Action">Climate
+								Action</a>
+						</div>
+						<div class="d-flex align-items-center">
+							<img src="./assets/img/icons/digitalTransformation.png" class="button-icon img-fluid">
+							<a href="#" class="btn btn-3 button-option-select-1 DT"
+								data-value="Digital Transformation">Digital
+								Transformation</a>
+						</div>
+					</div> -->
+
+					<!-- SIDS offer Pillars tab hover
+					<div id="tooleconomy" class="row align-items-center tooltip-blue-eco econo d-none">
+						<div class="col-2 justify-content-center text-center">
+							<img src="./assets/img/icons/blueEconomy.png" class="blue-eco-tooltip-icon">
+						</div>
+						<div class="col-10 text-section">
+							<h3> Blue Economy </h3>
+							<p>The Gridded Population of the World, Version 4 consists of estimates of human population
+								The Gridded Population of the World, Version 4 consists of estimates of human population
+								The Gridded Population of the World, Version 4 consists of estimates of human population
+								(number of
+								persons per pixel)</p>
+							<strong>Reference: CIESIN, Columbia Universty</strong>
+							<strong>Reference: CIESIN, Columbia Universty</strong>
+						</div>
+					</div>
+
+					<div id="tooleclimate" class="row align-items-center tooltip-cli tooltip-blue-eco econo d-none">
+						<div class="col-2 justify-content-center text-center">
+							<img src="./assets/img/icons/climateAction.png" class="blue-eco-tooltip-icon">
+						</div>
+						<div class="col-10 text-section">
+							<h3>Climate Action </h3>
+							<p>The Gridded Population of the World, Version 4 consists of estimates of human population
+								The Gridded Population of the World, Version 4 consists of estimates of human population
+								The Gridded Population of the World, Version 4 consists of estimates of human population
+								(number of
+								persons per pixel)</p>
+							<strong>Reference: CIESIN, Columbia Universty</strong>
+							<strong>Reference: CIESIN, Columbia Universty</strong>
+						</div>
+					</div>
+
+					<div id="tooldigi" class="row align-items-center tooltip-digi tooltip-blue-eco econo d-none">
+						<div class="col-2 justify-content-center text-center">
+							<img src="./assets/img/icons/digitalTransformation.png" class="blue-eco-tooltip-icon">
+						</div>
+						<div class="col-10 text-section">
+							<h3>Digital Transformation </h3>
+							<p>The Gridded Population of the World, Version 4 consists of estimates of human population
+								The Gridded Population of the World, Version 4 consists of estimates of human population
+								The Gridded Population of the World, Version 4 consists of estimates of human population
+								(number of
+								persons per pixel)</p>
+							<strong>Reference: CIESIN, Columbia Universty</strong>
+							<strong>Reference: CIESIN, Columbia Universty</strong>
+						</div>
+					</div> -->
+
+					<!-- end SIDS offer Pillars tab hover -->
+
+					<!-- hover for SDGS 
+					<div id="samimg" class="row align-items-center tooltip-blue-eco econo sdg-tool d-none">
+						<div class="col-12">
+							<h3 class="text-center title-text"> Blue Economy </h3>
+							<p class="img-tooltip-content"> </p>
+						</div>
+					</div>
+					<div class="button-selection tab " id="tab3"> -->
+						<!-- Slider 1
+						<div id="SAMOA_slider" data-bs-interval="false" class="carousel slide samoa">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-imgid="1">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/1.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="2">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/2.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="3">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/3.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="4">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/4.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item " data-imgid="5">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/5.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="6">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/6.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="7">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/7.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="8">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/8.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item " data-imgid="9">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/9.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="10">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/10.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="11">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/11.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="12">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/12.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="13">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/13.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="14">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/14.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="15">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/15.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="16">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/16.png"
+										alt="Third slide">
+								</div>
+							</div>
+
+							<a class="carousel-control-prev" href="#SAMOA_slider" role="button" data-bs-slide="prev"
+								data-bs-target="#SAMOA_slider">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#SAMOA_slider" role="button" data-bs-slide="next"
+								data-bs-target="#SAMOA_slider">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div> -->
+						<!--  
+						<div id="gridsamoa" class="grid-container samoa-grid samoa d-none">
+							<div class="icon-grid">
+								<div class="icon-grid-item" data-imgid="1">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/1.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="2">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/2.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="3">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/3.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="4">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/4.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="5">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/5.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="6">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/6.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="7">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/7.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="8">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/8.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="9">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/9.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="10">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/10.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="11">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/11.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="12">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/12.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="13">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/13.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="14">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/14.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="15">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/15.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="16">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/samoa/16.png"
+										alt="Third slide">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="button-selection tab tab-2 active" id="tab2"> -->
+						<!-- Slider 2
+						<div id="sdg_slider" data-bs-interval="false" class="carousel slide sdgimg">
+							<div class="carousel-inner">
+								<div class="carousel-item active" data-imgid="1">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/1.png" id=""
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="2">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/2.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="3">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/3.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="4">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/4.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item " data-imgid="5">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/5.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="6">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/6.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="7">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/7.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="8">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/8.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item " data-imgid="9">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/9.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="10">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/10.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="11">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/11.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="12">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/12.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="13">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/13.png"
+										alt="First slide">
+								</div>
+								<div class="carousel-item" data-imgid="14">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/14.png"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item" data-imgid="15">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/15.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="16">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/16.png"
+										alt="Third slide">
+								</div>
+								<div class="carousel-item" data-imgid="17">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/17.png"
+										alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#sdg_slider" role="button" data-bs-slide="prev"
+								data-bs-target="#sdg_slider">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#sdg_slider" role="button" data-bs-slide="next"
+								data-bs-target="#sdg_slider">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div> -->
+
+						<!-- Grid for SDGs
+						<div id="gridsdgs" class="grid-container sdgs d-none">
+							<div class="icon-grid">
+								<div class="icon-grid-item" data-imgid="1">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/1.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="2">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/2.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="3">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/3.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="4">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/4.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="5">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/5.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="6">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/6.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="7">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/7.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="8">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/8.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="9">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/9.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="10">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/10.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="11">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/11.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="12">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/12.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="13">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/13.png"
+										alt="First slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="14">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/14.png"
+										alt="Second slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="15">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/15.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="16">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/16.png"
+										alt="Third slide">
+								</div>
+								<div class="icon-grid-item" data-imgid="17">
+									<img class="d-block mx-auto carousel-img" src="./assets/img/sdg/17.png"
+										alt="Third slide">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div> -->
+
+
+			<div class="row">
+
+				<div class="col-12">
+					<div class="custom-selection-dropdown selection-dropdown-1">
+						<label>Dataset</label>
+						<select class="form-select data-set-selection" id="dataDrop" aria-label="Dataset" name="dataset-selection">
+							<option value="start" selected="">Select Dataset</option>
+							<!--<option value="Example 2">Example 2</option>
+							<option value="Example Dataset 3">Example Dataset 3</option>
+							<option value="Example Dataset 4">Example Dataset 4</option> -->
+						</select>
+						<span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
+						<span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
+					</div>
+				</div>
+
+				<div class="col-12">
+
+					<div id="layer-id" class="custom-selection-dropdown selection-dropdown-1">
+						<label>Layer</label>
+						<select id="layer-drop" class="form-select" aria-label="Layer" name="layer-selection">
+							<option value="default" selected="">Select Layer</option>
+							<option value="Example 2">Example 2</option>
+						</select>
+						<span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
+						<span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+
+					<div class="year-timeline-wrapper">
+
+						<div class="year-timeline-controls">
+							<a href="#" id="year-play-pause" class="play">
+								<span>Play / Pause</span>
+							</a>
+						</div>
+
+						<div class="year-timeline">
+
+							<!-- Here for example code, it's mainly populated by JS 
+								 <div class="year-timeline-block alpha" data-year-idx="1">
+								<input type="radio" name="year-selected" value="1990" id="year-1990" checked>
+								<label for="year-1990">
+									<span class="label-value">1990</span>
+									<span class="circle-radio"></span>
+								</label>
+							</div> 
+
+							<div class="year-timeline-block" data-year-idx="2">
+								<input type="radio" name="year-selected" value="2000" id="year-2000">
+								<label for="year-2000">
+									<span class="label-value">2000</span>
+									<span class="circle-radio"></span>
+								</label>
+							</div>
+
+
+							<div class="year-timeline-block" data-year-idx="3">
+								<input type="radio" name="year-selected" value="2010" id="year-2010">
+								<label for="year-2010">
+									<span class="label-value">2010</span>
+									<span class="circle-radio"></span>
+								</label>
+							</div>
+
+
+							<div class="year-timeline-block" data-year-idx="4">
+								<input type="radio" name="year-selected" value="2015" id="year-2015">
+								<label for="year-2015">
+									<span class="label-value">2015</span>
+									<span class="circle-radio"></span>
+								</label>
+							</div>
+
+							<div class="year-timeline-block omega" data-year-idx="5">
+								<input type="radio" name="year-selected" value="2020" id="year-2020">
+								<label for="year-2020">
+									<span class="label-value">2020</span>
+									<span class="circle-radio"></span>
+								</label>
+							</div> -->
+
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="population-density-box col-flex">
+		<div class="col-flex" style="overflow-y:auto; padding:0px 6px 0px 0px;margin:12px 4px 12px 16px;">
+			<div id="infoBoxTitle" style="font-size:16px;font-weight:700;">Select a Dataset</div>
+			<div id="infoBoxText" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
+			<div id="infoBoxLink" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
+		</div>
+	</div>
+	<div class="population-per-km col-flex">
+		<div class="row-flex space-evenly" style="margin-top:4px;font-size: 14px;" id="legendTitle">Legend</div>
+
+		<div class="row-flex space-evenly" id="updateLegend">
+			<!--<div class="col-flex align-items-center">
+				<div class="population-per-km-text">0.05</div>
+				<div class="population-per-km-img" style="background-color:#B3F1FF;"></div>
+			</div>
+			<div class="col-flex align-items-center">
+				<div class="population-per-km-text">12.54</div>
+				<div class="population-per-km-img" style="background-color:#55E0FF;"></div>
+			</div>
+			<div class="col-flex align-items-center">
+				<div class="population-per-km-text">42.15</div>
+				<div class="population-per-km-img" style="background-color:#00D1FF;"></div>
+			</div>
+			<div class="col-flex align-items-center">
+				<div class="population-per-km-text">116.75</div>
+				<div class="population-per-km-img" style="background-color:#0099BB;"></div>
+			</div>
+			<div class="col-flex align-items-center">
+				<div class="population-per-km-text">2236.52</div>
+				<div class="population-per-km-img" style="background-color:#006379;"></div>
+			</div> -->
+		</div>
+		
+	</div>
+	<!-- </div> -->
+	<div class="loader"></div> 
+	<div id="map"></div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+	<script src="dashboard.e31bb0bc.js"></script>
+</body>
+
+</html>
