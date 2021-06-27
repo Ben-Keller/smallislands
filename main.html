@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/materialui.css">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
 
   <!-- Bootstrap core CSS -->
 
@@ -35,6 +36,9 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/pillarsAndTargets.css" rel="stylesheet">
   <link href="css/choropleth.css" rel="stylesheet">
+  <link href="css/mvi.css" rel="stylesheet">
+  <link href="css/qna.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/dashboard.e31bb0bc.css"></head>
 
 </head>
 
@@ -108,37 +112,53 @@
   <div class="h-100 mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
     <div id="fullDashboard" class="mdl-grid mdl-grid--no-spacing">
       <div class="mdl-cell mdl-cell--2-col" id="verticalMenu">
-        <div class="mdl-tabs__tab-bar">
-          <a href="#portfolioPanel" class="mdl-tabs__tab is-active" id="portfolioTab">
+        <div class="mdl-tabs__tab-bar" id="tabSelectorBox">
+          
+          <!-- <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
-            <h5>UNDP Portfolio</h5>
+            <h5>Geospatial Data</h5>
+          </a> -->
+          <a href="#gisPanel" class="mdl-tabs__tab is-active" id="gisTab">
+
+            <h5>Development Indicators</h5>
           </a>
-
           <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
-            <h5>Country Indicators</h5>
+            <h5>Development Indicators</h5>
+          </a>
+
+          <a href="#countryDataPanel" class="mdl-tabs__tab" id="mviTab">
+
+            <h5>Vulnerability</h5>
           </a>
 
           <a href="#countryViewPanel" class="mdl-tabs__tab" id="countryViewTab">
 
             <h5>Country Profiles</h5>
           </a>
-        
+
+          <a href="#portfolioPanel" class="mdl-tabs__tab " id="portfolioTab">
+
+            <h5>UNDP SIDS Portfolio</h5>
+          </a>
+
+          <a href="#qnaPanel" class="mdl-tabs__tab" id="qnaTab">
+
+            <h5>Q&A</h5>
+          </a>
+
 
           <!-- <a href="#geoPanel" class="mdl-tabs__tab">
 
 
             <h5>Geospatial Data</h5>
           </a> -->
-          <!-- <a href="#pillarsPanel" class="mdl-tabs__tab">
 
-            <h5>SIDS Offer</h5>
-          </a> -->
         </div>
       </div>
 
 
-      <div class="mdl-cell mdl-cell--2-col" id="verticalMenu2" style="display:none">
+      <!-- <div class="mdl-cell mdl-cell--2-col" id="verticalMenu2" style="display:none">
         <div class="mdl-tabs__tab-bar">
           <a href="#portfolioPanel" class="mdl-tabs__tab is-active">
 
@@ -179,16 +199,162 @@
           </a>
 
         </div>
-      </div>
+      </div> -->
 
 
 
 
+
+
+	
       <div class="mdl-cell mdl-cell--10-col">
 
-        <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel">
+        <div class="container panel mdl-tabs__panel is-active" id="gisPanel">
+
+	<!-- Logos Section Start -->
+	<div class="logos row-flex align-items-center">
+		<div class="UNDP-logo"></div>
+		<div class="rising-up-for-sids"></div>
+	</div>
+	<!-- Top Right Column -->
+	<div class="col-flex top-right">
+
+		<div class="row-flex" style="justify-content:flex-end;">
+			<div class="country-select-menu" id="country-select-id">
+				<select id="country-select">
+					<option value="Select Country or Region">Select Country or Region</option>
+					<!--<option value="USA">USA</option>
+					<option value="UK">UK</option>
+					<option value="IND">IND</option>
+					<option value="ABC">ABC</option>
+					<option value="EFG">EFG</option> -->
+				</select>
+				<span class="downarrow"></span>
+			</div>
+			<!--<div class="icon1"></div>-->
+		</div>
+
+		<div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
+			<div class="add-overlay-menu">
+				<select name="overlay-select" id="add-overlay">
+					<option value="Select Country or Region">Add overlays</option>
+					<option value="admin1">Admin Regions 1</option>
+					<option value="admin2">Admin Regions 2</option>
+					
+				</select>
+				<span class="downarrow"></span>
+			</div>
+			<div id="icon3d" class="icon2"></div>
+		</div>
+
+		<div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
+			<div class="plot-select-menu">
+				<select name="hexbin-change" id="plot-select">
+					<option selected="" value="hex5">5km hexbins</option>
+					<option value="hex10">10km hexbin</option>
+					<option value="admin1">Admin 1 Regions</option>
+					<option value="admin2">Admin 2 Regions</option>
+				</select>
+				<span class="selection-dropdown-arrow up left-arrow"></span>
+				<span class="selection-dropdown-arrow down right-arrow"></span>
+			</div>
+			<div class="icon3"></div>
+		</div>
+
+		<div class="row-flex add-chart-button-wrap">
+			<div class="add-chart-button row-flex align-items-center">
+				<div class="plus-sign"></div>
+				<div class="text-add-chart">Add chart</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Top right Column End -->
+
+	<div class="container main-wrapper">
+		<!-- Collapse button -->
+		<div class="collapse-btn">
+			<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+				<path fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path>
+			</svg>
+		</div>
+	
+
+			<div class="row">
+
+				<div class="col-12">
+					<div class="custom-selection-dropdown selection-dropdown-1">
+						<label>Dataset</label>
+						<select class="form-select data-set-selection" id="dataDrop" aria-label="Dataset" name="dataset-selection">
+							<option value="start" selected="">Select Dataset</option>
+							<!--<option value="Example 2">Example 2</option>
+							<option value="Example Dataset 3">Example Dataset 3</option>
+							<option value="Example Dataset 4">Example Dataset 4</option> -->
+						</select>
+						<span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
+						<span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
+					</div>
+				</div>
+
+				<div class="col-12">
+
+					<div class="custom-selection-dropdown selection-dropdown-1">
+						<label>Layer</label>
+						<select class="form-select" aria-label="Layer" name="layer-selection">
+							<option value="default" selected="">Select Layer</option>
+							<!--<option value="Example 2">Example 2</option> -->
+						</select>
+						<span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
+						<span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-12">
+
+					<div class="year-timeline-wrapper">
+
+						<div class="year-timeline-controls">
+							<a href="#" id="year-play-pause" class="play">
+								<span>Play / Pause</span>
+							</a>
+						</div>
+
+						<div class="year-timeline">
+
+		
+	</div>
+	<div class="population-density-box col-flex">
+		<div class="col-flex" style="overflow-y:auto; padding:0px 6px 0px 0px;margin:12px 4px 12px 16px;">
+			<div id="infoBoxTitle" style="font-size:16px;font-weight:700;">Select a Dataset</div>
+			<div id="infoBoxText" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
+			<div id="infoBoxLink" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
+		</div>
+	</div>
+	<div class="population-per-km col-flex">
+		<div class="row-flex space-evenly" style="margin-top:4px;font-size: 14px;" id="legendTitle">Legend</div>
+
+		<div class="row-flex space-evenly" id="updateLegend">
+
+		</div>
+		
+	</div>
+	<!-- </div> -->
+	<div id="map"></div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+        <div class="container panel mdl-tabs__panel hidden" id="portfolioPanel">
           <div id="projectTooltips"></div>
-          <div id="samoaTooltips" ></div>
+          <div id="samoaTooltips"></div>
           <div class="panelTitleRow ">
             <div class="col-lg-12">
               <h2>UNDP Portfolio in Small Island Developing States</h2>
@@ -302,53 +468,53 @@
                 <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-01.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-02.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-02.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-03.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-03.png">
               </div>
               <div class="sdgIcon">
                 <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-04.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-05.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-05.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-06.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-06.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-07.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-07.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-08.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-08.png">
               </div>
 
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-09.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-09.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-10.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-10.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-11.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-11.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-12.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-12.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-13.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-13.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-14.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-14.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-15.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-15.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-16.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-16.png">
               </div>
               <div class="sdgIcon">
-                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-17.png" >
+                <img src="icons/SDG Icons 2019_WEB/E-WEB-Goal-17.png">
               </div>
 
             </div>
@@ -457,7 +623,7 @@
                 <li id="sdg"><a class="selectedGoal">Sustainable Development Goals</a></li>
                 <li id="undpss"><a>Signature Solutions</a></li>
 
-                <div class="goalShader"></div>
+                <div class="goalShader shader"></div>
               </ul>
 
             </div>
@@ -522,8 +688,8 @@
         <div class="container panel mdl-tabs__panel hidden" id="countryDataPanel">
 
 
-          <div class="col-lg-12" id="countryDataTitle">
-            <h2>SIDS Development Indicators</h2>
+          <div class="col-lg-12">
+            <h2 id="countryDataTitle">SIDS Development Indicators</h2>
           </div>
 
 
@@ -536,7 +702,7 @@
 
           <div class="row">
             <div id="indicatorSelectorCol" class="col-sm-3">
-
+              <div id="indicatorSelectBox1" style="display:block">
               <div class="input__select">
                 <select id="indicatorCategorySelect" class="indicatorFilter">
 
@@ -552,6 +718,7 @@
                 <ul id="listBoox">
                 </ul>
               </div>
+              </div>
               <div id="choroInfoBox">
                 <h4 id="choroInfoTitle">Select an Indicator</h4>
                 <p id="choroIndiText"></p>
@@ -561,24 +728,141 @@
                 </p>
               </div>
 
-              <div id="indicatorSelectBox2">
-                -- Second Indicator -- 
-              <div class="input__select">
-                <select id="indicatorCategorySelect2" class="indicatorFilter">
+              <div id="indicatorSelectBox2" style="display:block">
+                -- Second Indicator --
+                <div class="input__select">
+                  <select id="indicatorCategorySelect2" class="indicatorFilter">
 
-                </select>
-              </div>
-              <div class="input__select">
-                <select id="indicatorSubcategorySelect2" class="indicatorFilter">
+                  </select>
+                </div>
+                <div class="input__select">
+                  <select id="indicatorSubcategorySelect2" class="indicatorFilter">
 
-                </select>
+                  </select>
+                </div>
+
+                <div class="listbox " id="indicatorSelect2">
+                  <ul id="listBoox2">
+                  </ul>
+                </div>
               </div>
 
-              <div class="listbox " id="indicatorSelect2">
-                <ul id="listBoox2">
-                </ul>
+
+              <div id="mviCustomSelectBox" style="display:none">
+
+
+                    <div class="col-lg-12 d-flex justify-content-center slidebox" id="mviPresetSelect">
+
+
+                      <ul>
+                        <li id="mviLi"><a class="selectedMviPreset">MVI</a></li>
+                        <li id="eviLi"><a>EVI</a></li>
+                        <li id="customLi"><a>Custom</a></li>
+      
+                        <div class="mviPresetShader shader"></div>
+                      </ul>
+                    </div>
+
+           
+
+
+                  <div id="mviYearSelect">
+
+                  </div>
+
+<div id="checkboxBox">
+
+                  <div id="mviEnvironmentalTitle" class="mviTitle">
+                    Environmental
+                  </div>
+
+                  <div id="mviEnvironmentalIndicators">
+                    <label class="checkboxContainer">Victims of Disasters
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="victims" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">Agriculture & Fishing (% of GDP)
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="agrGDP" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    
+                  </div>
+
+                  <div id="mviGeographicTitle" class="mviTitle">
+                    Geographic
+                  </div>
+
+                  <div id="mviGeographicIndicators">
+                    <label class="checkboxContainer">Remoteness
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="remote" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">% Population in Coastal Zones
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="popLECZ" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">% Population in Drylands
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="popDry" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                  </div>
+
+                
+
+                  
+
+                  <div id="mviEconomicTitle" class="mviTitle">
+                    Economic
+                  </div>
+
+                  <div id="mviEconomicIndicators">
+                    <label class="checkboxContainer">Export Concentration
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="expConc" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">Export Instability
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="expInst" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">Agricultural Instability
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="agrInst" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                  </div>
+
+                  <div id="mviFinancialTitle" class="mviTitle">
+                    Financial
+                  </div>
+
+                  <div id="mviFinancialIndicators">
+                    <label class="checkboxContainer">Tourism Revenue (% of Exports)
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="tourism" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">Remittances (% of GDP)
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="remit" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                    <label class="checkboxContainer">FDI Inflows (% of GDP)
+                      <input type="checkbox" name="mviIndicator" checked="checked" id="fdi" onchange="customSelectChange()">
+                      <span class="checkmark"></span>
+                    </label>
+                    
+                  </div>
+
+                </div>
+
               </div>
-            </div>
 
 
 
@@ -590,34 +874,108 @@
             <div class="mapToolCont col-sm-9">
 
 
-             
+
 
 
               <div class="col-lg-12 d-flex justify-content-center slidebox" id="vizSelect">
-         
-        
-    <ul>
-      <li id="globalLi"><a>Global View</a></li>
-      <li id="choroLi"><a class="selectedViz">Choropleth</a></li>
-      <li id="barLi"><a >Bar Chart</a></li>
-      <li id="timeLi"><a>Time Series</a></li>
-      <li id="multiLi"><a>Multi-indicator</a></li>
 
-      <div class="vizShader"></div>
-    </ul>
-  </div>
 
-  <div class="row">
-    <div id="choro_legend_container">
-      <img id="regionLegend" src="images/tempChoroLegend.jpg">
-    </div>
+                <ul>
+                  <li id="infoLi"><a>Info</a></li>
+                  <li id="choroLi"><a id="choroLiLi" class="selectedViz">Choropleth</a></li>
+                  <li id="barLi"><a>Bar Chart</a></li>
+                  <li id="globalLi"><a>Global View</a></li>
+           
+                  <!-- <li id="timeLi"><a>Time Series</a></li>
+                  <li id="multiLi"><a>Multi-indicator</a></li> -->
+                  
+              
 
-  </div>
+                  <div class="vizShader shader"></div>
+                </ul>
+              </div>
+
+
+
 
 
               <div id="choroTooltips"></div>
 
-              <div id="choro_map_container"> </div>
+             
+
+              <div id="choro_legend_container">
+                <img id="regionLegend" src="images/tempChoroLegend.jpg">
+              </div>
+
+              <div class="col-lg-12 spiderbox" style="height:0;margin:0">
+                <div id="customSpider" class="radarChart" style="text-align:center;height:0"></div>
+              
+   
+              <div class="col-lg-12 d-flex justify-content-end slidebox" style="display:none;padding:0">
+
+                <div id="sortbySelect" style="margin-top:50px">
+                <ul>
+                  
+                  <div id="shortbySelect" style="text-align:center">Sort by</div>
+                  <li id="rankLi"><a id="rankLiLi" class="selectedSortby">Rank</a></li>
+                  <li id="regionLi"><a>Region</a></li>         
+                  <div class="sortbyShader shader"></div>
+                </ul>
+                </div>
+              </div>
+
+            
+            </div> 
+   <div id="mviInfoPage" style="height:0;display:none">
+
+    <h5>  About this page: </h5>
+
+    <p>  These visualizations are intended to illustrate the findings of the discussion paper and is part of UNDP’s contribution to the 
+      discussion around the MVI.  
+    </p>
+      <p>[more about the interactive visualization] </p>
+      
+    <p>  [more about the standardization of all indicators and how this is reflected] </p>
+  
+  
+
+    <h5> Background</h5>
+    <p>In response to the unique context of SIDS and the acute lack of finance exacerbated by the COVID-19 pandemic, 
+      UNDP has developed a <a href="https://www.undp.org/publications/towards-multidimensional-vulnerability-index" target="_blank"> 
+        <b>Multidimensional Vulnerability Index (MVI)</b> </a> to reflect traditional as well as emerging risks facing not only SIDS 
+        but all developing countries. 
+      The MVI responds to calls from SIDS for the reassessment the eligibility for concessional financing beyond income level to 
+      accurately capture the vulnerability SIDS face:</p>
+
+    <ul>
+   <li> <p>In July and August 2020, the <a href="https://www.aosis.org/" target="_blank"> 
+    Alliance of Small Island States (AOSIS)</a> sent two letters to the Executive Office of the 
+     Secretary-General requesting efforts be made on linking of vulnerability to access to financing and expanding eligibility criteria 
+     beyond income-based indicators.</p>
+</li>
+    <li><p>In December, the <a href="https://undocs.org/en/A/RES/75/215" target="_blank"> 
+      SIDS Resolution (A/RES/75/215) </a> was passed by the GA, paragraph 8.a of the Resolution makes a direct mention 
+      of the multidimensional vulnerability index and requests the Secretary-General to report progress on the development and use of 
+      the index. A milestone in the efforts to advocate for the development of a new index, UNDP did a significant amount of advocacy 
+      work in the lead up to its adoption including through briefings to the 2nd committee and G77.</p>
+ </li>
+    </ul>
+    <p>Using the MVI, the analysis in the discussion paper shows clearly that the majority of SIDS are far more vulnerable their income 
+      level 
+      alone would suggest. Using 11 indicators for 128 countries (including 34 SIDS), the MVI demonstrates that all but five SIDS are 
+      far more vulnerable than their income level would suggest. Furthermore, a simulation comparing SIDS to LDCs demonstrates that, 
+      if the MVI were used as a financing criterion (rather than just income per capita), SIDS on average would save 1.5% of their 
+      GDP per annum in interest payments.</p>
+    
+ 
+   </div>
+
+              <div id="choro_map_container" style="padding-top:40px"> 
+              </div>
+                
+            
+            
+           
 
               <div id="indicatorExportDiv" class="col-lg-12">
                 <!-- <button id="portfolioCsvButton" class="csvButton" type="button">Export csv</button></div> -->
@@ -669,22 +1027,19 @@
           </div>
           <div id="fullCountryViewInfo">
             <div class="col-lg-12 countryInfoBar">
-              <div class="row">
-                <div class="col-lg-3" id="countryProfile">
+              <div class="row" >
+                <div class="col-lg-4" id="countryProfile" style="margin-bottom:0;padding-bottom:0">
                   <h4 id="countryProfileTitle">Country Information</h4>
                   <div id="countryProfileInfo">
 
                   </div>
                 </div>
-                <div class="col-lg-3" id="countryRelief"><img id="reliefMap"></div>
+                <div class="col-lg-4" id="countryRelief" style="margin:0;padding:0"><img id="reliefMap"></div>
                 <!-- <div class="col-lg-2 scrollbar" id="countryStories">
 
               </div> -->
-                <div class="col-lg-3 spiderbox" style="text-align:center">
-                  <h4 id="mviTitle" style="margin-top:12px;">Multidimensional Vulnerability</h4>
-                  <div id="mviSpider" class="radarChart"></div>
-                </div>
-                <div class="col-lg-3" id="countryImageContainer"><img id="countryImage">
+
+                <div class="col-lg-4" id="countryImageContainer" style="margin:0;padding:0"><img id="countryImage">
                   <!--src="images/countries/grenada/grenadaBeachside.jpg">-->
                   <div id="imageLink" style="display:none">
                     <p>Bottom Center</p>
@@ -693,7 +1048,7 @@
               </div>
             </div>
 
-            <div class="col-lg-9 d-flex justify-content-center" id=multiCountrySelectBox>
+            <div class="col-lg-12 d-flex justify-content-center" id=multiCountrySelectBox>
 
 
               <select multiple="" class="label gray countryMultiSelect dropdown" id="multiCountrySelect">
@@ -703,42 +1058,19 @@
 
             </div>
             <div class="row">
-              <div class="col-lg-3 spiderbox">
+              <div class="col-lg-4 spiderbox">
                 <h3 style="color:#0DB14B">Climate Action</h3>
                 <div id="climateSpider" class="radarChart" style="text-align:center;"></div>
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3 spiderbox">
+              <div class="col-lg-4 spiderbox">
                 <h3 style="color:#0BC6FF">Blue Economy</h3>
                 <div id="blueSpider" class="radarChart" style="text-align:center;"></div>
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3 spiderbox">
+              <div class="col-lg-4 spiderbox">
                 <h3 style="color:#F58220">Digital Transformation</h3>
                 <div id="digitalSpider" class="radarChart" style="text-align:center;"></div>
               </div><!-- /.col-lg-4 -->
-              <div class="col-lg-3" id="financeBox">
-
-                <h3 style="color:#9e0909">Finance</h3>
-                <div id="financeInfo">
-
-                </div>
-
-
-
-                <div id="countryExportDiv" class="col-lg-3">
-                  <ul>
-                    <select id="countryExport" class="exportDropdown">
-                      <option value='export' selected hidden>Export</option>
-                      <option value='summary'>Summary csv</option>
-
-                    </select>
-                  </ul>
-
-
-
-                </div>
-
-
-              </div><!-- /.col-lg-4 -->
+ 
 
               <div id="tooltipIndicator" class="tooltips" role="tooltip">
                 <div id="tooltipIndicatorContent"></div>
@@ -755,14 +1087,38 @@
 
 
 
-              <!-- <div id="spiderLegend" class=col-lg-9></div> -->
+              <div class="col-lg-7 spiderbox" style="text-align:center">
+                <h3 style="color:#9e0909">Multidimensional Vulnerability</h3>
+                <div id="mviSpider" class="radarChart"></div>
+              </div>
+
+
+              <div class="col-lg-5" id="financeBox">
+
+                <h3 style="color:#0018a0">Finance</h3>
+                <div id="financeInfo">
+
+                </div>
+
+
+<!-- this is inside the finance box for some reason -->
+                <div id="countryExportDiv" class="col-lg-1">
+                  <ul>
+                    <select id="countryExport" class="exportDropdown">
+                      <option value='export' selected hidden>Export</option>
+                      <option value='summary'>Summary csv</option>
+
+                    </select>
+                  </ul>
+
+
+
+                </div>
+
+
+              </div><!-- /.col-lg-4 -->
             </div>
 
-
-            <div id="fullCountryViewInfo">
-
-
-            </div>
 
 
 
@@ -771,12 +1127,106 @@
 
 
 
+
+        <div class="container panel mdl-tabs__panel hidden" id="qnaPanel">
+
+
+              <h2 style="padding-top:40px; padding-bottom:40px">SIDS Dashboard Q&A</h2>
+ 
+
+
+              <div class="qnaBox">
+   
+                <ul class="qnalist">
+                    <li class="qnaItem qnaActive">
+                        <div class="qnaItemHeader">
+                            <h4 class="qnaQuestion ">What are Small Island Developing States?</h4>
+                            <i class="fa fa-angle-down qnaIcon"></i>
+                        </div>
+        
+                        <p class="qnaAnswer">Small Island Developing States (SIDS) are a distinct group of 38 UN Member States and 20 Non-UN Members/Associate Members of United Nations regional commissions that face unique social, economic and environmental vulnerabilities. The three geographical regions in which SIDS are located are: the Caribbean, the Pacific, and the Atlantic, Indian Ocean and South China Sea (AIS).  
+<br><br>
+                          SIDS were recognized as a special case both for their environment and development at the 1992 United Nations Conference on Environment and Development held in Rio de Janeiro, Brazil.  
+                          <br><br>                  
+                          The aggregate population of all the SIDS is 65 million, slightly less than 1% of the world’s population, yet this group faces unique social, economic, and environmental challenges.  
+                          <br><br>
+                          SIDS face a host of challenges including, for many, their remote geography. As a result, many SIDS face high import and export costs for goods as well as irregular international traffic volumes. Yet, they must rely on external markets for many goods due to the narrow resource base. 
+                    <!-- <br><br>
+                    One primary goal of this project is to centralize data in SIDS, thereby aiding policymaking and providing an opportunity to facilitate international, regional, and sub-regional SIDS-SIDS collaboration.
+                 -->
+                  </p>                    </li>
+                    <li class="qnaItem">
+                        <div class="qnaItemHeader">
+                            <h4 class="qnaQuestion">What is UNDP's SIDS Offer? </h4>
+                            <i class="fa fa-angle-down qnaIcon"></i>
+                        </div>
+                        <p class="qnaAnswer">
+
+                          UNDP’s SIDS offer – <b>Rising Up for SIDS</b> – presents an integrated approach for tapping into areas with potential to accelerate green recovery and transform societies based on three interconnected pillars: Climate Action, Blue Economy and Digital Transformation. The offer responds to the ambitions and demands SIDS expressed during the 2019 midterm review of the S.A.M.O.A. Pathway. It includes measures strengthening UNDP’s programmatic engagement, increasing our ability to respond to urgent challenges and enhancing organizational agility.    
+<br>
+                          <br><b>Climate Action</b>
+- Promoting decarbonized and resilient societies through scaled up climate action and enhanced efforts to mobilize climate finance. 
+
+<br><br><b>Blue Economy </b>
+
+- Harnessing the blue economy through an integrated approach rooted in sustainable finance and development. 
+
+<br><br><b>Digital Transformation </b>
+
+- Accelerating digital transformation through a whole-of-society approach that puts people at the centre for inclusive societies and resilient economies. 
+
+<br><br><b>Financing for Development </b>
+
+- Supporting SIDS to mobilize financing for development by seizing finance innovation opportunities such as: blue finance solutions, risk insurance, catalysing private sector investment and leveraging domestic resource mobilization. 
+                        </p>
+                    </li>
+                    <li class="qnaItem">
+                      <div class="qnaItemHeader">
+                          <h4 class="qnaQuestion">What are the sources of data used? </h4>
+                          <i class="fa fa-angle-down qnaIcon"></i>
+                      </div>
+                      <p class="qnaAnswer">All data sources used in the platform are publicly available. We have strived to curate the 	data in order to feature reliable, accurate and comprehensive information.  </p>
+                  </li>
+                  <li class="qnaItem">
+                    <div class="qnaItemHeader">
+                        <h4 class="qnaQuestion">What are the future stages of development for this data platform? </h4>
+                        <i class="fa fa-angle-down qnaIcon"></i>
+                    </div>
+                    <p class="qnaAnswer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </li>
+                <li class="qnaItem">
+                  <div class="qnaItemHeader">
+                      <h4 class="qnaQuestion">Who should I contact to learn more? </h4>
+                      <i class="fa fa-angle-down qnaIcon"></i>
+                  </div>
+                  <p class="qnaAnswer">To learn more about UNDP’s SIDS Offer, please visit our <a href="https://www.sparkblue.org/dashboard/small-island-developing-states" style="color:blue">SparkBlue page</a>.
+
+                    <br><br>For questions about UNDP’s SIDS Offer, “Rising up for SIDS”, please contact: <br>
+                    
+                    &emsp; Riad Meddeb, <i> Senior Principal Advisor for SIDS </i> – riad.meddeb@undp.org
+                    
+                   <br> &emsp; Ines Benabdallah,<i>  Programme Officer, SIDS </i> – ines.benabdallah@undp.org 
+                    <br><br>
+                    For technical questions about the platform please contact:  
+                    
+<br>                &emsp; Benjamin Keller - 	benjamin.keller@undp.org 
+
+</p>
+              </li>
+                </ul>
+            </div>
+</div> 
+
+</div>
+
+
+
       </div>
 
 
 
       <footer class="footerImg">
-       
+
       </footer>
 
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -816,11 +1266,16 @@
 
       <script src="scripts/pies.js"></script>
 
-      <script src="scripts/choropleth.js"></script>
+      <script src="scripts/sidsVizEngine.js"></script>
+      <script src="scripts/mviNew.js"></script>
 
       <script src="scripts/createCsv.js"></script>
 
+      <script src="scripts/qna.js"></script>
 
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+      <script src="dist/dashboard.e31bb0bc.js"></script>
 
 </body>
 
