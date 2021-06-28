@@ -323,12 +323,13 @@
 }
 
 #choro_legend_container {
-  height: 50px;
+  height: 0px;
   width: 90%;
+  overflow: visible;
 }
 
 #regionLegend {
-  height: 85%;
+  height: 42px;
   margin-left: 120px;
   margin-top: 5px;
   padding: 0;
@@ -338,7 +339,7 @@
   padding-top: 40px;
 }
 
-.vizShader {
+.shader {
   background-color: #E9ECF6;
   position: absolute;
   height: 24px;

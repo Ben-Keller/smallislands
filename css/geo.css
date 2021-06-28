@@ -1,16 +1,56 @@
-#geoMock {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-}
-
 #geoTitle {
   padding-top: 4%;
 }
 
 #geoPanel p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#mlTitle {
+  padding-top: 4%;
+}
+
+#machineLearningPanel p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#dataDownloadTitle {
+  padding-top: 4%;
+}
+
+#dataDownloadPanel p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#targetsTitle {
+  padding-top: 4%;
+}
+
+#targetsPanel p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+#powerBiTitle {
+  padding-top: 4%;
+}
+
+#powerBiPanel p {
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
