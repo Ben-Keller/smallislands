@@ -212,7 +212,7 @@
         "sourceName": "ITU",
         "datatype": "digital",
         "sourceLink": "https://www.itu.int/en/ITU-D/Cybersecurity/Pages/global-cybersecurity-index.aspx#:~:text=The%20Global%20Cybersecurity%20Index%20(GCI,different%20dimensions%20of%20the%20issue.",
-        "longDefinition": "No Data",
+        "longDefinition": "The Global Cybersecurity Index (GCI) is a trusted reference that measures the commitment of countries to cybersecurity at a global level – to raise awareness of the importance and different dimensions of the issue. As cybersecurity has a broad field of application, cutting across many industries and various sectors, each country’s level of development or engagement is assessed along five pillars – (i) Legal Measures, (ii) Technical Measures, (iii) Organizational Measures, (iv) Capacity Development, and (v) Cooperation – and then aggregated into an overall score.",
         "units": "No Data"
     },
     "Mobile cellular subscriptions (per person)": {
@@ -455,7 +455,7 @@
         "longDefinition": "Carbon dioxide emissions are those stemming from the burning of fossil fuels and the manufacture of cement. They include carbon dioxide produced during consumption of solid, liquid, and gas fuels and gas flaring.",
         "units": "No Data"
     },
-    "Renewable energy consumption (% of total final energy consumption)": {
+    "Renewable energy consumption (% of total)": {
         "source": "WB",
         "sourceName": "WB",
         "datatype": "climate",
