@@ -1,6 +1,10 @@
 // window.onload = function(){
   
   
+  document.getElementById("headerPanel").onscroll=function(){
+    document.getElementById("fullDashboard").scrollIntoView();
+  }
+
   var v1="<option value='all-sources'>All sources</option><option value='emilo-muc'>Münchner Kaffe</option><option value='emilo-muc-bio'>Münchner Kaffee BIO</option><option value='emilo-coli'>Colibri</option><option value='emilo-wall'>Wallaby</option><option value='emilo-lua'>Luani</option><option value='emilo-tuc'>Tucano BIO</option><option value='emilo-cora'>Corallo Decaf</option>"
   
   var v2="<option value='all-sources'>All sources</option><option value='gug-etho'>Äthopien</option><option value='gug-ecua'>Ecuador</option><option value='gug-gua'>Guatemala</option><option value='gug-hon'>Honduras</option>"
@@ -36,16 +40,9 @@
 
 
      
-      var x= $("#sdg");
-$('.goalShader').css({
-         'width': x.width()+32,
-         'left':x.position().left});
+    
 
-         var y= $("#choroLi");
-         $('.vizShader').css({
-                  'width': y.width()+32,
-                  'left':y.position().left});
-         
+       
 
 
 
