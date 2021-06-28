@@ -31,10 +31,15 @@
 
 #countryViewPanel h3 {
   font-size: 18px;
+  left: 300px;
   text-align: center;
   font-weight: bold;
   margin-top: 15px;
   margin-bottom: 0px;
+}
+
+#mviCountryTitle {
+  margin-left: 130px;
 }
 
 #countryViewPanel h5 {
@@ -232,10 +237,14 @@ select#type option[value=Colibri] {
   z-index: 0;
 }
 
+#financeBox {
+  padding-right: 150px;
+}
+
 #financeInfo {
   font-size: 12px;
   padding: 18px;
-  margin-top: 5px;
+  margin-top: 15px;
   background-color: #eeebeb;
   height: 220px;
   text-align: left;
