@@ -1,0 +1,83 @@
+.qnaBox {
+  width: 60%;
+  border-radius: 20px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 30px 15px;
+}
+
+.qnaTitulo {
+  text-align: center;
+  color: #1d1e35;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.qnaQuestion {
+  color: #4a4b5e;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 20px 0;
+}
+
+.qnaAnswer {
+  color: #787887;
+  line-height: 17px;
+  padding-bottom: 40px;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  transition: top 1s, opacity 1s;
+  z-index: 1;
+  font-size: 13px;
+}
+
+.qnaList {
+  list-style: none;
+}
+
+.qnaItemHeader {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.qnaItem {
+  border-bottom: 1px solid #E6E6E9;
+}
+
+.qnaIcon {
+  color: #f47c57;
+  transition: transform 1s;
+}
+
+.qnaList > li {
+  height: 54px;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+.qnaActive > .qnaItemHeader > .qnaQuestion {
+  font-weight: bold;
+}
+
+.qnaActive > .qnaItemHeader > .qnaIcon {
+  transform: rotate(180deg);
+}
+
+.qnaActive > .qnaAnswer {
+  opacity: 1;
+  top: 0;
+}
+
+li.qnaItem.qnaActive {
+  height: inherit;
+}
+
+/*# sourceMappingURL=qna.css.map */

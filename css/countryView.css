@@ -72,6 +72,11 @@
   color: #F58220;
 }
 
+#countryProfileTitle {
+  text-align: left;
+  padding-bottom: 6px;
+}
+
 #countryProfile, #countryStories {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -80,7 +85,8 @@
 #countryProfile {
   margin-right: 0;
   padding-right: 0;
-  padding-left: 20px;
+  padding-left: 40px;
+  line-height: 20px;
 }
 
 #countryRelief {
@@ -110,6 +116,7 @@
   margin-top: 2.5%;
   margin-bottom: 3%;
   padding-right: 0;
+  padding: 0;
 }
 
 .countryInfoBar img {
@@ -131,6 +138,7 @@
 
 #countryProfileInfo {
   font-size: 12px;
+  text-align: left;
 }
 
 #countryStories {
@@ -150,7 +158,7 @@
 .countryInfoBar h4 {
   font-size: 16px;
   font-weight: 800;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 /*
@@ -230,6 +238,8 @@ select#type option[value=Colibri] {
   margin-top: 5px;
   background-color: #eeebeb;
   height: 220px;
+  text-align: left;
+  line-height: 22px;
 }
 
 #countryImageContainer {

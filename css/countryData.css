@@ -53,16 +53,6 @@ Style-guide: https://levelup.gitconnected.com/css-only-custom-styled-select-99b1
   padding: 40px;
 }
 
-.vizShader {
-  background-color: #E9ECF6;
-  position: absolute;
-  height: 24px;
-  z-index: -1;
-  margin: 4px 6px;
-  padding: 0px 4px 3px 32px;
-  border-radius: 10px;
-}
-
 #countryDataViz img {
   width: 90%;
   height: auto;
