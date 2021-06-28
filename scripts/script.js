@@ -166,3 +166,18 @@ function nFormatter(num, digits) {
     }
     return (num / si[i].value).toFixed(digits).replace(rx, "$1") + si[i].symbol;
   }
+
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+      console.log(this.hash)
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      } 
+    });
+  });

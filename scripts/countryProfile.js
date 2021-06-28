@@ -223,6 +223,7 @@ function RadarChart(parent_selector, options, countryList, pillar, dataFull) {
 			.attr("y", (d, i) => -15 / cfg.textFormat ** 3 + rScaleNormal(maxValue * cfg.labelFactor) * sin(angleSlice * i - HALF_PI - cfg.spin))
 			.text(d => d)
 			.call(wrap, cfg.wrapWidth)
+			.style("pointer-events","auto")
 			.on('mouseover', function (d, i) {
 
 				try { sourceLink = metadata[0][d].sourceLink }
@@ -254,37 +255,18 @@ function RadarChart(parent_selector, options, countryList, pillar, dataFull) {
 				}
 
 
-				if (pillar == "MVI2") {
-					//this is currently not functional
-					mviSubMap = {
-						"Geographical Vulnerability": ["FDI inflows as percentage of GDP", "Agriculture and fishing as share of GDP"],
-						"Financial Vulnerability": ["Victims of disasters", "Remoteness", "Share of population in low elevated coastal zones"],
-						"Economic Vulnerability": ["Export concentration", "Export Instability", "Agricultural Instability"],
-						"Environmental Vulnerability": ["Tourism revenues as share of exports", "Remittances as percentage of GDP"]
-					}
-					subMVIlist = ""
-					//console.log(allKeyData)
-					console.log(mviSubMap[d])
-					for (indi in mviSubMap[d]) {
-						console.log(mviSubMap[d][indi])
-						console.log(mvi2Data)
-						subMVIlist += '<h6 style="color:black">' + mviSubMap[d][indi] + ": " + nFormatter(mvi2Data[mviSubMap[d][indi]], 2) + '</h6>'
-
-					}
-
-					document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:#8f0045">' + d +
-						'</h4>' + subMVIlist + '<h6>Source: UNDP' + '</h6><a href="' + sourceLink + '"></a>'
-
-				} else {
-					console.log(data[0])
-					value = dataFull[pillar.slice(0, -4)][0].axes.filter(obj => { return obj.axis === d })[0].value//[
+				
+					console.log(dataFull[pillar.slice(0, -4)][0])
+					value = parseFloat(dataFull[pillar.slice(0, -4)][0].axes.filter(obj => { return obj.axis === d })[0].value)//[
+						if(value>0.001){value=value.toFixed(3)}
+						else{value=value.toString()}
 					pillarColor = pillarColors[pillar.slice(0, -4)]
 					document.getElementById('tooltipIndicatorContent').innerHTML = '<h4 style="color:' + pillarColor + '">' + d +
 						'</h4><h6 style="display:inline">Definition: ' + '</h6><p>' + longDefinition + '</p><h6 style="margin-top:4px;">' + "Source: " + sourceName + '</h6><a href="' + sourceLink +
 						'"><h6 style="color:black">' + "Rank: " + rankFormat(indicatorValue.toString()) + '</h6></a>' +
-						'<h6 style="color:blue">' + "Value: " + parseFloat(value.toFixed(3)) + '</h6></a>';
+						'<h6 style="color:blue">' + "Value: " + value  + '</h6></a>';
 
-				}
+				
 				tooltip3.setAttribute('data-show', '');
 				keyIndicatorPopperInstance[d].update();
 
@@ -403,13 +385,18 @@ function RadarChart(parent_selector, options, countryList, pillar, dataFull) {
 	}
 
 	else {
+		console.log("job=g")
 		blobWrapper
 			.append("path")
 			.attr("class", "radarArea")
 			.attr("d", d => radarLine(d.axes))
 			.style("fill", (d, i) => cfg.color(i))
 			.style("fill-opacity", cfg.opacityArea)
+			.style("pointer-events","auto")
 			.on('mouseover', function (d, i) {
+
+				console.log("job=gsdfsdf")
+
 				//Dim all blobs
 				parent.selectAll(".radarArea")
 					.transition().duration(200)
@@ -427,8 +414,8 @@ function RadarChart(parent_selector, options, countryList, pillar, dataFull) {
 					.style('display', 'block')
 					.text(function () {
 						console.log(d)
-						return d.name
-					});//["Profile"].Country
+						return allKeyData[d.name]["Profile"].Country
+					});
 			})
 			.on('mouseout', () => {
 				//Bring back all blobs

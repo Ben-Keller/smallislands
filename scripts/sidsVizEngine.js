@@ -739,6 +739,9 @@ function updateChoropleth(indicator) {
     }
     else {
         indicatorData = wdiFull[indicator]["data"]//[selectedYear]
+    
+    
+    
     }
     indicatorData2 = wdiFull[indicator2]["data"]//[selectedYear]
     console.log(indicatorData)
@@ -765,8 +768,10 @@ function updateChoropleth(indicator) {
     })
     }
     else{
-            $(".choroText").each(function (d) {
-                if (mviCountryListSpider.includes(this.innerHTML)) {
+       
+        $(".choroText").each(function (d) {
+            //which is this only mviCountryListSpider? it doesn't check which tab is selected
+                if (mviCountryListSpider.includes(this.innerHTML)||(indicator=="Region"&&selectedPage=="countryDataTab")) {
                   
                     $(this).css("fill-opacity", 1)
                 }
@@ -775,6 +780,7 @@ function updateChoropleth(indicator) {
                     $(this).css("fill-opacity", 0)
                 }
             })
+        
             $(".choroText2").each(function (d) {
                 
                 $(this).css("fill-opacity", 0)
@@ -783,7 +789,7 @@ function updateChoropleth(indicator) {
         
                 $(this).css("fill-opacity", 0)
             })
-    
+
        
         }   
 
@@ -988,12 +994,12 @@ console.log(TT)
 
 
         noData = []
+  
         d3.select("#choro_map_container").selectAll("path")		/* Map  counties to  data */
             .attr("class", function (d) {
 
                 try {
-                    // console.log(stat)
-                    if (indicatorData[countryJson[this.id].Country] == "No Data" || typeof indicatorData[countryJson[this.id].Country] != "number") {
+                     if (indicatorData[countryJson[this.id].Country] == "No Data" || typeof indicatorData[countryJson[this.id].Country] != "number") {
                         //hide country name
                         noData.push(countryJson[this.id].Country)
                         return "nodata countrySvg"
@@ -1018,7 +1024,7 @@ console.log(TT)
 
             });
 
-
+if(indicator!="Region"){
         $(".choroText").each(function (d) {
          //   console.log(this.innerHTML)
             if (noData.includes(this.innerHTML)||selectedViz=="Global View") {
@@ -1049,7 +1055,7 @@ console.log(TT)
         })
         }
         }
-
+    }
 
 
 
@@ -1057,7 +1063,8 @@ console.log(TT)
         else { d3.select(".yAxisTitle").transition().duration(1000).attr("fill-opacity", 0) }
 
 
-        if (selectedPage == "countryDataTab") {
+
+
             labelTransformData = {}
             $(".countryLabel").each(function () {
                 var country = countryJson[this.parentNode.id].Country
@@ -1080,7 +1087,16 @@ console.log(TT)
                     var country = countryJson[this.parentNode.id].Country
                     return nFormatter(indicatorData[country], 3)
                 })
-        }
+        
+    }
+    else{
+        d3.select("#choro_map_container").selectAll("path")		/* Map  counties to  data */
+        .attr("class", function (d) {
+    try{
+            return (regionColors(countryJson[this.id].Region, "Y") + " shadow countrySvg")
+    }catch(error){}
+        
+        });
     }
 
     //ad labels to column chart
@@ -2003,7 +2019,9 @@ function customSelectChange() {
 
 
 $('#vizSelect ul li').click(function () {
-    var x = $(this);
+
+
+        var x = $(this);
 
     $('.vizShader').stop().animate({
         'width': x.width() + 32,
@@ -2208,6 +2226,7 @@ $('#mviPresetSelect ul li').click(function () {
 
 $("#mviTab").click(function () {
 
+    $("#infoLi").show()
     $(".mdl-tabs__tab").removeClass("is-active")
     $(this).addClass("is-active")
 
@@ -2252,7 +2271,7 @@ $("#mviTab").click(function () {
 
 
 $("#countryDataTab").on("click", function () {
-
+    $("#infoLi").hide()
     $(".mdl-tabs__tab").removeClass("is-active")
     $(this).addClass("is-active")
 

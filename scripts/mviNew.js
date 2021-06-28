@@ -139,12 +139,14 @@ function updateCustomMvi() {
             });
 
 
-
+            
+$("#infoLi").show()
 
 
 
 
     }
+
 
 
 
@@ -458,10 +460,10 @@ function updateCustomMvi() {
                 .duration(1200)
                 .attr("x", function () { return labelTransformData[countryJson[this.parentNode.id].Country]["width"] + 170 })
                 .attr("y", function () { return labelTransformData[countryJson[this.parentNode.id].Country]["y"] + 10 })
-                // .attr("fill-opacity", function () {
-                //   if (noData.includes(countryJson[this.parentNode.id].Country) || selectedViz != "Bar Chart") { return 0 }
-                //   else { return 1 }
-                // })
+                .attr("fill-opacity", function () {
+                  if (!mviCountryListSpider.includes(countryJson[this.parentNode.id].Country) || selectedViz != "Bar Chart") { return 0 }
+                  else { return 1 }
+                })
                 .text(function () {
 
                     val = mviValues[countryJson[this.parentNode.id].Country], 2
@@ -512,6 +514,13 @@ function updateCustomMvi() {
     else {
         $("#sortbySelect").hide()
     }
+
+if(selectedViz!="Bar Chart"){
+    d3.select(sidsMaps).selectAll(".countryLabel")
+    .transition()
+    .duration(1200)
+       .attr("fill-opacity", 0)
+}
 
 }
 
