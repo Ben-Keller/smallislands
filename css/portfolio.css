@@ -67,26 +67,9 @@
   margin-bottom: 0;
 }
 
-.title {
-  border-radius: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-top: 15px;
-}
-
 #portfolioPanel h1 {
   text-align: center;
   font-weight: bold;
-}
-
-.goalShader {
-  background-color: #E9ECF6;
-  position: absolute;
-  height: 24px;
-  z-index: -1;
-  margin: 4px 6px;
-  padding: 0px 4px 3px 32px;
-  border-radius: 10px;
 }
 
 .row {
@@ -144,14 +127,6 @@ polyline {
 
 #vizSelect ul li {
   padding: 6px 12px 4px;
-}
-
-#goalSelect ul li {
-  padding: 6px 12px 4px;
-}
-
-#goalSelect {
-  max-height: 42px;
 }
 
 #yearSelect {
