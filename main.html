@@ -118,16 +118,19 @@
 
             <h5>Geospatial Data</h5>
           </a> -->
-          <a href="#gisPanel" class="mdl-tabs__tab is-active" id="gisTab">
+       
+          <a href="#portfolioPanel" class="mdl-tabs__tab is-active" id="portfolioTab">
 
-            <h5>Development Indicators</h5>
+            <h5>UNDP SIDS Portfolio</h5>
           </a>
+
+
           <a href="#countryDataPanel" class="mdl-tabs__tab" id="countryDataTab">
 
             <h5>Development Indicators</h5>
           </a>
 
-          <a href="#countryDataPanel" class="mdl-tabs__tab" id="mviTab">
+          <a href="#countryDataPanel" class="mdl-tabs__tab " id="mviTab">
 
             <h5>Vulnerability</h5>
           </a>
@@ -137,9 +140,9 @@
             <h5>Country Profiles</h5>
           </a>
 
-          <a href="#portfolioPanel" class="mdl-tabs__tab " id="portfolioTab">
+          <a href="#gisPanel" class="mdl-tabs__tab " id="gisTab">
 
-            <h5>UNDP SIDS Portfolio</h5>
+            <h5>Geospatial Data</h5>
           </a>
 
           <a href="#qnaPanel" class="mdl-tabs__tab" id="qnaTab">
@@ -211,151 +214,151 @@
 
         <div class="container panel mdl-tabs__panel is-active" id="gisPanel">
 
-	<!-- Logos Section Start -->
-	<div class="logos row-flex align-items-center">
-		<div class="UNDP-logo"></div>
-		<div class="rising-up-for-sids"></div>
-	</div>
-	<!-- Top Right Column -->
-	<div class="col-flex top-right">
+          <!-- Logos Section Start -->
+          <div class="logos row-flex align-items-center">
+            <div class="UNDP-logo"></div>
+            <div class="rising-up-for-sids"></div>
+          </div>
+          <!-- Top Right Column -->
+          <div class="col-flex top-right">
+        
+            <div class="row-flex" style="justify-content:flex-end;">
+              <div class="country-select-menu" id="country-select-id">
+                <select id="country-select">
+                  <option value="Select Country or Region">Select Country or Region</option>
+                  <!--<option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                  <option value="IND">IND</option>
+                  <option value="ABC">ABC</option>
+                  <option value="EFG">EFG</option> -->
+                </select>
+                <span class="downarrow"></span>
+              </div>
+              <!--<div class="icon1"></div>-->
+            </div>
+        
+            <div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
+              <div class="add-overlay-menu">
+                <select name="overlay-select" id="add-overlay">
+                  <option value="Select Country or Region">Add overlays</option>
+                  <option value="admin1">Admin Regions 1</option>
+                  <option value="admin2">Admin Regions 2</option>
+                  
+                </select>
+                <span class="downarrow"></span>
+              </div>
+              <div id="icon3d" class="icon2"></div>
+            </div>
+        
+            <div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
+              <div class="plot-select-menu">
+                <select name="hexbin-change" id="plot-select">
+                  <option selected="" value="hex5">5km hexbins</option>
+                  <option value="hex10">10km hexbin</option>
+                  <option value="admin1">Admin 1 Regions</option>
+                  <option value="admin2">Admin 2 Regions</option>
+                </select>
+                <span class="selection-dropdown-arrow up left-arrow"></span>
+                <span class="selection-dropdown-arrow down right-arrow"></span>
+              </div>
+              <div class="icon3"></div>
+            </div>
+        
+            <div class="row-flex add-chart-button-wrap">
+              <div class="add-chart-button row-flex align-items-center">
+                <div class="plus-sign"></div>
+                <div class="text-add-chart">Add chart</div>
+              </div>
+            </div>
+        
+          </div>
+          <!-- Top right Column End -->
+        
+          <div class="container main-wrapper">
+            <!-- Collapse button -->
+            <div class="collapse-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                <path fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path>
+              </svg>
+            </div>
+          
+        
+              <div class="row">
+        
+                <div class="col-12">
+                  <div class="custom-selection-dropdown selection-dropdown-1">
+                    <label>Dataset</label>
+                    <select class="form-select data-set-selection" id="dataDrop" aria-label="Dataset" name="dataset-selection">
+                      <option value="start" selected="">Select Dataset</option>
+                      <!--<option value="Example 2">Example 2</option>
+                      <option value="Example Dataset 3">Example Dataset 3</option>
+                      <option value="Example Dataset 4">Example Dataset 4</option> -->
+                    </select>
+                    <span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
+                    <span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
+                  </div>
+                </div>
+        
+                <div class="col-12">
+        
+                  <div class="custom-selection-dropdown selection-dropdown-1">
+                    <label>Layer</label>
+                    <select class="form-select" aria-label="Layer" name="layer-selection">
+                      <option value="default" selected="">Select Layer</option>
+                      <!--<option value="Example 2">Example 2</option> -->
+                    </select>
+                    <span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
+                    <span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
+                  </div>
+        
+        
+                </div>
+              </div>
+        
+              <div class="row">
+                <div class="col-12">
+        
+                  <div class="year-timeline-wrapper">
+        
+                    <div class="year-timeline-controls">
+                      <a href="#" id="year-play-pause" class="play">
+                        <span>Play / Pause</span>
+                      </a>
+                    </div>
+        
+                    <div class="year-timeline">
+        
+            
+          </div>
+          <div class="population-density-box col-flex">
+            <div class="col-flex" style="overflow-y:auto; padding:0px 6px 0px 0px;margin:12px 4px 12px 16px;">
+              <div id="infoBoxTitle" style="font-size:16px;font-weight:700;">Select a Dataset</div>
+              <div id="infoBoxText" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
+              <div id="infoBoxLink" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
+            </div>
+          </div>
+          <div class="population-per-km col-flex">
+            <div class="row-flex space-evenly" style="margin-top:4px;font-size: 14px;" id="legendTitle">Legend</div>
+        
+            <div class="row-flex space-evenly" id="updateLegend">
+        
+            </div>
+            
+          </div>
+          <!-- </div> -->
+          <div id="map"></div>
+        
+          </div>
+        </div>
+        </div>
+        </div>
+        </div>
 
-		<div class="row-flex" style="justify-content:flex-end;">
-			<div class="country-select-menu" id="country-select-id">
-				<select id="country-select">
-					<option value="Select Country or Region">Select Country or Region</option>
-					<!--<option value="USA">USA</option>
-					<option value="UK">UK</option>
-					<option value="IND">IND</option>
-					<option value="ABC">ABC</option>
-					<option value="EFG">EFG</option> -->
-				</select>
-				<span class="downarrow"></span>
-			</div>
-			<!--<div class="icon1"></div>-->
-		</div>
 
-		<div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
-			<div class="add-overlay-menu">
-				<select name="overlay-select" id="add-overlay">
-					<option value="Select Country or Region">Add overlays</option>
-					<option value="admin1">Admin Regions 1</option>
-					<option value="admin2">Admin Regions 2</option>
-					
-				</select>
-				<span class="downarrow"></span>
-			</div>
-			<div id="icon3d" class="icon2"></div>
-		</div>
-
-		<div class="row-flex" style="justify-content:flex-end;margin-top:15px;">
-			<div class="plot-select-menu">
-				<select name="hexbin-change" id="plot-select">
-					<option selected="" value="hex5">5km hexbins</option>
-					<option value="hex10">10km hexbin</option>
-					<option value="admin1">Admin 1 Regions</option>
-					<option value="admin2">Admin 2 Regions</option>
-				</select>
-				<span class="selection-dropdown-arrow up left-arrow"></span>
-				<span class="selection-dropdown-arrow down right-arrow"></span>
-			</div>
-			<div class="icon3"></div>
-		</div>
-
-		<div class="row-flex add-chart-button-wrap">
-			<div class="add-chart-button row-flex align-items-center">
-				<div class="plus-sign"></div>
-				<div class="text-add-chart">Add chart</div>
-			</div>
-		</div>
-
-	</div>
-	<!-- Top right Column End -->
-
-	<div class="container main-wrapper">
-		<!-- Collapse button -->
-		<div class="collapse-btn">
-			<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-				<path fill="none" stroke="#eee" stroke-linecap="round" stroke-linejoin="round" stroke-width="48" d="M328 112L184 256l144 144"></path>
-			</svg>
-		</div>
-	
-
-			<div class="row">
-
-				<div class="col-12">
-					<div class="custom-selection-dropdown selection-dropdown-1">
-						<label>Dataset</label>
-						<select class="form-select data-set-selection" id="dataDrop" aria-label="Dataset" name="dataset-selection">
-							<option value="start" selected="">Select Dataset</option>
-							<!--<option value="Example 2">Example 2</option>
-							<option value="Example Dataset 3">Example Dataset 3</option>
-							<option value="Example Dataset 4">Example Dataset 4</option> -->
-						</select>
-						<span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
-						<span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
-					</div>
-				</div>
-
-				<div class="col-12">
-
-					<div class="custom-selection-dropdown selection-dropdown-1">
-						<label>Layer</label>
-						<select class="form-select" aria-label="Layer" name="layer-selection">
-							<option value="default" selected="">Select Layer</option>
-							<!--<option value="Example 2">Example 2</option> -->
-						</select>
-						<span class="selection-dropdown-arrow up dataset-select-uparrow"></span>
-						<span class="selection-dropdown-arrow down dataset-select-downarrow"></span>
-					</div>
-
-
-				</div>
-			</div>
-
-			<div class="row">
-				<div class="col-12">
-
-					<div class="year-timeline-wrapper">
-
-						<div class="year-timeline-controls">
-							<a href="#" id="year-play-pause" class="play">
-								<span>Play / Pause</span>
-							</a>
-						</div>
-
-						<div class="year-timeline">
-
-		
-	</div>
-	<div class="population-density-box col-flex">
-		<div class="col-flex" style="overflow-y:auto; padding:0px 6px 0px 0px;margin:12px 4px 12px 16px;">
-			<div id="infoBoxTitle" style="font-size:16px;font-weight:700;">Select a Dataset</div>
-			<div id="infoBoxText" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
-			<div id="infoBoxLink" style="font-size:12px;font-weight:500;margin-top:10px;"></div>
-		</div>
-	</div>
-	<div class="population-per-km col-flex">
-		<div class="row-flex space-evenly" style="margin-top:4px;font-size: 14px;" id="legendTitle">Legend</div>
-
-		<div class="row-flex space-evenly" id="updateLegend">
-
-		</div>
-		
-	</div>
-	<!-- </div> -->
-	<div id="map"></div>
-
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-
-        <div class="container panel mdl-tabs__panel hidden" id="portfolioPanel">
+        <div class="container panel mdl-tabs__panel is-active" id="portfolioPanel">
           <div id="projectTooltips"></div>
           <div id="samoaTooltips"></div>
-          <div class="panelTitleRow ">
+          <div class="panelTitleRow">
             <div class="col-lg-12">
               <h2>UNDP Portfolio in Small Island Developing States</h2>
             </div>
@@ -685,7 +688,7 @@
 
         </div>
 
-        <div class="container panel mdl-tabs__panel hidden" id="countryDataPanel">
+        <div class="container panel mdl-tabs__panel" id="countryDataPanel">
 
 
           <div class="col-lg-12">
@@ -930,12 +933,9 @@
 
     <h5>  About this page: </h5>
 
-    <p>  These visualizations are intended to illustrate the findings of the discussion paper and is part of UNDP’s contribution to the 
-      discussion around the MVI.  
-    </p>
-      <p>[more about the interactive visualization] </p>
-      
-    <p>  [more about the standardization of all indicators and how this is reflected] </p>
+   <p> The data from this paper is presented in a parametric interface with a customizable version of the MVI, as well as multiple forms of visualizations that allow for an analysis of the contributions of each indicator towards SIDS vulnerability. This supports comparisons of indices between countries and regions, as well as between the MVI and the Environmental Vulnerability Index (EVI) which is currently used as part of the three criteria for inclusion in the Least Developed Countries (LDC) category. </p>
+
+    <p>The composite MVI is an average value of four dimensions of vulnerability: environmental, geographic, economic, and financial. Each of the dimensions is calculated as an average of the normalized indicators selected for that dimension. All data is from UNDESA and World Bank. </p>
   
   
 
@@ -1087,13 +1087,13 @@
 
 
 
-              <div class="col-lg-7 spiderbox" style="text-align:center">
-                <h3 style="color:#9e0909">Multidimensional Vulnerability</h3>
+              <div class="col-lg-6 spiderbox" style="text-align:right">
+                <h3 id="mviCountryTitle" style="color:#9e0909">Multidimensional Vulnerability</h3>
                 <div id="mviSpider" class="radarChart"></div>
               </div>
 
 
-              <div class="col-lg-5" id="financeBox">
+              <div class="col-lg-6" id="financeBox">
 
                 <h3 style="color:#0018a0">Finance</h3>
                 <div id="financeInfo">
@@ -1131,7 +1131,7 @@
         <div class="container panel mdl-tabs__panel hidden" id="qnaPanel">
 
 
-              <h2 style="padding-top:40px; padding-bottom:40px">SIDS Dashboard Q&A</h2>
+              <h2 style="padding-top:40px; padding-bottom:20px">SIDS Data Visualization Platform Q&A</h2>
  
 
 
@@ -1192,7 +1192,7 @@
                         <h4 class="qnaQuestion">What are the future stages of development for this data platform? </h4>
                         <i class="fa fa-angle-down qnaIcon"></i>
                     </div>
-                    <p class="qnaAnswer">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p class="qnaAnswer">The current phase has been focused on the aggregation and visualization of publicly available development-related datasets in SIDS to support policymaking and to provide an opportunity for international, regional, and sub-regional SIDS-SIDS collaboration. In our next phase, we intend to use these collated datasets to build analysis tools that identify trends and generate insights specifically focused on the developmental challenges and solutions relevant for SIDS. </p>
                 </li>
                 <li class="qnaItem">
                   <div class="qnaItemHeader">
@@ -1229,15 +1229,14 @@
 
       </footer>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+  
       <!-- <script>window.jQuery || document.write('<script src="../scripts"><\/script>')</script> -->
       <script src="jsImport/popper.min.js"></script>
-      <script src="jsImport/bootstrap.min.js"></script>
+      
       <script src="https://unpkg.com/@popperjs/core@2"></script>
       <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="jsImport/bootstrap.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.2.13/dist/semantic.min.js"></script>
       <script src="https://storage.googleapis.com/code.getmdl.io/1.1.0/material.min.js"></script>
 
